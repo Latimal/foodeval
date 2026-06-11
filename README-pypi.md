@@ -1,5 +1,7 @@
 # FoodEval
 
+[![PyPI](https://img.shields.io/pypi/v/foodeval)](https://pypi.org/project/foodeval/) [![Python](https://img.shields.io/pypi/pyversions/foodeval)](https://pypi.org/project/foodeval/) [![License](https://img.shields.io/badge/license-CC--BY--NC--4.0_eval--only-blue)](https://github.com/latimal/foodeval/blob/main/LICENSE)
+
 **The food-domain benchmark for text embedding models.**
 
 Mainstream embedding benchmarks (MTEB, BEIR) contain no menu- or dish-level evaluations. The closest thing, NFCorpus, is medical-literature retrieval seeded from nutrition topics. Models that do well on those benchmarks stumble on food text. On our leaderboard, OpenAI's text-embedding-3-large, requested at d=384 through its native dimensions parameter, returns "egg white omelette" as its top hit for "egg free options" and "lassi" for "lactose free". Both queries score an NDCG@10 of 0.0, verifiable in its shipped result file. No model reaches 0.24 NDCG@10 on diet and allergen search, ours included.
