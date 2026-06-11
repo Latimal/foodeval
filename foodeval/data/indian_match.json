@@ -1,0 +1,3001 @@
+{
+  "task": "indian_match",
+  "version": "0.1.0",
+  "description": "Indian cuisine menu item matching",
+  "metric": "best_f1",
+  "pairs": [
+    {
+      "id": "p001",
+      "text_a": "**BESTSELLER** Butter Chicken",
+      "text_b": "Butter Chicken",
+      "label": 1
+    },
+    {
+      "id": "p002",
+      "text_a": "10 papa s special gluten free w canned mushroom",
+      "text_b": "12 papa s special w canned mushroom",
+      "label": 0
+    },
+    {
+      "id": "p003",
+      "text_a": "12 gourmet pizza",
+      "text_b": "12 supreme gourmet pizza",
+      "label": 0
+    },
+    {
+      "id": "p004",
+      "text_a": "12 l amour new york style pizza",
+      "text_b": "16 l amour new york style pizza",
+      "label": 1
+    },
+    {
+      "id": "p005",
+      "text_a": "12 margherita special",
+      "text_b": "16 margherita special",
+      "label": 1
+    },
+    {
+      "id": "p006",
+      "text_a": "12 traditional thin crust vegetarian deluxe classic pizza",
+      "text_b": "vegetarian classic pizza",
+      "label": 0
+    },
+    {
+      "id": "p007",
+      "text_a": "15 grilled chicken bacon cheddar",
+      "text_b": "15 grilled chicken philly",
+      "label": 0
+    },
+    {
+      "id": "p008",
+      "text_a": "16 genovese pizza",
+      "text_b": "bianca genovese pizza 18",
+      "label": 0
+    },
+    {
+      "id": "p009",
+      "text_a": "18 extra grilled chicken pizza",
+      "text_b": "grilled chicken pizza",
+      "label": 1
+    },
+    {
+      "id": "p010",
+      "text_a": "18 new york style thin crust cheese pizza",
+      "text_b": "giant new york style cheese pizza",
+      "label": 0
+    },
+    {
+      "id": "p011",
+      "text_a": "5 sev puri",
+      "text_b": "sev puri",
+      "label": 1
+    },
+    {
+      "id": "p012",
+      "text_a": "50 juice",
+      "text_b": "kale speeder juice",
+      "label": 0
+    },
+    {
+      "id": "p013",
+      "text_a": "9 sausage",
+      "text_b": "sausage 14",
+      "label": 1
+    },
+    {
+      "id": "p014",
+      "text_a": "aaa mushroom",
+      "text_b": "clear mushroom",
+      "label": 0
+    },
+    {
+      "id": "p015",
+      "text_a": "abhiruchi special chicken biryani",
+      "text_b": "special ambur chicken biryani",
+      "label": 0
+    },
+    {
+      "id": "p016",
+      "text_a": "almond milk latte",
+      "text_b": "vanilla frappe",
+      "label": 0
+    },
+    {
+      "id": "p017",
+      "text_a": "Aloo Paratha",
+      "text_b": "Aloo Tikki",
+      "label": 0
+    },
+    {
+      "id": "p018",
+      "text_a": "american pizza",
+      "text_b": "the classic american pizza",
+      "label": 1
+    },
+    {
+      "id": "p019",
+      "text_a": "appam beef curry combo",
+      "text_b": "curry beef",
+      "label": 0
+    },
+    {
+      "id": "p020",
+      "text_a": "apple green juice",
+      "text_b": "green apple juice",
+      "label": 1
+    },
+    {
+      "id": "p021",
+      "text_a": "arabita pasta",
+      "text_b": "pasta arabita",
+      "label": 1
+    },
+    {
+      "id": "p022",
+      "text_a": "arrbiata pasta",
+      "text_b": "arrabiata pasta",
+      "label": 1
+    },
+    {
+      "id": "p023",
+      "text_a": "ashta ice cream with cotton candy and pistachio",
+      "text_b": "pistachio ice cream",
+      "label": 0
+    },
+    {
+      "id": "p024",
+      "text_a": "assorted bbq platter",
+      "text_b": "assorted platter",
+      "label": 0
+    },
+    {
+      "id": "p025",
+      "text_a": "authentic baked cheesecake",
+      "text_b": "authentic classic cheesecake",
+      "label": 1
+    },
+    {
+      "id": "p026",
+      "text_a": "authentic soba",
+      "text_b": "authentic ramen boneless",
+      "label": 0
+    },
+    {
+      "id": "p027",
+      "text_a": "avocado blt",
+      "text_b": "blt salad with avocado",
+      "label": 0
+    },
+    {
+      "id": "p028",
+      "text_a": "avocado egg",
+      "text_b": "egg mcmuffin",
+      "label": 0
+    },
+    {
+      "id": "p029",
+      "text_a": "avocado pear salad",
+      "text_b": "avocado pear salad half",
+      "label": 1
+    },
+    {
+      "id": "p030",
+      "text_a": "avocado toast classic",
+      "text_b": "avocado toast",
+      "label": 1
+    },
+    {
+      "id": "p031",
+      "text_a": "awadhi lamb biryani",
+      "text_b": "royal biryani lamb",
+      "label": 0
+    },
+    {
+      "id": "p032",
+      "text_a": "baby corn gravy manchurian",
+      "text_b": "baby corn gravy manchrian",
+      "label": 1
+    },
+    {
+      "id": "p033",
+      "text_a": "baby corn lollipop masala",
+      "text_b": "baby corn masala",
+      "label": 0
+    },
+    {
+      "id": "p034",
+      "text_a": "baby rawas curry",
+      "text_b": "rawas curry",
+      "label": 1
+    },
+    {
+      "id": "p035",
+      "text_a": "bacon and cheese",
+      "text_b": "classic bacon cheese",
+      "label": 0
+    },
+    {
+      "id": "p036",
+      "text_a": "bacon egg and cheese",
+      "text_b": "bacon sausage egg and cheese",
+      "label": 0
+    },
+    {
+      "id": "p037",
+      "text_a": "badami kheer the traditional rice pudding",
+      "text_b": "kheer rice",
+      "label": 0
+    },
+    {
+      "id": "p038",
+      "text_a": "baigan bharta gf v",
+      "text_b": "baigan bharta v gf",
+      "label": 1
+    },
+    {
+      "id": "p039",
+      "text_a": "baked strawberry cheesecake tub",
+      "text_b": "strawberry baked cheesecake",
+      "label": 1
+    },
+    {
+      "id": "p040",
+      "text_a": "baklava walnut",
+      "text_b": "walnut baklava",
+      "label": 1
+    },
+    {
+      "id": "p041",
+      "text_a": "barbecue shawarma combo",
+      "text_b": "shawarma combo",
+      "label": 0
+    },
+    {
+      "id": "p042",
+      "text_a": "basbousa and cream pie",
+      "text_b": "cream pie with basbousa",
+      "label": 1
+    },
+    {
+      "id": "p043",
+      "text_a": "bean cheese breakfast burritos",
+      "text_b": "bean cheese smothered burritos plate",
+      "label": 0
+    },
+    {
+      "id": "p044",
+      "text_a": "beef and lamb platter",
+      "text_b": "beef and lamb salad",
+      "label": 0
+    },
+    {
+      "id": "p045",
+      "text_a": "beef fajitas fajita de res",
+      "text_b": "beef fajitas fajitas de res",
+      "label": 1
+    },
+    {
+      "id": "p046",
+      "text_a": "beef gimbap",
+      "text_b": "beef kimbap",
+      "label": 1
+    },
+    {
+      "id": "p047",
+      "text_a": "beef italian",
+      "text_b": "beef kafta",
+      "label": 0
+    },
+    {
+      "id": "p048",
+      "text_a": "beef noodle dish",
+      "text_b": "taiwanese beef noodle",
+      "label": 0
+    },
+    {
+      "id": "p049",
+      "text_a": "beef shawarma hummus",
+      "text_b": "hummus shawarma beef plate",
+      "label": 1
+    },
+    {
+      "id": "p050",
+      "text_a": "beef skirt",
+      "text_b": "beef skirt steak fajita",
+      "label": 0
+    },
+    {
+      "id": "p051",
+      "text_a": "beef steak",
+      "text_b": "steak beef",
+      "label": 1
+    },
+    {
+      "id": "p052",
+      "text_a": "beef trio enchilada",
+      "text_b": "six pack ground beef enchilada",
+      "label": 0
+    },
+    {
+      "id": "p053",
+      "text_a": "beef with lemongrass",
+      "text_b": "extra lemongrass beef",
+      "label": 1
+    },
+    {
+      "id": "p054",
+      "text_a": "bhagare baigan egg plant gf",
+      "text_b": "masala baigan egg plant",
+      "label": 0
+    },
+    {
+      "id": "p055",
+      "text_a": "bhuna mutton",
+      "text_b": "bhuna mutton special",
+      "label": 1
+    },
+    {
+      "id": "p056",
+      "text_a": "black pepper beef combo with fried rice",
+      "text_b": "black pepper beef fillet rice set",
+      "label": 0
+    },
+    {
+      "id": "p057",
+      "text_a": "boned capon truffe and jelly",
+      "text_b": "cold boned capon truffe and jelly",
+      "label": 1
+    },
+    {
+      "id": "p058",
+      "text_a": "bottled ice tea",
+      "text_b": "ice tea bottled",
+      "label": 1
+    },
+    {
+      "id": "p059",
+      "text_a": "brisk iced tea 20 oz",
+      "text_b": "organic iced tea 32 oz",
+      "label": 0
+    },
+    {
+      "id": "p060",
+      "text_a": "brisket pho chin nac",
+      "text_b": "kid pho chin brisket",
+      "label": 0
+    },
+    {
+      "id": "p061",
+      "text_a": "Briyani",
+      "text_b": "Biryani",
+      "label": 1
+    },
+    {
+      "id": "p062",
+      "text_a": "broccoli in oyster sauce",
+      "text_b": "fresh broccoli with oyster sauce",
+      "label": 0
+    },
+    {
+      "id": "p063",
+      "text_a": "broiled half spring chicken",
+      "text_b": "half spring chicken broiled",
+      "label": 1
+    },
+    {
+      "id": "p064",
+      "text_a": "bubble tea",
+      "text_b": "classic bubble tea",
+      "label": 1
+    },
+    {
+      "id": "p065",
+      "text_a": "bubble tea",
+      "text_b": "ginger lemon tea",
+      "label": 0
+    },
+    {
+      "id": "p066",
+      "text_a": "bubble tea",
+      "text_b": "lemon iced tea",
+      "label": 0
+    },
+    {
+      "id": "p067",
+      "text_a": "bubble tea",
+      "text_b": "tea o",
+      "label": 0
+    },
+    {
+      "id": "p068",
+      "text_a": "buffalo chicken",
+      "text_b": "chicken buffalo",
+      "label": 1
+    },
+    {
+      "id": "p069",
+      "text_a": "buffalo chicken pizza 15",
+      "text_b": "buffalo spicy chicken pizza",
+      "label": 1
+    },
+    {
+      "id": "p070",
+      "text_a": "burger primo",
+      "text_b": "nirvana burger",
+      "label": 0
+    },
+    {
+      "id": "p071",
+      "text_a": "burnt chilli prawns dry",
+      "text_b": "chilli prawns dry",
+      "label": 1
+    },
+    {
+      "id": "p072",
+      "text_a": "burrito bowl asada",
+      "text_b": "fajita burrito bowl",
+      "label": 0
+    },
+    {
+      "id": "p073",
+      "text_a": "butter chicken bl",
+      "text_b": "butter chicken",
+      "label": 1
+    },
+    {
+      "id": "p074",
+      "text_a": "Butter Naan",
+      "text_b": "Butter Chicken",
+      "label": 0
+    },
+    {
+      "id": "p075",
+      "text_a": "Butter Naan",
+      "text_b": "Naan",
+      "label": 1
+    },
+    {
+      "id": "p076",
+      "text_a": "butter paneer hotdog",
+      "text_b": "paneer butter masala",
+      "label": 0
+    },
+    {
+      "id": "p077",
+      "text_a": "Butter Paratha",
+      "text_b": "Paratha",
+      "label": 1
+    },
+    {
+      "id": "p078",
+      "text_a": "cajun chicken fried steak plate",
+      "text_b": "fried chicken and chicken",
+      "label": 0
+    },
+    {
+      "id": "p079",
+      "text_a": "can of orange soda",
+      "text_b": "orange soda",
+      "label": 0
+    },
+    {
+      "id": "p080",
+      "text_a": "cappuccino",
+      "text_b": "south indian coffee",
+      "label": 0
+    },
+    {
+      "id": "p081",
+      "text_a": "caramel custurd",
+      "text_b": "caramel custard",
+      "label": 1
+    },
+    {
+      "id": "p082",
+      "text_a": "caramel latte",
+      "text_b": "sea salt caramel latte",
+      "label": 0
+    },
+    {
+      "id": "p083",
+      "text_a": "casserola di ravioli",
+      "text_b": "ravioli di arragosta",
+      "label": 0
+    },
+    {
+      "id": "p084",
+      "text_a": "cauliflower in potato curry",
+      "text_b": "cauliflower potato curry",
+      "label": 1
+    },
+    {
+      "id": "p085",
+      "text_a": "century egg tofu",
+      "text_b": "century egg with tofu",
+      "label": 1
+    },
+    {
+      "id": "p086",
+      "text_a": "chai latte",
+      "text_b": "dirty chai latte",
+      "label": 0
+    },
+    {
+      "id": "p087",
+      "text_a": "chai latte",
+      "text_b": "thai tea boba",
+      "label": 0
+    },
+    {
+      "id": "p088",
+      "text_a": "cheese burger only",
+      "text_b": "cheese burger sub",
+      "label": 0
+    },
+    {
+      "id": "p089",
+      "text_a": "cheese burger only",
+      "text_b": "double cheese burger only",
+      "label": 1
+    },
+    {
+      "id": "p090",
+      "text_a": "Cheese Burst Pizza",
+      "text_b": "Pizza",
+      "label": 0
+    },
+    {
+      "id": "p091",
+      "text_a": "Cheese Sandwich",
+      "text_b": "Sandwich",
+      "label": 1
+    },
+    {
+      "id": "p092",
+      "text_a": "cheese sticks",
+      "text_b": "fried mozzarella cheese sticks",
+      "label": 0
+    },
+    {
+      "id": "p093",
+      "text_a": "Chef's Special Biryani",
+      "text_b": "Biryani",
+      "label": 1
+    },
+    {
+      "id": "p094",
+      "text_a": "chefs chicken curry 16 oz",
+      "text_b": "chicken curry 16 oz",
+      "label": 1
+    },
+    {
+      "id": "p095",
+      "text_a": "Chhole Bhature",
+      "text_b": "Chole Bhature",
+      "label": 1
+    },
+    {
+      "id": "p096",
+      "text_a": "chia seeds macchiato",
+      "text_b": "macchiato topped with chia seeds",
+      "label": 1
+    },
+    {
+      "id": "p097",
+      "text_a": "chicken 555 wrap",
+      "text_b": "chicken malai boti wrap",
+      "label": 0
+    },
+    {
+      "id": "p098",
+      "text_a": "chicken and lamb kebab plate",
+      "text_b": "kebab chicken",
+      "label": 0
+    },
+    {
+      "id": "p099",
+      "text_a": "chicken bacon fries",
+      "text_b": "chicken fries",
+      "label": 0
+    },
+    {
+      "id": "p100",
+      "text_a": "chicken bbq wrap",
+      "text_b": "original german chicken doner wrap",
+      "label": 0
+    },
+    {
+      "id": "p101",
+      "text_a": "chicken bibimbap",
+      "text_b": "chicken bibim bap",
+      "label": 1
+    },
+    {
+      "id": "p102",
+      "text_a": "chicken biriyani",
+      "text_b": "chicken string hopper biriyani",
+      "label": 0
+    },
+    {
+      "id": "p103",
+      "text_a": "Chicken Biryani",
+      "text_b": "Butter Chicken",
+      "label": 0
+    },
+    {
+      "id": "p104",
+      "text_a": "chicken biryani",
+      "text_b": "chicken do pyaza",
+      "label": 0
+    },
+    {
+      "id": "p105",
+      "text_a": "Chicken Biryani",
+      "text_b": "Mutton Biryani",
+      "label": 0
+    },
+    {
+      "id": "p106",
+      "text_a": "Chicken Biryani (Serves 1)",
+      "text_b": "Chicken Biryani",
+      "label": 1
+    },
+    {
+      "id": "p107",
+      "text_a": "chicken chettinadu curry",
+      "text_b": "swagath special chicken curry",
+      "label": 0
+    },
+    {
+      "id": "p108",
+      "text_a": "chicken chicken 65",
+      "text_b": "chicken paella",
+      "label": 0
+    },
+    {
+      "id": "p109",
+      "text_a": "chicken chilli dry fry",
+      "text_b": "dry chilli chicken",
+      "label": 0
+    },
+    {
+      "id": "p110",
+      "text_a": "chicken chow fan rice",
+      "text_b": "spicy chicken rice meal",
+      "label": 0
+    },
+    {
+      "id": "p111",
+      "text_a": "chicken combination schezwan fired rice",
+      "text_b": "chicken schezwan combination fried rice",
+      "label": 1
+    },
+    {
+      "id": "p112",
+      "text_a": "chicken creamy pizza",
+      "text_b": "chicken dominator pizza",
+      "label": 0
+    },
+    {
+      "id": "p113",
+      "text_a": "chicken dinner special",
+      "text_b": "chicken dinner style",
+      "label": 1
+    },
+    {
+      "id": "p114",
+      "text_a": "chicken garlic sauce",
+      "text_b": "chicken hot garlic sauce",
+      "label": 1
+    },
+    {
+      "id": "p115",
+      "text_a": "chicken ghee roast dry",
+      "text_b": "dragon chicken dry",
+      "label": 0
+    },
+    {
+      "id": "p116",
+      "text_a": "chicken gilaafi kebab",
+      "text_b": "chicken zafrani kebab",
+      "label": 0
+    },
+    {
+      "id": "p117",
+      "text_a": "chicken hot and sour",
+      "text_b": "chicken hot sour",
+      "label": 1
+    },
+    {
+      "id": "p118",
+      "text_a": "chicken in schezwan hot and numbing sauce",
+      "text_b": "schezwan chicken hot",
+      "label": 0
+    },
+    {
+      "id": "p119",
+      "text_a": "chicken kadai boneless for 2",
+      "text_b": "chicken kadai for 2",
+      "label": 0
+    },
+    {
+      "id": "p120",
+      "text_a": "chicken karaikudi boneless",
+      "text_b": "karaikudi chicken",
+      "label": 0
+    },
+    {
+      "id": "p121",
+      "text_a": "Chicken Kathi Roll",
+      "text_b": "Egg Kathi Roll",
+      "label": 0
+    },
+    {
+      "id": "p122",
+      "text_a": "chicken katsu",
+      "text_b": "chicken jollof rice",
+      "label": 0
+    },
+    {
+      "id": "p123",
+      "text_a": "Chicken Kebab",
+      "text_b": "Mutton Kebab",
+      "label": 0
+    },
+    {
+      "id": "p124",
+      "text_a": "Chicken Korma",
+      "text_b": "Mutton Korma",
+      "label": 0
+    },
+    {
+      "id": "p125",
+      "text_a": "chicken lebnani kebab",
+      "text_b": "chicken kebab",
+      "label": 0
+    },
+    {
+      "id": "p126",
+      "text_a": "chicken malaysian noodles w g",
+      "text_b": "chicken malaysian noodles",
+      "label": 1
+    },
+    {
+      "id": "p127",
+      "text_a": "Chicken Manchurian",
+      "text_b": "Veg Manchurian",
+      "label": 0
+    },
+    {
+      "id": "p128",
+      "text_a": "chicken mayo sandwich triangle",
+      "text_b": "chicken mayo sandwich",
+      "label": 1
+    },
+    {
+      "id": "p129",
+      "text_a": "Chicken Momos",
+      "text_b": "Veg Momos",
+      "label": 0
+    },
+    {
+      "id": "p130",
+      "text_a": "chicken mushrooms bamboo shoots",
+      "text_b": "chicken mushroom bamboo shoots",
+      "label": 1
+    },
+    {
+      "id": "p131",
+      "text_a": "Chicken Noodles",
+      "text_b": "Egg Noodles",
+      "label": 0
+    },
+    {
+      "id": "p132",
+      "text_a": "chicken noodles schezwan",
+      "text_b": "chicken schezwan noodles",
+      "label": 1
+    },
+    {
+      "id": "p133",
+      "text_a": "chicken nuggets 10",
+      "text_b": "chicken nuggets 8",
+      "label": 1
+    },
+    {
+      "id": "p134",
+      "text_a": "chicken pad thai noodles",
+      "text_b": "vegetable pad thai noodles",
+      "label": 0
+    },
+    {
+      "id": "p135",
+      "text_a": "chicken parmigiana stuffed pizza",
+      "text_b": "stuffed pizza chicken 18",
+      "label": 0
+    },
+    {
+      "id": "p136",
+      "text_a": "chicken pepper fry",
+      "text_b": "f7a chicken pepper fry",
+      "label": 1
+    },
+    {
+      "id": "p137",
+      "text_a": "chicken peri peri kebab",
+      "text_b": "peshwari chicken chapli kebab platter",
+      "label": 0
+    },
+    {
+      "id": "p138",
+      "text_a": "chicken red hot dragon",
+      "text_b": "dragon chinese chicken",
+      "label": 0
+    },
+    {
+      "id": "p139",
+      "text_a": "chicken reshmi kebab tandoori",
+      "text_b": "chicken tandoori kebab",
+      "label": 1
+    },
+    {
+      "id": "p140",
+      "text_a": "chicken rice set",
+      "text_b": "kung pao chicken rice combo",
+      "label": 0
+    },
+    {
+      "id": "p141",
+      "text_a": "chicken rogan josh",
+      "text_b": "chicken jollof rice",
+      "label": 0
+    },
+    {
+      "id": "p142",
+      "text_a": "chicken sandwich",
+      "text_b": "chicken schnitzel",
+      "label": 0
+    },
+    {
+      "id": "p143",
+      "text_a": "chicken shawarma",
+      "text_b": "chicken pho",
+      "label": 0
+    },
+    {
+      "id": "p144",
+      "text_a": "Chicken Shawarma",
+      "text_b": "Paneer Shawarma",
+      "label": 0
+    },
+    {
+      "id": "p145",
+      "text_a": "Chicken Shawarma (Regular)",
+      "text_b": "Chicken Shawarma",
+      "label": 1
+    },
+    {
+      "id": "p146",
+      "text_a": "chicken shawarma value meal",
+      "text_b": "chicken shawarma with side",
+      "label": 0
+    },
+    {
+      "id": "p147",
+      "text_a": "chicken shawarma wheat pita",
+      "text_b": "chicken shawarma in wheat",
+      "label": 1
+    },
+    {
+      "id": "p148",
+      "text_a": "chicken smash burger",
+      "text_b": "chicken cheese smash burger",
+      "label": 0
+    },
+    {
+      "id": "p149",
+      "text_a": "Chicken Soup",
+      "text_b": "Chicken Biryani",
+      "label": 0
+    },
+    {
+      "id": "p150",
+      "text_a": "Chicken Soup",
+      "text_b": "Chicken Sandwich",
+      "label": 0
+    },
+    {
+      "id": "p151",
+      "text_a": "chicken spring roll",
+      "text_b": "chicken katsu",
+      "label": 0
+    },
+    {
+      "id": "p152",
+      "text_a": "chicken strips and fries",
+      "text_b": "chicken strips with fries",
+      "label": 1
+    },
+    {
+      "id": "p153",
+      "text_a": "chicken sukkha south",
+      "text_b": "chicken sukkha",
+      "label": 1
+    },
+    {
+      "id": "p154",
+      "text_a": "Chicken Tikka",
+      "text_b": "Paneer Tikka",
+      "label": 0
+    },
+    {
+      "id": "p155",
+      "text_a": "chicken tikka biryani",
+      "text_b": "chicken tikka biryani 32 oz",
+      "label": 1
+    },
+    {
+      "id": "p156",
+      "text_a": "chicken tikka kabobs",
+      "text_b": "chicken tikka kale salad",
+      "label": 0
+    },
+    {
+      "id": "p157",
+      "text_a": "chicken wings fried traditional",
+      "text_b": "fried chicken breast",
+      "label": 0
+    },
+    {
+      "id": "p158",
+      "text_a": "Chiken Biryani",
+      "text_b": "Chicken Biryani",
+      "label": 1
+    },
+    {
+      "id": "p159",
+      "text_a": "chilli paneer in oyster sauce",
+      "text_b": "chilli paneer sauce",
+      "label": 0
+    },
+    {
+      "id": "p160",
+      "text_a": "chilly chicken andhra style boneless",
+      "text_b": "chilly chicken andhra style",
+      "label": 1
+    },
+    {
+      "id": "p161",
+      "text_a": "china town chilli paneer gravy",
+      "text_b": "chinatown chilli paneer gravy",
+      "label": 1
+    },
+    {
+      "id": "p162",
+      "text_a": "chipotle enchiladas 2",
+      "text_b": "chipotle enchiladas combo",
+      "label": 0
+    },
+    {
+      "id": "p163",
+      "text_a": "Chocolate Cake",
+      "text_b": "Chocolate Shake",
+      "label": 0
+    },
+    {
+      "id": "p164",
+      "text_a": "Chole Bhature (2 Pcs)",
+      "text_b": "Chole Bhature",
+      "label": 1
+    },
+    {
+      "id": "p165",
+      "text_a": "chole kulcha",
+      "text_b": "matar kulcha serves 1",
+      "label": 1
+    },
+    {
+      "id": "p166",
+      "text_a": "chole patice",
+      "text_b": "chole pattice",
+      "label": 1
+    },
+    {
+      "id": "p167",
+      "text_a": "cholena sandwich",
+      "text_b": "fraldinha sandwich",
+      "label": 0
+    },
+    {
+      "id": "p168",
+      "text_a": "choley chickpea curry",
+      "text_b": "spiced chickpea curry",
+      "label": 0
+    },
+    {
+      "id": "p169",
+      "text_a": "Chowmin",
+      "text_b": "Chow Mein",
+      "label": 1
+    },
+    {
+      "id": "p170",
+      "text_a": "churros and ice cream scoop",
+      "text_b": "wb ice cream scoop",
+      "label": 0
+    },
+    {
+      "id": "p171",
+      "text_a": "classic bibimbap",
+      "text_b": "eel bibimbap",
+      "label": 0
+    },
+    {
+      "id": "p172",
+      "text_a": "classic chicken steamed momos now",
+      "text_b": "chicken steamed momos",
+      "label": 1
+    },
+    {
+      "id": "p173",
+      "text_a": "classic lamb curry",
+      "text_b": "mango curry special lamb",
+      "label": 0
+    },
+    {
+      "id": "p174",
+      "text_a": "classic paneer biryani",
+      "text_b": "special paneer biryani",
+      "label": 1
+    },
+    {
+      "id": "p175",
+      "text_a": "classic tomato rice",
+      "text_b": "mtr tomato rice powder",
+      "label": 0
+    },
+    {
+      "id": "p176",
+      "text_a": "clear soup cross bridge mixian",
+      "text_b": "tomato soup cross bridge mixian",
+      "label": 0
+    },
+    {
+      "id": "p177",
+      "text_a": "clear vegetables soup",
+      "text_b": "vegetable clear soup",
+      "label": 0
+    },
+    {
+      "id": "p178",
+      "text_a": "coconut lassi",
+      "text_b": "mango coconut lassi",
+      "label": 0
+    },
+    {
+      "id": "p179",
+      "text_a": "cold brew with pecan",
+      "text_b": "cold brew infused with pecan",
+      "label": 1
+    },
+    {
+      "id": "p180",
+      "text_a": "Cold Coffee",
+      "text_b": "Coffee Cake",
+      "label": 0
+    },
+    {
+      "id": "p181",
+      "text_a": "cold roast beef sandwich",
+      "text_b": "sandwich mexicana roast beef",
+      "label": 1
+    },
+    {
+      "id": "p182",
+      "text_a": "cold roast prime ribs of beef",
+      "text_b": "roast prime ribs beef",
+      "label": 1
+    },
+    {
+      "id": "p183",
+      "text_a": "combination dinner no 10",
+      "text_b": "combination dinner no 11",
+      "label": 0
+    },
+    {
+      "id": "p184",
+      "text_a": "combo grilled meat",
+      "text_b": "grilled hamour combo",
+      "label": 0
+    },
+    {
+      "id": "p185",
+      "text_a": "consomme croute au pot",
+      "text_b": "consomme double croute au pot",
+      "label": 1
+    },
+    {
+      "id": "p186",
+      "text_a": "cookie chocolate chip",
+      "text_b": "halva chocolate chip cookie",
+      "label": 1
+    },
+    {
+      "id": "p187",
+      "text_a": "cornbread with salad",
+      "text_b": "corn bread with salad",
+      "label": 1
+    },
+    {
+      "id": "p188",
+      "text_a": "crab cakes",
+      "text_b": "maryland crab cake",
+      "label": 1
+    },
+    {
+      "id": "p189",
+      "text_a": "crab special soup",
+      "text_b": "crab soup",
+      "label": 1
+    },
+    {
+      "id": "p190",
+      "text_a": "Crispy Burger",
+      "text_b": "Burger",
+      "label": 1
+    },
+    {
+      "id": "p191",
+      "text_a": "crispy chicken pakoda",
+      "text_b": "chicken pakora",
+      "label": 1
+    },
+    {
+      "id": "p192",
+      "text_a": "crush with egg machaca con huevo",
+      "text_b": "machacado con huevo machacado with egg",
+      "label": 0
+    },
+    {
+      "id": "p193",
+      "text_a": "crystal dim sum veg",
+      "text_b": "dim sum veg",
+      "label": 1
+    },
+    {
+      "id": "p194",
+      "text_a": "crystal green dumpling",
+      "text_b": "crystal dumpling",
+      "label": 1
+    },
+    {
+      "id": "p195",
+      "text_a": "crystal vegetable dumplings",
+      "text_b": "vegetable crystal dumplings",
+      "label": 1
+    },
+    {
+      "id": "p196",
+      "text_a": "curry protein variants chicken mutton paneer egg fish prawns mushroom aloo gobi",
+      "text_b": "build your curry pick protein gravy chicken rs 199 mutton rs 349 paneer rs 229 by curry hub 4 0",
+      "label": 1
+    },
+    {
+      "id": "p197",
+      "text_a": "Daal Makhani",
+      "text_b": "Dal Makhni",
+      "label": 1
+    },
+    {
+      "id": "p198",
+      "text_a": "dahi ke kabab jain",
+      "text_b": "dahi ke kebab",
+      "label": 1
+    },
+    {
+      "id": "p199",
+      "text_a": "Dal Makhani",
+      "text_b": "Chole",
+      "label": 0
+    },
+    {
+      "id": "p200",
+      "text_a": "Dal Makhani - Regular",
+      "text_b": "Dal Makhani",
+      "label": 1
+    },
+    {
+      "id": "p201",
+      "text_a": "deep fried squid calamari",
+      "text_b": "spicy fried squid",
+      "label": 0
+    },
+    {
+      "id": "p202",
+      "text_a": "deluxe kebab",
+      "text_b": "turkish kebab plate",
+      "label": 0
+    },
+    {
+      "id": "p203",
+      "text_a": "diet can",
+      "text_b": "pepsi diet can",
+      "label": 0
+    },
+    {
+      "id": "p204",
+      "text_a": "doenjang jjigae special",
+      "text_b": "kimchi doenjang jjigae",
+      "label": 0
+    },
+    {
+      "id": "p205",
+      "text_a": "dosa batter",
+      "text_b": "fresh dosa batter 64 oz",
+      "label": 1
+    },
+    {
+      "id": "p206",
+      "text_a": "Dosai",
+      "text_b": "Dosa",
+      "label": 1
+    },
+    {
+      "id": "p207",
+      "text_a": "double egg chilli prata",
+      "text_b": "double egg onion chilli prata",
+      "label": 0
+    },
+    {
+      "id": "p208",
+      "text_a": "double kunafa na ameh",
+      "text_b": "fine kunafa",
+      "label": 1
+    },
+    {
+      "id": "p209",
+      "text_a": "double salmon roll",
+      "text_b": "salmon special roll",
+      "label": 1
+    },
+    {
+      "id": "p210",
+      "text_a": "Dry Manchurian",
+      "text_b": "Gravy Manchurian",
+      "label": 0
+    },
+    {
+      "id": "p211",
+      "text_a": "dry red chilli prawns",
+      "text_b": "chilli prawns dry",
+      "label": 1
+    },
+    {
+      "id": "p212",
+      "text_a": "duck wonton soup",
+      "text_b": "roast duck noodle soup",
+      "label": 0
+    },
+    {
+      "id": "p213",
+      "text_a": "dynamite shrimp rice bowl",
+      "text_b": "shrimp rice bowl",
+      "label": 1
+    },
+    {
+      "id": "p214",
+      "text_a": "economic breaded chicken with pasta meal",
+      "text_b": "pasta with chicken pane",
+      "label": 0
+    },
+    {
+      "id": "p215",
+      "text_a": "egg 1 any style",
+      "text_b": "egg any style with sausage links",
+      "label": 0
+    },
+    {
+      "id": "p216",
+      "text_a": "egg boiled sandwich with cheese",
+      "text_b": "nesto cheese with egg baloney sandwich",
+      "label": 0
+    },
+    {
+      "id": "p217",
+      "text_a": "egg butter bhurji",
+      "text_b": "egg bhurji",
+      "label": 0
+    },
+    {
+      "id": "p218",
+      "text_a": "egg dosa",
+      "text_b": "egg dhosa",
+      "label": 1
+    },
+    {
+      "id": "p219",
+      "text_a": "egg double liver roll",
+      "text_b": "egg roll",
+      "label": 0
+    },
+    {
+      "id": "p220",
+      "text_a": "Egg Fried Rice",
+      "text_b": "Chicken Fried Rice",
+      "label": 0
+    },
+    {
+      "id": "p221",
+      "text_a": "Egg Roll",
+      "text_b": "Egg Curry",
+      "label": 0
+    },
+    {
+      "id": "p222",
+      "text_a": "egg tomato plate",
+      "text_b": "khameer egg and tomato",
+      "label": 0
+    },
+    {
+      "id": "p223",
+      "text_a": "eggs and pork skin burrito huevos con chicharron",
+      "text_b": "eggs and pork skin taquito huevos con chicharron",
+      "label": 0
+    },
+    {
+      "id": "p224",
+      "text_a": "eggs biryani",
+      "text_b": "kingfish biryani",
+      "label": 0
+    },
+    {
+      "id": "p225",
+      "text_a": "eggs scrambled smoked beef",
+      "text_b": "scrambled eggs with smoked beef",
+      "label": 1
+    },
+    {
+      "id": "p226",
+      "text_a": "eggs with pastrami",
+      "text_b": "eggs with pastrami plate",
+      "label": 1
+    },
+    {
+      "id": "p227",
+      "text_a": "enchiladas pork",
+      "text_b": "smoked pork enchiladas",
+      "label": 0
+    },
+    {
+      "id": "p228",
+      "text_a": "ethiopian veggie combo",
+      "text_b": "special veggie combo",
+      "label": 0
+    },
+    {
+      "id": "p229",
+      "text_a": "extra classic bhatura",
+      "text_b": "extra bhatura",
+      "label": 1
+    },
+    {
+      "id": "p230",
+      "text_a": "extra sauce white",
+      "text_b": "white sauce platter",
+      "label": 0
+    },
+    {
+      "id": "p231",
+      "text_a": "falafel hummus salad and pita",
+      "text_b": "falafel with hummus",
+      "label": 0
+    },
+    {
+      "id": "p232",
+      "text_a": "falafel wrap come with fries",
+      "text_b": "gyro wrap come with fries",
+      "label": 0
+    },
+    {
+      "id": "p233",
+      "text_a": "fanta orange",
+      "text_b": "fanta orange 2",
+      "label": 1
+    },
+    {
+      "id": "p234",
+      "text_a": "fatayer labneh with olives",
+      "text_b": "labneh with olives fatayer",
+      "label": 1
+    },
+    {
+      "id": "p235",
+      "text_a": "fireball whisky 1l sale save",
+      "text_b": "fireball whisky sale save",
+      "label": 1
+    },
+    {
+      "id": "p236",
+      "text_a": "Fish Curry",
+      "text_b": "Chicken Curry",
+      "label": 0
+    },
+    {
+      "id": "p237",
+      "text_a": "Fish Fry",
+      "text_b": "Fish Curry",
+      "label": 0
+    },
+    {
+      "id": "p238",
+      "text_a": "fish tikka kalimiri",
+      "text_b": "fish tikka",
+      "label": 0
+    },
+    {
+      "id": "p239",
+      "text_a": "flaming kafta wrap",
+      "text_b": "mighty kafta wrap",
+      "label": 0
+    },
+    {
+      "id": "p240",
+      "text_a": "french cake with ice cream",
+      "text_b": "layer cake with ice cream",
+      "label": 1
+    },
+    {
+      "id": "p241",
+      "text_a": "fresh fruit assorted",
+      "text_b": "fruit assorted",
+      "label": 1
+    },
+    {
+      "id": "p242",
+      "text_a": "fresh vegetable dinner with a poached egg",
+      "text_b": "new spring vegetable dinner with poached egg hollandaise sauce",
+      "label": 1
+    },
+    {
+      "id": "p243",
+      "text_a": "fried egg 2",
+      "text_b": "fried egg",
+      "label": 1
+    },
+    {
+      "id": "p244",
+      "text_a": "fried egg rolls 2 rolls",
+      "text_b": "side of fried egg",
+      "label": 0
+    },
+    {
+      "id": "p245",
+      "text_a": "Fried Momos",
+      "text_b": "Steamed Momos",
+      "label": 0
+    },
+    {
+      "id": "p246",
+      "text_a": "Fried Rice",
+      "text_b": "Biryani",
+      "label": 0
+    },
+    {
+      "id": "p247",
+      "text_a": "fries gyro bowl",
+      "text_b": "snack gyro fries",
+      "label": 0
+    },
+    {
+      "id": "p248",
+      "text_a": "frozen spring roll shrimp",
+      "text_b": "spring roll shrimp",
+      "label": 1
+    },
+    {
+      "id": "p249",
+      "text_a": "fruit and nuts milkshake",
+      "text_b": "fruit mass milkshake",
+      "label": 0
+    },
+    {
+      "id": "p250",
+      "text_a": "garlic cream plate",
+      "text_b": "garlic with cream",
+      "label": 1
+    },
+    {
+      "id": "p251",
+      "text_a": "garlic green beans with prawns",
+      "text_b": "prawns with hot garlic sauce",
+      "label": 0
+    },
+    {
+      "id": "p252",
+      "text_a": "Garlic Naan",
+      "text_b": "Naan",
+      "label": 1
+    },
+    {
+      "id": "p253",
+      "text_a": "german black forest cake eggfree",
+      "text_b": "german black forest cake",
+      "label": 1
+    },
+    {
+      "id": "p254",
+      "text_a": "Ghee Roast Dosa",
+      "text_b": "Dosa",
+      "label": 1
+    },
+    {
+      "id": "p255",
+      "text_a": "ghee roti",
+      "text_b": "ghee rotii",
+      "label": 1
+    },
+    {
+      "id": "p256",
+      "text_a": "goa coconut curry nd fish",
+      "text_b": "goa coconut curry nd vegetable",
+      "label": 0
+    },
+    {
+      "id": "p257",
+      "text_a": "goat marg soup",
+      "text_b": "house special goat soup",
+      "label": 0
+    },
+    {
+      "id": "p258",
+      "text_a": "Golgappa",
+      "text_b": "Pani Puri",
+      "label": 1
+    },
+    {
+      "id": "p259",
+      "text_a": "greek gusto salad",
+      "text_b": "gusto greek salad",
+      "label": 1
+    },
+    {
+      "id": "p260",
+      "text_a": "green chicken kebab hariyali",
+      "text_b": "hariyali kebab chicken",
+      "label": 1
+    },
+    {
+      "id": "p261",
+      "text_a": "green salad",
+      "text_b": "green salad plate",
+      "label": 1
+    },
+    {
+      "id": "p262",
+      "text_a": "grill veg mix cheese roll",
+      "text_b": "mix veg kaju roll",
+      "label": 0
+    },
+    {
+      "id": "p263",
+      "text_a": "grilled pink salmon",
+      "text_b": "grilled salmon and pear salad",
+      "label": 0
+    },
+    {
+      "id": "p264",
+      "text_a": "Grilled Sandwich",
+      "text_b": "Sandwich",
+      "label": 1
+    },
+    {
+      "id": "p265",
+      "text_a": "gulab jamun",
+      "text_b": "gulaab jamun",
+      "label": 1
+    },
+    {
+      "id": "p266",
+      "text_a": "gulab jamun",
+      "text_b": "gulab jamun serve warm",
+      "label": 1
+    },
+    {
+      "id": "p267",
+      "text_a": "Gulab Jamun",
+      "text_b": "Gulab Jamun Shake",
+      "label": 0
+    },
+    {
+      "id": "p268",
+      "text_a": "gulab jamun",
+      "text_b": "gulab jamun with ice cream",
+      "label": 0
+    },
+    {
+      "id": "p269",
+      "text_a": "gulab jamun",
+      "text_b": "paneer shawarma",
+      "label": 0
+    },
+    {
+      "id": "p270",
+      "text_a": "Gulab Jamun",
+      "text_b": "Rasgulla",
+      "label": 0
+    },
+    {
+      "id": "p271",
+      "text_a": "Gulab Jamun (2 Pcs)",
+      "text_b": "Gulab Jamun",
+      "label": 1
+    },
+    {
+      "id": "p272",
+      "text_a": "hakka noodles",
+      "text_b": "hakka mee",
+      "label": 1
+    },
+    {
+      "id": "p273",
+      "text_a": "Hakka Noodles (Half)",
+      "text_b": "Hakka Noodles",
+      "label": 1
+    },
+    {
+      "id": "p274",
+      "text_a": "half broasted chicken",
+      "text_b": "whole fresh broasted chicken",
+      "label": 0
+    },
+    {
+      "id": "p275",
+      "text_a": "half tawa pulao",
+      "text_b": "tawa pulav",
+      "label": 1
+    },
+    {
+      "id": "p276",
+      "text_a": "ham and 4 cheese omelette",
+      "text_b": "ham and cheese pronto",
+      "label": 0
+    },
+    {
+      "id": "p277",
+      "text_a": "homemade corn salad",
+      "text_b": "sweet corn salad",
+      "label": 1
+    },
+    {
+      "id": "p278",
+      "text_a": "hong kong style chicken dry",
+      "text_b": "chicken hong kong dry",
+      "label": 1
+    },
+    {
+      "id": "p279",
+      "text_a": "hongkong style shrimp w scrambled egg",
+      "text_b": "scrambled egg with shrimp chow fun",
+      "label": 0
+    },
+    {
+      "id": "p280",
+      "text_a": "hor fun egg with gravy",
+      "text_b": "hor fun with egg gravy",
+      "label": 1
+    },
+    {
+      "id": "p281",
+      "text_a": "hot and spicy sauce",
+      "text_b": "sweet and spicy sauce",
+      "label": 0
+    },
+    {
+      "id": "p282",
+      "text_a": "hot cortado",
+      "text_b": "cortado hot",
+      "label": 1
+    },
+    {
+      "id": "p283",
+      "text_a": "hot garlic exotic veg",
+      "text_b": "veg garlic gravy",
+      "label": 0
+    },
+    {
+      "id": "p284",
+      "text_a": "house pan fried noodles in stilling platter",
+      "text_b": "special pan fried noodles",
+      "label": 0
+    },
+    {
+      "id": "p285",
+      "text_a": "humbang bulalo rice",
+      "text_b": "kare bulalo rice",
+      "label": 0
+    },
+    {
+      "id": "p286",
+      "text_a": "hummus dip and pita",
+      "text_b": "hummus dip with pita",
+      "label": 1
+    },
+    {
+      "id": "p287",
+      "text_a": "hummus with meat plate",
+      "text_b": "meat hummus",
+      "label": 1
+    },
+    {
+      "id": "p288",
+      "text_a": "hyderabadi dum biryani chicken",
+      "text_b": "hyderabadi dum chicken biryani",
+      "label": 1
+    },
+    {
+      "id": "p289",
+      "text_a": "iced cappuccino",
+      "text_b": "cappuccino iced",
+      "label": 1
+    },
+    {
+      "id": "p290",
+      "text_a": "iced cappuccino",
+      "text_b": "vanilla frappe",
+      "label": 0
+    },
+    {
+      "id": "p291",
+      "text_a": "iced green tea",
+      "text_b": "oat matcha latte",
+      "label": 0
+    },
+    {
+      "id": "p292",
+      "text_a": "Idli",
+      "text_b": "Vada",
+      "label": 0
+    },
+    {
+      "id": "p293",
+      "text_a": "idli sambhar 3",
+      "text_b": "udipi idli",
+      "label": 0
+    },
+    {
+      "id": "p294",
+      "text_a": "idli with veg kurma",
+      "text_b": "kari idli veg",
+      "label": 0
+    },
+    {
+      "id": "p295",
+      "text_a": "Idly",
+      "text_b": "Idli",
+      "label": 1
+    },
+    {
+      "id": "p296",
+      "text_a": "indian masala shikanji",
+      "text_b": "masala lemonade",
+      "label": 1
+    },
+    {
+      "id": "p297",
+      "text_a": "indo chicken malaysian flat noodles",
+      "text_b": "chicken malaysian noodles",
+      "label": 1
+    },
+    {
+      "id": "p298",
+      "text_a": "italian hunger pizza",
+      "text_b": "italian pizza",
+      "label": 1
+    },
+    {
+      "id": "p299",
+      "text_a": "jain corn palak",
+      "text_b": "corn palak",
+      "label": 1
+    },
+    {
+      "id": "p300",
+      "text_a": "Jalebi",
+      "text_b": "Gulab Jamun",
+      "label": 0
+    },
+    {
+      "id": "p301",
+      "text_a": "jaoanese seafood udon noodles w1",
+      "text_b": "yaki udon noodles",
+      "label": 0
+    },
+    {
+      "id": "p302",
+      "text_a": "japchae",
+      "text_b": "japchae chapchae",
+      "label": 1
+    },
+    {
+      "id": "p303",
+      "text_a": "Jeera Rice",
+      "text_b": "Jeera Water",
+      "label": 0
+    },
+    {
+      "id": "p304",
+      "text_a": "jr cheese omelet",
+      "text_b": "sausage cheese omelet",
+      "label": 0
+    },
+    {
+      "id": "p305",
+      "text_a": "Kabab",
+      "text_b": "Kebab",
+      "label": 1
+    },
+    {
+      "id": "p306",
+      "text_a": "Kadhai Paneer",
+      "text_b": "Karahi Paneer",
+      "label": 1
+    },
+    {
+      "id": "p307",
+      "text_a": "kaju paneer masala",
+      "text_b": "paneer kaju masala dish",
+      "label": 1
+    },
+    {
+      "id": "p308",
+      "text_a": "kaju paneer masala",
+      "text_b": "paneer muttor masala",
+      "label": 0
+    },
+    {
+      "id": "p309",
+      "text_a": "kao pad sap pa rod",
+      "text_b": "khao pad sap pa rod",
+      "label": 1
+    },
+    {
+      "id": "p310",
+      "text_a": "karak masala chai",
+      "text_b": "khatta meetha special masala chai",
+      "label": 0
+    },
+    {
+      "id": "p311",
+      "text_a": "kawasaki roll",
+      "text_b": "master roll",
+      "label": 0
+    },
+    {
+      "id": "p312",
+      "text_a": "Kebab",
+      "text_b": "Tandoori Chicken",
+      "label": 0
+    },
+    {
+      "id": "p313",
+      "text_a": "keptkon fried rice seafood",
+      "text_b": "pinapple fried rice",
+      "label": 0
+    },
+    {
+      "id": "p314",
+      "text_a": "kid s 2 chicken fingers with fries",
+      "text_b": "kid s chicken fingers french fries",
+      "label": 1
+    },
+    {
+      "id": "p315",
+      "text_a": "kid s chiqui quesa",
+      "text_b": "kid s chiqui quesa with meat",
+      "label": 0
+    },
+    {
+      "id": "p316",
+      "text_a": "kids beef enchilada taco",
+      "text_b": "kids soft beef taco",
+      "label": 0
+    },
+    {
+      "id": "p317",
+      "text_a": "kids chicken sandwich",
+      "text_b": "kids chicken sandwich combo",
+      "label": 1
+    },
+    {
+      "id": "p318",
+      "text_a": "kolhapuri mushroom",
+      "text_b": "mushroom kolhapuri",
+      "label": 1
+    },
+    {
+      "id": "p319",
+      "text_a": "kolhapuri mutton keema",
+      "text_b": "mutton keema",
+      "label": 1
+    },
+    {
+      "id": "p320",
+      "text_a": "kousa mahshi",
+      "text_b": "mahshi kousa",
+      "label": 1
+    },
+    {
+      "id": "p321",
+      "text_a": "Kulfi",
+      "text_b": "Ice Cream",
+      "label": 0
+    },
+    {
+      "id": "p322",
+      "text_a": "kulfi with fries",
+      "text_b": "traditional kulfi with fries",
+      "label": 1
+    },
+    {
+      "id": "p323",
+      "text_a": "kushka biriyani rice",
+      "text_b": "donne kushka biryani rice",
+      "label": 1
+    },
+    {
+      "id": "p324",
+      "text_a": "labneh",
+      "text_b": "greek yogurt",
+      "label": 0
+    },
+    {
+      "id": "p325",
+      "text_a": "lamb kebab salad gf",
+      "text_b": "lamb kebab sekuwa",
+      "label": 0
+    },
+    {
+      "id": "p326",
+      "text_a": "lamb tagine with prune",
+      "text_b": "lamb tagine with vegetables",
+      "label": 0
+    },
+    {
+      "id": "p327",
+      "text_a": "loaded cheese garlic bread",
+      "text_b": "cheese garlic bread",
+      "label": 1
+    },
+    {
+      "id": "p328",
+      "text_a": "losing weight 15",
+      "text_b": "losing weight 17",
+      "label": 0
+    },
+    {
+      "id": "p329",
+      "text_a": "louisiana whole wings combo",
+      "text_b": "whole wings deal combo",
+      "label": 0
+    },
+    {
+      "id": "p330",
+      "text_a": "lucknowi mutton biryani",
+      "text_b": "lucknowi zafrani mutton biryani",
+      "label": 1
+    },
+    {
+      "id": "p331",
+      "text_a": "mac cheese pizza 10 inches",
+      "text_b": "mac cheese pizza 12 inches",
+      "label": 1
+    },
+    {
+      "id": "p332",
+      "text_a": "malai soya chaap roll 9inch",
+      "text_b": "malai chaap roll",
+      "label": 1
+    },
+    {
+      "id": "p333",
+      "text_a": "Manchoorian",
+      "text_b": "Manchurian",
+      "label": 1
+    },
+    {
+      "id": "p334",
+      "text_a": "manchow soup spicy topped with crispy noodles",
+      "text_b": "manchow soup with crispy noodles",
+      "label": 0
+    },
+    {
+      "id": "p335",
+      "text_a": "mango curry special vegetable",
+      "text_b": "vegetable mango curry",
+      "label": 1
+    },
+    {
+      "id": "p336",
+      "text_a": "Mango Lassi",
+      "text_b": "Mango Kulfi",
+      "label": 0
+    },
+    {
+      "id": "p337",
+      "text_a": "mango smoothie",
+      "text_b": "mango pudding",
+      "label": 0
+    },
+    {
+      "id": "p338",
+      "text_a": "mango sticky rice seasonal",
+      "text_b": "sweet sticky rice and fresh mango",
+      "label": 0
+    },
+    {
+      "id": "p339",
+      "text_a": "masala chicken thali",
+      "text_b": "chicken masala",
+      "label": 0
+    },
+    {
+      "id": "p340",
+      "text_a": "Masala Dosa",
+      "text_b": "Plain Dosa",
+      "label": 0
+    },
+    {
+      "id": "p341",
+      "text_a": "Masala Dosa",
+      "text_b": "Uttapam",
+      "label": 0
+    },
+    {
+      "id": "p342",
+      "text_a": "Masala Dosa | South Indian",
+      "text_b": "Masala Dosa",
+      "label": 1
+    },
+    {
+      "id": "p343",
+      "text_a": "Masala Tea",
+      "text_b": "Masala Dosa",
+      "label": 0
+    },
+    {
+      "id": "p344",
+      "text_a": "matar kulcha pocket",
+      "text_b": "matar kulcha serves 1",
+      "label": 1
+    },
+    {
+      "id": "p345",
+      "text_a": "mayonnaise dressing",
+      "text_b": "mayonnaise dressing extra",
+      "label": 1
+    },
+    {
+      "id": "p346",
+      "text_a": "mcflurry oreo m",
+      "text_b": "mcflurry oreo",
+      "label": 1
+    },
+    {
+      "id": "p347",
+      "text_a": "meat salona w rice",
+      "text_b": "shrimps salona w rice",
+      "label": 0
+    },
+    {
+      "id": "p348",
+      "text_a": "medu vada",
+      "text_b": "medu vada w sambar",
+      "label": 1
+    },
+    {
+      "id": "p349",
+      "text_a": "mee goreng",
+      "text_b": "mie goreng mee goreng",
+      "label": 1
+    },
+    {
+      "id": "p350",
+      "text_a": "merguez pita sandwich",
+      "text_b": "schnitzel pita sandwich",
+      "label": 0
+    },
+    {
+      "id": "p351",
+      "text_a": "mexican tortas",
+      "text_b": "mexican tortas tortas",
+      "label": 1
+    },
+    {
+      "id": "p352",
+      "text_a": "milk cap taro milk tea",
+      "text_b": "taro milk bubble tea",
+      "label": 0
+    },
+    {
+      "id": "p353",
+      "text_a": "milk tea with cookie crumble",
+      "text_b": "cookie crumble milk tea",
+      "label": 1
+    },
+    {
+      "id": "p354",
+      "text_a": "Mini Idli",
+      "text_b": "Idli",
+      "label": 1
+    },
+    {
+      "id": "p355",
+      "text_a": "mix shawarma",
+      "text_b": "shawarma mix",
+      "label": 1
+    },
+    {
+      "id": "p356",
+      "text_a": "mixed seafood",
+      "text_b": "seafood mixed",
+      "label": 1
+    },
+    {
+      "id": "p357",
+      "text_a": "mixed seafood",
+      "text_b": "special mixed seafood",
+      "label": 1
+    },
+    {
+      "id": "p358",
+      "text_a": "Momos",
+      "text_b": "Spring Roll",
+      "label": 0
+    },
+    {
+      "id": "p359",
+      "text_a": "mushroom baby corn manchurian",
+      "text_b": "baby corn manchurian",
+      "label": 0
+    },
+    {
+      "id": "p360",
+      "text_a": "mushroom doo pyaza",
+      "text_b": "mushroom do pyaza",
+      "label": 1
+    },
+    {
+      "id": "p361",
+      "text_a": "mushroom kurkure shawarma",
+      "text_b": "mushroom kurkure",
+      "label": 0
+    },
+    {
+      "id": "p362",
+      "text_a": "mushroom manchorian",
+      "text_b": "mushroom manchurian",
+      "label": 1
+    },
+    {
+      "id": "p363",
+      "text_a": "mushroom masala grilled sandwich",
+      "text_b": "masala grilled sandwich",
+      "label": 0
+    },
+    {
+      "id": "p364",
+      "text_a": "mushroom soup",
+      "text_b": "mushroom soup isan",
+      "label": 1
+    },
+    {
+      "id": "p365",
+      "text_a": "mushroom veg masala dosa",
+      "text_b": "mushroom masala dosa",
+      "label": 1
+    },
+    {
+      "id": "p366",
+      "text_a": "MUST TRY! Chicken 65",
+      "text_b": "Chicken 65",
+      "label": 1
+    },
+    {
+      "id": "p367",
+      "text_a": "mutter paneer rice",
+      "text_b": "paneer rice",
+      "label": 1
+    },
+    {
+      "id": "p368",
+      "text_a": "mutton agri handi",
+      "text_b": "mutton handi",
+      "label": 0
+    },
+    {
+      "id": "p369",
+      "text_a": "mutton biryani",
+      "text_b": "mutton briyani",
+      "label": 1
+    },
+    {
+      "id": "p370",
+      "text_a": "mutton curry",
+      "text_b": "paneer burger",
+      "label": 0
+    },
+    {
+      "id": "p371",
+      "text_a": "mutton curry",
+      "text_b": "prawns curry",
+      "label": 0
+    },
+    {
+      "id": "p372",
+      "text_a": "mutton kalimirch signature",
+      "text_b": "mutton paya signature",
+      "label": 0
+    },
+    {
+      "id": "p373",
+      "text_a": "mutton kebab",
+      "text_b": "mutton kebob",
+      "label": 1
+    },
+    {
+      "id": "p374",
+      "text_a": "mutton keema fry pav h",
+      "text_b": "mutton keema fry",
+      "label": 1
+    },
+    {
+      "id": "p375",
+      "text_a": "mutton korma curry",
+      "text_b": "mutton do pyaza curry",
+      "label": 0
+    },
+    {
+      "id": "p376",
+      "text_a": "Mutton Nihari",
+      "text_b": "Chicken Nihari",
+      "label": 0
+    },
+    {
+      "id": "p377",
+      "text_a": "Mutton Rogan Josh",
+      "text_b": "Chicken Rogan Josh",
+      "label": 0
+    },
+    {
+      "id": "p378",
+      "text_a": "mutton roll coke",
+      "text_b": "mutton roll",
+      "label": 0
+    },
+    {
+      "id": "p379",
+      "text_a": "mutton vindaloo",
+      "text_b": "mutton shawarma",
+      "label": 0
+    },
+    {
+      "id": "p380",
+      "text_a": "mutton without rice",
+      "text_b": "quarter mutton mazbi with rice",
+      "label": 0
+    },
+    {
+      "id": "p381",
+      "text_a": "Naan",
+      "text_b": "Paratha",
+      "label": 0
+    },
+    {
+      "id": "p382",
+      "text_a": "Nann",
+      "text_b": "Naan",
+      "label": 1
+    },
+    {
+      "id": "p383",
+      "text_a": "non veg spring roll",
+      "text_b": "veg spring roll v",
+      "label": 0
+    },
+    {
+      "id": "p384",
+      "text_a": "nutella banana chapati",
+      "text_b": "nutella chapati",
+      "label": 0
+    },
+    {
+      "id": "p385",
+      "text_a": "onion lachedar paratha",
+      "text_b": "lachedar paratha",
+      "label": 1
+    },
+    {
+      "id": "p386",
+      "text_a": "organic roti",
+      "text_b": "roti bread",
+      "label": 0
+    },
+    {
+      "id": "p387",
+      "text_a": "oscar sandwich",
+      "text_b": "williamsburg sandwich",
+      "label": 0
+    },
+    {
+      "id": "p388",
+      "text_a": "palaak paneer",
+      "text_b": "paneer mataro",
+      "label": 0
+    },
+    {
+      "id": "p389",
+      "text_a": "palak paneer chawal fry",
+      "text_b": "palak paneer rice bowl",
+      "label": 1
+    },
+    {
+      "id": "p390",
+      "text_a": "palak paneer chilly dosa",
+      "text_b": "paneer chilly dosa",
+      "label": 0
+    },
+    {
+      "id": "p391",
+      "text_a": "palak paneer with rice",
+      "text_b": "steam rice with palak paneer",
+      "label": 1
+    },
+    {
+      "id": "p392",
+      "text_a": "pan bahar shake",
+      "text_b": "pan shake",
+      "label": 0
+    },
+    {
+      "id": "p393",
+      "text_a": "paneer adarakki masala",
+      "text_b": "paneer kadai",
+      "label": 0
+    },
+    {
+      "id": "p394",
+      "text_a": "paneer bund cheese",
+      "text_b": "paneer cheese",
+      "label": 1
+    },
+    {
+      "id": "p395",
+      "text_a": "paneer butter garlic noodles",
+      "text_b": "paneer chilly garlic noodles",
+      "label": 0
+    },
+    {
+      "id": "p396",
+      "text_a": "Paneer Butter Masala",
+      "text_b": "Chicken Butter Masala",
+      "label": 0
+    },
+    {
+      "id": "p397",
+      "text_a": "Paneer Butter Masala [VEG]",
+      "text_b": "Paneer Butter Masala",
+      "label": 1
+    },
+    {
+      "id": "p398",
+      "text_a": "paneer chatpata masala",
+      "text_b": "paneer chatpata",
+      "label": 1
+    },
+    {
+      "id": "p399",
+      "text_a": "paneer chicken 65",
+      "text_b": "paneer korma",
+      "label": 0
+    },
+    {
+      "id": "p400",
+      "text_a": "paneer chilly hot dog",
+      "text_b": "paneer hot dog",
+      "label": 0
+    },
+    {
+      "id": "p401",
+      "text_a": "paneer kurchan sharantha",
+      "text_b": "paneer kurchan",
+      "label": 0
+    },
+    {
+      "id": "p402",
+      "text_a": "paneer pizza",
+      "text_b": "paneer dosa",
+      "label": 0
+    },
+    {
+      "id": "p403",
+      "text_a": "Paneer Roll",
+      "text_b": "Paneer Tikka",
+      "label": 0
+    },
+    {
+      "id": "p404",
+      "text_a": "Paneer Tikka",
+      "text_b": "Malai Kofta",
+      "label": 0
+    },
+    {
+      "id": "p405",
+      "text_a": "Paneer Tikka [NEW]",
+      "text_b": "Paneer Tikka",
+      "label": 1
+    },
+    {
+      "id": "p406",
+      "text_a": "paneer tikka masala tawa special",
+      "text_b": "paneer tikka masala meal",
+      "label": 0
+    },
+    {
+      "id": "p407",
+      "text_a": "Pani Puri (6 Pcs)",
+      "text_b": "Pani Puri",
+      "label": 1
+    },
+    {
+      "id": "p408",
+      "text_a": "panoer mushroom masala",
+      "text_b": "paneer mushroom masala",
+      "label": 1
+    },
+    {
+      "id": "p409",
+      "text_a": "Parantha",
+      "text_b": "Paratha",
+      "label": 1
+    },
+    {
+      "id": "p410",
+      "text_a": "Pasta",
+      "text_b": "Noodles",
+      "label": 0
+    },
+    {
+      "id": "p411",
+      "text_a": "Pav Bhaji",
+      "text_b": "Vada Pav",
+      "label": 0
+    },
+    {
+      "id": "p412",
+      "text_a": "Pavbhaji",
+      "text_b": "Pav Bhaji",
+      "label": 1
+    },
+    {
+      "id": "p413",
+      "text_a": "peas paneer",
+      "text_b": "shahenshah paneer",
+      "label": 0
+    },
+    {
+      "id": "p414",
+      "text_a": "pepperoni pizza",
+      "text_b": "chicken pizza",
+      "label": 0
+    },
+    {
+      "id": "p415",
+      "text_a": "pepperoni red paprika stuffed garlic bread",
+      "text_b": "chicken pepperoni stuffed garlic bread",
+      "label": 0
+    },
+    {
+      "id": "p416",
+      "text_a": "pernil sandwich",
+      "text_b": "tripleta sandwich",
+      "label": 0
+    },
+    {
+      "id": "p417",
+      "text_a": "pineapple cake 500g",
+      "text_b": "pineapple cake",
+      "label": 1
+    },
+    {
+      "id": "p418",
+      "text_a": "Pizza",
+      "text_b": "Burger",
+      "label": 0
+    },
+    {
+      "id": "p419",
+      "text_a": "poke bowl",
+      "text_b": "poke wan",
+      "label": 1
+    },
+    {
+      "id": "p420",
+      "text_a": "pollo tikka",
+      "text_b": "kotopoulo tikka",
+      "label": 1
+    },
+    {
+      "id": "p421",
+      "text_a": "pomfret tawa fry 1 pc",
+      "text_b": "pomfret tawa fry",
+      "label": 1
+    },
+    {
+      "id": "p422",
+      "text_a": "pork miso noodle soup",
+      "text_b": "shredded pork cabbage noodle soup",
+      "label": 0
+    },
+    {
+      "id": "p423",
+      "text_a": "pork vindaloo",
+      "text_b": "pork bibimbap",
+      "label": 0
+    },
+    {
+      "id": "p424",
+      "text_a": "praline cortado",
+      "text_b": "cortado infused with praline",
+      "label": 1
+    },
+    {
+      "id": "p425",
+      "text_a": "Prawns Biryani",
+      "text_b": "Chicken Biryani",
+      "label": 0
+    },
+    {
+      "id": "p426",
+      "text_a": "prawns combo thali",
+      "text_b": "prawns fry thali",
+      "label": 1
+    },
+    {
+      "id": "p427",
+      "text_a": "prawns noodle",
+      "text_b": "prawns noodles",
+      "label": 1
+    },
+    {
+      "id": "p428",
+      "text_a": "prawns zaffrani tandoori",
+      "text_b": "prawns tandoori",
+      "label": 0
+    },
+    {
+      "id": "p429",
+      "text_a": "Puchka",
+      "text_b": "Golgappa",
+      "label": 1
+    },
+    {
+      "id": "p430",
+      "text_a": "Pulav",
+      "text_b": "Pulao",
+      "label": 1
+    },
+    {
+      "id": "p431",
+      "text_a": "punjabi samosa special",
+      "text_b": "kachori special",
+      "label": 0
+    },
+    {
+      "id": "p432",
+      "text_a": "quarter tandoori chicken",
+      "text_b": "special chicken tandoori",
+      "label": 1
+    },
+    {
+      "id": "p433",
+      "text_a": "quesadilla 6",
+      "text_b": "special quesadilla",
+      "label": 1
+    },
+    {
+      "id": "p434",
+      "text_a": "quesadilla de adobada",
+      "text_b": "quesadilla de birria",
+      "label": 0
+    },
+    {
+      "id": "p435",
+      "text_a": "Rava Dosa",
+      "text_b": "Dosa",
+      "label": 1
+    },
+    {
+      "id": "p436",
+      "text_a": "rawas agri curry",
+      "text_b": "rawas curry",
+      "label": 0
+    },
+    {
+      "id": "p437",
+      "text_a": "risotto burrata",
+      "text_b": "rosa risotto",
+      "label": 0
+    },
+    {
+      "id": "p438",
+      "text_a": "rock and roll six pieces",
+      "text_b": "rock roll",
+      "label": 0
+    },
+    {
+      "id": "p439",
+      "text_a": "roomali roti",
+      "text_b": "roomali rotii",
+      "label": 1
+    },
+    {
+      "id": "p440",
+      "text_a": "royal china lotus leaf rice chicken",
+      "text_b": "chicken lotus leaf rice",
+      "label": 1
+    },
+    {
+      "id": "p441",
+      "text_a": "salmon roe gunkan",
+      "text_b": "salmon roe nigiri",
+      "label": 0
+    },
+    {
+      "id": "p442",
+      "text_a": "salt and pepper",
+      "text_b": "salt pepper",
+      "label": 1
+    },
+    {
+      "id": "p443",
+      "text_a": "Samosa",
+      "text_b": "Kachori",
+      "label": 0
+    },
+    {
+      "id": "p444",
+      "text_a": "sardines sandwich",
+      "text_b": "sojok sandwich",
+      "label": 0
+    },
+    {
+      "id": "p445",
+      "text_a": "Schezwan Fried Rice",
+      "text_b": "Fried Rice",
+      "label": 0
+    },
+    {
+      "id": "p446",
+      "text_a": "schezwan noodles",
+      "text_b": "Noodles",
+      "label": 1
+    },
+    {
+      "id": "p447",
+      "text_a": "seafood tajin meal creamy sauce",
+      "text_b": "seafood tajin meal red sauce",
+      "label": 0
+    },
+    {
+      "id": "p448",
+      "text_a": "shahi korma curry non veg",
+      "text_b": "veg curry aloo gobi korma",
+      "label": 0
+    },
+    {
+      "id": "p449",
+      "text_a": "shandar special chicken hakka chowmein",
+      "text_b": "chicken hakka chowmein",
+      "label": 1
+    },
+    {
+      "id": "p450",
+      "text_a": "Shawerma",
+      "text_b": "Shawarma",
+      "label": 1
+    },
+    {
+      "id": "p451",
+      "text_a": "signature bak chor mee",
+      "text_b": "grandma s wanton mee boneless",
+      "label": 0
+    },
+    {
+      "id": "p452",
+      "text_a": "sirloin steak and cheese",
+      "text_b": "steak and cheese submarine",
+      "label": 0
+    },
+    {
+      "id": "p453",
+      "text_a": "slice kesar kulfi",
+      "text_b": "kesar kulfi",
+      "label": 1
+    },
+    {
+      "id": "p454",
+      "text_a": "sliced fresh pineapple a la mode",
+      "text_b": "sliced pineapple a la mode",
+      "label": 1
+    },
+    {
+      "id": "p455",
+      "text_a": "sourdough bread",
+      "text_b": "sourdough loaf",
+      "label": 1
+    },
+    {
+      "id": "p456",
+      "text_a": "south mysore pak",
+      "text_b": "south mysore",
+      "label": 1
+    },
+    {
+      "id": "p457",
+      "text_a": "special kesar malai roll",
+      "text_b": "kesar malai roll",
+      "label": 1
+    },
+    {
+      "id": "p458",
+      "text_a": "special pani puri",
+      "text_b": "pani puri",
+      "label": 1
+    },
+    {
+      "id": "p459",
+      "text_a": "special spicy salmon roll",
+      "text_b": "spicy salmon roll 8",
+      "label": 1
+    },
+    {
+      "id": "p460",
+      "text_a": "special tofu w hot garlic sauce",
+      "text_b": "tofu broccoli garlic sauce",
+      "label": 0
+    },
+    {
+      "id": "p461",
+      "text_a": "spicey corn",
+      "text_b": "spicy corn",
+      "label": 1
+    },
+    {
+      "id": "p462",
+      "text_a": "spicy feta spread 1 2 pint",
+      "text_b": "spicy feta spread 1 pint",
+      "label": 1
+    },
+    {
+      "id": "p463",
+      "text_a": "spinach and ricotta tortellini",
+      "text_b": "tortellini ricotta spinach",
+      "label": 1
+    },
+    {
+      "id": "p464",
+      "text_a": "spinach dip cold",
+      "text_b": "spinach dip tg",
+      "label": 0
+    },
+    {
+      "id": "p465",
+      "text_a": "steak and kidney pie",
+      "text_b": "steak kidney",
+      "label": 1
+    },
+    {
+      "id": "p466",
+      "text_a": "strawberry fruit juice",
+      "text_b": "strawberry juice",
+      "label": 1
+    },
+    {
+      "id": "p467",
+      "text_a": "sushi box for 20 veg",
+      "text_b": "sushi box for 24 non veg",
+      "label": 0
+    },
+    {
+      "id": "p468",
+      "text_a": "taco de lengua beef tongue",
+      "text_b": "three beef tongue tacos 3 taco de lengua",
+      "label": 0
+    },
+    {
+      "id": "p469",
+      "text_a": "tandoori chilli paneer",
+      "text_b": "tandoori paneer tikka",
+      "label": 1
+    },
+    {
+      "id": "p470",
+      "text_a": "Tandoori Roti",
+      "text_b": "Roti",
+      "label": 1
+    },
+    {
+      "id": "p471",
+      "text_a": "Tanduri Chicken",
+      "text_b": "Tandoori Chicken",
+      "label": 1
+    },
+    {
+      "id": "p472",
+      "text_a": "teriyaki chikin",
+      "text_b": "teriyaki dak",
+      "label": 1
+    },
+    {
+      "id": "p473",
+      "text_a": "the basic burger",
+      "text_b": "the italian burger",
+      "label": 0
+    },
+    {
+      "id": "p474",
+      "text_a": "tiny prawns tawa masala",
+      "text_b": "prawns tawa masala",
+      "label": 1
+    },
+    {
+      "id": "p475",
+      "text_a": "tndoori chaap roll",
+      "text_b": "tandoori chaap roll",
+      "label": 1
+    },
+    {
+      "id": "p476",
+      "text_a": "tom yum kung soup",
+      "text_b": "tom yum soup",
+      "label": 1
+    },
+    {
+      "id": "p477",
+      "text_a": "traditional chilli vinegar",
+      "text_b": "chilli vinegar",
+      "label": 1
+    },
+    {
+      "id": "p478",
+      "text_a": "tuna fish and provolone sub",
+      "text_b": "tuna fish subs half",
+      "label": 0
+    },
+    {
+      "id": "p479",
+      "text_a": "Uttappam",
+      "text_b": "Uttapam",
+      "label": 1
+    },
+    {
+      "id": "p480",
+      "text_a": "Vada Pav - Mumbai Style",
+      "text_b": "Vada Pav",
+      "label": 1
+    },
+    {
+      "id": "p481",
+      "text_a": "Vadapav",
+      "text_b": "Vada Pav",
+      "label": 1
+    },
+    {
+      "id": "p482",
+      "text_a": "value combo",
+      "text_b": "value combo c c",
+      "label": 0
+    },
+    {
+      "id": "p483",
+      "text_a": "veg banh mi",
+      "text_b": "veg nachos",
+      "label": 0
+    },
+    {
+      "id": "p484",
+      "text_a": "veg burger",
+      "text_b": "veg samosa",
+      "label": 0
+    },
+    {
+      "id": "p485",
+      "text_a": "veg cheese paneer frankie",
+      "text_b": "veg paneer frankie",
+      "label": 0
+    },
+    {
+      "id": "p486",
+      "text_a": "veg chilli garlic noodles in container each",
+      "text_b": "veg chilli garlic noodles",
+      "label": 1
+    },
+    {
+      "id": "p487",
+      "text_a": "veg chilli milli green",
+      "text_b": "veg chilli milli",
+      "label": 1
+    },
+    {
+      "id": "p488",
+      "text_a": "veg chow mein",
+      "text_b": "veg pide",
+      "label": 0
+    },
+    {
+      "id": "p489",
+      "text_a": "Veg Fried Rice @199",
+      "text_b": "Veg Fried Rice",
+      "label": 1
+    },
+    {
+      "id": "p490",
+      "text_a": "veg hot garlic sauce gravy ball",
+      "text_b": "veg hot garlic gravy",
+      "label": 1
+    },
+    {
+      "id": "p491",
+      "text_a": "veg korean noodle",
+      "text_b": "veg korean noodles",
+      "label": 1
+    },
+    {
+      "id": "p492",
+      "text_a": "veg nachos",
+      "text_b": "veg gyros",
+      "label": 0
+    },
+    {
+      "id": "p493",
+      "text_a": "veg okonomiyaki",
+      "text_b": "veg green curry",
+      "label": 0
+    },
+    {
+      "id": "p494",
+      "text_a": "Veg Pasta",
+      "text_b": "Veg Noodles",
+      "label": 0
+    },
+    {
+      "id": "p495",
+      "text_a": "vegetable wok fried",
+      "text_b": "wok fried lagman",
+      "label": 0
+    },
+    {
+      "id": "p496",
+      "text_a": "watermelon juice liter",
+      "text_b": "watermelon juice special",
+      "label": 0
+    },
+    {
+      "id": "p497",
+      "text_a": "white sauce pasta non veg",
+      "text_b": "pink sauce pasta non veg",
+      "label": 0
+    },
+    {
+      "id": "p498",
+      "text_a": "zafrani kalmi kebab",
+      "text_b": "kalmi kebab",
+      "label": 1
+    }
+  ],
+  "metadata": {
+    "n_pairs": 498,
+    "n_positive": 234,
+    "n_negative": 264
+  }
+}

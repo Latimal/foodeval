@@ -1,0 +1,1921 @@
+{
+  "task": "global_match",
+  "version": "0.1.0",
+  "description": "Global cuisine menu item matching",
+  "metric": "best_f1",
+  "pairs": [
+    {
+      "id": "p001",
+      "text_a": "***HOT*** Spicy Ramen",
+      "text_b": "Spicy Ramen",
+      "label": 1
+    },
+    {
+      "id": "p002",
+      "text_a": "**NEW** Falafel Wrap",
+      "text_b": "Falafel Wrap",
+      "label": 1
+    },
+    {
+      "id": "p003",
+      "text_a": "Acai Bowl with Granola",
+      "text_b": "Acai Granola Bowl",
+      "label": 1
+    },
+    {
+      "id": "p004",
+      "text_a": "Ahi Tuna Poke",
+      "text_b": "Tuna Poke Bowl",
+      "label": 1
+    },
+    {
+      "id": "p005",
+      "text_a": "Baba Ghanoush Dip",
+      "text_b": "Baba Ganoush",
+      "label": 1
+    },
+    {
+      "id": "p006",
+      "text_a": "Bahn Mi",
+      "text_b": "Banh Mi",
+      "label": 1
+    },
+    {
+      "id": "p007",
+      "text_a": "Baked Falafel",
+      "text_b": "Fried Falafel",
+      "label": 0
+    },
+    {
+      "id": "p008",
+      "text_a": "Baklava",
+      "text_b": "Kunafa",
+      "label": 0
+    },
+    {
+      "id": "p009",
+      "text_a": "Baklava Pistachio",
+      "text_b": "Pistachio Baklava",
+      "label": 1
+    },
+    {
+      "id": "p010",
+      "text_a": "Banana Pancake",
+      "text_b": "Banana Split",
+      "label": 0
+    },
+    {
+      "id": "p011",
+      "text_a": "Banana Split",
+      "text_b": "Banana Fritters",
+      "label": 0
+    },
+    {
+      "id": "p012",
+      "text_a": "BBQ Chicken Pizza",
+      "text_b": "BBQ Chicken Wings",
+      "label": 0
+    },
+    {
+      "id": "p013",
+      "text_a": "BBQ Chicken Wings",
+      "text_b": "Chicken Wings BBQ",
+      "label": 1
+    },
+    {
+      "id": "p014",
+      "text_a": "BBQ Ribs",
+      "text_b": "BBQ Chicken",
+      "label": 0
+    },
+    {
+      "id": "p015",
+      "text_a": "BBQ Ribs Half Rack",
+      "text_b": "Half Rack BBQ Ribs",
+      "label": 1
+    },
+    {
+      "id": "p016",
+      "text_a": "Beef Bourguignon",
+      "text_b": "Boeuf Bourguignon",
+      "label": 1
+    },
+    {
+      "id": "p017",
+      "text_a": "Beef Bulgogi",
+      "text_b": "Pork Bulgogi",
+      "label": 0
+    },
+    {
+      "id": "p018",
+      "text_a": "Beef Bulgogi Bowl",
+      "text_b": "Bulgogi Rice Bowl",
+      "label": 1
+    },
+    {
+      "id": "p019",
+      "text_a": "Beef Burger",
+      "text_b": "Beef Steak",
+      "label": 0
+    },
+    {
+      "id": "p020",
+      "text_a": "Beef Burrito",
+      "text_b": "Chicken Burrito",
+      "label": 0
+    },
+    {
+      "id": "p021",
+      "text_a": "Beef Enchiladas",
+      "text_b": "Enchiladas de Res",
+      "label": 1
+    },
+    {
+      "id": "p022",
+      "text_a": "Beef Pho",
+      "text_b": "Beef Ramen",
+      "label": 0
+    },
+    {
+      "id": "p023",
+      "text_a": "Beef Pho",
+      "text_b": "Chicken Pho",
+      "label": 0
+    },
+    {
+      "id": "p024",
+      "text_a": "Beef Rendang",
+      "text_b": "Rendang Daging",
+      "label": 1
+    },
+    {
+      "id": "p025",
+      "text_a": "Beef Stew",
+      "text_b": "Beef Stroganoff",
+      "label": 0
+    },
+    {
+      "id": "p026",
+      "text_a": "Beef Taco",
+      "text_b": "Beef Enchilada",
+      "label": 0
+    },
+    {
+      "id": "p027",
+      "text_a": "Beef Taco Plate",
+      "text_b": "Plate of Beef Tacos",
+      "label": 1
+    },
+    {
+      "id": "p028",
+      "text_a": "Beef Tacos",
+      "text_b": "Fish Tacos",
+      "label": 0
+    },
+    {
+      "id": "p029",
+      "text_a": "Beef Tartare",
+      "text_b": "Steak Tartare",
+      "label": 1
+    },
+    {
+      "id": "p030",
+      "text_a": "BESTSELLER - Pad Thai",
+      "text_b": "Pad Thai",
+      "label": 1
+    },
+    {
+      "id": "p031",
+      "text_a": "Bibimbap",
+      "text_b": "Donburi",
+      "label": 0
+    },
+    {
+      "id": "p032",
+      "text_a": "Bibimbap Bowl",
+      "text_b": "Korean Bibimbap",
+      "label": 1
+    },
+    {
+      "id": "p033",
+      "text_a": "BLT Sandwich",
+      "text_b": "Bacon Lettuce Tomato Sandwich",
+      "label": 1
+    },
+    {
+      "id": "p034",
+      "text_a": "Bratwurst",
+      "text_b": "Currywurst",
+      "label": 0
+    },
+    {
+      "id": "p035",
+      "text_a": "Bruchetta",
+      "text_b": "Bruschetta",
+      "label": 1
+    },
+    {
+      "id": "p036",
+      "text_a": "Bruschetta",
+      "text_b": "Crostini",
+      "label": 0
+    },
+    {
+      "id": "p037",
+      "text_a": "Bruschetta Tomato",
+      "text_b": "Tomato Bruschetta",
+      "label": 1
+    },
+    {
+      "id": "p038",
+      "text_a": "Buffalo Wings (12 Pcs)",
+      "text_b": "Buffalo Chicken Wings",
+      "label": 1
+    },
+    {
+      "id": "p039",
+      "text_a": "Bulgogi Bowl | Korean",
+      "text_b": "Bulgogi Bowl",
+      "label": 1
+    },
+    {
+      "id": "p040",
+      "text_a": "Burrito Bowl @$9.99",
+      "text_b": "Burrito Bowl",
+      "label": 1
+    },
+    {
+      "id": "p041",
+      "text_a": "Caesar Salad",
+      "text_b": "Cobb Salad",
+      "label": 0
+    },
+    {
+      "id": "p042",
+      "text_a": "California Roll",
+      "text_b": "Dragon Roll",
+      "label": 0
+    },
+    {
+      "id": "p043",
+      "text_a": "Caprese Salad",
+      "text_b": "Insalata Caprese",
+      "label": 1
+    },
+    {
+      "id": "p044",
+      "text_a": "Carnitas Plate",
+      "text_b": "Pork Carnitas Platter",
+      "label": 1
+    },
+    {
+      "id": "p045",
+      "text_a": "Ceviche",
+      "text_b": "Cebiche",
+      "label": 1
+    },
+    {
+      "id": "p046",
+      "text_a": "Ceviche",
+      "text_b": "Tartare",
+      "label": 0
+    },
+    {
+      "id": "p047",
+      "text_a": "Ceviche de Camaron",
+      "text_b": "Shrimp Ceviche",
+      "label": 1
+    },
+    {
+      "id": "p048",
+      "text_a": "Char Kway Teow",
+      "text_b": "Char Kuey Teow",
+      "label": 1
+    },
+    {
+      "id": "p049",
+      "text_a": "Cheese Enchilada",
+      "text_b": "Chicken Enchilada",
+      "label": 0
+    },
+    {
+      "id": "p050",
+      "text_a": "Cheese Fries",
+      "text_b": "Cheese Sticks",
+      "label": 0
+    },
+    {
+      "id": "p051",
+      "text_a": "Cheese Pizza",
+      "text_b": "Cheese Cake",
+      "label": 0
+    },
+    {
+      "id": "p052",
+      "text_a": "Cheese Quesadilla",
+      "text_b": "Cheese Enchilada",
+      "label": 0
+    },
+    {
+      "id": "p053",
+      "text_a": "Cheese Quesadilla",
+      "text_b": "Quesadilla de Queso",
+      "label": 1
+    },
+    {
+      "id": "p054",
+      "text_a": "Chef's Special Ramen",
+      "text_b": "Ramen",
+      "label": 1
+    },
+    {
+      "id": "p055",
+      "text_a": "Chicken Alfredo Pasta",
+      "text_b": "Alfredo Chicken Pasta",
+      "label": 1
+    },
+    {
+      "id": "p056",
+      "text_a": "Chicken Burrito",
+      "text_b": "Chicken Fajita",
+      "label": 0
+    },
+    {
+      "id": "p057",
+      "text_a": "Chicken Burrito Bowl",
+      "text_b": "Burrito Bowl Chicken",
+      "label": 1
+    },
+    {
+      "id": "p058",
+      "text_a": "Chicken Caesar Salad",
+      "text_b": "Caesar Salad with Chicken",
+      "label": 1
+    },
+    {
+      "id": "p059",
+      "text_a": "Chicken Gyro",
+      "text_b": "Lamb Gyro",
+      "label": 0
+    },
+    {
+      "id": "p060",
+      "text_a": "Chicken Karaage",
+      "text_b": "Japanese Fried Chicken",
+      "label": 1
+    },
+    {
+      "id": "p061",
+      "text_a": "Chicken Katsu",
+      "text_b": "Chicken Karaage",
+      "label": 0
+    },
+    {
+      "id": "p062",
+      "text_a": "Chicken Katsu Curry",
+      "text_b": "Katsu Curry Chicken",
+      "label": 1
+    },
+    {
+      "id": "p063",
+      "text_a": "Chicken Katsu Don",
+      "text_b": "Chicken Katsu Curry",
+      "label": 0
+    },
+    {
+      "id": "p064",
+      "text_a": "Chicken Noodle Soup",
+      "text_b": "Chicken Rice Soup",
+      "label": 0
+    },
+    {
+      "id": "p065",
+      "text_a": "Chicken Parmesan",
+      "text_b": "Eggplant Parmesan",
+      "label": 0
+    },
+    {
+      "id": "p066",
+      "text_a": "Chicken Quesadilla",
+      "text_b": "Steak Quesadilla",
+      "label": 0
+    },
+    {
+      "id": "p067",
+      "text_a": "Chicken Sandwich",
+      "text_b": "Chicken Salad",
+      "label": 0
+    },
+    {
+      "id": "p068",
+      "text_a": "Chicken Satay",
+      "text_b": "Beef Satay",
+      "label": 0
+    },
+    {
+      "id": "p069",
+      "text_a": "Chicken Satay (4 Pcs)",
+      "text_b": "Satay Chicken",
+      "label": 1
+    },
+    {
+      "id": "p070",
+      "text_a": "Chicken Schnitzel",
+      "text_b": "Schnitzel Chicken",
+      "label": 1
+    },
+    {
+      "id": "p071",
+      "text_a": "Chicken Shawarma",
+      "text_b": "Beef Shawarma",
+      "label": 0
+    },
+    {
+      "id": "p072",
+      "text_a": "Chicken Shawarma",
+      "text_b": "Shawerma Chicken",
+      "label": 1
+    },
+    {
+      "id": "p073",
+      "text_a": "Chicken Shawarma (Reg)",
+      "text_b": "Chicken Shawarma",
+      "label": 1
+    },
+    {
+      "id": "p074",
+      "text_a": "Chicken Shawarma Plate",
+      "text_b": "Chicken Shawarma Wrap",
+      "label": 0
+    },
+    {
+      "id": "p075",
+      "text_a": "Chicken Shawarma Plate",
+      "text_b": "Shawarma Chicken w/ Rice",
+      "label": 1
+    },
+    {
+      "id": "p076",
+      "text_a": "Chicken Shawarma Rice Bowl",
+      "text_b": "Shawarma Bowl Chicken",
+      "label": 1
+    },
+    {
+      "id": "p077",
+      "text_a": "Chicken Soup",
+      "text_b": "Chicken Pizza",
+      "label": 0
+    },
+    {
+      "id": "p078",
+      "text_a": "Chicken Souvlaki",
+      "text_b": "Souvlaki Chicken Plate",
+      "label": 1
+    },
+    {
+      "id": "p079",
+      "text_a": "Chicken Tamales",
+      "text_b": "Tamales de Pollo",
+      "label": 1
+    },
+    {
+      "id": "p080",
+      "text_a": "Chicken Wings",
+      "text_b": "Chicken Drumstick",
+      "label": 0
+    },
+    {
+      "id": "p081",
+      "text_a": "Chicken Wings 6 Pcs",
+      "text_b": "Chicken Wings",
+      "label": 1
+    },
+    {
+      "id": "p082",
+      "text_a": "Chicken Wrap",
+      "text_b": "Chicken Bowl",
+      "label": 0
+    },
+    {
+      "id": "p083",
+      "text_a": "Chocolate Cake",
+      "text_b": "Chocolate Fondue",
+      "label": 0
+    },
+    {
+      "id": "p084",
+      "text_a": "Chocolate Lava Cake",
+      "text_b": "Molten Chocolate Cake",
+      "label": 1
+    },
+    {
+      "id": "p085",
+      "text_a": "Chocolate Mousse",
+      "text_b": "Chocolate Brownie",
+      "label": 0
+    },
+    {
+      "id": "p086",
+      "text_a": "Churros",
+      "text_b": "Donuts",
+      "label": 0
+    },
+    {
+      "id": "p087",
+      "text_a": "Churros with Chocolate",
+      "text_b": "Churros con Chocolate",
+      "label": 1
+    },
+    {
+      "id": "p088",
+      "text_a": "Clam Chowder",
+      "text_b": "Lobster Bisque",
+      "label": 0
+    },
+    {
+      "id": "p089",
+      "text_a": "Clam Chowder Soup",
+      "text_b": "New England Clam Chowder",
+      "label": 1
+    },
+    {
+      "id": "p090",
+      "text_a": "Classic Cheeseburger",
+      "text_b": "Cheese Burger",
+      "label": 1
+    },
+    {
+      "id": "p091",
+      "text_a": "Coconut Curry",
+      "text_b": "Coconut Water",
+      "label": 0
+    },
+    {
+      "id": "p092",
+      "text_a": "Coffee Cake",
+      "text_b": "Iced Coffee",
+      "label": 0
+    },
+    {
+      "id": "p093",
+      "text_a": "Coq au Vin",
+      "text_b": "Beef Bourguignon",
+      "label": 0
+    },
+    {
+      "id": "p094",
+      "text_a": "Corn Chowder",
+      "text_b": "Corn Dog",
+      "label": 0
+    },
+    {
+      "id": "p095",
+      "text_a": "Corn Tortilla",
+      "text_b": "Flour Tortilla",
+      "label": 0
+    },
+    {
+      "id": "p096",
+      "text_a": "Crepe",
+      "text_b": "Pancake",
+      "label": 0
+    },
+    {
+      "id": "p097",
+      "text_a": "Crepe Nutella",
+      "text_b": "Nutella Crepe",
+      "label": 1
+    },
+    {
+      "id": "p098",
+      "text_a": "Crispy Calamari",
+      "text_b": "Fried Calamari Rings",
+      "label": 1
+    },
+    {
+      "id": "p099",
+      "text_a": "Crispy Chicken Burger",
+      "text_b": "Chicken Burger Crispy",
+      "label": 1
+    },
+    {
+      "id": "p100",
+      "text_a": "Crispy Duck",
+      "text_b": "Roast Duck",
+      "label": 0
+    },
+    {
+      "id": "p101",
+      "text_a": "Croissant",
+      "text_b": "Brioche",
+      "label": 0
+    },
+    {
+      "id": "p102",
+      "text_a": "Croissant",
+      "text_b": "Danish Pastry",
+      "label": 0
+    },
+    {
+      "id": "p103",
+      "text_a": "Croissant",
+      "text_b": "Pain au Chocolat",
+      "label": 0
+    },
+    {
+      "id": "p104",
+      "text_a": "Croque Monsieur",
+      "text_b": "Ham & Cheese Croque",
+      "label": 1
+    },
+    {
+      "id": "p105",
+      "text_a": "Dan Dan Noodle",
+      "text_b": "Dandan Noodles",
+      "label": 1
+    },
+    {
+      "id": "p106",
+      "text_a": "Deep Dish Pizza",
+      "text_b": "Thin Crust Pizza",
+      "label": 0
+    },
+    {
+      "id": "p107",
+      "text_a": "Duck Confit",
+      "text_b": "Confit de Canard",
+      "label": 1
+    },
+    {
+      "id": "p108",
+      "text_a": "Egg Roll",
+      "text_b": "Egg Fried Rice",
+      "label": 0
+    },
+    {
+      "id": "p109",
+      "text_a": "Eggs Benedict",
+      "text_b": "Egg Benedict",
+      "label": 1
+    },
+    {
+      "id": "p110",
+      "text_a": "Elote Mexican Corn",
+      "text_b": "Mexican Street Corn",
+      "label": 1
+    },
+    {
+      "id": "p111",
+      "text_a": "Empanada",
+      "text_b": "Samosa",
+      "label": 0
+    },
+    {
+      "id": "p112",
+      "text_a": "Enchilada",
+      "text_b": "Burrito",
+      "label": 0
+    },
+    {
+      "id": "p113",
+      "text_a": "Falafel",
+      "text_b": "Kibbeh",
+      "label": 0
+    },
+    {
+      "id": "p114",
+      "text_a": "Falafel Plate",
+      "text_b": "Falafel Wrap",
+      "label": 0
+    },
+    {
+      "id": "p115",
+      "text_a": "Falafel Plate with Salad",
+      "text_b": "Falafel Salad Plate",
+      "label": 1
+    },
+    {
+      "id": "p116",
+      "text_a": "Falafel Sandwich",
+      "text_b": "Falafel Pita Sandwich",
+      "label": 1
+    },
+    {
+      "id": "p117",
+      "text_a": "Fattoush Salad",
+      "text_b": "Lebanese Fattoush",
+      "label": 1
+    },
+    {
+      "id": "p118",
+      "text_a": "Fettuccine Alfredo",
+      "text_b": "Alfredo Fettuccine",
+      "label": 1
+    },
+    {
+      "id": "p119",
+      "text_a": "Fettuccine Alfredo",
+      "text_b": "Carbonara",
+      "label": 0
+    },
+    {
+      "id": "p120",
+      "text_a": "Fettuccine Alfredo (Lunch)",
+      "text_b": "Fettuccine Alfredo",
+      "label": 1
+    },
+    {
+      "id": "p121",
+      "text_a": "Fetuccine Alfredo",
+      "text_b": "Fettuccine Alfredo",
+      "label": 1
+    },
+    {
+      "id": "p122",
+      "text_a": "Fish and Chips",
+      "text_b": "Fish & Chips",
+      "label": 1
+    },
+    {
+      "id": "p123",
+      "text_a": "Fish and Chips",
+      "text_b": "Fish Tacos",
+      "label": 0
+    },
+    {
+      "id": "p124",
+      "text_a": "Fish Finger",
+      "text_b": "Fish Fillet",
+      "label": 0
+    },
+    {
+      "id": "p125",
+      "text_a": "Fish Tacos",
+      "text_b": "Tacos de Pescado",
+      "label": 1
+    },
+    {
+      "id": "p126",
+      "text_a": "Focaccia",
+      "text_b": "Ciabatta",
+      "label": 0
+    },
+    {
+      "id": "p127",
+      "text_a": "French Onion Soup",
+      "text_b": "Soupe a l'Oignon",
+      "label": 1
+    },
+    {
+      "id": "p128",
+      "text_a": "French Toast",
+      "text_b": "French Fries",
+      "label": 0
+    },
+    {
+      "id": "p129",
+      "text_a": "Fried Calamari",
+      "text_b": "Grilled Calamari",
+      "label": 0
+    },
+    {
+      "id": "p130",
+      "text_a": "Fried Chicken",
+      "text_b": "Chicken Fried Steak",
+      "label": 0
+    },
+    {
+      "id": "p131",
+      "text_a": "Garlic Bread",
+      "text_b": "Garlic Shrimp",
+      "label": 0
+    },
+    {
+      "id": "p132",
+      "text_a": "Garlic Prawn Pasta",
+      "text_b": "Pasta with Garlic Prawns",
+      "label": 1
+    },
+    {
+      "id": "p133",
+      "text_a": "General Tso Chicken",
+      "text_b": "Orange Chicken",
+      "label": 0
+    },
+    {
+      "id": "p134",
+      "text_a": "Gnocchi",
+      "text_b": "Ravioli",
+      "label": 0
+    },
+    {
+      "id": "p135",
+      "text_a": "Gnocci",
+      "text_b": "Gnocchi",
+      "label": 1
+    },
+    {
+      "id": "p136",
+      "text_a": "Greek Salad",
+      "text_b": "Caesar Salad",
+      "label": 0
+    },
+    {
+      "id": "p137",
+      "text_a": "Green Curry Chicken",
+      "text_b": "Yellow Curry Chicken",
+      "label": 0
+    },
+    {
+      "id": "p138",
+      "text_a": "Green Tea",
+      "text_b": "Green Curry",
+      "label": 0
+    },
+    {
+      "id": "p139",
+      "text_a": "Grilled Cheese Sandwich",
+      "text_b": "Grilled Cheese",
+      "label": 1
+    },
+    {
+      "id": "p140",
+      "text_a": "Grilled Chicken Pita",
+      "text_b": "Chicken Pita Grilled",
+      "label": 1
+    },
+    {
+      "id": "p141",
+      "text_a": "Grilled Chicken Salad",
+      "text_b": "Grilled Chicken Sandwich",
+      "label": 0
+    },
+    {
+      "id": "p142",
+      "text_a": "Grilled Chicken Shawarma Wrap",
+      "text_b": "Shawarma Chicken Grilled Wrap",
+      "label": 1
+    },
+    {
+      "id": "p143",
+      "text_a": "Grilled Chicken Wrap",
+      "text_b": "Chicken Wrap Grilled",
+      "label": 1
+    },
+    {
+      "id": "p144",
+      "text_a": "Grilled Halloumi",
+      "text_b": "Halloumi Grilled",
+      "label": 1
+    },
+    {
+      "id": "p145",
+      "text_a": "Grilled Lamb Chops",
+      "text_b": "Lamb Chops Grilled",
+      "label": 1
+    },
+    {
+      "id": "p146",
+      "text_a": "Grilled Salmon",
+      "text_b": "Fried Salmon",
+      "label": 0
+    },
+    {
+      "id": "p147",
+      "text_a": "Grilled Salmon Fillet",
+      "text_b": "Salmon Grilled",
+      "label": 1
+    },
+    {
+      "id": "p148",
+      "text_a": "Guacamole & Chips",
+      "text_b": "Chips and Guacamole",
+      "label": 1
+    },
+    {
+      "id": "p149",
+      "text_a": "Gyoza",
+      "text_b": "Shumai",
+      "label": 0
+    },
+    {
+      "id": "p150",
+      "text_a": "Gyoza Pan Fried",
+      "text_b": "Pan-Fried Dumplings",
+      "label": 1
+    },
+    {
+      "id": "p151",
+      "text_a": "Gyudon",
+      "text_b": "Katsudon",
+      "label": 0
+    },
+    {
+      "id": "p152",
+      "text_a": "Hainanese Chicken Rice",
+      "text_b": "Chicken Rice Hainanese",
+      "label": 1
+    },
+    {
+      "id": "p153",
+      "text_a": "Hawaiian Poke Bowl",
+      "text_b": "Poke Bowl Hawaiian",
+      "label": 1
+    },
+    {
+      "id": "p154",
+      "text_a": "Hummus",
+      "text_b": "Baba Ghanoush",
+      "label": 0
+    },
+    {
+      "id": "p155",
+      "text_a": "Hummus Plate",
+      "text_b": "Falafel Plate",
+      "label": 0
+    },
+    {
+      "id": "p156",
+      "text_a": "Hummus with Pita",
+      "text_b": "Hummus Dip & Pita Bread",
+      "label": 1
+    },
+    {
+      "id": "p157",
+      "text_a": "Humous",
+      "text_b": "Hummus",
+      "label": 1
+    },
+    {
+      "id": "p158",
+      "text_a": "Iced Tea",
+      "text_b": "Iced Coffee",
+      "label": 0
+    },
+    {
+      "id": "p159",
+      "text_a": "Japanese Curry Rice",
+      "text_b": "Kare Raisu",
+      "label": 1
+    },
+    {
+      "id": "p160",
+      "text_a": "Jollof Rice",
+      "text_b": "West African Jollof",
+      "label": 1
+    },
+    {
+      "id": "p161",
+      "text_a": "Kebab Wrap",
+      "text_b": "Kebap Wrap",
+      "label": 1
+    },
+    {
+      "id": "p162",
+      "text_a": "Kimchi Fried Rice",
+      "text_b": "Kimchi Bokkeumbap",
+      "label": 1
+    },
+    {
+      "id": "p163",
+      "text_a": "Kimchi Fried Rice",
+      "text_b": "Yangzhou Fried Rice",
+      "label": 0
+    },
+    {
+      "id": "p164",
+      "text_a": "Kimchi Jjigae",
+      "text_b": "Doenjang Jjigae",
+      "label": 0
+    },
+    {
+      "id": "p165",
+      "text_a": "Korean Fried Chicken",
+      "text_b": "KFC Korean Style",
+      "label": 1
+    },
+    {
+      "id": "p166",
+      "text_a": "Kunafa",
+      "text_b": "Kunafeh",
+      "label": 1
+    },
+    {
+      "id": "p167",
+      "text_a": "Kunafa Cheese",
+      "text_b": "Kunafeh with Cheese",
+      "label": 1
+    },
+    {
+      "id": "p168",
+      "text_a": "Kung Pao Chicken",
+      "text_b": "Gong Bao Chicken",
+      "label": 1
+    },
+    {
+      "id": "p169",
+      "text_a": "Laksa Noodle Soup",
+      "text_b": "Curry Laksa",
+      "label": 1
+    },
+    {
+      "id": "p170",
+      "text_a": "Lamb Burger",
+      "text_b": "Beef Burger",
+      "label": 0
+    },
+    {
+      "id": "p171",
+      "text_a": "Lamb Doner",
+      "text_b": "Chicken Doner",
+      "label": 0
+    },
+    {
+      "id": "p172",
+      "text_a": "Lamb Doner Kebab",
+      "text_b": "Doner Lamb",
+      "label": 1
+    },
+    {
+      "id": "p173",
+      "text_a": "Lamb Gyro Plate",
+      "text_b": "Gyro Lamb Platter",
+      "label": 1
+    },
+    {
+      "id": "p174",
+      "text_a": "Lamb Kebab",
+      "text_b": "Chicken Kebab",
+      "label": 0
+    },
+    {
+      "id": "p175",
+      "text_a": "Lamb Kebab Plate",
+      "text_b": "Chicken Kebab Plate",
+      "label": 0
+    },
+    {
+      "id": "p176",
+      "text_a": "Lamb Kofta",
+      "text_b": "Lamb Shawarma",
+      "label": 0
+    },
+    {
+      "id": "p177",
+      "text_a": "Lamb Kofta Plate",
+      "text_b": "Kofta Lamb Platter",
+      "label": 1
+    },
+    {
+      "id": "p178",
+      "text_a": "Lamb Shank",
+      "text_b": "Lamb Chop",
+      "label": 0
+    },
+    {
+      "id": "p179",
+      "text_a": "Lamb Shawarma Rice",
+      "text_b": "Shawarma Lamb with Rice",
+      "label": 1
+    },
+    {
+      "id": "p180",
+      "text_a": "Lamb Shawarma Wrap",
+      "text_b": "Shawarma Lamb Roll",
+      "label": 1
+    },
+    {
+      "id": "p181",
+      "text_a": "Lamb Souvlaki",
+      "text_b": "Chicken Souvlaki",
+      "label": 0
+    },
+    {
+      "id": "p182",
+      "text_a": "Lamb Tagine",
+      "text_b": "Chicken Tagine",
+      "label": 0
+    },
+    {
+      "id": "p183",
+      "text_a": "Lamb Tagine",
+      "text_b": "Moroccan Lamb Tagine",
+      "label": 1
+    },
+    {
+      "id": "p184",
+      "text_a": "Lamb Wrap",
+      "text_b": "Lamb Plate",
+      "label": 0
+    },
+    {
+      "id": "p185",
+      "text_a": "Lasagna",
+      "text_b": "Lasagne al Forno",
+      "label": 1
+    },
+    {
+      "id": "p186",
+      "text_a": "Lemon Tart",
+      "text_b": "Lemon Chicken",
+      "label": 0
+    },
+    {
+      "id": "p187",
+      "text_a": "Mac and Cheese",
+      "text_b": "Mac n Cheese",
+      "label": 1
+    },
+    {
+      "id": "p188",
+      "text_a": "Mango Smoothie",
+      "text_b": "Mango Sticky Rice",
+      "label": 0
+    },
+    {
+      "id": "p189",
+      "text_a": "Mapo Tofu",
+      "text_b": "Mapo Doufu",
+      "label": 1
+    },
+    {
+      "id": "p190",
+      "text_a": "Margherita",
+      "text_b": "Diavola",
+      "label": 0
+    },
+    {
+      "id": "p191",
+      "text_a": "Margherita Pizza",
+      "text_b": "Four Cheese Pizza",
+      "label": 0
+    },
+    {
+      "id": "p192",
+      "text_a": "Margherita Pizza",
+      "text_b": "Marinara Pizza",
+      "label": 0
+    },
+    {
+      "id": "p193",
+      "text_a": "Margherita Pizza",
+      "text_b": "Pizza Margherita",
+      "label": 1
+    },
+    {
+      "id": "p194",
+      "text_a": "Margherita Pizza [12 inch]",
+      "text_b": "Margherita Pizza",
+      "label": 1
+    },
+    {
+      "id": "p195",
+      "text_a": "Matcha Latte",
+      "text_b": "Matcha Ice Cream",
+      "label": 0
+    },
+    {
+      "id": "p196",
+      "text_a": "Mediterranean Salad",
+      "text_b": "Med Salad Bowl",
+      "label": 1
+    },
+    {
+      "id": "p197",
+      "text_a": "Mee Goreng Mamak",
+      "text_b": "Mamak Fried Noodles",
+      "label": 1
+    },
+    {
+      "id": "p198",
+      "text_a": "Miso Ramen",
+      "text_b": "Shoyu Ramen",
+      "label": 0
+    },
+    {
+      "id": "p199",
+      "text_a": "Miso Soup",
+      "text_b": "Miso Ramen",
+      "label": 0
+    },
+    {
+      "id": "p200",
+      "text_a": "Mixed Grill Platter",
+      "text_b": "Mixed Grill Plate",
+      "label": 1
+    },
+    {
+      "id": "p201",
+      "text_a": "Mousaka",
+      "text_b": "Moussaka",
+      "label": 1
+    },
+    {
+      "id": "p202",
+      "text_a": "Moussaka",
+      "text_b": "Greek Moussaka",
+      "label": 1
+    },
+    {
+      "id": "p203",
+      "text_a": "Moussaka",
+      "text_b": "Lasagna",
+      "label": 0
+    },
+    {
+      "id": "p204",
+      "text_a": "Mushroom Soup",
+      "text_b": "Mushroom Pizza",
+      "label": 0
+    },
+    {
+      "id": "p205",
+      "text_a": "Mushroom Soup",
+      "text_b": "Mushroom Risotto",
+      "label": 0
+    },
+    {
+      "id": "p206",
+      "text_a": "Mushroom Swiss Burger",
+      "text_b": "Swiss Mushroom Burger",
+      "label": 1
+    },
+    {
+      "id": "p207",
+      "text_a": "MUST TRY! Fish Tacos",
+      "text_b": "Fish Tacos",
+      "label": 1
+    },
+    {
+      "id": "p208",
+      "text_a": "Naan",
+      "text_b": "Pita",
+      "label": 0
+    },
+    {
+      "id": "p209",
+      "text_a": "Nasi Goreng",
+      "text_b": "Mee Goreng",
+      "label": 0
+    },
+    {
+      "id": "p210",
+      "text_a": "Nasi Goreng",
+      "text_b": "Nasi Lemak",
+      "label": 0
+    },
+    {
+      "id": "p211",
+      "text_a": "Nasi Goreng Special",
+      "text_b": "Special Indonesian Fried Rice",
+      "label": 1
+    },
+    {
+      "id": "p212",
+      "text_a": "NEW! Korean Fried Chicken",
+      "text_b": "Korean Fried Chicken",
+      "label": 1
+    },
+    {
+      "id": "p213",
+      "text_a": "Onion Rings",
+      "text_b": "Onion Soup",
+      "label": 0
+    },
+    {
+      "id": "p214",
+      "text_a": "Orange Chicken",
+      "text_b": "Orange Juice",
+      "label": 0
+    },
+    {
+      "id": "p215",
+      "text_a": "Pad Thai",
+      "text_b": "Pad Krapow",
+      "label": 0
+    },
+    {
+      "id": "p216",
+      "text_a": "Pad Thai",
+      "text_b": "Pad See Ew",
+      "label": 0
+    },
+    {
+      "id": "p217",
+      "text_a": "Pad Thai - Veg [POPULAR]",
+      "text_b": "Veg Pad Thai",
+      "label": 1
+    },
+    {
+      "id": "p218",
+      "text_a": "Pad Thai Chicken",
+      "text_b": "Chicken Pad Thai",
+      "label": 1
+    },
+    {
+      "id": "p219",
+      "text_a": "Peking Duck",
+      "text_b": "Beijing Duck",
+      "label": 1
+    },
+    {
+      "id": "p220",
+      "text_a": "Penne Arrabbiata",
+      "text_b": "Arrabbiata Penne Pasta",
+      "label": 1
+    },
+    {
+      "id": "p221",
+      "text_a": "Penne Vodka",
+      "text_b": "Penne Arrabiata",
+      "label": 0
+    },
+    {
+      "id": "p222",
+      "text_a": "Pepperoni Pizza",
+      "text_b": "Hawaiian Pizza",
+      "label": 0
+    },
+    {
+      "id": "p223",
+      "text_a": "Pepperoni Pizza Large",
+      "text_b": "Large Pepperoni Pizza",
+      "label": 1
+    },
+    {
+      "id": "p224",
+      "text_a": "Philly Cheesesteak",
+      "text_b": "Philadelphia Cheese Steak",
+      "label": 1
+    },
+    {
+      "id": "p225",
+      "text_a": "Pho Beef Noodle Soup",
+      "text_b": "Pho Bo",
+      "label": 1
+    },
+    {
+      "id": "p226",
+      "text_a": "Pho Bo",
+      "text_b": "Pho Beef",
+      "label": 1
+    },
+    {
+      "id": "p227",
+      "text_a": "Pho Bo (Large)",
+      "text_b": "Pho Bo",
+      "label": 1
+    },
+    {
+      "id": "p228",
+      "text_a": "Pizza",
+      "text_b": "Flatbread",
+      "label": 0
+    },
+    {
+      "id": "p229",
+      "text_a": "Poke Bowl",
+      "text_b": "Chirashi",
+      "label": 0
+    },
+    {
+      "id": "p230",
+      "text_a": "Pork Banh Mi",
+      "text_b": "Chicken Banh Mi",
+      "label": 0
+    },
+    {
+      "id": "p231",
+      "text_a": "Pork Belly",
+      "text_b": "Pork Ribs",
+      "label": 0
+    },
+    {
+      "id": "p232",
+      "text_a": "Pork Belly Bao",
+      "text_b": "Chicken Bao",
+      "label": 0
+    },
+    {
+      "id": "p233",
+      "text_a": "Pork Belly Bun",
+      "text_b": "Pork Belly Rice",
+      "label": 0
+    },
+    {
+      "id": "p234",
+      "text_a": "Pork Dumpling",
+      "text_b": "Pork Bun",
+      "label": 0
+    },
+    {
+      "id": "p235",
+      "text_a": "Pork Gyoza",
+      "text_b": "Shrimp Gyoza",
+      "label": 0
+    },
+    {
+      "id": "p236",
+      "text_a": "Pork Ramen",
+      "text_b": "Chicken Ramen",
+      "label": 0
+    },
+    {
+      "id": "p237",
+      "text_a": "Pork Tonkatsu Set",
+      "text_b": "Tonkatsu Pork",
+      "label": 1
+    },
+    {
+      "id": "p238",
+      "text_a": "Prawn Cocktail",
+      "text_b": "Shrimp Cocktail",
+      "label": 1
+    },
+    {
+      "id": "p239",
+      "text_a": "Prawn Pad Thai",
+      "text_b": "Prawn Laksa",
+      "label": 0
+    },
+    {
+      "id": "p240",
+      "text_a": "Prawn Tempura",
+      "text_b": "Prawn Cocktail",
+      "label": 0
+    },
+    {
+      "id": "p241",
+      "text_a": "Prosciutto & Melon",
+      "text_b": "Melon with Prosciutto",
+      "label": 1
+    },
+    {
+      "id": "p242",
+      "text_a": "Pulled Pork",
+      "text_b": "Pork Chop",
+      "label": 0
+    },
+    {
+      "id": "p243",
+      "text_a": "Pulled Pork Sandwich",
+      "text_b": "BBQ Pulled Pork",
+      "label": 1
+    },
+    {
+      "id": "p244",
+      "text_a": "Pumpkin Soup",
+      "text_b": "Pumpkin Pie",
+      "label": 0
+    },
+    {
+      "id": "p245",
+      "text_a": "Quesadilla",
+      "text_b": "Gordita",
+      "label": 0
+    },
+    {
+      "id": "p246",
+      "text_a": "Quiche Lorraine",
+      "text_b": "Lorraine Quiche",
+      "label": 1
+    },
+    {
+      "id": "p247",
+      "text_a": "Ramen",
+      "text_b": "Pho",
+      "label": 0
+    },
+    {
+      "id": "p248",
+      "text_a": "Red Curry",
+      "text_b": "Green Curry",
+      "label": 0
+    },
+    {
+      "id": "p249",
+      "text_a": "Risotto",
+      "text_b": "Paella",
+      "label": 0
+    },
+    {
+      "id": "p250",
+      "text_a": "Risotto alla Milanese",
+      "text_b": "Risotto ai Funghi",
+      "label": 0
+    },
+    {
+      "id": "p251",
+      "text_a": "Risotto Mushroom",
+      "text_b": "Mushroom Risotto",
+      "label": 1
+    },
+    {
+      "id": "p252",
+      "text_a": "Roti Canai Plain",
+      "text_b": "Roti Prata",
+      "label": 1
+    },
+    {
+      "id": "p253",
+      "text_a": "Salmon Poke Bowl",
+      "text_b": "Tuna Poke Bowl",
+      "label": 0
+    },
+    {
+      "id": "p254",
+      "text_a": "Salmon Roll",
+      "text_b": "Salmon Bowl",
+      "label": 0
+    },
+    {
+      "id": "p255",
+      "text_a": "Salmon Sashimi Set",
+      "text_b": "Sashimi Salmon",
+      "label": 1
+    },
+    {
+      "id": "p256",
+      "text_a": "Schnitzel",
+      "text_b": "Wiener Schnitzel",
+      "label": 1
+    },
+    {
+      "id": "p257",
+      "text_a": "Shawarma",
+      "text_b": "Doner Kebab",
+      "label": 0
+    },
+    {
+      "id": "p258",
+      "text_a": "Shawarma Plate (Serves 1)",
+      "text_b": "Shawarma Plate",
+      "label": 1
+    },
+    {
+      "id": "p259",
+      "text_a": "Shawarma Wrap Beef",
+      "text_b": "Beef Shawarma Wrap",
+      "label": 1
+    },
+    {
+      "id": "p260",
+      "text_a": "Shawerma Plate",
+      "text_b": "Shawarma Plate",
+      "label": 1
+    },
+    {
+      "id": "p261",
+      "text_a": "Shrimp Cocktail",
+      "text_b": "Shrimp Scampi",
+      "label": 0
+    },
+    {
+      "id": "p262",
+      "text_a": "Shrimp Fried Rice",
+      "text_b": "Fried Rice Shrimp",
+      "label": 1
+    },
+    {
+      "id": "p263",
+      "text_a": "Shrimp Pad Thai",
+      "text_b": "Chicken Pad Thai",
+      "label": 0
+    },
+    {
+      "id": "p264",
+      "text_a": "Shrimp Pasta",
+      "text_b": "Shrimp Rice",
+      "label": 0
+    },
+    {
+      "id": "p265",
+      "text_a": "Singapore Chili Crab",
+      "text_b": "Chili Crab Singapore",
+      "label": 1
+    },
+    {
+      "id": "p266",
+      "text_a": "Singapore Noodles",
+      "text_b": "Singapore Fried Noodles",
+      "label": 1
+    },
+    {
+      "id": "p267",
+      "text_a": "Soba Noodle",
+      "text_b": "Ramen Noodle",
+      "label": 0
+    },
+    {
+      "id": "p268",
+      "text_a": "Soft Taco",
+      "text_b": "Crispy Taco",
+      "label": 0
+    },
+    {
+      "id": "p269",
+      "text_a": "Spaghetti Bolognese",
+      "text_b": "Bolognese Pasta",
+      "label": 1
+    },
+    {
+      "id": "p270",
+      "text_a": "Spaghetti Bolognese",
+      "text_b": "Spaghetti Aglio e Olio",
+      "label": 0
+    },
+    {
+      "id": "p271",
+      "text_a": "Spanakopita",
+      "text_b": "Spinach Pie Greek",
+      "label": 1
+    },
+    {
+      "id": "p272",
+      "text_a": "Spicy Salmon Roll",
+      "text_b": "Spicy Tuna Roll",
+      "label": 0
+    },
+    {
+      "id": "p273",
+      "text_a": "Spicy Tuna Roll",
+      "text_b": "California Roll",
+      "label": 0
+    },
+    {
+      "id": "p274",
+      "text_a": "Spicy Tuna Roll",
+      "text_b": "Tuna Spicy Roll",
+      "label": 1
+    },
+    {
+      "id": "p275",
+      "text_a": "Spring Roll",
+      "text_b": "Egg Roll",
+      "label": 0
+    },
+    {
+      "id": "p276",
+      "text_a": "Spring Roll",
+      "text_b": "Summer Roll",
+      "label": 0
+    },
+    {
+      "id": "p277",
+      "text_a": "Steak Frites",
+      "text_b": "Steak and Fries",
+      "label": 1
+    },
+    {
+      "id": "p278",
+      "text_a": "Steamed Dumplings",
+      "text_b": "Fried Dumplings",
+      "label": 0
+    },
+    {
+      "id": "p279",
+      "text_a": "Strawberry Crepe",
+      "text_b": "Strawberry Smoothie",
+      "label": 0
+    },
+    {
+      "id": "p280",
+      "text_a": "Sushi",
+      "text_b": "Sashimi",
+      "label": 0
+    },
+    {
+      "id": "p281",
+      "text_a": "Tabbouleh Salad",
+      "text_b": "Tabouleh",
+      "label": 1
+    },
+    {
+      "id": "p282",
+      "text_a": "Tabouleh",
+      "text_b": "Tabbouleh",
+      "label": 1
+    },
+    {
+      "id": "p283",
+      "text_a": "Taco",
+      "text_b": "Burrito",
+      "label": 0
+    },
+    {
+      "id": "p284",
+      "text_a": "Tacos Al Pastor (3)",
+      "text_b": "Al Pastor Tacos",
+      "label": 1
+    },
+    {
+      "id": "p285",
+      "text_a": "Teriyaki Chicken Bowl",
+      "text_b": "Chicken Teriyaki Rice",
+      "label": 1
+    },
+    {
+      "id": "p286",
+      "text_a": "Teriyaki Salmon",
+      "text_b": "Teriyaki Chicken",
+      "label": 0
+    },
+    {
+      "id": "p287",
+      "text_a": "Thai Basil Chicken",
+      "text_b": "Pad Krapow Gai",
+      "label": 1
+    },
+    {
+      "id": "p288",
+      "text_a": "Thai Green Curry",
+      "text_b": "Green Curry Thai",
+      "label": 1
+    },
+    {
+      "id": "p289",
+      "text_a": "Tiramisu",
+      "text_b": "Panna Cotta",
+      "label": 0
+    },
+    {
+      "id": "p290",
+      "text_a": "Tiramisu Slice",
+      "text_b": "Tiramisu",
+      "label": 1
+    },
+    {
+      "id": "p291",
+      "text_a": "Tom Kha Gai",
+      "text_b": "Tom Yum Goong",
+      "label": 0
+    },
+    {
+      "id": "p292",
+      "text_a": "Tom Kha Gai Soup",
+      "text_b": "Tom Kha Chicken",
+      "label": 1
+    },
+    {
+      "id": "p293",
+      "text_a": "Tom Yam",
+      "text_b": "Tom Yum",
+      "label": 1
+    },
+    {
+      "id": "p294",
+      "text_a": "Tom Yum",
+      "text_b": "Tom Kha",
+      "label": 0
+    },
+    {
+      "id": "p295",
+      "text_a": "Tom Yum Fried Rice",
+      "text_b": "Tom Yum Soup",
+      "label": 0
+    },
+    {
+      "id": "p296",
+      "text_a": "Tom Yum Goong - Regular",
+      "text_b": "Tom Yum Goong",
+      "label": 1
+    },
+    {
+      "id": "p297",
+      "text_a": "Tom Yum Soup",
+      "text_b": "Tom Yam Goong",
+      "label": 1
+    },
+    {
+      "id": "p298",
+      "text_a": "Tonkatsu Curry Rice",
+      "text_b": "Curry Rice with Pork Cutlet",
+      "label": 1
+    },
+    {
+      "id": "p299",
+      "text_a": "Tonkotsu Ramen",
+      "text_b": "Miso Ramen",
+      "label": 0
+    },
+    {
+      "id": "p300",
+      "text_a": "Tonkotsu Ramen",
+      "text_b": "Pork Bone Ramen",
+      "label": 1
+    },
+    {
+      "id": "p301",
+      "text_a": "Tteokbokki",
+      "text_b": "Japchae",
+      "label": 0
+    },
+    {
+      "id": "p302",
+      "text_a": "Tteokbokki",
+      "text_b": "Topokki",
+      "label": 1
+    },
+    {
+      "id": "p303",
+      "text_a": "Tteokbokki",
+      "text_b": "Topokki Rice Cakes",
+      "label": 1
+    },
+    {
+      "id": "p304",
+      "text_a": "Tuna Melt",
+      "text_b": "Tuna Tartare",
+      "label": 0
+    },
+    {
+      "id": "p305",
+      "text_a": "Turkey Club Sandwich",
+      "text_b": "Club Sandwich Turkey",
+      "label": 1
+    },
+    {
+      "id": "p306",
+      "text_a": "Udon",
+      "text_b": "Soba",
+      "label": 0
+    },
+    {
+      "id": "p307",
+      "text_a": "Vegetable Tempura",
+      "text_b": "Tempura Vegetables",
+      "label": 1
+    },
+    {
+      "id": "p308",
+      "text_a": "Veggie Burger",
+      "text_b": "Chicken Burger",
+      "label": 0
+    },
+    {
+      "id": "p309",
+      "text_a": "Veggie Burger",
+      "text_b": "Vegetable Burger",
+      "label": 1
+    },
+    {
+      "id": "p310",
+      "text_a": "Veggie Wrap",
+      "text_b": "Veggie Bowl",
+      "label": 0
+    },
+    {
+      "id": "p311",
+      "text_a": "Wet Burrito",
+      "text_b": "Dry Burrito",
+      "label": 0
+    },
+    {
+      "id": "p312",
+      "text_a": "White Clam Pizza",
+      "text_b": "Pepperoni Pizza",
+      "label": 0
+    },
+    {
+      "id": "p313",
+      "text_a": "Wonton Mee Dry",
+      "text_b": "Dry Wonton Noodles",
+      "label": 1
+    },
+    {
+      "id": "p314",
+      "text_a": "Wonton Noodle Soup",
+      "text_b": "Wanton Mee Soup",
+      "label": 1
+    },
+    {
+      "id": "p315",
+      "text_a": "Wonton Soup",
+      "text_b": "Dumpling Soup",
+      "label": 0
+    },
+    {
+      "id": "p316",
+      "text_a": "Wonton Soup",
+      "text_b": "Hot and Sour Soup",
+      "label": 0
+    },
+    {
+      "id": "p317",
+      "text_a": "Xiao Long Bao (6pcs)",
+      "text_b": "Soup Dumplings",
+      "label": 1
+    },
+    {
+      "id": "p318",
+      "text_a": "Yakitori Set",
+      "text_b": "Japanese Chicken Skewers",
+      "label": 1
+    }
+  ],
+  "metadata": {
+    "n_pairs": 318,
+    "n_positive": 159,
+    "n_negative": 159
+  }
+}

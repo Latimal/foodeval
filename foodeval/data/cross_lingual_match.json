@@ -1,0 +1,3616 @@
+{
+  "task": "cross_lingual_match",
+  "version": "0.1.0",
+  "description": "Cross-lingual and cross-script menu item matching",
+  "metric": "best_f1",
+  "pairs": [
+    {
+      "id": "p001",
+      "text_a": "Aloo Gobi आलू गोभी",
+      "text_b": "Aloo Matar आलू मटर",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p002",
+      "text_a": "Aloo Gobi आलू गोभी",
+      "text_b": "आलू गोभी",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p003",
+      "text_a": "Arabic Flatbread",
+      "text_b": "Khubz Arabi",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p004",
+      "text_a": "Arabic Meat Pastry",
+      "text_b": "Fatayer Laham",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p005",
+      "text_a": "Ayam Goreng",
+      "text_b": "Karaage",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p006",
+      "text_a": "Baba Ghanoush بابا غنوج",
+      "text_b": "Baba Ganoush بابا غنوج",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p007",
+      "text_a": "Banh Mi",
+      "text_b": "Shawarma Wrap",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p008",
+      "text_a": "Basil Chicken Stir Fry",
+      "text_b": "Gai Pad Krapow",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p009",
+      "text_a": "Basil Chicken ผัดกระเพราไก่",
+      "text_b": "Pad Krapow Gai ผัดกระเพรา",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p010",
+      "text_a": "Beef Bowl",
+      "text_b": "Gyudon",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p011",
+      "text_a": "Beef Burrito",
+      "text_b": "Burrito de Res",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p012",
+      "text_a": "Beef Pho",
+      "text_b": "Pho Bo",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p013",
+      "text_a": "Beef Rendang Curry",
+      "text_b": "Rendang Sapi",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p014",
+      "text_a": "Beef Short Ribs",
+      "text_b": "Galbi",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p015",
+      "text_a": "Beef Stew",
+      "text_b": "Pho Bo",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p016",
+      "text_a": "Beef Tataki",
+      "text_b": "Seared Beef Slices Japanese Style",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p017",
+      "text_a": "Bibimbap 비빔밥",
+      "text_b": "Kimbap 김밥",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p018",
+      "text_a": "Bibimbap 비빔밥",
+      "text_b": "Mixed Rice Bowl",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p019",
+      "text_a": "Bibimbap 비빔밥",
+      "text_b": "비빔밥",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p020",
+      "text_a": "Biryani",
+      "text_b": "Paella",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p021",
+      "text_a": "Biryani बिरयानी",
+      "text_b": "Biryani",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p022",
+      "text_a": "Biryani बिरयानी",
+      "text_b": "Pulao पुलाव",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p023",
+      "text_a": "Broken Rice Pork",
+      "text_b": "Com Tam Suon",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p024",
+      "text_a": "Bulgogi",
+      "text_b": "Carne Asada",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p025",
+      "text_a": "Bulgogi 불고기",
+      "text_b": "Galbi 갈비",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p026",
+      "text_a": "Bulgogi 불고기",
+      "text_b": "Korean BBQ Beef",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p027",
+      "text_a": "Bulgogi 불고기",
+      "text_b": "Korean BBQ Bulgogi 불고기",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p028",
+      "text_a": "Bun Cha",
+      "text_b": "Satay Ayam",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p029",
+      "text_a": "Bun Cha Pork Noodles",
+      "text_b": "Bun Cha Ha Noi",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p030",
+      "text_a": "Burrito de Res",
+      "text_b": "Shawarma Lahm",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p031",
+      "text_a": "Butter Chicken बटर चिकन",
+      "text_b": "Butter Chicken",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p032",
+      "text_a": "Butter Chicken बटर चिकन",
+      "text_b": "Paneer Tikka पनीर टिक्का",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p033",
+      "text_a": "Butter Naan बटर नान",
+      "text_b": "Naan Butter नान",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p034",
+      "text_a": "Ceviche",
+      "text_b": "Sashimi",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p035",
+      "text_a": "Chao Fan",
+      "text_b": "Khao Pad",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p036",
+      "text_a": "Char Siu",
+      "text_b": "Bulgogi",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p037",
+      "text_a": "Char Siu Pork",
+      "text_b": "Cha Shao Rou",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p038",
+      "text_a": "Char Siu Pork 叉烧",
+      "text_b": "BBQ Pork 叉烧肉",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p039",
+      "text_a": "Cheese Pastry",
+      "text_b": "Fatayer Jibneh",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p040",
+      "text_a": "Cheese Quesadilla",
+      "text_b": "Quesadilla de Queso",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p041",
+      "text_a": "Chicken Biryani चिकन बिरयानी",
+      "text_b": "Biryani Chicken बिरयानी",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p042",
+      "text_a": "Chicken Curry",
+      "text_b": "Pollo Asado",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p043",
+      "text_a": "Chicken Enchiladas",
+      "text_b": "Enchiladas de Pollo",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p044",
+      "text_a": "Chicken Fajitas",
+      "text_b": "Fajitas de Pollo",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p045",
+      "text_a": "Chicken Karaage 唐揚げ",
+      "text_b": "Karaage Fried Chicken からあげ",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p046",
+      "text_a": "Chicken Pho",
+      "text_b": "Pho Ga",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p047",
+      "text_a": "Chicken Satay Skewers",
+      "text_b": "Sate Ayam",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p048",
+      "text_a": "Chicken Satay ไก่สะเต๊ะ",
+      "text_b": "ไก่สะเต๊ะ",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p049",
+      "text_a": "Chicken Shawarma",
+      "text_b": "Shawarma Dajaj",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p050",
+      "text_a": "Chicken Shawarma شاورما دجاج",
+      "text_b": "Lamb Shawarma شاورما لحم",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p051",
+      "text_a": "Chicken Shawarma شاورما دجاج",
+      "text_b": "Shawarma Chicken شاورما",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p052",
+      "text_a": "Chicken Shawarma شاورما دجاج",
+      "text_b": "شاورما دجاج",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p053",
+      "text_a": "Chicken Skewers",
+      "text_b": "Yakitori",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p054",
+      "text_a": "Chicken Tacos",
+      "text_b": "Tacos de Pollo",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p055",
+      "text_a": "Chicken Teriyaki",
+      "text_b": "Tori Teriyaki",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p056",
+      "text_a": "Chicken Teriyaki 照り焼きチキン",
+      "text_b": "Beef Teriyaki 牛照り焼き",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p057",
+      "text_a": "Chicken Teriyaki 照り焼きチキン",
+      "text_b": "Chicken Teriyaki",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p058",
+      "text_a": "Chicken Tikka Masala चिकन टिक्का मसाला",
+      "text_b": "Tikka Masala Chicken टिक्का मसाला",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p059",
+      "text_a": "Chicken Tortilla Soup",
+      "text_b": "Sopa de Tortilla",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p060",
+      "text_a": "Chickpea Stew Arabic",
+      "text_b": "Yakhnet Hummus",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p061",
+      "text_a": "Chole Bhature छोले भटूरे",
+      "text_b": "Rajma Chawal राजमा चावल",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p062",
+      "text_a": "Chole Bhature छोले भटूरे",
+      "text_b": "छोले भटूरे",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p063",
+      "text_a": "Chow Mein 炒面",
+      "text_b": "炒面",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p064",
+      "text_a": "Chun Juan",
+      "text_b": "Goi Cuon",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p065",
+      "text_a": "Coconut Rice Plate",
+      "text_b": "Nasi Uduk",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p066",
+      "text_a": "Coconut Soup Chicken",
+      "text_b": "Tom Kha Gai",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p067",
+      "text_a": "Cold Soba Noodles",
+      "text_b": "Zaru Soba",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p068",
+      "text_a": "Crispy Pork Belly Thai",
+      "text_b": "Moo Krob",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p069",
+      "text_a": "Dakgalbi 닭갈비",
+      "text_b": "Spicy Chicken Dakgalbi 닭갈비",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p070",
+      "text_a": "Dal Makhani दाल मखनी",
+      "text_b": "Dal Makhani",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p071",
+      "text_a": "Dal Makhani दाल मखनी",
+      "text_b": "Dal Tadka दाल तड़का",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p072",
+      "text_a": "Dan Dan Noodles",
+      "text_b": "Dan Dan Mian",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p073",
+      "text_a": "Dan Dan Noodles",
+      "text_b": "Naengmyeon",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p074",
+      "text_a": "Dan Dan Noodles 担担面",
+      "text_b": "Chow Mein 炒面",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p075",
+      "text_a": "Dan Dan Noodles 担担面",
+      "text_b": "担担面",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p076",
+      "text_a": "Dim Sum Shrimp Dumplings 虾饺",
+      "text_b": "Har Gow 虾饺",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p077",
+      "text_a": "Doenjang Jjigae 된장찌개",
+      "text_b": "Soybean Paste Stew 된장찌개",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p078",
+      "text_a": "Edamame Beans 枝豆",
+      "text_b": "Steamed Edamame 枝豆",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p079",
+      "text_a": "Egg Fried Rice",
+      "text_b": "Dan Chao Fan",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p080",
+      "text_a": "Enchiladas",
+      "text_b": "Lumpia Shanghai",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p081",
+      "text_a": "Falafel",
+      "text_b": "Hush Puppies",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p082",
+      "text_a": "Falafel فلافل",
+      "text_b": "Falafel",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p083",
+      "text_a": "Falafel فلافل",
+      "text_b": "Falafel Balls فلافل",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p084",
+      "text_a": "Fattoush",
+      "text_b": "Som Tam",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p085",
+      "text_a": "Fattoush فتوش",
+      "text_b": "Fattoush Salad",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p086",
+      "text_a": "Fattoush فتوش",
+      "text_b": "Tabbouleh تبولة",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p087",
+      "text_a": "Fried Chicken Indonesian",
+      "text_b": "Ayam Goreng",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p088",
+      "text_a": "Fried Dumplings 煎饺",
+      "text_b": "Pan Fried Dumplings 煎饺",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p089",
+      "text_a": "Fried Noodles",
+      "text_b": "Mie Goreng",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p090",
+      "text_a": "Fried Rice",
+      "text_b": "Chao Fan",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p091",
+      "text_a": "Fried Rice 炒饭",
+      "text_b": "Chow Mein 炒面",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p092",
+      "text_a": "Fried Rice 炒饭",
+      "text_b": "Fried Rice",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p093",
+      "text_a": "Fried Tofu in Dashi Broth",
+      "text_b": "Agedashi Tofu",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p094",
+      "text_a": "Fried Tofu Indonesian",
+      "text_b": "Tahu Goreng",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p095",
+      "text_a": "Fried Tortilla Chips",
+      "text_b": "Totopos",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p096",
+      "text_a": "Galbi",
+      "text_b": "Carne Asada",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p097",
+      "text_a": "Galbi Ribs 갈비",
+      "text_b": "갈비",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p098",
+      "text_a": "Goi Cuon",
+      "text_b": "Lumpia",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p099",
+      "text_a": "Green Curry Chicken",
+      "text_b": "Chicken Teriyaki",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p100",
+      "text_a": "Green Curry Chicken",
+      "text_b": "Gaeng Khiao Wan Gai",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p101",
+      "text_a": "Green Curry Chicken แกงเขียวหวานไก่",
+      "text_b": "Thai Green Curry แกงเขียวหวาน",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p102",
+      "text_a": "Green Curry แกงเขียวหวาน",
+      "text_b": "Green Curry",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p103",
+      "text_a": "Green Curry แกงเขียวหวาน",
+      "text_b": "Red Curry แกงเผ็ด",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p104",
+      "text_a": "Grilled Beef",
+      "text_b": "Carne Asada",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p105",
+      "text_a": "Grilled Chicken",
+      "text_b": "Dajaj Mashawi",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p106",
+      "text_a": "Grilled Chicken Indonesian",
+      "text_b": "Ayam Bakar",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p107",
+      "text_a": "Grilled Chicken Thai",
+      "text_b": "Gai Yang",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p108",
+      "text_a": "Grilled Eel",
+      "text_b": "Unagi Kabayaki",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p109",
+      "text_a": "Grilled Lamb Chops",
+      "text_b": "Kastaleta Mashwiya",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p110",
+      "text_a": "Grilled Salmon",
+      "text_b": "Sake Shioyaki",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p111",
+      "text_a": "Gulab Jamun गुलाब जामुन",
+      "text_b": "Rasgulla रसगुल्ला",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p112",
+      "text_a": "Gulab Jamun गुलाब जामुन",
+      "text_b": "गुलाब जामुन",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p113",
+      "text_a": "Gyoza Dumplings 餃子",
+      "text_b": "Gyoza Dumplings",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p114",
+      "text_a": "Gyoza 餃子",
+      "text_b": "Shumai シュウマイ",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p115",
+      "text_a": "Gyudon",
+      "text_b": "Bulgogi",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p116",
+      "text_a": "Hominy Stew Mexican",
+      "text_b": "Pozole",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p117",
+      "text_a": "Hot and Sour Soup",
+      "text_b": "Suan La Tang",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p118",
+      "text_a": "Hot and Sour Soup 酸辣汤",
+      "text_b": "Hot and Sour Soup",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p119",
+      "text_a": "Hot and Sour Soup 酸辣汤",
+      "text_b": "Wonton Soup 馄饨汤",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p120",
+      "text_a": "Hummus حمص",
+      "text_b": "Baba Ghanoush بابا غنوج",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p121",
+      "text_a": "Hummus حمص",
+      "text_b": "Hummus",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p122",
+      "text_a": "Hummus حمص",
+      "text_b": "Hummus Dip حمص",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p123",
+      "text_a": "Indonesian Fried Rice",
+      "text_b": "Nasi Goreng",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p124",
+      "text_a": "Japanese Curry Rice",
+      "text_b": "Kare Raisu",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p125",
+      "text_a": "Japanese Curry Rice カレーライス",
+      "text_b": "Curry Rice カレーライス",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p126",
+      "text_a": "Japanese Fried Chicken",
+      "text_b": "Karaage",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p127",
+      "text_a": "Japanese Fried Rice",
+      "text_b": "Chahan",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p128",
+      "text_a": "Japchae",
+      "text_b": "Pad Woon Sen",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p129",
+      "text_a": "Japchae 잡채",
+      "text_b": "Glass Noodle Stir Fry",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p130",
+      "text_a": "Jiao Zi",
+      "text_b": "Gyoza",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p131",
+      "text_a": "Kabsa كبسة",
+      "text_b": "Mandi مندي",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p132",
+      "text_a": "Kabsa كبسة",
+      "text_b": "كبسة",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p133",
+      "text_a": "Katsu Curry カツカレー",
+      "text_b": "カツカレー",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p134",
+      "text_a": "Kebab Laham",
+      "text_b": "Galbi",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p135",
+      "text_a": "Khao Pad ข้าวผัด",
+      "text_b": "Pad Thai ผัดไทย",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p136",
+      "text_a": "Khao Pad ข้าวผัด",
+      "text_b": "ข้าวผัด",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p137",
+      "text_a": "Kibbeh كبة",
+      "text_b": "Falafel فلافل",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p138",
+      "text_a": "Kibbeh كبة",
+      "text_b": "كبة",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p139",
+      "text_a": "Kimbap",
+      "text_b": "Onigiri",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p140",
+      "text_a": "Kimbap 김밥",
+      "text_b": "김밥",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p141",
+      "text_a": "Kimchi Jjigae",
+      "text_b": "Tom Kha Gai",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p142",
+      "text_a": "Kimchi Jjigae 김치찌개",
+      "text_b": "Doenjang Jjigae 된장찌개",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p143",
+      "text_a": "Kimchi Jjigae 김치찌개",
+      "text_b": "Kimchi Stew",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p144",
+      "text_a": "Kimchi Stew",
+      "text_b": "Kimchi Jjigae",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p145",
+      "text_a": "Korean Army Stew",
+      "text_b": "Budae Jjigae",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p146",
+      "text_a": "Korean BBQ Beef",
+      "text_b": "Bulgogi",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p147",
+      "text_a": "Korean Cold Noodles",
+      "text_b": "Naengmyeon",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p148",
+      "text_a": "Korean Fried Chicken 치킨",
+      "text_b": "치킨",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p149",
+      "text_a": "Korean Pancake",
+      "text_b": "Pajeon",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p150",
+      "text_a": "Korean Seaweed Rice Roll",
+      "text_b": "Kimbap",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p151",
+      "text_a": "Kunafa كنافة",
+      "text_b": "Baklava بقلاوة",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p152",
+      "text_a": "Kunafa كنافة",
+      "text_b": "Kanafeh كنافة",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p153",
+      "text_a": "Kunafa كنافة",
+      "text_b": "Kunafa",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p154",
+      "text_a": "Kung Pao Chicken",
+      "text_b": "Gai Pad Krapow",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p155",
+      "text_a": "Kung Pao Chicken",
+      "text_b": "Gong Bao Ji Ding",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p156",
+      "text_a": "Kung Pao Chicken 宫保鸡丁",
+      "text_b": "Gong Bao Chicken 宫保鸡丁",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p157",
+      "text_a": "Kung Pao Chicken 宫保鸡丁",
+      "text_b": "Kung Pao Chicken",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p158",
+      "text_a": "Kung Pao Chicken 宫保鸡丁",
+      "text_b": "Mapo Tofu 麻婆豆腐",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p159",
+      "text_a": "Labneh لبنة",
+      "text_b": "لبنة",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p160",
+      "text_a": "Lamb Kabsa كبسة لحم",
+      "text_b": "Kabsa Lamb كبسة",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p161",
+      "text_a": "Lamb Shawarma",
+      "text_b": "Shawarma Lahm",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p162",
+      "text_a": "Larb Chicken Salad",
+      "text_b": "Larb Gai",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p163",
+      "text_a": "Lemongrass Pork Chop",
+      "text_b": "Suon Nuong Sa",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p164",
+      "text_a": "Lentil Soup Arabic",
+      "text_b": "Shorbat Adas",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p165",
+      "text_a": "Machboos",
+      "text_b": "Biryani",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p166",
+      "text_a": "Manakeesh",
+      "text_b": "Okonomiyaki",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p167",
+      "text_a": "Manakeesh مناقيش",
+      "text_b": "Fatayer فطاير",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p168",
+      "text_a": "Manakeesh مناقيش",
+      "text_b": "Manakeesh",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p169",
+      "text_a": "Mango Sticky Rice",
+      "text_b": "Khao Niao Mamuang",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p170",
+      "text_a": "Mango Sticky Rice ข้าวเหนียวมะม่วง",
+      "text_b": "Coconut Ice Cream ไอศกรีมกะทิ",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p171",
+      "text_a": "Mango Sticky Rice ข้าวเหนียวมะม่วง",
+      "text_b": "Mango Sticky Rice",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p172",
+      "text_a": "Mapo Tofu",
+      "text_b": "Ma Po Dou Fu",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p173",
+      "text_a": "Mapo Tofu",
+      "text_b": "Sundubu Jjigae",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p174",
+      "text_a": "Mapo Tofu 麻婆豆腐",
+      "text_b": "Mapo Tofu",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p175",
+      "text_a": "Marinated Crab",
+      "text_b": "Ganjang Gejang",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p176",
+      "text_a": "Masala Dosa मसाला डोसा",
+      "text_b": "मसाला डोसा",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p177",
+      "text_a": "Massaman Curry Beef",
+      "text_b": "Gaeng Massaman Neua",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p178",
+      "text_a": "Massaman Curry แกงมัสมั่น",
+      "text_b": "Panang Curry พะแนง",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p179",
+      "text_a": "Massaman Curry แกงมัสมั่น",
+      "text_b": "แกงมัสมั่น",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p180",
+      "text_a": "Matar Paneer मटर पनीर",
+      "text_b": "Peas Paneer मटर पनीर",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p181",
+      "text_a": "Matcha Latte 抹茶ラテ",
+      "text_b": "Green Tea Latte 抹茶ラテ",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p182",
+      "text_a": "Meat Kebab",
+      "text_b": "Kebab Laham",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p183",
+      "text_a": "Mexican Rice",
+      "text_b": "Arroz Rojo",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p184",
+      "text_a": "Mie Goreng",
+      "text_b": "Yakisoba",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p185",
+      "text_a": "Milk Pudding Arabic",
+      "text_b": "Muhallabia",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p186",
+      "text_a": "Miso Ramen 味噌ラーメン",
+      "text_b": "Tonkotsu Ramen 豚骨ラーメン",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p187",
+      "text_a": "Miso Soup 味噌汁",
+      "text_b": "Miso Soup",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p188",
+      "text_a": "Mixed Grill",
+      "text_b": "Mashawi Mushakkal",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p189",
+      "text_a": "Mixed Rice Bowl",
+      "text_b": "Bibimbap",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p190",
+      "text_a": "Mixed Vegetables Stir Fry",
+      "text_b": "Cap Cay",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p191",
+      "text_a": "Naan Bread नान",
+      "text_b": "Naan",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p192",
+      "text_a": "Naan नान",
+      "text_b": "Roti रोटी",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p193",
+      "text_a": "Naengmyeon 냉면",
+      "text_b": "Cold Noodles 냉면",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p194",
+      "text_a": "Naengmyeon 냉면",
+      "text_b": "Japchae 잡채",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p195",
+      "text_a": "Nasi Goreng",
+      "text_b": "Chahan",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p196",
+      "text_a": "Nasi Lemak",
+      "text_b": "Khao Pad",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p197",
+      "text_a": "Pad Krapow ผัดกระเพรา",
+      "text_b": "Pad Prik King ผัดพริกแกง",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p198",
+      "text_a": "Pad Krapow ผัดกระเพรา",
+      "text_b": "ผัดกระเพรา",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p199",
+      "text_a": "Pad See Ew ผัดซีอิ๊ว",
+      "text_b": "Pad See Ew",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p200",
+      "text_a": "Pad Thai",
+      "text_b": "Chow Mein",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p201",
+      "text_a": "Pad Thai Noodles",
+      "text_b": "Phad Thai Goong",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p202",
+      "text_a": "Pad Thai Noodles ผัดไทย",
+      "text_b": "Thai Pad Thai ผัดไทย",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p203",
+      "text_a": "Pad Thai ผัดไทย",
+      "text_b": "Pad See Ew ผัดซีอิ๊ว",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p204",
+      "text_a": "Pad Thai ผัดไทย",
+      "text_b": "Pad Thai",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p205",
+      "text_a": "Pajeon 파전",
+      "text_b": "Bindaetteok 빈대떡",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p206",
+      "text_a": "Pajeon 파전",
+      "text_b": "Korean Pancake 파전",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p207",
+      "text_a": "Palak Paneer पालक पनीर",
+      "text_b": "Spinach Paneer पालक पनीर",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p208",
+      "text_a": "Paneer Tikka पनीर टिक्का",
+      "text_b": "Paneer Tikka",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p209",
+      "text_a": "Papaya Salad",
+      "text_b": "Som Tam",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p210",
+      "text_a": "Papaya Salad ส้มตำ",
+      "text_b": "Som Tam ส้มตำ",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p211",
+      "text_a": "Peking Duck",
+      "text_b": "Bei Jing Kao Ya",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p212",
+      "text_a": "Peking Duck 北京烤鸭",
+      "text_b": "Roast Goose 烧鹅",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p213",
+      "text_a": "Peking Duck 北京烤鸭",
+      "text_b": "北京烤鸭",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p214",
+      "text_a": "Pho Ga",
+      "text_b": "Khao Piak Sen",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p215",
+      "text_a": "Pork Banh Mi",
+      "text_b": "Banh Mi Thit",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p216",
+      "text_a": "Pork Belly BBQ",
+      "text_b": "Samgyeopsal",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p217",
+      "text_a": "Pork Belly Bowl",
+      "text_b": "Butadon",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p218",
+      "text_a": "Pork Carnitas",
+      "text_b": "Carnitas de Puerco",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p219",
+      "text_a": "Pork Cutlet",
+      "text_b": "Tonkatsu",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p220",
+      "text_a": "Pozole",
+      "text_b": "Doenjang Jjigae",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p221",
+      "text_a": "Quesadilla",
+      "text_b": "Jianbing",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p222",
+      "text_a": "Rajma Chawal राजमा चावल",
+      "text_b": "राजमा चावल",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p223",
+      "text_a": "Ramen Noodles ラーメン",
+      "text_b": "ラーメン",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p224",
+      "text_a": "Refried Beans Side",
+      "text_b": "Frijoles Refritos",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p225",
+      "text_a": "Rendang",
+      "text_b": "Massaman Curry",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p226",
+      "text_a": "Salmon Sashimi サーモン刺身",
+      "text_b": "Salmon Sashimi",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p227",
+      "text_a": "Salmon Sashimi サーモン刺身",
+      "text_b": "Tuna Sashimi マグロ刺身",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p228",
+      "text_a": "Salmon Sushi Roll",
+      "text_b": "Sake Maki",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p229",
+      "text_a": "Samgyeopsal",
+      "text_b": "Char Siu",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p230",
+      "text_a": "Samgyeopsal 삼겹살",
+      "text_b": "Dakgalbi 닭갈비",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p231",
+      "text_a": "Samgyeopsal 삼겹살",
+      "text_b": "Grilled Pork Belly",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p232",
+      "text_a": "Samosa समोसा",
+      "text_b": "Kachori कचौड़ी",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p233",
+      "text_a": "Samosa समोसा",
+      "text_b": "Samosa",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p234",
+      "text_a": "Sesame Chicken 芝麻鸡",
+      "text_b": "Sesame Chicken 芝麻鸡丁",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p235",
+      "text_a": "Shawarma",
+      "text_b": "Gyros",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p236",
+      "text_a": "Shawarma شاورما",
+      "text_b": "Falafel فلافل",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p237",
+      "text_a": "Shawarma شاورما",
+      "text_b": "Shawarma",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p238",
+      "text_a": "Shrimp Ceviche",
+      "text_b": "Ceviche de Camaron",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p239",
+      "text_a": "Shrimp Tempura",
+      "text_b": "Ebi Tempura",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p240",
+      "text_a": "Shrimp Tempura 海老天ぷら",
+      "text_b": "Shrimp Tempura",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p241",
+      "text_a": "Soba Noodles そば",
+      "text_b": "Buckwheat Noodles 蕎麦",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p242",
+      "text_a": "Som Tam Salad ส้มตำ",
+      "text_b": "Papaya Salad",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p243",
+      "text_a": "Som Tam ส้มตำ",
+      "text_b": "Larb ลาบ",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p244",
+      "text_a": "Soy Sauce Chicken",
+      "text_b": "Ayam Kecap",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p245",
+      "text_a": "Soybean Paste Stew",
+      "text_b": "Doenjang Jjigae",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p246",
+      "text_a": "Spiced Chicken Rice Gulf Style",
+      "text_b": "Machboos Dajaj",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p247",
+      "text_a": "Spiced Rice Lamb",
+      "text_b": "Kabsa Laham",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p248",
+      "text_a": "Spicy Glazed Korean Fried Chicken",
+      "text_b": "Yangnyeom Chicken",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p249",
+      "text_a": "Spicy Pork Stir Fry",
+      "text_b": "Jeyuk Bokkeum",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p250",
+      "text_a": "Spicy Rice Cakes",
+      "text_b": "Tteokbokki",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p251",
+      "text_a": "Spit Roasted Pork Tacos",
+      "text_b": "Tacos al Pastor",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p252",
+      "text_a": "Spring Rolls",
+      "text_b": "Chun Juan",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p253",
+      "text_a": "Spring Rolls Vietnamese",
+      "text_b": "Goi Cuon",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p254",
+      "text_a": "Spring Rolls 春卷",
+      "text_b": "Dumplings 饺子",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p255",
+      "text_a": "Spring Rolls 春卷",
+      "text_b": "Spring Rolls",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p256",
+      "text_a": "Steamed Dumplings",
+      "text_b": "Zheng Jiao",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p257",
+      "text_a": "Steamed Egg Custard",
+      "text_b": "Gyeran Jjim",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p258",
+      "text_a": "Stuffed Grape Leaves",
+      "text_b": "Warak Enab",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p259",
+      "text_a": "Stuffed Peppers Mexican",
+      "text_b": "Chiles Rellenos",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p260",
+      "text_a": "Sundubu Jjigae 순두부찌개",
+      "text_b": "Kimchi Jjigae 김치찌개",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p261",
+      "text_a": "Sundubu Jjigae 순두부찌개",
+      "text_b": "순두부찌개",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p262",
+      "text_a": "Sweet and Sour Pork",
+      "text_b": "Gu Lao Rou",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p263",
+      "text_a": "Sweet and Sour Pork 糖醋里脊",
+      "text_b": "Char Siu 叉烧",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p264",
+      "text_a": "Sweet and Sour Pork 糖醋里脊",
+      "text_b": "Sweet and Sour Pork",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p265",
+      "text_a": "Tabbouleh تبولة",
+      "text_b": "تبولة",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p266",
+      "text_a": "Tacos al Pastor",
+      "text_b": "Doner Kebab",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p267",
+      "text_a": "Takoyaki",
+      "text_b": "Kanom Krok",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p268",
+      "text_a": "Takoyaki Octopus Balls たこ焼き",
+      "text_b": "たこ焼き",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p269",
+      "text_a": "Tandoori Chicken तंदूरी चिकन",
+      "text_b": "Chicken Tandoori तंदूरी मुर्गा",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p270",
+      "text_a": "Tempura Udon",
+      "text_b": "Khao Soi",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p271",
+      "text_a": "Tempura 天ぷら",
+      "text_b": "Karaage 唐揚げ",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p272",
+      "text_a": "Thai Boat Noodles",
+      "text_b": "Kuay Tiew Rua",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p273",
+      "text_a": "Thai Chicken Satay",
+      "text_b": "Satay Gai",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p274",
+      "text_a": "Thai Fried Rice",
+      "text_b": "Khao Pad",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p275",
+      "text_a": "Thai Fried Rice ข้าวผัด",
+      "text_b": "Khao Pad Thai ข้าวผัด",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p276",
+      "text_a": "Thai Red Curry",
+      "text_b": "Gaeng Phet",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p277",
+      "text_a": "Tom Kha Gai ต้มข่าไก่",
+      "text_b": "ต้มข่าไก่",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p278",
+      "text_a": "Tom Yum",
+      "text_b": "Miso Soup",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p279",
+      "text_a": "Tom Yum Goong",
+      "text_b": "Pho Ga",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p280",
+      "text_a": "Tom Yum Goong ต้มยำกุ้ง",
+      "text_b": "Tom Yum Shrimp ต้มยำกุ้ง",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p281",
+      "text_a": "Tom Yum Shrimp Soup",
+      "text_b": "Tom Yum Goong",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p282",
+      "text_a": "Tom Yum Soup ต้มยำ",
+      "text_b": "Tom Yum Soup",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p283",
+      "text_a": "Tom Yum ต้มยำ",
+      "text_b": "Tom Kha ต้มข่า",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p284",
+      "text_a": "Tonkatsu Pork Cutlet とんかつ",
+      "text_b": "Pork Cutlet",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p285",
+      "text_a": "Tonkatsu とんかつ",
+      "text_b": "Chicken Katsu チキンカツ",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p286",
+      "text_a": "Tonkotsu Ramen",
+      "text_b": "Pho Bo",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p287",
+      "text_a": "Tteokbokki",
+      "text_b": "Pad See Ew",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p288",
+      "text_a": "Tteokbokki Spicy 떡볶이",
+      "text_b": "Spicy Tteokbokki 떡볶이",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p289",
+      "text_a": "Tteokbokki 떡볶이",
+      "text_b": "Japchae 잡채",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p290",
+      "text_a": "Tteokbokki 떡볶이",
+      "text_b": "Spicy Rice Cakes",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p291",
+      "text_a": "Udon Noodle Soup うどん",
+      "text_b": "うどん",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p292",
+      "text_a": "Udon うどん",
+      "text_b": "Ramen ラーメン",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p293",
+      "text_a": "Unagi Grilled Eel うなぎ蒲焼",
+      "text_b": "うなぎ蒲焼",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p294",
+      "text_a": "Vietnamese Crepe",
+      "text_b": "Banh Xeo",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p295",
+      "text_a": "Vietnamese Egg Coffee",
+      "text_b": "Ca Phe Trung",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p296",
+      "text_a": "Vietnamese Iced Milk Coffee",
+      "text_b": "Ca Phe Sua Da",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p297",
+      "text_a": "Wonton Soup",
+      "text_b": "Hun Tun Tang",
+      "label": 1,
+      "domain": "romanized"
+    },
+    {
+      "id": "p298",
+      "text_a": "Wonton Soup",
+      "text_b": "Tom Yum Goong",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p299",
+      "text_a": "Wonton Soup 馄饨汤",
+      "text_b": "馄饨汤",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p300",
+      "text_a": "Xiao Long Bao",
+      "text_b": "Gyoza",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p301",
+      "text_a": "Xiaolongbao 小笼包",
+      "text_b": "Wonton 馄饨",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p302",
+      "text_a": "Xiaolongbao 小笼包",
+      "text_b": "小笼包",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p303",
+      "text_a": "Yakitori",
+      "text_b": "Satay Gai",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p304",
+      "text_a": "Yakitori Skewers 焼き鳥",
+      "text_b": "Grilled Yakitori 焼鳥",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p305",
+      "text_a": "Yakitori 焼き鳥",
+      "text_b": "Yakiniku 焼肉",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p306",
+      "text_a": "Yangzhou Fried Rice 扬州炒饭",
+      "text_b": "Yang Chow Fried Rice 扬州炒饭",
+      "label": 1,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p307",
+      "text_a": "برياني",
+      "text_b": "बिरयानी",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p308",
+      "text_a": "حمص",
+      "text_b": "ラーメン",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p309",
+      "text_a": "دجاج بالزبدة",
+      "text_b": "बटर चिकन",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p310",
+      "text_a": "دجاج بالزبدة",
+      "text_b": "बिरयानी",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p311",
+      "text_a": "دجاج مقلي",
+      "text_b": "तंदूरी चिकन",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p312",
+      "text_a": "شاي أخضر",
+      "text_b": "ग्रीन टी",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p313",
+      "text_a": "كباب",
+      "text_b": "कबाब",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p314",
+      "text_a": "كباب",
+      "text_b": "ผัดไทย",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p315",
+      "text_a": "نان",
+      "text_b": "नान",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p316",
+      "text_a": "نان",
+      "text_b": "ラーメン",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p317",
+      "text_a": "दाल मखनी",
+      "text_b": "แกงเขียวหวาน",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p318",
+      "text_a": "पनीर टिक्का",
+      "text_b": "火锅",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p319",
+      "text_a": "बटर चिकन",
+      "text_b": "拉面",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p320",
+      "text_a": "बबल टी",
+      "text_b": "ผัดไทย",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p321",
+      "text_a": "बिरयानी",
+      "text_b": "ต้มยำกุ้ง",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p322",
+      "text_a": "समोसा",
+      "text_b": "ผัดไทย",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p323",
+      "text_a": "समोसा",
+      "text_b": "宫保鸡丁",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p324",
+      "text_a": "ข้าวผัด",
+      "text_b": "أرز مقلي",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p325",
+      "text_a": "ข้าวผัด",
+      "text_b": "फ्राइड राइस",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p326",
+      "text_a": "ข้าวผัด",
+      "text_b": "बिरयानी",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p327",
+      "text_a": "ชาเขียว",
+      "text_b": "برياني",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p328",
+      "text_a": "ชาเขียว",
+      "text_b": "شاي أخضر",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p329",
+      "text_a": "ต้มยำกุ้ง",
+      "text_b": "비빔밥",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p330",
+      "text_a": "ผัดไทย",
+      "text_b": "فلافل",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p331",
+      "text_a": "เนื้อย่าง",
+      "text_b": "لحم مشوي",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p332",
+      "text_a": "แกงเขียวหวาน",
+      "text_b": "拉面",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p333",
+      "text_a": "ไก่ทอด",
+      "text_b": "دجاج مقلي",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p334",
+      "text_a": "ไก่ทอด",
+      "text_b": "फ्राइड चिकन",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p335",
+      "text_a": "ไก่ย่าง",
+      "text_b": "तंदूरी चिकन",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p336",
+      "text_a": "ไอศกรีม",
+      "text_b": "شاورما",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p337",
+      "text_a": "ไอศกรีม",
+      "text_b": "आइसक्रीम",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p338",
+      "text_a": "うどん",
+      "text_b": "凉面",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p339",
+      "text_a": "そば",
+      "text_b": "라멘",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p340",
+      "text_a": "アイスクリーム",
+      "text_b": "बिरयानी",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p341",
+      "text_a": "アイスクリーム",
+      "text_b": "冰淇淋",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p342",
+      "text_a": "イカフライ",
+      "text_b": "두부튀김",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p343",
+      "text_a": "エビフライ",
+      "text_b": "กุ้งทอด",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p344",
+      "text_a": "エビフライ",
+      "text_b": "ปลาหมึกทอด",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p345",
+      "text_a": "カレーライス",
+      "text_b": "카레라이스",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p346",
+      "text_a": "キムチ",
+      "text_b": "김치",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p347",
+      "text_a": "グリーンカレー",
+      "text_b": "แกงเขียวหวาน",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p348",
+      "text_a": "ケバブ",
+      "text_b": "كباب",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p349",
+      "text_a": "ケバブ",
+      "text_b": "समोसा",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p350",
+      "text_a": "サモサ",
+      "text_b": "समोसा",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p351",
+      "text_a": "サモサ",
+      "text_b": "떡볶이",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p352",
+      "text_a": "シャワルマ",
+      "text_b": "شاورما",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p353",
+      "text_a": "シャワルマ",
+      "text_b": "बिरयानी",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p354",
+      "text_a": "タブーレ",
+      "text_b": "تبولة",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p355",
+      "text_a": "タブーレ",
+      "text_b": "떡볶이",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p356",
+      "text_a": "タンドリーチキン",
+      "text_b": "तंदूरी चिकन",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p357",
+      "text_a": "タンドリーチキン",
+      "text_b": "炒饭",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p358",
+      "text_a": "ダルマカニ",
+      "text_b": "شاورما",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p359",
+      "text_a": "チキンカツ",
+      "text_b": "دجاج مقلي",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p360",
+      "text_a": "チキンカツ",
+      "text_b": "ไก่ย่าง",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p361",
+      "text_a": "チャーハン",
+      "text_b": "炒饭",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p362",
+      "text_a": "チャーハン",
+      "text_b": "볶음밥",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p363",
+      "text_a": "チャーハン",
+      "text_b": "카레라이스",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p364",
+      "text_a": "トッポッキ",
+      "text_b": "떡볶이",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p365",
+      "text_a": "トムヤムクン",
+      "text_b": "ต้มยำกุ้ง",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p366",
+      "text_a": "ナン",
+      "text_b": "नान",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p367",
+      "text_a": "ナン",
+      "text_b": "김치",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p368",
+      "text_a": "バターチキン",
+      "text_b": "चिकन बिरयानी",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p369",
+      "text_a": "バターチキン",
+      "text_b": "बटर चिकन",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p370",
+      "text_a": "バターチキン",
+      "text_b": "김치",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p371",
+      "text_a": "パッタイ",
+      "text_b": "ผัดไทย",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p372",
+      "text_a": "パニールティッカ",
+      "text_b": "비빔밥",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p373",
+      "text_a": "パラクパニール",
+      "text_b": "ผัดไทย",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p374",
+      "text_a": "ビビンバ",
+      "text_b": "ข้าวผัด",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p375",
+      "text_a": "ビビンバ",
+      "text_b": "비빔밥",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p376",
+      "text_a": "ビリヤニ",
+      "text_b": "فلافل",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p377",
+      "text_a": "ビリヤニ",
+      "text_b": "बिरयानी",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p378",
+      "text_a": "ファラフェル",
+      "text_b": "فلافل",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p379",
+      "text_a": "フムス",
+      "text_b": "حمص",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p380",
+      "text_a": "フライドチキン",
+      "text_b": "चिकन बिरयानी",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p381",
+      "text_a": "フライドチキン",
+      "text_b": "ไก่ทอด",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p382",
+      "text_a": "フライドチキン",
+      "text_b": "炸鸡",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p383",
+      "text_a": "マーボー豆腐",
+      "text_b": "麻婆豆腐",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p384",
+      "text_a": "ラーメン",
+      "text_b": "شاورما",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p385",
+      "text_a": "ラーメン",
+      "text_b": "拉面",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p386",
+      "text_a": "ラーメン",
+      "text_b": "라멘",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p387",
+      "text_a": "ラーメン",
+      "text_b": "볶음면",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p388",
+      "text_a": "ラーメン",
+      "text_b": "비빔밥",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p389",
+      "text_a": "冰咖啡",
+      "text_b": "तंदूरी चिकन",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p390",
+      "text_a": "冰淇淋",
+      "text_b": "كباب",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p391",
+      "text_a": "冰淇淋",
+      "text_b": "आइसक्रीम",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p392",
+      "text_a": "天ぷら",
+      "text_b": "ไก่ทอด",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p393",
+      "text_a": "天ぷら",
+      "text_b": "天妇罗",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p394",
+      "text_a": "寿司",
+      "text_b": "김밥",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p395",
+      "text_a": "手羽先",
+      "text_b": "치킨카츠",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p396",
+      "text_a": "拉面",
+      "text_b": "ผัดไทย",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p397",
+      "text_a": "揚げ出し豆腐",
+      "text_b": "炸鸡",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p398",
+      "text_a": "炒面",
+      "text_b": "ผัดซีอิ๊ว",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p399",
+      "text_a": "炒面",
+      "text_b": "라멘",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p400",
+      "text_a": "炒饭",
+      "text_b": "أرز مقلي",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p401",
+      "text_a": "炒饭",
+      "text_b": "फ्राइड राइस",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p402",
+      "text_a": "炒饭",
+      "text_b": "ข้าวผัด",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p403",
+      "text_a": "炸虾",
+      "text_b": "กุ้งทอด",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p404",
+      "text_a": "炸鸡",
+      "text_b": "دجاج مقلي",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p405",
+      "text_a": "炸鸡",
+      "text_b": "फ्राइड चिकन",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p406",
+      "text_a": "炸鸡",
+      "text_b": "ไก่ทอด",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p407",
+      "text_a": "炸鸡",
+      "text_b": "ไก่ย่าง",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p408",
+      "text_a": "烤肉",
+      "text_b": "لحم مشوي",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p409",
+      "text_a": "烤鱼",
+      "text_b": "سمك مشوي",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p410",
+      "text_a": "烤鱼",
+      "text_b": "तंदूरी चिकन",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p411",
+      "text_a": "焼き魚",
+      "text_b": "เนื้อย่าง",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p412",
+      "text_a": "焼肉",
+      "text_b": "ไก่ย่าง",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p413",
+      "text_a": "珍珠奶茶",
+      "text_b": "كباب",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p414",
+      "text_a": "绿茶",
+      "text_b": "ग्रीन टी",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p415",
+      "text_a": "绿茶",
+      "text_b": "ชาเขียว",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p416",
+      "text_a": "鸡翅",
+      "text_b": "ไก่ทอด",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p417",
+      "text_a": "구이",
+      "text_b": "لحم مشوي",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p418",
+      "text_a": "김치",
+      "text_b": "समोसा",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p419",
+      "text_a": "난",
+      "text_b": "नान",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p420",
+      "text_a": "난",
+      "text_b": "ラーメン",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p421",
+      "text_a": "냉면",
+      "text_b": "凉面",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p422",
+      "text_a": "냉면",
+      "text_b": "焼きそば",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p423",
+      "text_a": "닭날개",
+      "text_b": "फ्राइड चिकन",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p424",
+      "text_a": "두부튀김",
+      "text_b": "ปลาหมึกทอด",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p425",
+      "text_a": "떡볶이",
+      "text_b": "ファラフェル",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p426",
+      "text_a": "마파두부",
+      "text_b": "麻婆豆腐",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p427",
+      "text_a": "만두",
+      "text_b": "饺子",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p428",
+      "text_a": "버터치킨",
+      "text_b": "बटर चिकन",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p429",
+      "text_a": "버터치킨",
+      "text_b": "ラーメン",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p430",
+      "text_a": "볶음면",
+      "text_b": "炒面",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p431",
+      "text_a": "볶음밥",
+      "text_b": "أرز مقلي",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p432",
+      "text_a": "볶음밥",
+      "text_b": "बिरयानी",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p433",
+      "text_a": "볶음밥",
+      "text_b": "ข้าวผัด",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p434",
+      "text_a": "볶음밥",
+      "text_b": "炒饭",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p435",
+      "text_a": "비리야니",
+      "text_b": "बिरयानी",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p436",
+      "text_a": "비리야니",
+      "text_b": "シャワルマ",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p437",
+      "text_a": "사모사",
+      "text_b": "समोसा",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p438",
+      "text_a": "사모사",
+      "text_b": "ผัดไทย",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p439",
+      "text_a": "새우튀김",
+      "text_b": "กุ้งทอด",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p440",
+      "text_a": "새우튀김",
+      "text_b": "炸鱿鱼",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p441",
+      "text_a": "생선구이",
+      "text_b": "烤鸡",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p442",
+      "text_a": "오징어튀김",
+      "text_b": "เต้าหู้ทอด",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p443",
+      "text_a": "치킨카츠",
+      "text_b": "फ्राइड चिकन",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p444",
+      "text_a": "카레라이스",
+      "text_b": "ข้าวแกง",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p445",
+      "text_a": "케밥",
+      "text_b": "كباب",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p446",
+      "text_a": "탄두리치킨",
+      "text_b": "तंदूरी चिकन",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p447",
+      "text_a": "탄두리치킨",
+      "text_b": "麻婆豆腐",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p448",
+      "text_a": "후라이드치킨",
+      "text_b": "دجاج مشوي",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p449",
+      "text_a": "후라이드치킨",
+      "text_b": "دجاج مقلي",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p450",
+      "text_a": "후라이드치킨",
+      "text_b": "ไก่ทอด",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p451",
+      "text_a": "Sushi",
+      "text_b": "Ramen",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p452",
+      "text_a": "Pad Thai",
+      "text_b": "Tom Yum",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p453",
+      "text_a": "Pho Bo",
+      "text_b": "Bun Cha",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p454",
+      "text_a": "Ceviche",
+      "text_b": "Empanada",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p455",
+      "text_a": "Gyoza",
+      "text_b": "Sashimi",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p456",
+      "text_a": "Bibimbap",
+      "text_b": "Kimchi Jjigae",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p457",
+      "text_a": "Nasi Goreng",
+      "text_b": "Satay",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p458",
+      "text_a": "Falafel",
+      "text_b": "Shawarma",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p459",
+      "text_a": "Tacos",
+      "text_b": "Enchiladas",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p460",
+      "text_a": "Paella",
+      "text_b": "Gazpacho",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p461",
+      "text_a": "Risotto",
+      "text_b": "Bruschetta",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p462",
+      "text_a": "Couscous",
+      "text_b": "Tagine",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p463",
+      "text_a": "Bulgogi",
+      "text_b": "Tteokbokki",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p464",
+      "text_a": "Laksa",
+      "text_b": "Char Kway Teow",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p465",
+      "text_a": "Rendang",
+      "text_b": "Gado Gado",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p466",
+      "text_a": "Banh Mi",
+      "text_b": "Pho Ga",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p467",
+      "text_a": "Doner Kebab",
+      "text_b": "Lahmacun",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p468",
+      "text_a": "Tempura",
+      "text_b": "Teriyaki",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p469",
+      "text_a": "Miso Soup",
+      "text_b": "Udon",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p470",
+      "text_a": "Hummus",
+      "text_b": "Baba Ghanoush",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p471",
+      "text_a": "Tamales",
+      "text_b": "Pozole",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p472",
+      "text_a": "Gimbap",
+      "text_b": "Japchae",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p473",
+      "text_a": "Baklava",
+      "text_b": "Kunafa",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p474",
+      "text_a": "Gyros",
+      "text_b": "Moussaka",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p475",
+      "text_a": "Dim Sum",
+      "text_b": "Chow Mein",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p476",
+      "text_a": "Arepa",
+      "text_b": "Pupusa",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p477",
+      "text_a": "Masala Dosa",
+      "text_b": "Chole Bhature",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p478",
+      "text_a": "Naan",
+      "text_b": "Paratha",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p479",
+      "text_a": "Biryani",
+      "text_b": "Pulao",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p480",
+      "text_a": "Samosa",
+      "text_b": "Pakora",
+      "label": 0,
+      "domain": "romanized"
+    },
+    {
+      "id": "p481",
+      "text_a": "Butter Chicken मक्खन चिकन",
+      "text_b": "Palak Paneer पालक पनीर",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p482",
+      "text_a": "Rogan Josh रोगन जोश",
+      "text_b": "Biryani बिरयानी",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p483",
+      "text_a": "Samosa समोसा",
+      "text_b": "Kachori कचोरी",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p484",
+      "text_a": "Gulab Jamun गुलाब जामुन",
+      "text_b": "Jalebi जलेबी",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p485",
+      "text_a": "Dal Makhani दाल मखनी",
+      "text_b": "Rajma राजमा",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p486",
+      "text_a": "Tandoori Chicken तंदूरी चिकन",
+      "text_b": "Seekh Kebab सीख कबाब",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p487",
+      "text_a": "Idli इडली",
+      "text_b": "Dosa डोसा",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p488",
+      "text_a": "Pav Bhaji पाव भाजी",
+      "text_b": "Vada Pav वड़ा पाव",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p489",
+      "text_a": "Korma कोरमा",
+      "text_b": "Vindaloo विंदालू",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p490",
+      "text_a": "Sushi 寿司",
+      "text_b": "Ramen ラーメン",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p491",
+      "text_a": "Dim Sum 点心",
+      "text_b": "Chow Mein 炒面",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p492",
+      "text_a": "Pad Thai ผัดไทย",
+      "text_b": "Green Curry แกงเขียวหวาน",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p493",
+      "text_a": "Kimchi 김치",
+      "text_b": "Bibimbap 비빔밥",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p494",
+      "text_a": "Falafel فلافل",
+      "text_b": "Hummus حمص",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p495",
+      "text_a": "Shawarma شاورما",
+      "text_b": "Fattoush فتوش",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p496",
+      "text_a": "Tacos タコス",
+      "text_b": "Burrito ブリトー",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p497",
+      "text_a": "Pho Phở",
+      "text_b": "Banh Mi Bánh Mì",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p498",
+      "text_a": "Tom Yum ต้มยำ",
+      "text_b": "Pad Krapow ผัดกระเพรา",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p499",
+      "text_a": "Miso Soup 味噌汁",
+      "text_b": "Tempura 天ぷら",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p500",
+      "text_a": "Gyoza 餃子",
+      "text_b": "Siu Mai 焼売",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p501",
+      "text_a": "Kebab كباب",
+      "text_b": "Kunafa كنافة",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p502",
+      "text_a": "Dosa दोसा",
+      "text_b": "Uttapam उत्तपम",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p503",
+      "text_a": "Lassi लस्सी",
+      "text_b": "Chai चाय",
+      "label": 0,
+      "domain": "bilingual"
+    },
+    {
+      "id": "p504",
+      "text_a": "拉麺",
+      "text_b": "拉面",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p505",
+      "text_a": "壽司",
+      "text_b": "寿司",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p506",
+      "text_a": "餃子",
+      "text_b": "饺子",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p507",
+      "text_a": "炸雞",
+      "text_b": "炸鸡",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p508",
+      "text_a": "炒飯",
+      "text_b": "拉面",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p509",
+      "text_a": "綠茶",
+      "text_b": "火锅",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p510",
+      "text_a": "سمك مشوي",
+      "text_b": "생선구이",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p511",
+      "text_a": "لحم مشوي",
+      "text_b": "불고기",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p512",
+      "text_a": "فلافل",
+      "text_b": "비빔밥",
+      "label": 0,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p513",
+      "text_a": "دجاج مشوي",
+      "text_b": "烤鸡",
+      "label": 1,
+      "domain": "cross_script"
+    },
+    {
+      "id": "p514",
+      "text_a": "فلافل",
+      "text_b": "炒饭",
+      "label": 0,
+      "domain": "cross_script"
+    }
+  ],
+  "metadata": {
+    "n_pairs": 514,
+    "n_positive": 281,
+    "n_negative": 233,
+    "domains": [
+      "bilingual",
+      "cross_script",
+      "romanized"
+    ]
+  }
+}

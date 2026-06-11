@@ -1,0 +1,1783 @@
+{
+  "task": "beverage_match",
+  "version": "0.1.0",
+  "description": "Beverage menu item matching",
+  "metric": "best_f1",
+  "pairs": [
+    {
+      "id": "p001",
+      "text_a": "Aam Lassi",
+      "text_b": "Mango Lassi",
+      "label": 1
+    },
+    {
+      "id": "p002",
+      "text_a": "Aam Panna",
+      "text_b": "Mango Juice",
+      "label": 0
+    },
+    {
+      "id": "p003",
+      "text_a": "Aam Panna",
+      "text_b": "Raw Mango Sherbet",
+      "label": 1
+    },
+    {
+      "id": "p004",
+      "text_a": "Acai Smoothie",
+      "text_b": "Acai Blend",
+      "label": 1
+    },
+    {
+      "id": "p005",
+      "text_a": "Acai Smoothie",
+      "text_b": "Acai Bowl",
+      "label": 0
+    },
+    {
+      "id": "p006",
+      "text_a": "Affogato",
+      "text_b": "Espresso Affogato",
+      "label": 1
+    },
+    {
+      "id": "p007",
+      "text_a": "Agua de Horchata",
+      "text_b": "Rice Horchata Drink",
+      "label": 1
+    },
+    {
+      "id": "p008",
+      "text_a": "Agua de Jamaica",
+      "text_b": "Cranberry Juice",
+      "label": 0
+    },
+    {
+      "id": "p009",
+      "text_a": "Agua de Jamaica",
+      "text_b": "Hibiscus Agua Fresca",
+      "label": 1
+    },
+    {
+      "id": "p010",
+      "text_a": "Agua Fresca de Mango",
+      "text_b": "Mango Smoothie",
+      "label": 0
+    },
+    {
+      "id": "p011",
+      "text_a": "Almond Milk Cappuccino",
+      "text_b": "Cappuccino with Almond Milk",
+      "label": 1
+    },
+    {
+      "id": "p012",
+      "text_a": "Almond Milk Latte",
+      "text_b": "Almond Milk Mocha",
+      "label": 0
+    },
+    {
+      "id": "p013",
+      "text_a": "Americano",
+      "text_b": "Iced Americano",
+      "label": 0
+    },
+    {
+      "id": "p014",
+      "text_a": "Americano",
+      "text_b": "Long Black",
+      "label": 0
+    },
+    {
+      "id": "p015",
+      "text_a": "Americano 12oz",
+      "text_b": "Americano",
+      "label": 1
+    },
+    {
+      "id": "p016",
+      "text_a": "Arabic Coffee",
+      "text_b": "Espresso",
+      "label": 0
+    },
+    {
+      "id": "p017",
+      "text_a": "Arabic Coffee",
+      "text_b": "Qahwa",
+      "label": 1
+    },
+    {
+      "id": "p018",
+      "text_a": "Arabic Coffee",
+      "text_b": "Qahwa Arabiya",
+      "label": 1
+    },
+    {
+      "id": "p019",
+      "text_a": "Avocado Smoothie",
+      "text_b": "Smoothie de Aguacate",
+      "label": 1
+    },
+    {
+      "id": "p020",
+      "text_a": "Ayran",
+      "text_b": "Lassi",
+      "label": 0
+    },
+    {
+      "id": "p021",
+      "text_a": "Ayran",
+      "text_b": "Salted Yogurt Drink",
+      "label": 1
+    },
+    {
+      "id": "p022",
+      "text_a": "Ayran",
+      "text_b": "Yogurt Drink",
+      "label": 1
+    },
+    {
+      "id": "p023",
+      "text_a": "Ayran (Large)",
+      "text_b": "Ayran",
+      "label": 1
+    },
+    {
+      "id": "p024",
+      "text_a": "Ayran 200ml",
+      "text_b": "Ayran",
+      "label": 1
+    },
+    {
+      "id": "p025",
+      "text_a": "Banana Frappe",
+      "text_b": "Banana Ice Blend",
+      "label": 1
+    },
+    {
+      "id": "p026",
+      "text_a": "Banana Milkshake",
+      "text_b": "Banana Ice Cream",
+      "label": 0
+    },
+    {
+      "id": "p027",
+      "text_a": "Banana Protein Shake",
+      "text_b": "Banana Protein Smoothie",
+      "label": 1
+    },
+    {
+      "id": "p028",
+      "text_a": "Bandrek",
+      "text_b": "Ginger Tea",
+      "label": 0
+    },
+    {
+      "id": "p029",
+      "text_a": "Bandrek",
+      "text_b": "Indonesian Spiced Ginger Tea",
+      "label": 1
+    },
+    {
+      "id": "p030",
+      "text_a": "Bandung",
+      "text_b": "Rose Milk",
+      "label": 1
+    },
+    {
+      "id": "p031",
+      "text_a": "Bandung",
+      "text_b": "Strawberry Milk",
+      "label": 0
+    },
+    {
+      "id": "p032",
+      "text_a": "Berry Smoothie",
+      "text_b": "Mixed Berry Soda",
+      "label": 0
+    },
+    {
+      "id": "p033",
+      "text_a": "Black Milk Tea",
+      "text_b": "Bubble Milk Tea",
+      "label": 1
+    },
+    {
+      "id": "p034",
+      "text_a": "Black Tea",
+      "text_b": "Black Tea Latte",
+      "label": 0
+    },
+    {
+      "id": "p035",
+      "text_a": "Black Tea with Cardamom",
+      "text_b": "Karak Tea",
+      "label": 1
+    },
+    {
+      "id": "p036",
+      "text_a": "Blue Lagoon",
+      "text_b": "Blue Lagoon Mocktail",
+      "label": 1
+    },
+    {
+      "id": "p037",
+      "text_a": "Blue Lagoon Mocktail",
+      "text_b": "Blue Curacao Soda",
+      "label": 0
+    },
+    {
+      "id": "p038",
+      "text_a": "Boba Milk Tea",
+      "text_b": "Bubble Milk Tea",
+      "label": 1
+    },
+    {
+      "id": "p039",
+      "text_a": "Boba Tea",
+      "text_b": "Boba Smoothie",
+      "label": 0
+    },
+    {
+      "id": "p040",
+      "text_a": "Brown Sugar Boba",
+      "text_b": "Tiger Sugar Boba",
+      "label": 1
+    },
+    {
+      "id": "p041",
+      "text_a": "Bubble Tea",
+      "text_b": "Green Tea",
+      "label": 0
+    },
+    {
+      "id": "p042",
+      "text_a": "Bubble Tea - Regular",
+      "text_b": "Bubble Tea",
+      "label": 1
+    },
+    {
+      "id": "p043",
+      "text_a": "Bubble Tea Taro",
+      "text_b": "Taro Boba Tea",
+      "label": 1
+    },
+    {
+      "id": "p044",
+      "text_a": "Buko Juice",
+      "text_b": "Buko Pandan",
+      "label": 0
+    },
+    {
+      "id": "p045",
+      "text_a": "Buttermilk",
+      "text_b": "Butter Milkshake",
+      "label": 0
+    },
+    {
+      "id": "p046",
+      "text_a": "Cafe Americano",
+      "text_b": "Americano Coffee",
+      "label": 1
+    },
+    {
+      "id": "p047",
+      "text_a": "Cafe Latte (Medium)",
+      "text_b": "Latte",
+      "label": 1
+    },
+    {
+      "id": "p048",
+      "text_a": "Caffe Latte",
+      "text_b": "Latte",
+      "label": 1
+    },
+    {
+      "id": "p049",
+      "text_a": "Caffè Mocha",
+      "text_b": "Mocha Coffee",
+      "label": 1
+    },
+    {
+      "id": "p050",
+      "text_a": "Café Au Lait",
+      "text_b": "Latte",
+      "label": 0
+    },
+    {
+      "id": "p051",
+      "text_a": "Café de Olla",
+      "text_b": "Mexican Spiced Coffee",
+      "label": 0
+    },
+    {
+      "id": "p052",
+      "text_a": "Café Latte",
+      "text_b": "Latte",
+      "label": 1
+    },
+    {
+      "id": "p053",
+      "text_a": "Cappuccino",
+      "text_b": "Americano",
+      "label": 0
+    },
+    {
+      "id": "p054",
+      "text_a": "Cappuccino (Hot)",
+      "text_b": "Hot Cappuccino",
+      "label": 1
+    },
+    {
+      "id": "p055",
+      "text_a": "Cappuccino (Large)",
+      "text_b": "Cappuccino",
+      "label": 1
+    },
+    {
+      "id": "p056",
+      "text_a": "Cappuccino (Tall)",
+      "text_b": "Cappuccino",
+      "label": 1
+    },
+    {
+      "id": "p057",
+      "text_a": "Capuccino",
+      "text_b": "Cappuccino",
+      "label": 1
+    },
+    {
+      "id": "p058",
+      "text_a": "Caramel Latte",
+      "text_b": "Caramel Pudding",
+      "label": 0
+    },
+    {
+      "id": "p059",
+      "text_a": "Caramel Macchiato",
+      "text_b": "Macchiato Caramel",
+      "label": 1
+    },
+    {
+      "id": "p060",
+      "text_a": "Cendol",
+      "text_b": "Bubble Tea",
+      "label": 0
+    },
+    {
+      "id": "p061",
+      "text_a": "Cendol",
+      "text_b": "Chendol",
+      "label": 1
+    },
+    {
+      "id": "p062",
+      "text_a": "Chaas",
+      "text_b": "Buttermilk",
+      "label": 1
+    },
+    {
+      "id": "p063",
+      "text_a": "Chaas",
+      "text_b": "Raita",
+      "label": 0
+    },
+    {
+      "id": "p064",
+      "text_a": "Chaas 250ml",
+      "text_b": "Chaas",
+      "label": 1
+    },
+    {
+      "id": "p065",
+      "text_a": "Chai",
+      "text_b": "Chai Latte",
+      "label": 0
+    },
+    {
+      "id": "p066",
+      "text_a": "Chamomile Herbal Tea",
+      "text_b": "Chamomile Tea",
+      "label": 1
+    },
+    {
+      "id": "p067",
+      "text_a": "Champurrado",
+      "text_b": "Atole",
+      "label": 0
+    },
+    {
+      "id": "p068",
+      "text_a": "Champurrado",
+      "text_b": "Hot Chocolate",
+      "label": 0
+    },
+    {
+      "id": "p069",
+      "text_a": "Champurrado",
+      "text_b": "Mexican Chocolate Atole",
+      "label": 1
+    },
+    {
+      "id": "p070",
+      "text_a": "Champurrado",
+      "text_b": "Mexican Hot Chocolate",
+      "label": 0
+    },
+    {
+      "id": "p071",
+      "text_a": "Chinese Almond Tea",
+      "text_b": "Almond Milk Tea",
+      "label": 0
+    },
+    {
+      "id": "p072",
+      "text_a": "Chinese Plum Juice",
+      "text_b": "Suan Mei Tang",
+      "label": 1
+    },
+    {
+      "id": "p073",
+      "text_a": "Chocolate Frappe",
+      "text_b": "Chocolate Shake",
+      "label": 0
+    },
+    {
+      "id": "p074",
+      "text_a": "Chocolate Shake (12 oz)",
+      "text_b": "Chocolate Shake",
+      "label": 1
+    },
+    {
+      "id": "p075",
+      "text_a": "Cocoa",
+      "text_b": "Cocoa Tea",
+      "label": 0
+    },
+    {
+      "id": "p076",
+      "text_a": "Coconut Water",
+      "text_b": "Agua de Coco",
+      "label": 1
+    },
+    {
+      "id": "p077",
+      "text_a": "Coconut Water",
+      "text_b": "Coconut Smoothie",
+      "label": 0
+    },
+    {
+      "id": "p078",
+      "text_a": "Coffee",
+      "text_b": "Coffee Cake",
+      "label": 0
+    },
+    {
+      "id": "p079",
+      "text_a": "Cold Brew",
+      "text_b": "Iced Americano",
+      "label": 0
+    },
+    {
+      "id": "p080",
+      "text_a": "Cold Brew",
+      "text_b": "Iced Coffee",
+      "label": 0
+    },
+    {
+      "id": "p081",
+      "text_a": "Cold Brew",
+      "text_b": "Iced Tea",
+      "label": 0
+    },
+    {
+      "id": "p082",
+      "text_a": "Cold Brew (500ml)",
+      "text_b": "Cold Brew",
+      "label": 1
+    },
+    {
+      "id": "p083",
+      "text_a": "Cold Brew Coffee",
+      "text_b": "Cold Brew",
+      "label": 1
+    },
+    {
+      "id": "p084",
+      "text_a": "Cold Pressed Juice",
+      "text_b": "Cold Press Juice",
+      "label": 1
+    },
+    {
+      "id": "p085",
+      "text_a": "Cold Pressed Juice",
+      "text_b": "Smoothie",
+      "label": 0
+    },
+    {
+      "id": "p086",
+      "text_a": "Cold-Pressed Beet Juice",
+      "text_b": "Beet Cold Pressed Juice",
+      "label": 1
+    },
+    {
+      "id": "p087",
+      "text_a": "Cortado",
+      "text_b": "Cafe Cortado",
+      "label": 1
+    },
+    {
+      "id": "p088",
+      "text_a": "Cortado",
+      "text_b": "Macchiato",
+      "label": 0
+    },
+    {
+      "id": "p089",
+      "text_a": "Dalgona Coffee",
+      "text_b": "Frappe",
+      "label": 0
+    },
+    {
+      "id": "p090",
+      "text_a": "Dalgona Coffee",
+      "text_b": "Whipped Coffee",
+      "label": 1
+    },
+    {
+      "id": "p091",
+      "text_a": "Dirty Chai",
+      "text_b": "Chai with Espresso",
+      "label": 1
+    },
+    {
+      "id": "p092",
+      "text_a": "Doogh",
+      "text_b": "Laban",
+      "label": 1
+    },
+    {
+      "id": "p093",
+      "text_a": "Double Shot Espresso",
+      "text_b": "Doppio",
+      "label": 1
+    },
+    {
+      "id": "p094",
+      "text_a": "Drip Coffee",
+      "text_b": "Filter Coffee",
+      "label": 1
+    },
+    {
+      "id": "p095",
+      "text_a": "Earl Grey Tea",
+      "text_b": "Earl Grey",
+      "label": 1
+    },
+    {
+      "id": "p096",
+      "text_a": "Energy Drink",
+      "text_b": "Sports Drink",
+      "label": 0
+    },
+    {
+      "id": "p097",
+      "text_a": "Es Cendol",
+      "text_b": "Cendol Shake",
+      "label": 0
+    },
+    {
+      "id": "p098",
+      "text_a": "Es Jeruk",
+      "text_b": "Iced Orange",
+      "label": 1
+    },
+    {
+      "id": "p099",
+      "text_a": "Espresso",
+      "text_b": "Espresso Martini",
+      "label": 0
+    },
+    {
+      "id": "p100",
+      "text_a": "Espresso",
+      "text_b": "Espresso Tonic",
+      "label": 0
+    },
+    {
+      "id": "p101",
+      "text_a": "Espresso",
+      "text_b": "Latte",
+      "label": 0
+    },
+    {
+      "id": "p102",
+      "text_a": "Espresso (Single)",
+      "text_b": "Espresso",
+      "label": 1
+    },
+    {
+      "id": "p103",
+      "text_a": "Espresso Double",
+      "text_b": "Double Espresso",
+      "label": 1
+    },
+    {
+      "id": "p104",
+      "text_a": "Espresso Macchiato",
+      "text_b": "Macchiato Espresso",
+      "label": 1
+    },
+    {
+      "id": "p105",
+      "text_a": "Expresso",
+      "text_b": "Espresso",
+      "label": 1
+    },
+    {
+      "id": "p106",
+      "text_a": "Filter Kaapi",
+      "text_b": "Filter Coffee",
+      "label": 1
+    },
+    {
+      "id": "p107",
+      "text_a": "Flat White",
+      "text_b": "Cappuccino",
+      "label": 0
+    },
+    {
+      "id": "p108",
+      "text_a": "Flat White",
+      "text_b": "Flat White Coffee",
+      "label": 1
+    },
+    {
+      "id": "p109",
+      "text_a": "Flat White (12 oz)",
+      "text_b": "Flat White",
+      "label": 1
+    },
+    {
+      "id": "p110",
+      "text_a": "Fresh Lime Soda",
+      "text_b": "Nimbu Pani",
+      "label": 1
+    },
+    {
+      "id": "p111",
+      "text_a": "Fresh Orange Juice",
+      "text_b": "Orange Juice Fresh",
+      "label": 1
+    },
+    {
+      "id": "p112",
+      "text_a": "Frozen Lemonade",
+      "text_b": "Lemonade",
+      "label": 0
+    },
+    {
+      "id": "p113",
+      "text_a": "Frozen Lemonade",
+      "text_b": "Lemonade Slush",
+      "label": 1
+    },
+    {
+      "id": "p114",
+      "text_a": "Genmaicha",
+      "text_b": "Brown Rice Green Tea",
+      "label": 1
+    },
+    {
+      "id": "p115",
+      "text_a": "Green Juice",
+      "text_b": "Green Tea",
+      "label": 0
+    },
+    {
+      "id": "p116",
+      "text_a": "Green Tea",
+      "text_b": "Green Tea Latte",
+      "label": 0
+    },
+    {
+      "id": "p117",
+      "text_a": "Guava Juice",
+      "text_b": "Guava Nectar Soda",
+      "label": 0
+    },
+    {
+      "id": "p118",
+      "text_a": "Hazelnut Latte",
+      "text_b": "Hazelnut Mocha",
+      "label": 0
+    },
+    {
+      "id": "p119",
+      "text_a": "Hibiscus Tea",
+      "text_b": "Jamaica Tea",
+      "label": 1
+    },
+    {
+      "id": "p120",
+      "text_a": "Hojicha Latte",
+      "text_b": "Roasted Green Tea Latte",
+      "label": 1
+    },
+    {
+      "id": "p121",
+      "text_a": "Honeydew Boba",
+      "text_b": "Honeydew Milk Tea",
+      "label": 1
+    },
+    {
+      "id": "p122",
+      "text_a": "Horchata",
+      "text_b": "Coconut Water",
+      "label": 0
+    },
+    {
+      "id": "p123",
+      "text_a": "Horchata",
+      "text_b": "Horchata Latte",
+      "label": 0
+    },
+    {
+      "id": "p124",
+      "text_a": "Horchata",
+      "text_b": "Milk",
+      "label": 0
+    },
+    {
+      "id": "p125",
+      "text_a": "Horchata",
+      "text_b": "Rice Horchata",
+      "label": 1
+    },
+    {
+      "id": "p126",
+      "text_a": "Horchata",
+      "text_b": "Rice Milk Drink",
+      "label": 1
+    },
+    {
+      "id": "p127",
+      "text_a": "Horchata",
+      "text_b": "Rice Pudding",
+      "label": 0
+    },
+    {
+      "id": "p128",
+      "text_a": "Horchata (Large)",
+      "text_b": "Horchata",
+      "label": 1
+    },
+    {
+      "id": "p129",
+      "text_a": "Horchata de Arroz",
+      "text_b": "Agua de Horchata",
+      "label": 1
+    },
+    {
+      "id": "p130",
+      "text_a": "Horchata de Arroz",
+      "text_b": "Horchata",
+      "label": 1
+    },
+    {
+      "id": "p131",
+      "text_a": "Hot Chocolate",
+      "text_b": "Chocolate Cake",
+      "label": 0
+    },
+    {
+      "id": "p132",
+      "text_a": "Hot Chocolate",
+      "text_b": "Chocolate Milk",
+      "label": 0
+    },
+    {
+      "id": "p133",
+      "text_a": "Hot Chocolate",
+      "text_b": "Hot Cocoa",
+      "label": 1
+    },
+    {
+      "id": "p134",
+      "text_a": "Hot Chocolate with Marshmallows",
+      "text_b": "Iced Chocolate",
+      "label": 0
+    },
+    {
+      "id": "p135",
+      "text_a": "Hot Chocolate with Marshmallows",
+      "text_b": "Marshmallow Hot Cocoa",
+      "label": 1
+    },
+    {
+      "id": "p136",
+      "text_a": "Hot Cocoa",
+      "text_b": "Cold Cocoa",
+      "label": 0
+    },
+    {
+      "id": "p137",
+      "text_a": "Iced Caramel Latte",
+      "text_b": "Caramel Iced Latte",
+      "label": 1
+    },
+    {
+      "id": "p138",
+      "text_a": "Iced Kopi Susu",
+      "text_b": "Hot Kopi Susu",
+      "label": 0
+    },
+    {
+      "id": "p139",
+      "text_a": "Iced Matcha",
+      "text_b": "Hot Matcha",
+      "label": 0
+    },
+    {
+      "id": "p140",
+      "text_a": "Iced Matcha Latte",
+      "text_b": "Matcha Latte (Iced)",
+      "label": 1
+    },
+    {
+      "id": "p141",
+      "text_a": "Iced Tea Lemon",
+      "text_b": "Lemon Iced Tea",
+      "label": 1
+    },
+    {
+      "id": "p142",
+      "text_a": "Irish Coffee",
+      "text_b": "Whiskey Coffee",
+      "label": 1
+    },
+    {
+      "id": "p143",
+      "text_a": "Jaljeera",
+      "text_b": "Masala Soda",
+      "label": 0
+    },
+    {
+      "id": "p144",
+      "text_a": "Jaljeera",
+      "text_b": "Spiced Cumin Lemonade",
+      "label": 0
+    },
+    {
+      "id": "p145",
+      "text_a": "Jaljeera Soda",
+      "text_b": "Jal Jeera Soda",
+      "label": 1
+    },
+    {
+      "id": "p146",
+      "text_a": "Jallab",
+      "text_b": "Date Molasses Drink",
+      "label": 1
+    },
+    {
+      "id": "p147",
+      "text_a": "Jallab",
+      "text_b": "Jalleb",
+      "label": 1
+    },
+    {
+      "id": "p148",
+      "text_a": "Jallab",
+      "text_b": "Tamarind Juice",
+      "label": 0
+    },
+    {
+      "id": "p149",
+      "text_a": "Jasmine Green Tea",
+      "text_b": "Jasmine Tea",
+      "label": 1
+    },
+    {
+      "id": "p150",
+      "text_a": "Jasmine Green Tea",
+      "text_b": "Mo Li Hua Cha",
+      "label": 1
+    },
+    {
+      "id": "p151",
+      "text_a": "Kopi",
+      "text_b": "Coffee",
+      "label": 1
+    },
+    {
+      "id": "p152",
+      "text_a": "Kopi O",
+      "text_b": "Black Coffee Kopi",
+      "label": 1
+    },
+    {
+      "id": "p153",
+      "text_a": "Kopi O",
+      "text_b": "Espresso",
+      "label": 0
+    },
+    {
+      "id": "p154",
+      "text_a": "Kopi Tubruk",
+      "text_b": "Vietnamese Drip Coffee",
+      "label": 0
+    },
+    {
+      "id": "p155",
+      "text_a": "Korean Banana Milk",
+      "text_b": "Banana Milk",
+      "label": 1
+    },
+    {
+      "id": "p156",
+      "text_a": "Korean Citron Tea",
+      "text_b": "Yuja Ade",
+      "label": 0
+    },
+    {
+      "id": "p157",
+      "text_a": "Korean Yuja Tea",
+      "text_b": "Yuzu Honey Tea",
+      "label": 1
+    },
+    {
+      "id": "p158",
+      "text_a": "Lassi",
+      "text_b": "Yogurt Parfait",
+      "label": 0
+    },
+    {
+      "id": "p159",
+      "text_a": "Latte",
+      "text_b": "Flat White",
+      "label": 0
+    },
+    {
+      "id": "p160",
+      "text_a": "Latte",
+      "text_b": "Matcha Latte",
+      "label": 0
+    },
+    {
+      "id": "p161",
+      "text_a": "Latte - Regular",
+      "text_b": "Latte",
+      "label": 1
+    },
+    {
+      "id": "p162",
+      "text_a": "Lebanese Coffee",
+      "text_b": "Cafe Arabe",
+      "label": 1
+    },
+    {
+      "id": "p163",
+      "text_a": "Lemonade",
+      "text_b": "Lemon Soda",
+      "label": 0
+    },
+    {
+      "id": "p164",
+      "text_a": "Lemonade",
+      "text_b": "Lemon Tart",
+      "label": 0
+    },
+    {
+      "id": "p165",
+      "text_a": "Licuado de Banana",
+      "text_b": "Banana Milkshake",
+      "label": 0
+    },
+    {
+      "id": "p166",
+      "text_a": "Licuado de Fresa",
+      "text_b": "Strawberry Smoothie",
+      "label": 1
+    },
+    {
+      "id": "p167",
+      "text_a": "Licuado de Plátano",
+      "text_b": "Banana Milkshake",
+      "label": 1
+    },
+    {
+      "id": "p168",
+      "text_a": "Limonada",
+      "text_b": "Limeade",
+      "label": 1
+    },
+    {
+      "id": "p169",
+      "text_a": "London Fog",
+      "text_b": "Earl Grey Latte",
+      "label": 1
+    },
+    {
+      "id": "p170",
+      "text_a": "Long Black",
+      "text_b": "Cafe Lungo",
+      "label": 1
+    },
+    {
+      "id": "p171",
+      "text_a": "Macha Latte",
+      "text_b": "Matcha Latte",
+      "label": 1
+    },
+    {
+      "id": "p172",
+      "text_a": "Machiato",
+      "text_b": "Macchiato",
+      "label": 1
+    },
+    {
+      "id": "p173",
+      "text_a": "Mango Juice",
+      "text_b": "Mango Lassi",
+      "label": 0
+    },
+    {
+      "id": "p174",
+      "text_a": "Mango Lassi",
+      "text_b": "Mango Smoothie",
+      "label": 0
+    },
+    {
+      "id": "p175",
+      "text_a": "Mango Lassi",
+      "text_b": "Mango Yogurt Drink",
+      "label": 1
+    },
+    {
+      "id": "p176",
+      "text_a": "Mango Lassi (Small)",
+      "text_b": "Mango Lassi",
+      "label": 1
+    },
+    {
+      "id": "p177",
+      "text_a": "Mango Shake",
+      "text_b": "Mango Milkshake",
+      "label": 1
+    },
+    {
+      "id": "p178",
+      "text_a": "Mango Smoothie",
+      "text_b": "Mango Juice",
+      "label": 0
+    },
+    {
+      "id": "p179",
+      "text_a": "Mango Smoothie",
+      "text_b": "Smoothie Mango",
+      "label": 1
+    },
+    {
+      "id": "p180",
+      "text_a": "Masala Chai",
+      "text_b": "Chai Latte",
+      "label": 0
+    },
+    {
+      "id": "p181",
+      "text_a": "Masala Chai",
+      "text_b": "Chai Tea",
+      "label": 1
+    },
+    {
+      "id": "p182",
+      "text_a": "Matcha",
+      "text_b": "Matcha Cake",
+      "label": 0
+    },
+    {
+      "id": "p183",
+      "text_a": "Matcha Green Tea Latte",
+      "text_b": "Matcha Latte",
+      "label": 1
+    },
+    {
+      "id": "p184",
+      "text_a": "Matcha Latte",
+      "text_b": "Matcha Cake",
+      "label": 0
+    },
+    {
+      "id": "p185",
+      "text_a": "Matcha Latte",
+      "text_b": "Matcha Milk",
+      "label": 0
+    },
+    {
+      "id": "p186",
+      "text_a": "Melon Milkshake",
+      "text_b": "Melon Shake",
+      "label": 1
+    },
+    {
+      "id": "p187",
+      "text_a": "Milo",
+      "text_b": "Hot Chocolate",
+      "label": 0
+    },
+    {
+      "id": "p188",
+      "text_a": "Milo (Regular)",
+      "text_b": "Milo",
+      "label": 1
+    },
+    {
+      "id": "p189",
+      "text_a": "Milo Dinosaur",
+      "text_b": "Iced Milo",
+      "label": 1
+    },
+    {
+      "id": "p190",
+      "text_a": "Mint Lemonade",
+      "text_b": "Limonana",
+      "label": 1
+    },
+    {
+      "id": "p191",
+      "text_a": "Mint Lemonade",
+      "text_b": "Mint Tea",
+      "label": 0
+    },
+    {
+      "id": "p192",
+      "text_a": "Mint Tea",
+      "text_b": "Mint Mojito Soda",
+      "label": 0
+    },
+    {
+      "id": "p193",
+      "text_a": "Moccha",
+      "text_b": "Mocha",
+      "label": 1
+    },
+    {
+      "id": "p194",
+      "text_a": "Mocha",
+      "text_b": "Hot Chocolate",
+      "label": 0
+    },
+    {
+      "id": "p195",
+      "text_a": "Mocha Frappe",
+      "text_b": "Frappe Mocha",
+      "label": 1
+    },
+    {
+      "id": "p196",
+      "text_a": "Nescafe Turkish Coffee",
+      "text_b": "Turkish Coffee",
+      "label": 1
+    },
+    {
+      "id": "p197",
+      "text_a": "Nimbu Shikanji",
+      "text_b": "Fresh Lime Shikanji",
+      "label": 1
+    },
+    {
+      "id": "p198",
+      "text_a": "Nitro Cold Brew",
+      "text_b": "Draft Beer",
+      "label": 0
+    },
+    {
+      "id": "p199",
+      "text_a": "Nitro Cold Brew",
+      "text_b": "Nitrogen Cold Brew",
+      "label": 1
+    },
+    {
+      "id": "p200",
+      "text_a": "Oat Flat White",
+      "text_b": "Flat White with Oat Milk",
+      "label": 1
+    },
+    {
+      "id": "p201",
+      "text_a": "Oat Milk Cappuccino",
+      "text_b": "Oat Milk Flat White",
+      "label": 0
+    },
+    {
+      "id": "p202",
+      "text_a": "Oat Milk Latte",
+      "text_b": "Almond Milk Latte",
+      "label": 0
+    },
+    {
+      "id": "p203",
+      "text_a": "Oolong Milk Tea",
+      "text_b": "Oolong Boba",
+      "label": 1
+    },
+    {
+      "id": "p204",
+      "text_a": "Oolong Tea",
+      "text_b": "Oolong Milk Tea",
+      "label": 0
+    },
+    {
+      "id": "p205",
+      "text_a": "Oolong Tea",
+      "text_b": "Wu Long Tea",
+      "label": 1
+    },
+    {
+      "id": "p206",
+      "text_a": "Orange Juice",
+      "text_b": "Orange Soda",
+      "label": 0
+    },
+    {
+      "id": "p207",
+      "text_a": "Passionfruit Green Tea",
+      "text_b": "Passion Fruit Tea",
+      "label": 1
+    },
+    {
+      "id": "p208",
+      "text_a": "Peach Iced Tea",
+      "text_b": "Peach Bubble Tea",
+      "label": 0
+    },
+    {
+      "id": "p209",
+      "text_a": "Persian Tea",
+      "text_b": "Chai Irani",
+      "label": 1
+    },
+    {
+      "id": "p210",
+      "text_a": "Piccolo Latte",
+      "text_b": "Piccolo Coffee",
+      "label": 1
+    },
+    {
+      "id": "p211",
+      "text_a": "Pina Colada",
+      "text_b": "Pina Colada Smoothie",
+      "label": 0
+    },
+    {
+      "id": "p212",
+      "text_a": "Pineapple Orange Juice",
+      "text_b": "Pineapple Juice with Orange",
+      "label": 1
+    },
+    {
+      "id": "p213",
+      "text_a": "Pour Over",
+      "text_b": "French Press",
+      "label": 0
+    },
+    {
+      "id": "p214",
+      "text_a": "Pour Over Coffee",
+      "text_b": "Hand Drip Coffee",
+      "label": 1
+    },
+    {
+      "id": "p215",
+      "text_a": "Protein Shake",
+      "text_b": "Milkshake",
+      "label": 0
+    },
+    {
+      "id": "p216",
+      "text_a": "Protein Shake",
+      "text_b": "Protein Smoothie",
+      "label": 1
+    },
+    {
+      "id": "p217",
+      "text_a": "Protein Shake",
+      "text_b": "Protein Smoothie Bowl",
+      "label": 0
+    },
+    {
+      "id": "p218",
+      "text_a": "Pumpkin Latte",
+      "text_b": "Pumpkin Pie",
+      "label": 0
+    },
+    {
+      "id": "p219",
+      "text_a": "Pumpkin Spice Latte",
+      "text_b": "Chai Latte",
+      "label": 0
+    },
+    {
+      "id": "p220",
+      "text_a": "Pumpkin Spice Latte",
+      "text_b": "PSL",
+      "label": 1
+    },
+    {
+      "id": "p221",
+      "text_a": "Qahwa",
+      "text_b": "Coffee Latte",
+      "label": 0
+    },
+    {
+      "id": "p222",
+      "text_a": "Ristretto",
+      "text_b": "Espresso",
+      "label": 0
+    },
+    {
+      "id": "p223",
+      "text_a": "Ristretto",
+      "text_b": "Ristretto Shot",
+      "label": 1
+    },
+    {
+      "id": "p224",
+      "text_a": "Rooibos Tea",
+      "text_b": "Red Bush Tea",
+      "label": 1
+    },
+    {
+      "id": "p225",
+      "text_a": "Rose Horchata",
+      "text_b": "Horchata de Arroz",
+      "label": 0
+    },
+    {
+      "id": "p226",
+      "text_a": "Rose Lassi",
+      "text_b": "Rose Yogurt Shake",
+      "label": 1
+    },
+    {
+      "id": "p227",
+      "text_a": "Rose Milk",
+      "text_b": "Rose Cake",
+      "label": 0
+    },
+    {
+      "id": "p228",
+      "text_a": "Rosewater Milk",
+      "text_b": "Sharbat-e Golab",
+      "label": 1
+    },
+    {
+      "id": "p229",
+      "text_a": "Sago Gula Melaka",
+      "text_b": "Pandan Milkshake",
+      "label": 0
+    },
+    {
+      "id": "p230",
+      "text_a": "Sahlab",
+      "text_b": "Hot Chocolate",
+      "label": 0
+    },
+    {
+      "id": "p231",
+      "text_a": "Sahlab",
+      "text_b": "Hot Orchid Drink",
+      "label": 1
+    },
+    {
+      "id": "p232",
+      "text_a": "Sahlab",
+      "text_b": "Rice Pudding",
+      "label": 0
+    },
+    {
+      "id": "p233",
+      "text_a": "Sahlab",
+      "text_b": "Salep",
+      "label": 1
+    },
+    {
+      "id": "p234",
+      "text_a": "Sahlab (Hot)",
+      "text_b": "Hot Sahlab",
+      "label": 1
+    },
+    {
+      "id": "p235",
+      "text_a": "Salted Buttermilk",
+      "text_b": "Salted Lassi",
+      "label": 0
+    },
+    {
+      "id": "p236",
+      "text_a": "Salted Lassi",
+      "text_b": "Masala Lassi",
+      "label": 1
+    },
+    {
+      "id": "p237",
+      "text_a": "Shikanji",
+      "text_b": "Lemon Soda",
+      "label": 0
+    },
+    {
+      "id": "p238",
+      "text_a": "Shirley Temple",
+      "text_b": "Cherry Soda",
+      "label": 0
+    },
+    {
+      "id": "p239",
+      "text_a": "Shirley Temple",
+      "text_b": "Shirley Temple Mocktail",
+      "label": 1
+    },
+    {
+      "id": "p240",
+      "text_a": "Slushie",
+      "text_b": "Frappe",
+      "label": 0
+    },
+    {
+      "id": "p241",
+      "text_a": "Slushie",
+      "text_b": "Frozen Slush",
+      "label": 1
+    },
+    {
+      "id": "p242",
+      "text_a": "Smoothie Bowl",
+      "text_b": "Smoothie",
+      "label": 0
+    },
+    {
+      "id": "p243",
+      "text_a": "Soursop Juice",
+      "text_b": "Soursop Milkshake",
+      "label": 0
+    },
+    {
+      "id": "p244",
+      "text_a": "Soy Cappuccino",
+      "text_b": "Regular Cappuccino",
+      "label": 0
+    },
+    {
+      "id": "p245",
+      "text_a": "Soy Latte",
+      "text_b": "Latte with Soy Milk",
+      "label": 1
+    },
+    {
+      "id": "p246",
+      "text_a": "Soy Latte",
+      "text_b": "Oat Milk Latte",
+      "label": 0
+    },
+    {
+      "id": "p247",
+      "text_a": "Soya Milk Latte",
+      "text_b": "Soy Latte",
+      "label": 1
+    },
+    {
+      "id": "p248",
+      "text_a": "Sparkling Apple Juice",
+      "text_b": "Apple Juice",
+      "label": 0
+    },
+    {
+      "id": "p249",
+      "text_a": "Sparkling Water with Lime",
+      "text_b": "Lime Sparkling Water",
+      "label": 1
+    },
+    {
+      "id": "p250",
+      "text_a": "Spiced Hot Chocolate",
+      "text_b": "Mexican Hot Chocolate",
+      "label": 0
+    },
+    {
+      "id": "p251",
+      "text_a": "Strawberry Milkshake",
+      "text_b": "Strawberry Shake",
+      "label": 1
+    },
+    {
+      "id": "p252",
+      "text_a": "Strawberry Milkshake",
+      "text_b": "Strawberry Smoothie",
+      "label": 0
+    },
+    {
+      "id": "p253",
+      "text_a": "Strawberry Milkshake",
+      "text_b": "Strawberry Yogurt Drink",
+      "label": 0
+    },
+    {
+      "id": "p254",
+      "text_a": "Sugarcane Juice",
+      "text_b": "Jugo de Caña",
+      "label": 1
+    },
+    {
+      "id": "p255",
+      "text_a": "Sweet Lassi",
+      "text_b": "Meethi Lassi",
+      "label": 1
+    },
+    {
+      "id": "p256",
+      "text_a": "Sweet Lassi",
+      "text_b": "Sweet Yogurt Drink",
+      "label": 1
+    },
+    {
+      "id": "p257",
+      "text_a": "Taiwanese Oolong Milk Tea",
+      "text_b": "Oolong Boba Tea",
+      "label": 1
+    },
+    {
+      "id": "p258",
+      "text_a": "Tamarind Juice",
+      "text_b": "Tamar Hindi",
+      "label": 1
+    },
+    {
+      "id": "p259",
+      "text_a": "Taro Boba",
+      "text_b": "Taro Cake",
+      "label": 0
+    },
+    {
+      "id": "p260",
+      "text_a": "Taro Bubble Tea",
+      "text_b": "Taro Boba",
+      "label": 1
+    },
+    {
+      "id": "p261",
+      "text_a": "Taro Bubble Tea",
+      "text_b": "Taro Milkshake",
+      "label": 0
+    },
+    {
+      "id": "p262",
+      "text_a": "Teh Tarik",
+      "text_b": "Chai Latte",
+      "label": 0
+    },
+    {
+      "id": "p263",
+      "text_a": "Teh Tarik",
+      "text_b": "Pulled Milk Tea",
+      "label": 1
+    },
+    {
+      "id": "p264",
+      "text_a": "Teh Tarik",
+      "text_b": "Pulled Tea",
+      "label": 1
+    },
+    {
+      "id": "p265",
+      "text_a": "Teh Tarik",
+      "text_b": "Thai Tea",
+      "label": 0
+    },
+    {
+      "id": "p266",
+      "text_a": "Thai Iced Tea",
+      "text_b": "Cha Yen",
+      "label": 1
+    },
+    {
+      "id": "p267",
+      "text_a": "Thai Milk Tea",
+      "text_b": "Cha Yen",
+      "label": 1
+    },
+    {
+      "id": "p268",
+      "text_a": "Thai Tea",
+      "text_b": "Thai Milk Tea",
+      "label": 0
+    },
+    {
+      "id": "p269",
+      "text_a": "Thandai",
+      "text_b": "Badam Milk",
+      "label": 0
+    },
+    {
+      "id": "p270",
+      "text_a": "Thandai",
+      "text_b": "Badam Thandai",
+      "label": 1
+    },
+    {
+      "id": "p271",
+      "text_a": "Turkish Coffee",
+      "text_b": "Arabic Coffee",
+      "label": 0
+    },
+    {
+      "id": "p272",
+      "text_a": "Turkish Coffee",
+      "text_b": "Greek Coffee",
+      "label": 0
+    },
+    {
+      "id": "p273",
+      "text_a": "Turkish Coffee",
+      "text_b": "Turk Kahvesi",
+      "label": 1
+    },
+    {
+      "id": "p274",
+      "text_a": "Turkish Coffee",
+      "text_b": "Turkish Coffee Latte",
+      "label": 0
+    },
+    {
+      "id": "p275",
+      "text_a": "Turkish Coffee",
+      "text_b": "Türk Kahvesi",
+      "label": 1
+    },
+    {
+      "id": "p276",
+      "text_a": "Turkish Coffee 6oz",
+      "text_b": "Turkish Coffee",
+      "label": 1
+    },
+    {
+      "id": "p277",
+      "text_a": "Turmeric Latte",
+      "text_b": "Golden Milk",
+      "label": 1
+    },
+    {
+      "id": "p278",
+      "text_a": "Vanilla Latte",
+      "text_b": "Vanilla Ice Cream",
+      "label": 0
+    },
+    {
+      "id": "p279",
+      "text_a": "Vanilla Oat Latte",
+      "text_b": "Vanilla Almond Latte",
+      "label": 0
+    },
+    {
+      "id": "p280",
+      "text_a": "Vanilla Shake",
+      "text_b": "Vanilla Smoothie",
+      "label": 0
+    },
+    {
+      "id": "p281",
+      "text_a": "Vienna Coffee",
+      "text_b": "Affogato",
+      "label": 0
+    },
+    {
+      "id": "p282",
+      "text_a": "Vienna Coffee",
+      "text_b": "Wiener Kaffee",
+      "label": 1
+    },
+    {
+      "id": "p283",
+      "text_a": "Vietnamese Iced Coffee",
+      "text_b": "Vietnamese Egg Coffee",
+      "label": 0
+    },
+    {
+      "id": "p284",
+      "text_a": "Vietnamese Iced Coffee with Condensed Milk",
+      "text_b": "Ca Phe Sua Da",
+      "label": 1
+    },
+    {
+      "id": "p285",
+      "text_a": "Virgin Mojito",
+      "text_b": "Mojito Mocktail",
+      "label": 1
+    },
+    {
+      "id": "p286",
+      "text_a": "Virgin Mojito",
+      "text_b": "Mojito with Rum",
+      "label": 0
+    },
+    {
+      "id": "p287",
+      "text_a": "Virgin Pina Colada",
+      "text_b": "Pina Colada Mocktail",
+      "label": 1
+    },
+    {
+      "id": "p288",
+      "text_a": "White Hot Chocolate",
+      "text_b": "Hot White Mocha",
+      "label": 0
+    },
+    {
+      "id": "p289",
+      "text_a": "Wintermelon Bubble Tea",
+      "text_b": "Winter Melon Tea",
+      "label": 1
+    },
+    {
+      "id": "p290",
+      "text_a": "Yakult Soda",
+      "text_b": "Yakult Sparkling Drink",
+      "label": 1
+    },
+    {
+      "id": "p291",
+      "text_a": "Yerba Mate",
+      "text_b": "Green Tea",
+      "label": 0
+    },
+    {
+      "id": "p292",
+      "text_a": "Yerba Mate",
+      "text_b": "Mate Latte",
+      "label": 0
+    },
+    {
+      "id": "p293",
+      "text_a": "Yerba Mate",
+      "text_b": "Mate Tea",
+      "label": 1
+    },
+    {
+      "id": "p294",
+      "text_a": "Yerba Mate (Hot)",
+      "text_b": "Hot Yerba Mate",
+      "label": 1
+    },
+    {
+      "id": "p295",
+      "text_a": "Yuzu Soda",
+      "text_b": "Yuzu Mocktail",
+      "label": 0
+    }
+  ],
+  "metadata": {
+    "n_pairs": 295,
+    "n_positive": 161,
+    "n_negative": 134
+  }
+}

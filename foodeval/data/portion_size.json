@@ -1,0 +1,1381 @@
+{
+  "task": "portion_size",
+  "version": "0.1.0",
+  "description": "Portion size sensitivity - should a model treat different sizes of the same dish as duplicates?",
+  "metric": "best_f1",
+  "pairs": [
+    {
+      "id": "p001",
+      "text_a": "Regular Pepsi",
+      "text_b": "Large Pepsi",
+      "label": 1
+    },
+    {
+      "id": "p002",
+      "text_a": "Small Coke",
+      "text_b": "Medium Coke",
+      "label": 1
+    },
+    {
+      "id": "p003",
+      "text_a": "Medium Sprite",
+      "text_b": "Large Sprite",
+      "label": 1
+    },
+    {
+      "id": "p004",
+      "text_a": "XL Fanta",
+      "text_b": "Large Fanta",
+      "label": 1
+    },
+    {
+      "id": "p005",
+      "text_a": "Tall Latte",
+      "text_b": "Grande Latte",
+      "label": 1
+    },
+    {
+      "id": "p006",
+      "text_a": "Grande Cappuccino",
+      "text_b": "Venti Cappuccino",
+      "label": 1
+    },
+    {
+      "id": "p007",
+      "text_a": "Tall Caramel Macchiato",
+      "text_b": "Venti Caramel Macchiato",
+      "label": 1
+    },
+    {
+      "id": "p008",
+      "text_a": "Medium Americano",
+      "text_b": "Large Americano",
+      "label": 1
+    },
+    {
+      "id": "p009",
+      "text_a": "Half Tandoori Chicken",
+      "text_b": "Full Tandoori Chicken",
+      "label": 1
+    },
+    {
+      "id": "p010",
+      "text_a": "Single Butter Naan",
+      "text_b": "Double Butter Naan",
+      "label": 1
+    },
+    {
+      "id": "p011",
+      "text_a": "Half Paneer Biryani",
+      "text_b": "Full Paneer Biryani",
+      "label": 1
+    },
+    {
+      "id": "p012",
+      "text_a": "1 Pc Samosa",
+      "text_b": "2 Pc Samosa",
+      "label": 1
+    },
+    {
+      "id": "p013",
+      "text_a": "6 Pcs Wings",
+      "text_b": "12 Pcs Wings",
+      "label": 1
+    },
+    {
+      "id": "p014",
+      "text_a": "4 Pcs Chicken Momos",
+      "text_b": "8 Pcs Chicken Momos",
+      "label": 1
+    },
+    {
+      "id": "p015",
+      "text_a": "250ml Coke",
+      "text_b": "500ml Coke",
+      "label": 1
+    },
+    {
+      "id": "p016",
+      "text_a": "330ml Sprite",
+      "text_b": "1L Sprite",
+      "label": 1
+    },
+    {
+      "id": "p017",
+      "text_a": "500ml Mango Lassi",
+      "text_b": "1L Mango Lassi",
+      "label": 1
+    },
+    {
+      "id": "p018",
+      "text_a": "Regular Biryani",
+      "text_b": "Family Biryani",
+      "label": 1
+    },
+    {
+      "id": "p019",
+      "text_a": "Personal Pizza",
+      "text_b": "Medium Pizza",
+      "label": 1
+    },
+    {
+      "id": "p020",
+      "text_a": "Large Pepperoni Pizza",
+      "text_b": "XL Pepperoni Pizza",
+      "label": 1
+    },
+    {
+      "id": "p021",
+      "text_a": "Dal Tadka - Half",
+      "text_b": "Dal Tadka - Full",
+      "label": 1
+    },
+    {
+      "id": "p022",
+      "text_a": "Chole Bhature (Half Plate)",
+      "text_b": "Chole Bhature (Full Plate)",
+      "label": 1
+    },
+    {
+      "id": "p023",
+      "text_a": "Paneer Butter Masala Half",
+      "text_b": "Paneer Butter Masala Full",
+      "label": 1
+    },
+    {
+      "id": "p024",
+      "text_a": "Mini Dosa",
+      "text_b": "Regular Dosa",
+      "label": 1
+    },
+    {
+      "id": "p025",
+      "text_a": "Jumbo Prawns Fry",
+      "text_b": "Prawns Fry",
+      "label": 1
+    },
+    {
+      "id": "p026",
+      "text_a": "Mini Idli",
+      "text_b": "Full Idli Plate",
+      "label": 1
+    },
+    {
+      "id": "p027",
+      "text_a": "200g Chicken Tikka",
+      "text_b": "500g Chicken Tikka",
+      "label": 1
+    },
+    {
+      "id": "p028",
+      "text_a": "250g Lamb Kebab",
+      "text_b": "500g Lamb Kebab",
+      "label": 1
+    },
+    {
+      "id": "p029",
+      "text_a": "1kg Roast Chicken",
+      "text_b": "500g Roast Chicken",
+      "label": 1
+    },
+    {
+      "id": "p030",
+      "text_a": "Chicken Fried Rice (Serves 1)",
+      "text_b": "Chicken Fried Rice (Serves 2-3)",
+      "label": 1
+    },
+    {
+      "id": "p031",
+      "text_a": "Veg Pulao for 1",
+      "text_b": "Veg Pulao for 4",
+      "label": 1
+    },
+    {
+      "id": "p032",
+      "text_a": "Miso Soup Small",
+      "text_b": "Miso Soup Large",
+      "label": 1
+    },
+    {
+      "id": "p033",
+      "text_a": "Small Teriyaki Chicken Bowl",
+      "text_b": "Large Teriyaki Chicken Bowl",
+      "label": 1
+    },
+    {
+      "id": "p034",
+      "text_a": "Regular Ramen",
+      "text_b": "Large Ramen",
+      "label": 1
+    },
+    {
+      "id": "p035",
+      "text_a": "Small Kimchi Fried Rice",
+      "text_b": "Large Kimchi Fried Rice",
+      "label": 1
+    },
+    {
+      "id": "p036",
+      "text_a": "Half Shawarma",
+      "text_b": "Full Shawarma",
+      "label": 1
+    },
+    {
+      "id": "p037",
+      "text_a": "Single Falafel Wrap",
+      "text_b": "Double Falafel Wrap",
+      "label": 1
+    },
+    {
+      "id": "p038",
+      "text_a": "Small Hummus",
+      "text_b": "Large Hummus",
+      "label": 1
+    },
+    {
+      "id": "p039",
+      "text_a": "Half Tray Baklava",
+      "text_b": "Full Tray Baklava",
+      "label": 1
+    },
+    {
+      "id": "p040",
+      "text_a": "Small Pasta Alfredo",
+      "text_b": "Large Pasta Alfredo",
+      "label": 1
+    },
+    {
+      "id": "p041",
+      "text_a": "Half Lasagna",
+      "text_b": "Full Lasagna",
+      "label": 1
+    },
+    {
+      "id": "p042",
+      "text_a": "Regular Margherita Pizza",
+      "text_b": "Large Margherita Pizza",
+      "label": 1
+    },
+    {
+      "id": "p043",
+      "text_a": "2 Pc Spring Roll",
+      "text_b": "4 Pc Spring Roll",
+      "label": 1
+    },
+    {
+      "id": "p044",
+      "text_a": "6 Pc Dumplings",
+      "text_b": "12 Pc Dumplings",
+      "label": 1
+    },
+    {
+      "id": "p045",
+      "text_a": "Small Chow Mein",
+      "text_b": "Large Chow Mein",
+      "label": 1
+    },
+    {
+      "id": "p046",
+      "text_a": "Medium Fried Rice",
+      "text_b": "Large Fried Rice",
+      "label": 1
+    },
+    {
+      "id": "p047",
+      "text_a": "Small Pad Thai",
+      "text_b": "Large Pad Thai",
+      "label": 1
+    },
+    {
+      "id": "p048",
+      "text_a": "Regular Green Curry",
+      "text_b": "Large Green Curry",
+      "label": 1
+    },
+    {
+      "id": "p049",
+      "text_a": "250ml Orange Juice",
+      "text_b": "500ml Orange Juice",
+      "label": 1
+    },
+    {
+      "id": "p050",
+      "text_a": "330ml Iced Tea",
+      "text_b": "1L Iced Tea",
+      "label": 1
+    },
+    {
+      "id": "p051",
+      "text_a": "Small Smoothie",
+      "text_b": "Large Smoothie",
+      "label": 1
+    },
+    {
+      "id": "p052",
+      "text_a": "Regular Lemonade",
+      "text_b": "XL Lemonade",
+      "label": 1
+    },
+    {
+      "id": "p053",
+      "text_a": "8 Pc Chicken Wings",
+      "text_b": "16 Pc Chicken Wings",
+      "label": 1
+    },
+    {
+      "id": "p054",
+      "text_a": "5 Pc Chicken Nuggets",
+      "text_b": "10 Pc Chicken Nuggets",
+      "label": 1
+    },
+    {
+      "id": "p055",
+      "text_a": "Single Cheeseburger",
+      "text_b": "Double Cheeseburger",
+      "label": 1
+    },
+    {
+      "id": "p056",
+      "text_a": "Half Chicken Shawarma Plate",
+      "text_b": "Full Chicken Shawarma Plate",
+      "label": 1
+    },
+    {
+      "id": "p057",
+      "text_a": "Small Beef Burrito",
+      "text_b": "Large Beef Burrito",
+      "label": 1
+    },
+    {
+      "id": "p058",
+      "text_a": "Mini Burger",
+      "text_b": "Regular Burger",
+      "label": 1
+    },
+    {
+      "id": "p059",
+      "text_a": "12oz Coffee",
+      "text_b": "16oz Coffee",
+      "label": 1
+    },
+    {
+      "id": "p060",
+      "text_a": "8oz Hot Chocolate",
+      "text_b": "12oz Hot Chocolate",
+      "label": 1
+    },
+    {
+      "id": "p061",
+      "text_a": "Small Milk Tea",
+      "text_b": "Large Milk Tea",
+      "label": 1
+    },
+    {
+      "id": "p062",
+      "text_a": "Regular Thai Iced Tea",
+      "text_b": "Large Thai Iced Tea",
+      "label": 1
+    },
+    {
+      "id": "p063",
+      "text_a": "Half Chicken Biryani",
+      "text_b": "Full Chicken Biryani",
+      "label": 1
+    },
+    {
+      "id": "p064",
+      "text_a": "Single Veg Thali",
+      "text_b": "Double Veg Thali",
+      "label": 1
+    },
+    {
+      "id": "p065",
+      "text_a": "1 Pc Paneer Tikka",
+      "text_b": "2 Pc Paneer Tikka",
+      "label": 1
+    },
+    {
+      "id": "p066",
+      "text_a": "3 Pc Chicken Seekh Kebab",
+      "text_b": "6 Pc Chicken Seekh Kebab",
+      "label": 1
+    },
+    {
+      "id": "p067",
+      "text_a": "Small Caesar Salad",
+      "text_b": "Large Caesar Salad",
+      "label": 1
+    },
+    {
+      "id": "p068",
+      "text_a": "Medium Greek Salad",
+      "text_b": "Large Greek Salad",
+      "label": 1
+    },
+    {
+      "id": "p069",
+      "text_a": "250ml Apple Juice",
+      "text_b": "1L Apple Juice",
+      "label": 1
+    },
+    {
+      "id": "p070",
+      "text_a": "Regular Cola",
+      "text_b": "Large Cola",
+      "label": 1
+    },
+    {
+      "id": "p071",
+      "text_a": "Tall Mocha",
+      "text_b": "Grande Mocha",
+      "label": 1
+    },
+    {
+      "id": "p072",
+      "text_a": "Venti Flat White",
+      "text_b": "Grande Flat White",
+      "label": 1
+    },
+    {
+      "id": "p073",
+      "text_a": "Half Veg Hakka Noodles",
+      "text_b": "Full Veg Hakka Noodles",
+      "label": 1
+    },
+    {
+      "id": "p074",
+      "text_a": "2 Pc Fish Fry",
+      "text_b": "4 Pc Fish Fry",
+      "label": 1
+    },
+    {
+      "id": "p075",
+      "text_a": "Small Chicken Korma",
+      "text_b": "Large Chicken Korma",
+      "label": 1
+    },
+    {
+      "id": "p076",
+      "text_a": "Mini Calzone",
+      "text_b": "Regular Calzone",
+      "label": 1
+    },
+    {
+      "id": "p077",
+      "text_a": "200g Paneer Tikka",
+      "text_b": "400g Paneer Tikka",
+      "label": 1
+    },
+    {
+      "id": "p078",
+      "text_a": "500g Butter Chicken",
+      "text_b": "1kg Butter Chicken",
+      "label": 1
+    },
+    {
+      "id": "p079",
+      "text_a": "Small Tzatziki",
+      "text_b": "Large Tzatziki",
+      "label": 1
+    },
+    {
+      "id": "p080",
+      "text_a": "Single Espresso",
+      "text_b": "Double Espresso",
+      "label": 1
+    },
+    {
+      "id": "p081",
+      "text_a": "Small Mango Smoothie",
+      "text_b": "Large Mango Smoothie",
+      "label": 1
+    },
+    {
+      "id": "p082",
+      "text_a": "Regular Ginger Ale",
+      "text_b": "XL Ginger Ale",
+      "label": 1
+    },
+    {
+      "id": "p083",
+      "text_a": "Half Plate Veg Fried Rice",
+      "text_b": "Full Plate Veg Fried Rice",
+      "label": 1
+    },
+    {
+      "id": "p084",
+      "text_a": "1 Pc Garlic Bread",
+      "text_b": "2 Pc Garlic Bread",
+      "label": 1
+    },
+    {
+      "id": "p085",
+      "text_a": "6 Pc Mozzarella Sticks",
+      "text_b": "12 Pc Mozzarella Sticks",
+      "label": 1
+    },
+    {
+      "id": "p086",
+      "text_a": "Small Chicken Caesar Wrap",
+      "text_b": "Large Chicken Caesar Wrap",
+      "label": 1
+    },
+    {
+      "id": "p087",
+      "text_a": "250ml Water",
+      "text_b": "1L Water",
+      "label": 1
+    },
+    {
+      "id": "p088",
+      "text_a": "Small Hot Tea",
+      "text_b": "Large Hot Tea",
+      "label": 1
+    },
+    {
+      "id": "p089",
+      "text_a": "Regular Cold Coffee",
+      "text_b": "Large Cold Coffee",
+      "label": 1
+    },
+    {
+      "id": "p090",
+      "text_a": "Half Paneer Roll",
+      "text_b": "Full Paneer Roll",
+      "label": 1
+    },
+    {
+      "id": "p091",
+      "text_a": "3 Pc Veg Kathi Roll",
+      "text_b": "6 Pc Veg Kathi Roll",
+      "label": 1
+    },
+    {
+      "id": "p092",
+      "text_a": "Medium Chicken Shawarma",
+      "text_b": "Large Chicken Shawarma",
+      "label": 1
+    },
+    {
+      "id": "p093",
+      "text_a": "Mini Pav Bhaji",
+      "text_b": "Regular Pav Bhaji",
+      "label": 1
+    },
+    {
+      "id": "p094",
+      "text_a": "Small Chicken Biryani",
+      "text_b": "Family Chicken Biryani",
+      "label": 1
+    },
+    {
+      "id": "p095",
+      "text_a": "200g Mutton Curry",
+      "text_b": "500g Mutton Curry",
+      "label": 1
+    },
+    {
+      "id": "p096",
+      "text_a": "1 Pc Onion Bhaji",
+      "text_b": "2 Pc Onion Bhaji",
+      "label": 1
+    },
+    {
+      "id": "p097",
+      "text_a": "Small Tandoori Platter",
+      "text_b": "Large Tandoori Platter",
+      "label": 1
+    },
+    {
+      "id": "p098",
+      "text_a": "Regular Veg Burger",
+      "text_b": "Large Veg Burger",
+      "label": 1
+    },
+    {
+      "id": "p099",
+      "text_a": "Half Plate Chicken Manchurian",
+      "text_b": "Full Plate Chicken Manchurian",
+      "label": 1
+    },
+    {
+      "id": "p100",
+      "text_a": "Small Black Coffee",
+      "text_b": "Large Black Coffee",
+      "label": 1
+    },
+    {
+      "id": "p101",
+      "text_a": "Tall Chai Latte",
+      "text_b": "Venti Chai Latte",
+      "label": 1
+    },
+    {
+      "id": "p102",
+      "text_a": "Grande Iced Latte",
+      "text_b": "Venti Iced Latte",
+      "label": 1
+    },
+    {
+      "id": "p103",
+      "text_a": "2 Pc Beef Tacos",
+      "text_b": "4 Pc Beef Tacos",
+      "label": 1
+    },
+    {
+      "id": "p104",
+      "text_a": "Small Pasta Bolognese",
+      "text_b": "Large Pasta Bolognese",
+      "label": 1
+    },
+    {
+      "id": "p105",
+      "text_a": "Regular Garlic Noodles",
+      "text_b": "Large Garlic Noodles",
+      "label": 1
+    },
+    {
+      "id": "p106",
+      "text_a": "Half Chicken Curry",
+      "text_b": "Full Chicken Curry",
+      "label": 1
+    },
+    {
+      "id": "p107",
+      "text_a": "Mini Sandwich",
+      "text_b": "Regular Sandwich",
+      "label": 1
+    },
+    {
+      "id": "p108",
+      "text_a": "8 Pc Buffalo Wings",
+      "text_b": "20 Pc Buffalo Wings",
+      "label": 1
+    },
+    {
+      "id": "p109",
+      "text_a": "330ml Pepsi",
+      "text_b": "1.5L Pepsi",
+      "label": 1
+    },
+    {
+      "id": "p110",
+      "text_a": "500ml Lemon Soda",
+      "text_b": "2L Lemon Soda",
+      "label": 1
+    },
+    {
+      "id": "p111",
+      "text_a": "Small Pineapple Juice",
+      "text_b": "Large Pineapple Juice",
+      "label": 1
+    },
+    {
+      "id": "p112",
+      "text_a": "Large Coffee",
+      "text_b": "Large Smoothie",
+      "label": 0
+    },
+    {
+      "id": "p113",
+      "text_a": "Small Fries",
+      "text_b": "Small Salad",
+      "label": 0
+    },
+    {
+      "id": "p114",
+      "text_a": "Regular Biryani",
+      "text_b": "Regular Pad Thai",
+      "label": 0
+    },
+    {
+      "id": "p115",
+      "text_a": "Family Pizza",
+      "text_b": "Family Bucket Chicken",
+      "label": 0
+    },
+    {
+      "id": "p116",
+      "text_a": "Half and Half Pizza",
+      "text_b": "Margherita Pizza",
+      "label": 0
+    },
+    {
+      "id": "p117",
+      "text_a": "Double Decker Burger",
+      "text_b": "Classic Burger",
+      "label": 0
+    },
+    {
+      "id": "p118",
+      "text_a": "Mini Idli",
+      "text_b": "Mini Dosa",
+      "label": 0
+    },
+    {
+      "id": "p119",
+      "text_a": "Grande Burrito",
+      "text_b": "Chicken Burrito",
+      "label": 0
+    },
+    {
+      "id": "p120",
+      "text_a": "Jumbo Shrimp",
+      "text_b": "Regular Prawns Curry",
+      "label": 0
+    },
+    {
+      "id": "p121",
+      "text_a": "Full English Breakfast",
+      "text_b": "Continental Breakfast",
+      "label": 0
+    },
+    {
+      "id": "p122",
+      "text_a": "Quarter Pounder",
+      "text_b": "Big Mac",
+      "label": 0
+    },
+    {
+      "id": "p123",
+      "text_a": "Large Chicken Pizza",
+      "text_b": "Large Veggie Pizza",
+      "label": 0
+    },
+    {
+      "id": "p124",
+      "text_a": "Regular Iced Latte",
+      "text_b": "Regular Iced Mocha",
+      "label": 0
+    },
+    {
+      "id": "p125",
+      "text_a": "Family Meal Deal",
+      "text_b": "Single Burger Combo",
+      "label": 0
+    },
+    {
+      "id": "p126",
+      "text_a": "Mini Pancakes",
+      "text_b": "Mini Waffles",
+      "label": 0
+    },
+    {
+      "id": "p127",
+      "text_a": "Large Soup",
+      "text_b": "Large Pasta",
+      "label": 0
+    },
+    {
+      "id": "p128",
+      "text_a": "Tall Cold Brew",
+      "text_b": "Tall Matcha Latte",
+      "label": 0
+    },
+    {
+      "id": "p129",
+      "text_a": "Grande Caramel Frappuccino",
+      "text_b": "Grande Mocha Frappuccino",
+      "label": 0
+    },
+    {
+      "id": "p130",
+      "text_a": "Mini Samosa Platter",
+      "text_b": "Mini Spring Rolls",
+      "label": 0
+    },
+    {
+      "id": "p131",
+      "text_a": "Half Chicken Tikka",
+      "text_b": "Half Lamb Kebab",
+      "label": 0
+    },
+    {
+      "id": "p132",
+      "text_a": "Large Butter Naan",
+      "text_b": "Large Garlic Naan",
+      "label": 0
+    },
+    {
+      "id": "p133",
+      "text_a": "Family Pack Fried Rice",
+      "text_b": "Family Pack Chow Mein",
+      "label": 0
+    },
+    {
+      "id": "p134",
+      "text_a": "Small Ramen",
+      "text_b": "Small Udon",
+      "label": 0
+    },
+    {
+      "id": "p135",
+      "text_a": "Double Cheeseburger",
+      "text_b": "Double Fish Burger",
+      "label": 0
+    },
+    {
+      "id": "p136",
+      "text_a": "Grande Green Tea",
+      "text_b": "Grande Thai Iced Tea",
+      "label": 0
+    },
+    {
+      "id": "p137",
+      "text_a": "Mini Falafel Wrap",
+      "text_b": "Mini Hummus Plate",
+      "label": 0
+    },
+    {
+      "id": "p138",
+      "text_a": "Regular Tandoori Chicken",
+      "text_b": "Regular Paneer Tikka",
+      "label": 0
+    },
+    {
+      "id": "p139",
+      "text_a": "Large Pho",
+      "text_b": "Large Bun Bo Hue",
+      "label": 0
+    },
+    {
+      "id": "p140",
+      "text_a": "Family Sushi Platter",
+      "text_b": "Family Tempura Basket",
+      "label": 0
+    },
+    {
+      "id": "p141",
+      "text_a": "Half Pasta Alfredo",
+      "text_b": "Half Lasagna",
+      "label": 0
+    },
+    {
+      "id": "p142",
+      "text_a": "Small Cappuccino",
+      "text_b": "Small Espresso",
+      "label": 0
+    },
+    {
+      "id": "p143",
+      "text_a": "Jumbo Chicken Wings",
+      "text_b": "Jumbo Onion Rings",
+      "label": 0
+    },
+    {
+      "id": "p144",
+      "text_a": "Mini Taco Bowl",
+      "text_b": "Mini Quesadilla",
+      "label": 0
+    },
+    {
+      "id": "p145",
+      "text_a": "Regular Beef Shawarma",
+      "text_b": "Regular Chicken Shawarma",
+      "label": 0
+    },
+    {
+      "id": "p146",
+      "text_a": "Large Kimchi Fried Rice",
+      "text_b": "Large Bibimbap",
+      "label": 0
+    },
+    {
+      "id": "p147",
+      "text_a": "Double Roast Beef Sandwich",
+      "text_b": "Double Turkey Sandwich",
+      "label": 0
+    },
+    {
+      "id": "p148",
+      "text_a": "Grande Mango Smoothie",
+      "text_b": "Grande Pineapple Juice",
+      "label": 0
+    },
+    {
+      "id": "p149",
+      "text_a": "Family Lasagna",
+      "text_b": "Family Garlic Bread",
+      "label": 0
+    },
+    {
+      "id": "p150",
+      "text_a": "Small Miso Soup",
+      "text_b": "Small Seaweed Salad",
+      "label": 0
+    },
+    {
+      "id": "p151",
+      "text_a": "Half Rack Ribs",
+      "text_b": "Half Rotisserie Chicken",
+      "label": 0
+    },
+    {
+      "id": "p152",
+      "text_a": "Mini Pita Pocket",
+      "text_b": "Mini Chicken Kabob",
+      "label": 0
+    },
+    {
+      "id": "p153",
+      "text_a": "Regular Veggie Burger",
+      "text_b": "Regular Chicken Burger",
+      "label": 0
+    },
+    {
+      "id": "p154",
+      "text_a": "Large Thai Curry",
+      "text_b": "Large Stir Fry Noodles",
+      "label": 0
+    },
+    {
+      "id": "p155",
+      "text_a": "Tall Iced Tea",
+      "text_b": "Tall Lemonade",
+      "label": 0
+    },
+    {
+      "id": "p156",
+      "text_a": "Double Bacon Pizza",
+      "text_b": "Double Pepperoni Pizza",
+      "label": 0
+    },
+    {
+      "id": "p157",
+      "text_a": "Mini Empanadas",
+      "text_b": "Mini Arepas",
+      "label": 0
+    },
+    {
+      "id": "p158",
+      "text_a": "Family Nachos",
+      "text_b": "Family Churros",
+      "label": 0
+    },
+    {
+      "id": "p159",
+      "text_a": "Quarter Chicken",
+      "text_b": "Quarter Duck",
+      "label": 0
+    },
+    {
+      "id": "p160",
+      "text_a": "Large Hummus Bowl",
+      "text_b": "Large Tabbouleh Bowl",
+      "label": 0
+    },
+    {
+      "id": "p161",
+      "text_a": "Regular Chai Latte",
+      "text_b": "Regular Hot Chocolate",
+      "label": 0
+    },
+    {
+      "id": "p162",
+      "text_a": "Grande Americano",
+      "text_b": "Grande Cappuccino",
+      "label": 0
+    },
+    {
+      "id": "p163",
+      "text_a": "Half Dozen Donuts",
+      "text_b": "Half Dozen Bagels",
+      "label": 0
+    },
+    {
+      "id": "p164",
+      "text_a": "Mini Croissant Sandwich",
+      "text_b": "Mini Danish Pastry",
+      "label": 0
+    },
+    {
+      "id": "p165",
+      "text_a": "Small Tofu Stir Fry",
+      "text_b": "Small Beef Teriyaki",
+      "label": 0
+    },
+    {
+      "id": "p166",
+      "text_a": "Jumbo Fish Fillet",
+      "text_b": "Jumbo Crab Cake",
+      "label": 0
+    },
+    {
+      "id": "p167",
+      "text_a": "Family Pasta Bowl",
+      "text_b": "Family Caesar Salad",
+      "label": 0
+    },
+    {
+      "id": "p168",
+      "text_a": "Double Egg Sandwich",
+      "text_b": "Double Avocado Toast",
+      "label": 0
+    },
+    {
+      "id": "p169",
+      "text_a": "Large Laksa",
+      "text_b": "Large Satay Noodles",
+      "label": 0
+    },
+    {
+      "id": "p170",
+      "text_a": "Mini Burrito Bowl",
+      "text_b": "Mini Taco Salad",
+      "label": 0
+    },
+    {
+      "id": "p171",
+      "text_a": "Regular Szechuan Chicken",
+      "text_b": "Regular Sweet and Sour Pork",
+      "label": 0
+    },
+    {
+      "id": "p172",
+      "text_a": "Tall Strawberry Milkshake",
+      "text_b": "Tall Vanilla Milkshake",
+      "label": 0
+    },
+    {
+      "id": "p173",
+      "text_a": "Grande Hazelnut Latte",
+      "text_b": "Grande Flat White",
+      "label": 0
+    },
+    {
+      "id": "p174",
+      "text_a": "Half Grilled Salmon",
+      "text_b": "Half Steak Frites",
+      "label": 0
+    },
+    {
+      "id": "p175",
+      "text_a": "Family Meat Feast Pizza",
+      "text_b": "Family Veggie Feast Pizza",
+      "label": 0
+    },
+    {
+      "id": "p176",
+      "text_a": "Small Egg Fried Rice",
+      "text_b": "Small Vegetable Chow Fun",
+      "label": 0
+    },
+    {
+      "id": "p177",
+      "text_a": "Mini Burger Sliders",
+      "text_b": "Mini Chicken Nuggets",
+      "label": 0
+    },
+    {
+      "id": "p178",
+      "text_a": "Large Corn Dog",
+      "text_b": "Large Hot Dog",
+      "label": 0
+    },
+    {
+      "id": "p179",
+      "text_a": "Double Paneer Wrap",
+      "text_b": "Double Falafel Wrap",
+      "label": 0
+    },
+    {
+      "id": "p180",
+      "text_a": "Regular Coconut Curry",
+      "text_b": "Regular Massaman Curry",
+      "label": 0
+    },
+    {
+      "id": "p181",
+      "text_a": "Family Breakfast Burrito",
+      "text_b": "Family Breakfast Sandwich",
+      "label": 0
+    },
+    {
+      "id": "p182",
+      "text_a": "Half Caesar Wrap",
+      "text_b": "Half Greek Salad",
+      "label": 0
+    },
+    {
+      "id": "p183",
+      "text_a": "Mini Pudding Cup",
+      "text_b": "Mini Fruit Tart",
+      "label": 0
+    },
+    {
+      "id": "p184",
+      "text_a": "Jumbo Pretzel",
+      "text_b": "Jumbo Soft Tacos",
+      "label": 0
+    },
+    {
+      "id": "p185",
+      "text_a": "Large Soba Noodle Salad",
+      "text_b": "Large Edamame Bowl",
+      "label": 0
+    },
+    {
+      "id": "p186",
+      "text_a": "Small Ricotta Ravioli",
+      "text_b": "Small Spinach Gnocchi",
+      "label": 0
+    },
+    {
+      "id": "p187",
+      "text_a": "Grande Orange Juice",
+      "text_b": "Grande Apple Cider",
+      "label": 0
+    },
+    {
+      "id": "p188",
+      "text_a": "Tall Nitro Coffee",
+      "text_b": "Tall Chai Tea",
+      "label": 0
+    },
+    {
+      "id": "p189",
+      "text_a": "Double Lamb Gyro",
+      "text_b": "Double Chicken Gyro",
+      "label": 0
+    },
+    {
+      "id": "p190",
+      "text_a": "Family Seafood Paella",
+      "text_b": "Family Chicken Paella",
+      "label": 0
+    },
+    {
+      "id": "p191",
+      "text_a": "Mini Tostada",
+      "text_b": "Mini Tamale",
+      "label": 0
+    },
+    {
+      "id": "p192",
+      "text_a": "Regular Pork Ramen",
+      "text_b": "Regular Vegetable Ramen",
+      "label": 0
+    },
+    {
+      "id": "p193",
+      "text_a": "Large Korean BBQ Plate",
+      "text_b": "Large Bulgogi Bowl",
+      "label": 0
+    },
+    {
+      "id": "p194",
+      "text_a": "Half Roast Turkey",
+      "text_b": "Half Ham Platter",
+      "label": 0
+    },
+    {
+      "id": "p195",
+      "text_a": "Small Basil Pesto Pasta",
+      "text_b": "Small Tomato Basil Soup",
+      "label": 0
+    },
+    {
+      "id": "p196",
+      "text_a": "Grande Salted Caramel Latte",
+      "text_b": "Grande Vanilla Latte",
+      "label": 0
+    },
+    {
+      "id": "p197",
+      "text_a": "Jumbo Meatball Sub",
+      "text_b": "Jumbo Philly Cheesesteak",
+      "label": 0
+    },
+    {
+      "id": "p198",
+      "text_a": "Mini Cheese Pizza",
+      "text_b": "Mini Pesto Pizza",
+      "label": 0
+    },
+    {
+      "id": "p199",
+      "text_a": "Family Curry Set",
+      "text_b": "Family Rice Bowl Set",
+      "label": 0
+    },
+    {
+      "id": "p200",
+      "text_a": "Regular Tuna Poke Bowl",
+      "text_b": "Regular Salmon Poke Bowl",
+      "label": 0
+    },
+    {
+      "id": "p201",
+      "text_a": "Large Mutton Korma",
+      "text_b": "Large Dal Makhani",
+      "label": 0
+    },
+    {
+      "id": "p202",
+      "text_a": "Tall Espresso Shot",
+      "text_b": "Tall Macchiato",
+      "label": 0
+    },
+    {
+      "id": "p203",
+      "text_a": "Double Chocolate Muffin",
+      "text_b": "Double Blueberry Muffin",
+      "label": 0
+    },
+    {
+      "id": "p204",
+      "text_a": "Half Roast Beef",
+      "text_b": "Half Chicken Caesar Wrap",
+      "label": 0
+    },
+    {
+      "id": "p205",
+      "text_a": "Mini Veggie Spring Roll",
+      "text_b": "Mini Chicken Spring Roll",
+      "label": 0
+    },
+    {
+      "id": "p206",
+      "text_a": "Large Moussaka",
+      "text_b": "Large Spanakopita",
+      "label": 0
+    },
+    {
+      "id": "p207",
+      "text_a": "Small Fried Calamari",
+      "text_b": "Small Crab Rangoon",
+      "label": 0
+    },
+    {
+      "id": "p208",
+      "text_a": "Grande Peach Iced Tea",
+      "text_b": "Grande Hibiscus Tea",
+      "label": 0
+    },
+    {
+      "id": "p209",
+      "text_a": "Family Combo Bucket",
+      "text_b": "Family Burger Box",
+      "label": 0
+    },
+    {
+      "id": "p210",
+      "text_a": "Regular Black Bean Taco",
+      "text_b": "Regular Carnitas Taco",
+      "label": 0
+    },
+    {
+      "id": "p211",
+      "text_a": "Jumbo Sausage Roll",
+      "text_b": "Jumbo Scotch Egg",
+      "label": 0
+    },
+    {
+      "id": "p212",
+      "text_a": "Mini Cheese Scone",
+      "text_b": "Mini Raisin Scone",
+      "label": 0
+    },
+    {
+      "id": "p213",
+      "text_a": "Large Chicken Satay",
+      "text_b": "Large Pork Satay",
+      "label": 0
+    },
+    {
+      "id": "p214",
+      "text_a": "Double Espresso Affogato",
+      "text_b": "Double Chocolate Gelato",
+      "label": 0
+    },
+    {
+      "id": "p215",
+      "text_a": "Half Mediterranean Plate",
+      "text_b": "Half Falafel Plate",
+      "label": 0
+    },
+    {
+      "id": "p216",
+      "text_a": "Tall Strawberry Lemonade",
+      "text_b": "Tall Passion Fruit Tea",
+      "label": 0
+    },
+    {
+      "id": "p217",
+      "text_a": "Grande Toffee Nut Latte",
+      "text_b": "Grande Cinnamon Dolce Latte",
+      "label": 0
+    },
+    {
+      "id": "p218",
+      "text_a": "Family Noodle Box",
+      "text_b": "Family Dumpling Box",
+      "label": 0
+    },
+    {
+      "id": "p219",
+      "text_a": "Mini Potato Cakes",
+      "text_b": "Mini Corn Fritters",
+      "label": 0
+    },
+    {
+      "id": "p220",
+      "text_a": "Large Seafood Chowder",
+      "text_b": "Large Mushroom Risotto",
+      "label": 0
+    },
+    {
+      "id": "p221",
+      "text_a": "Small Korean Pancake",
+      "text_b": "Small Japchae Bowl",
+      "label": 0
+    },
+    {
+      "id": "p222",
+      "text_a": "Quarter BBQ Chicken",
+      "text_b": "Quarter Veg Platter",
+      "label": 0
+    },
+    {
+      "id": "p223",
+      "text_a": "Double Halloumi Burger",
+      "text_b": "Double Falafel Burger",
+      "label": 0
+    },
+    {
+      "id": "p224",
+      "text_a": "Mini Chicken Tikka Wrap",
+      "text_b": "Mini Lamb Kebab Wrap",
+      "label": 0
+    },
+    {
+      "id": "p225",
+      "text_a": "Regular Espresso Tonic",
+      "text_b": "Regular Cold Brew Tonic",
+      "label": 0
+    },
+    {
+      "id": "p226",
+      "text_a": "Family Meatball Sub",
+      "text_b": "Family Veggie Sub",
+      "label": 0
+    },
+    {
+      "id": "p227",
+      "text_a": "Large Mango Lassi",
+      "text_b": "Large Rose Lassi",
+      "label": 0
+    },
+    {
+      "id": "p228",
+      "text_a": "Jumbo Clam Chowder",
+      "text_b": "Jumbo Lobster Bisque",
+      "label": 0
+    }
+  ],
+  "metadata": {
+    "n_pairs": 228,
+    "n_positive": 111,
+    "n_negative": 117
+  }
+}

@@ -1,0 +1,1951 @@
+{
+  "task": "noisy_menu_match",
+  "version": "0.1.0",
+  "description": "Menu matching with noisy text - prices, emojis, badges, abbreviations, and other real-world menu noise",
+  "metric": "best_f1",
+  "pairs": [
+    {
+      "id": "p001",
+      "text_a": "$14.99 Butter Chicken",
+      "text_b": "Butter Chicken",
+      "label": 1
+    },
+    {
+      "id": "p002",
+      "text_a": "Pad Thai @$12",
+      "text_b": "Pad Thai",
+      "label": 1
+    },
+    {
+      "id": "p003",
+      "text_a": "Tonkotsu Ramen - $15.50",
+      "text_b": "Tonkotsu Ramen",
+      "label": 1
+    },
+    {
+      "id": "p004",
+      "text_a": "Chicken Shawarma (AED 32)",
+      "text_b": "Chicken Shawarma",
+      "label": 1
+    },
+    {
+      "id": "p005",
+      "text_a": "***BESTSELLER*** Pad Thai",
+      "text_b": "Pad Thai",
+      "label": 1
+    },
+    {
+      "id": "p006",
+      "text_a": "~~SALE~~ Margherita Pizza",
+      "text_b": "Margherita Pizza",
+      "label": 1
+    },
+    {
+      "id": "p007",
+      "text_a": "NEW! Chicken Katsu Curry",
+      "text_b": "Chicken Katsu Curry",
+      "label": 1
+    },
+    {
+      "id": "p008",
+      "text_a": "MUST TRY: Lamb Gyro",
+      "text_b": "Lamb Gyro",
+      "label": 1
+    },
+    {
+      "id": "p009",
+      "text_a": "Margherita Pizza (12 inch)",
+      "text_b": "Margherita Pizza",
+      "label": 1
+    },
+    {
+      "id": "p010",
+      "text_a": "Chicken Wings (6 pcs)",
+      "text_b": "Chicken Wings",
+      "label": 1
+    },
+    {
+      "id": "p011",
+      "text_a": "Nasi Goreng [Regular]",
+      "text_b": "Nasi Goreng",
+      "label": 1
+    },
+    {
+      "id": "p012",
+      "text_a": "Tom Yum Soup - 500ml",
+      "text_b": "Tom Yum Soup",
+      "label": 1
+    },
+    {
+      "id": "p013",
+      "text_a": "2 x Chicken Shawarma (Regular)",
+      "text_b": "Chicken Shawarma",
+      "label": 1
+    },
+    {
+      "id": "p014",
+      "text_a": "1x Falafel Wrap + Drink",
+      "text_b": "Falafel Wrap",
+      "label": 1
+    },
+    {
+      "id": "p015",
+      "text_a": "Combo: Burger + Fries (Value)",
+      "text_b": "Burger",
+      "label": 1
+    },
+    {
+      "id": "p016",
+      "text_a": "Set A: Bento Box",
+      "text_b": "Bento Box",
+      "label": 1
+    },
+    {
+      "id": "p017",
+      "text_a": "CHICKEN TIKKA MASALA 🔥",
+      "text_b": "Chicken Tikka Masala",
+      "label": 1
+    },
+    {
+      "id": "p018",
+      "text_a": "SPICY TUNA ROLL 🍣",
+      "text_b": "Spicy Tuna Roll",
+      "label": 1
+    },
+    {
+      "id": "p019",
+      "text_a": "HOT COFFEE ☕",
+      "text_b": "Hot Coffee",
+      "label": 1
+    },
+    {
+      "id": "p020",
+      "text_a": "GARLIC BREAD 🧄🍞",
+      "text_b": "Garlic Bread",
+      "label": 1
+    },
+    {
+      "id": "p021",
+      "text_a": "ADD-ON: Garlic Naan | Serves 2",
+      "text_b": "Garlic Naan",
+      "label": 1
+    },
+    {
+      "id": "p022",
+      "text_a": "Side: Miso Soup (Optional)",
+      "text_b": "Miso Soup",
+      "label": 1
+    },
+    {
+      "id": "p023",
+      "text_a": "[Extra] Cheese Naan - Add to cart",
+      "text_b": "Cheese Naan",
+      "label": 1
+    },
+    {
+      "id": "p024",
+      "text_a": "Chkn Tka Msla",
+      "text_b": "Chicken Tikka Masala",
+      "label": 1
+    },
+    {
+      "id": "p025",
+      "text_a": "Btn Nan",
+      "text_b": "Butter Naan",
+      "label": 1
+    },
+    {
+      "id": "p026",
+      "text_a": "Choc Brwnie",
+      "text_b": "Chocolate Brownie",
+      "label": 1
+    },
+    {
+      "id": "p027",
+      "text_a": "Capp",
+      "text_b": "Cappuccino",
+      "label": 1
+    },
+    {
+      "id": "p028",
+      "text_a": "#12. Falafel Wrap [POPULAR]",
+      "text_b": "Falafel Wrap",
+      "label": 1
+    },
+    {
+      "id": "p029",
+      "text_a": "B5 - Beef Rendang [TOP PICK]",
+      "text_b": "Beef Rendang",
+      "label": 1
+    },
+    {
+      "id": "p030",
+      "text_a": "No. 42 Sweet & Sour Chicken [HOT]",
+      "text_b": "Sweet and Sour Chicken",
+      "label": 1
+    },
+    {
+      "id": "p031",
+      "text_a": "***HOT*** Spicy Ramen (Large) @¥980 🌶",
+      "text_b": "Spicy Ramen",
+      "label": 1
+    },
+    {
+      "id": "p032",
+      "text_a": "#7 BUTTER CHICKEN 🔥 $14.99 [BESTSELLER]",
+      "text_b": "Butter Chicken",
+      "label": 1
+    },
+    {
+      "id": "p033",
+      "text_a": "2x Pad Thai (Reg) @$12.50 ***PROMO***",
+      "text_b": "Pad Thai",
+      "label": 1
+    },
+    {
+      "id": "p034",
+      "text_a": "Recommended by 95% diners | Kung Pao Chicken",
+      "text_b": "Kung Pao Chicken",
+      "label": 1
+    },
+    {
+      "id": "p035",
+      "text_a": "Ordered 500+ times: Chicken Biryani",
+      "text_b": "Chicken Biryani",
+      "label": 1
+    },
+    {
+      "id": "p036",
+      "text_a": "Chef's Special >> Grilled Salmon",
+      "text_b": "Grilled Salmon",
+      "label": 1
+    },
+    {
+      "id": "p037",
+      "text_a": "Trending: Matcha Latte",
+      "text_b": "Matcha Latte",
+      "label": 1
+    },
+    {
+      "id": "p038",
+      "text_a": "₹249 Paneer Butter Masala",
+      "text_b": "Paneer Butter Masala",
+      "label": 1
+    },
+    {
+      "id": "p039",
+      "text_a": "Mushroom Risotto @€16",
+      "text_b": "Mushroom Risotto",
+      "label": 1
+    },
+    {
+      "id": "p040",
+      "text_a": "$9.50 Caesar Salad",
+      "text_b": "Caesar Salad",
+      "label": 1
+    },
+    {
+      "id": "p041",
+      "text_a": "Chicken Adobo (P299)",
+      "text_b": "Chicken Adobo",
+      "label": 1
+    },
+    {
+      "id": "p042",
+      "text_a": "***NEW*** Beef Burrito",
+      "text_b": "Beef Burrito",
+      "label": 1
+    },
+    {
+      "id": "p043",
+      "text_a": "~~LIMITED~~ Veggie Burger",
+      "text_b": "Veggie Burger",
+      "label": 1
+    },
+    {
+      "id": "p044",
+      "text_a": "Chicken Satay (8 sticks)",
+      "text_b": "Chicken Satay",
+      "label": 1
+    },
+    {
+      "id": "p045",
+      "text_a": "Pho Bo - Large",
+      "text_b": "Pho Bo",
+      "label": 1
+    },
+    {
+      "id": "p046",
+      "text_a": "2pcs Spring Rolls",
+      "text_b": "Spring Rolls",
+      "label": 1
+    },
+    {
+      "id": "p047",
+      "text_a": "Family Combo: Fried Chicken + Coke",
+      "text_b": "Fried Chicken",
+      "label": 1
+    },
+    {
+      "id": "p048",
+      "text_a": "VEGAN BOWL 🥗",
+      "text_b": "Vegan Bowl",
+      "label": 1
+    },
+    {
+      "id": "p049",
+      "text_a": "Masala Chai ☕",
+      "text_b": "Masala Chai",
+      "label": 1
+    },
+    {
+      "id": "p050",
+      "text_a": "Iced Thai Tea - 16oz",
+      "text_b": "Thai Tea",
+      "label": 1
+    },
+    {
+      "id": "p051",
+      "text_a": "Bubble Tea (Brown Sugar)",
+      "text_b": "Brown Sugar Bubble Tea",
+      "label": 1
+    },
+    {
+      "id": "p052",
+      "text_a": "Strawberry Smoothie 500ml",
+      "text_b": "Strawberry Smoothie",
+      "label": 1
+    },
+    {
+      "id": "p053",
+      "text_a": "Baguette Ham & Cheese [HOT]",
+      "text_b": "Ham and Cheese Baguette",
+      "label": 1
+    },
+    {
+      "id": "p054",
+      "text_a": "Croissant - Almond",
+      "text_b": "Almond Croissant",
+      "label": 1
+    },
+    {
+      "id": "p055",
+      "text_a": "Cheesecake Slice 1pc",
+      "text_b": "Cheesecake Slice",
+      "label": 1
+    },
+    {
+      "id": "p056",
+      "text_a": "Tiramisu (Classic)",
+      "text_b": "Tiramisu",
+      "label": 1
+    },
+    {
+      "id": "p057",
+      "text_a": "Chicken Tikka Masala (Jumbo)",
+      "text_b": "Chicken Tikka Masala",
+      "label": 1
+    },
+    {
+      "id": "p058",
+      "text_a": "Paneer Tikka @₹199",
+      "text_b": "Paneer Tikka",
+      "label": 1
+    },
+    {
+      "id": "p059",
+      "text_a": "Lamb Kebab - 2 Skewers",
+      "text_b": "Lamb Kebab",
+      "label": 1
+    },
+    {
+      "id": "p060",
+      "text_a": "Falafel Wrap (Extra Hummus)",
+      "text_b": "Falafel Wrap",
+      "label": 1
+    },
+    {
+      "id": "p061",
+      "text_a": "Sushi Platter 12 pcs",
+      "text_b": "Sushi Platter",
+      "label": 1
+    },
+    {
+      "id": "p062",
+      "text_a": "Salmon Nigiri [6pcs]",
+      "text_b": "Salmon Nigiri",
+      "label": 1
+    },
+    {
+      "id": "p063",
+      "text_a": "Kimchi Fried Rice - Spicy",
+      "text_b": "Kimchi Fried Rice",
+      "label": 1
+    },
+    {
+      "id": "p064",
+      "text_a": "Bibimbap (Regular)",
+      "text_b": "Bibimbap",
+      "label": 1
+    },
+    {
+      "id": "p065",
+      "text_a": "Green Curry @฿120",
+      "text_b": "Green Curry",
+      "label": 1
+    },
+    {
+      "id": "p066",
+      "text_a": "Tom Kha Gai (500ml)",
+      "text_b": "Tom Kha Gai",
+      "label": 1
+    },
+    {
+      "id": "p067",
+      "text_a": "Spaghetti Carbonara [Chef's Special]",
+      "text_b": "Spaghetti Carbonara",
+      "label": 1
+    },
+    {
+      "id": "p068",
+      "text_a": "Penne Arrabbiata 300g",
+      "text_b": "Penne Arrabbiata",
+      "label": 1
+    },
+    {
+      "id": "p069",
+      "text_a": "Burger & Fries Combo",
+      "text_b": "Burger",
+      "label": 1
+    },
+    {
+      "id": "p070",
+      "text_a": "BBQ Chicken Wings (10 pcs)",
+      "text_b": "BBQ Chicken Wings",
+      "label": 1
+    },
+    {
+      "id": "p071",
+      "text_a": "Omelette Sandwich - Breakfast",
+      "text_b": "Omelette Sandwich",
+      "label": 1
+    },
+    {
+      "id": "p072",
+      "text_a": "Hotdog with Cheese [Meal]",
+      "text_b": "Hotdog with Cheese",
+      "label": 1
+    },
+    {
+      "id": "p073",
+      "text_a": "Mango Lassi ₹99",
+      "text_b": "Mango Lassi",
+      "label": 1
+    },
+    {
+      "id": "p074",
+      "text_a": "Latte - Large",
+      "text_b": "Latte",
+      "label": 1
+    },
+    {
+      "id": "p075",
+      "text_a": "Espresso Shot x2",
+      "text_b": "Espresso",
+      "label": 1
+    },
+    {
+      "id": "p076",
+      "text_a": "Blueberry Muffin (1pc)",
+      "text_b": "Blueberry Muffin",
+      "label": 1
+    },
+    {
+      "id": "p077",
+      "text_a": "Veg Fried Rice - Family Pack",
+      "text_b": "Veg Fried Rice",
+      "label": 1
+    },
+    {
+      "id": "p078",
+      "text_a": "Chicken Caesar Wrap (Grilled)",
+      "text_b": "Chicken Caesar Wrap",
+      "label": 1
+    },
+    {
+      "id": "p079",
+      "text_a": "Beef Pho [XL]",
+      "text_b": "Beef Pho",
+      "label": 1
+    },
+    {
+      "id": "p080",
+      "text_a": "Pork Ramen - Spicy",
+      "text_b": "Pork Ramen",
+      "label": 1
+    },
+    {
+      "id": "p081",
+      "text_a": "Miso Soup $3.00",
+      "text_b": "Miso Soup",
+      "label": 1
+    },
+    {
+      "id": "p082",
+      "text_a": "Cappuccino (Tall)",
+      "text_b": "Cappuccino",
+      "label": 1
+    },
+    {
+      "id": "p083",
+      "text_a": "Chocolate Brownie [Warm]",
+      "text_b": "Chocolate Brownie",
+      "label": 1
+    },
+    {
+      "id": "p084",
+      "text_a": "Butter Naan - 2 pcs",
+      "text_b": "Butter Naan",
+      "label": 1
+    },
+    {
+      "id": "p085",
+      "text_a": "Chicken Biryani (Half)",
+      "text_b": "Chicken Biryani",
+      "label": 1
+    },
+    {
+      "id": "p086",
+      "text_a": "Grilled Salmon @£18",
+      "text_b": "Grilled Salmon",
+      "label": 1
+    },
+    {
+      "id": "p087",
+      "text_a": "Tuna Poke Bowl [Regular]",
+      "text_b": "Tuna Poke Bowl",
+      "label": 1
+    },
+    {
+      "id": "p088",
+      "text_a": "Veggie Spring Roll 4pcs",
+      "text_b": "Veggie Spring Roll",
+      "label": 1
+    },
+    {
+      "id": "p089",
+      "text_a": "Matcha Latte - Hot",
+      "text_b": "Matcha Latte",
+      "label": 1
+    },
+    {
+      "id": "p090",
+      "text_a": "Lemon Tart Slice",
+      "text_b": "Lemon Tart",
+      "label": 1
+    },
+    {
+      "id": "p091",
+      "text_a": "Chicken Shawarma Wrap - Large",
+      "text_b": "Chicken Shawarma Wrap",
+      "label": 1
+    },
+    {
+      "id": "p092",
+      "text_a": "Paneer Butter Masala [Spicy]",
+      "text_b": "Paneer Butter Masala",
+      "label": 1
+    },
+    {
+      "id": "p093",
+      "text_a": "Beef Rendang (R)",
+      "text_b": "Beef Rendang",
+      "label": 1
+    },
+    {
+      "id": "p094",
+      "text_a": "Sweet & Sour Pork - No Onion",
+      "text_b": "Sweet and Sour Pork",
+      "label": 1
+    },
+    {
+      "id": "p095",
+      "text_a": "Margherita Pizza 10\"",
+      "text_b": "Margherita Pizza",
+      "label": 1
+    },
+    {
+      "id": "p096",
+      "text_a": "Chicken Katsu Curry - 1 Serving",
+      "text_b": "Chicken Katsu Curry",
+      "label": 1
+    },
+    {
+      "id": "p097",
+      "text_a": "Falafel Pita (Add Tahini)",
+      "text_b": "Falafel Pita",
+      "label": 1
+    },
+    {
+      "id": "p098",
+      "text_a": "Tonkotsu Ramen [Spicy Level 2]",
+      "text_b": "Tonkotsu Ramen",
+      "label": 1
+    },
+    {
+      "id": "p099",
+      "text_a": "Iced Coffee - Medium",
+      "text_b": "Iced Coffee",
+      "label": 1
+    },
+    {
+      "id": "p100",
+      "text_a": "Bubble Tea - Taro",
+      "text_b": "Taro Bubble Tea",
+      "label": 1
+    },
+    {
+      "id": "p101",
+      "text_a": "Croissant [Butter]",
+      "text_b": "Butter Croissant",
+      "label": 1
+    },
+    {
+      "id": "p102",
+      "text_a": "Cheese Pizza - 8 slices",
+      "text_b": "Cheese Pizza",
+      "label": 1
+    },
+    {
+      "id": "p103",
+      "text_a": "Chicken Tikka Masala - Family Pack",
+      "text_b": "Chicken Tikka Masala",
+      "label": 1
+    },
+    {
+      "id": "p104",
+      "text_a": "Samosa Chaat @₹89",
+      "text_b": "Samosa Chaat",
+      "label": 1
+    },
+    {
+      "id": "p105",
+      "text_a": "Lamb Gyro (Pita)",
+      "text_b": "Lamb Gyro",
+      "label": 1
+    },
+    {
+      "id": "p106",
+      "text_a": "Mushroom Soup 400ml",
+      "text_b": "Mushroom Soup",
+      "label": 1
+    },
+    {
+      "id": "p107",
+      "text_a": "Spicy Tuna Roll - 8pc",
+      "text_b": "Spicy Tuna Roll",
+      "label": 1
+    },
+    {
+      "id": "p108",
+      "text_a": "Chicken Teriyaki Bowl [Lunch]",
+      "text_b": "Chicken Teriyaki Bowl",
+      "label": 1
+    },
+    {
+      "id": "p109",
+      "text_a": "Pad See Ew $11",
+      "text_b": "Pad See Ew",
+      "label": 1
+    },
+    {
+      "id": "p110",
+      "text_a": "Vegetable Lasagna (Slice)",
+      "text_b": "Vegetable Lasagna",
+      "label": 1
+    },
+    {
+      "id": "p111",
+      "text_a": "Fish and Chips [Classic]",
+      "text_b": "Fish and Chips",
+      "label": 1
+    },
+    {
+      "id": "p112",
+      "text_a": "Jasmine Tea - Hot",
+      "text_b": "Jasmine Tea",
+      "label": 1
+    },
+    {
+      "id": "p113",
+      "text_a": "Mango Smoothie 🍹",
+      "text_b": "Mango Smoothie",
+      "label": 1
+    },
+    {
+      "id": "p114",
+      "text_a": "Garlic Bread (4 pcs)",
+      "text_b": "Garlic Bread",
+      "label": 1
+    },
+    {
+      "id": "p115",
+      "text_a": "Chicken Shawarma AED 28 | Best Value",
+      "text_b": "Chicken Shawarma",
+      "label": 1
+    },
+    {
+      "id": "p116",
+      "text_a": "***POPULAR*** Kung Pao Shrimp",
+      "text_b": "Kung Pao Shrimp",
+      "label": 1
+    },
+    {
+      "id": "p117",
+      "text_a": "NEW Chicken Biryani (Single)",
+      "text_b": "Chicken Biryani",
+      "label": 1
+    },
+    {
+      "id": "p118",
+      "text_a": "B5 Beef Rendang",
+      "text_b": "Beef Rendang",
+      "label": 1
+    },
+    {
+      "id": "p119",
+      "text_a": "#18 Sushi Roll [Chef Pick]",
+      "text_b": "Sushi Roll",
+      "label": 1
+    },
+    {
+      "id": "p120",
+      "text_a": "Large Latte - Trending",
+      "text_b": "Latte",
+      "label": 1
+    },
+    {
+      "id": "p121",
+      "text_a": "Chai Tea Latte - 12oz",
+      "text_b": "Chai Tea Latte",
+      "label": 1
+    },
+    {
+      "id": "p122",
+      "text_a": "Chocolate Chip Cookie x3",
+      "text_b": "Chocolate Chip Cookie",
+      "label": 1
+    },
+    {
+      "id": "p123",
+      "text_a": "Sourdough Bread [Fresh]",
+      "text_b": "Sourdough Bread",
+      "label": 1
+    },
+    {
+      "id": "p124",
+      "text_a": "2x Falafel Wrap + Fries",
+      "text_b": "Falafel Wrap",
+      "label": 1
+    },
+    {
+      "id": "p125",
+      "text_a": "Crispy Chicken Burger (Meal)",
+      "text_b": "Crispy Chicken Burger",
+      "label": 1
+    },
+    {
+      "id": "p126",
+      "text_a": "#5. Paneer Tikka [SPICY]",
+      "text_b": "Paneer Tikka",
+      "label": 1
+    },
+    {
+      "id": "p127",
+      "text_a": "Recommended by 95% diners | Butter Naan",
+      "text_b": "Butter Naan",
+      "label": 1
+    },
+    {
+      "id": "p128",
+      "text_a": "Chef's Special >> Margherita Pizza",
+      "text_b": "Margherita Pizza",
+      "label": 1
+    },
+    {
+      "id": "p129",
+      "text_a": "Trending: Cold Brew Coffee",
+      "text_b": "Cold Brew Coffee",
+      "label": 1
+    },
+    {
+      "id": "p130",
+      "text_a": "Miso Ramen (Large) @¥1200",
+      "text_b": "Miso Ramen",
+      "label": 1
+    },
+    {
+      "id": "p131",
+      "text_a": "Chicken Satay - 6 skewers",
+      "text_b": "Chicken Satay",
+      "label": 1
+    },
+    {
+      "id": "p132",
+      "text_a": "Veg Biryani [Mini]",
+      "text_b": "Veg Biryani",
+      "label": 1
+    },
+    {
+      "id": "p133",
+      "text_a": "Prawn Noodles 500g",
+      "text_b": "Prawn Noodles",
+      "label": 1
+    },
+    {
+      "id": "p134",
+      "text_a": "Hot Chocolate ☕🍫",
+      "text_b": "Hot Chocolate",
+      "label": 1
+    },
+    {
+      "id": "p135",
+      "text_a": "Chicken Korma (Promo)",
+      "text_b": "Chicken Korma",
+      "label": 1
+    },
+    {
+      "id": "p136",
+      "text_a": "Pho Ga - Extra Herbs",
+      "text_b": "Pho Ga",
+      "label": 1
+    },
+    {
+      "id": "p137",
+      "text_a": "Egg Fried Rice @¥38",
+      "text_b": "Egg Fried Rice",
+      "label": 1
+    },
+    {
+      "id": "p138",
+      "text_a": "Chicken Tenders 5pcs",
+      "text_b": "Chicken Tenders",
+      "label": 1
+    },
+    {
+      "id": "p139",
+      "text_a": "MATCHA LATTE 🍵",
+      "text_b": "Matcha Latte",
+      "label": 1
+    },
+    {
+      "id": "p140",
+      "text_a": "Butter Chicken - Value Meal",
+      "text_b": "Butter Chicken",
+      "label": 1
+    },
+    {
+      "id": "p141",
+      "text_a": "Grilled Cheese Sandwich [Add Bacon]",
+      "text_b": "Grilled Cheese Sandwich",
+      "label": 1
+    },
+    {
+      "id": "p142",
+      "text_a": "Steak Frites - Medium Rare",
+      "text_b": "Steak Frites",
+      "label": 1
+    },
+    {
+      "id": "p143",
+      "text_a": "Shakshuka (2 eggs)",
+      "text_b": "Shakshuka",
+      "label": 1
+    },
+    {
+      "id": "p144",
+      "text_a": "Chicken Caesar Salad $13.99",
+      "text_b": "Chicken Caesar Salad",
+      "label": 1
+    },
+    {
+      "id": "p145",
+      "text_a": "Mango Sticky Rice - Thai Style",
+      "text_b": "Mango Sticky Rice",
+      "label": 1
+    },
+    {
+      "id": "p146",
+      "text_a": "Tiramisu Slice (New)",
+      "text_b": "Tiramisu",
+      "label": 1
+    },
+    {
+      "id": "p147",
+      "text_a": "#22. Grilled Salmon [TOP RATED]",
+      "text_b": "Grilled Salmon",
+      "label": 1
+    },
+    {
+      "id": "p148",
+      "text_a": "Spicy Ramen 🍜 + Egg",
+      "text_b": "Spicy Ramen",
+      "label": 1
+    },
+    {
+      "id": "p149",
+      "text_a": "Sponge Cake [Freshly Baked]",
+      "text_b": "Sponge Cake",
+      "label": 1
+    },
+    {
+      "id": "p150",
+      "text_a": "Creamy Mushroom Pasta @€15.90",
+      "text_b": "Creamy Mushroom Pasta",
+      "label": 1
+    },
+    {
+      "id": "p151",
+      "text_a": "Chicken Biryani 1kg",
+      "text_b": "Chicken Biryani",
+      "label": 1
+    },
+    {
+      "id": "p152",
+      "text_a": "Falafel Bowl (No Onion)",
+      "text_b": "Falafel Bowl",
+      "label": 1
+    },
+    {
+      "id": "p153",
+      "text_a": "***BESTSELLER*** Caesar Salad",
+      "text_b": "***BESTSELLER*** Greek Salad",
+      "label": 0
+    },
+    {
+      "id": "p154",
+      "text_a": "🔥 Chicken Wings",
+      "text_b": "🔥 Onion Rings",
+      "label": 0
+    },
+    {
+      "id": "p155",
+      "text_a": "#1 Pad Thai [TOP PICK]",
+      "text_b": "#1 Green Curry [TOP PICK]",
+      "label": 0
+    },
+    {
+      "id": "p156",
+      "text_a": "$12.99 Fish Tacos",
+      "text_b": "$12.99 Fish & Chips",
+      "label": 0
+    },
+    {
+      "id": "p157",
+      "text_a": "***NEW*** Pho Bo",
+      "text_b": "***NEW*** Tom Yum",
+      "label": 0
+    },
+    {
+      "id": "p158",
+      "text_a": "Spicy Chicken Wings @$8.99 🔥",
+      "text_b": "BBQ Chicken Wings @$8.99 🔥",
+      "label": 0
+    },
+    {
+      "id": "p159",
+      "text_a": "GRILLED CHICKEN SANDWICH",
+      "text_b": "GRILLED CHICKEN WRAP",
+      "label": 0
+    },
+    {
+      "id": "p160",
+      "text_a": "Chicken Biryani (Serves 2) 🔥",
+      "text_b": "Chicken Fried Rice (Serves 2) 🔥",
+      "label": 0
+    },
+    {
+      "id": "p161",
+      "text_a": "Family Meal: 2 Burgers + Fries + Drinks",
+      "text_b": "Classic Burger",
+      "label": 0
+    },
+    {
+      "id": "p162",
+      "text_a": "Bento Set A: Teriyaki + Rice + Miso",
+      "text_b": "Chicken Teriyaki",
+      "label": 0
+    },
+    {
+      "id": "p163",
+      "text_a": "Party Pack: 20 Momos",
+      "text_b": "Steamed Momos (6 pcs)",
+      "label": 0
+    },
+    {
+      "id": "p164",
+      "text_a": "$10 Naan",
+      "text_b": "$10 Roti",
+      "label": 0
+    },
+    {
+      "id": "p165",
+      "text_a": "***HOT*** Green Tea",
+      "text_b": "***HOT*** Matcha Latte",
+      "label": 0
+    },
+    {
+      "id": "p166",
+      "text_a": "#3 Crepe [POPULAR]",
+      "text_b": "#3 Pancake [POPULAR]",
+      "label": 0
+    },
+    {
+      "id": "p167",
+      "text_a": "ICED AMERICANO ☕",
+      "text_b": "ICED LATTE ☕",
+      "label": 0
+    },
+    {
+      "id": "p168",
+      "text_a": "Paneer Tikka Masala | Chef's Pick",
+      "text_b": "Paneer Butter Masala | Chef's Pick",
+      "label": 0
+    },
+    {
+      "id": "p169",
+      "text_a": "Lamb Shawarma Wrap - Extra Sauce",
+      "text_b": "Falafel Wrap - Extra Sauce",
+      "label": 0
+    },
+    {
+      "id": "p170",
+      "text_a": "Sushi Combo A (8 pcs)",
+      "text_b": "Ramen Combo A (8 pcs)",
+      "label": 0
+    },
+    {
+      "id": "p171",
+      "text_a": "Korean Fried Chicken 12pc [SPICY]",
+      "text_b": "Bibimbap Bowl 12pc [SPICY]",
+      "label": 0
+    },
+    {
+      "id": "p172",
+      "text_a": "Thai Basil Chicken - Medium",
+      "text_b": "Thai Green Curry - Medium",
+      "label": 0
+    },
+    {
+      "id": "p173",
+      "text_a": "Margherita Pizza ★★★★★",
+      "text_b": "Pepperoni Pizza ★★★★★",
+      "label": 0
+    },
+    {
+      "id": "p174",
+      "text_a": "Double Cheeseburger + Fries",
+      "text_b": "Chicken Nuggets + Fries",
+      "label": 0
+    },
+    {
+      "id": "p175",
+      "text_a": "Street Tacos 3 for $9.99",
+      "text_b": "Burrito Bowl 3 for $9.99",
+      "label": 0
+    },
+    {
+      "id": "p176",
+      "text_a": "Kung Pao Chicken (Large)",
+      "text_b": "Mongolian Beef (Large)",
+      "label": 0
+    },
+    {
+      "id": "p177",
+      "text_a": "Miso Soup - Add Tofu",
+      "text_b": "Seaweed Salad - Add Tofu",
+      "label": 0
+    },
+    {
+      "id": "p178",
+      "text_a": "Crispy Spring Rolls x6",
+      "text_b": "Steamed Dumplings x6",
+      "label": 0
+    },
+    {
+      "id": "p179",
+      "text_a": "Pasta Alfredo | NEW RECIPE",
+      "text_b": "Pasta Bolognese | NEW RECIPE",
+      "label": 0
+    },
+    {
+      "id": "p180",
+      "text_a": "BBQ Pulled Pork Sandwich $11.50",
+      "text_b": "Brisket Sandwich $11.50",
+      "label": 0
+    },
+    {
+      "id": "p181",
+      "text_a": "Veggie Pizza [Top Rated]",
+      "text_b": "Hawaiian Pizza [Top Rated]",
+      "label": 0
+    },
+    {
+      "id": "p182",
+      "text_a": "Chai Latte (HOT) @ $4.75",
+      "text_b": "Hot Chocolate (HOT) @ $4.75",
+      "label": 0
+    },
+    {
+      "id": "p183",
+      "text_a": "Mango Sticky Rice 🍧",
+      "text_b": "Coconut Rice Pudding 🍧",
+      "label": 0
+    },
+    {
+      "id": "p184",
+      "text_a": "Espresso Shot x2",
+      "text_b": "Macchiato Shot x2",
+      "label": 0
+    },
+    {
+      "id": "p185",
+      "text_a": "Butter Chicken Meal Deal",
+      "text_b": "Chana Masala Meal Deal",
+      "label": 0
+    },
+    {
+      "id": "p186",
+      "text_a": "Hummus Plate + Pita",
+      "text_b": "Baba Ganoush Plate + Pita",
+      "label": 0
+    },
+    {
+      "id": "p187",
+      "text_a": "Salmon Nigiri 4pc",
+      "text_b": "Tuna Sashimi 4pc",
+      "label": 0
+    },
+    {
+      "id": "p188",
+      "text_a": "Japchae Noodles [BOGO]",
+      "text_b": "Tteokbokki [BOGO]",
+      "label": 0
+    },
+    {
+      "id": "p189",
+      "text_a": "Green Curry Bowl #2",
+      "text_b": "Massaman Curry Bowl #2",
+      "label": 0
+    },
+    {
+      "id": "p190",
+      "text_a": "Fettuccine Carbonara - Lunch",
+      "text_b": "Lasagna - Lunch",
+      "label": 0
+    },
+    {
+      "id": "p191",
+      "text_a": "Classic Hot Dog w/ Fries",
+      "text_b": "Corn Dog w/ Fries",
+      "label": 0
+    },
+    {
+      "id": "p192",
+      "text_a": "Chicken Quesadilla 🌶️",
+      "text_b": "Beef Quesadilla 🌶️",
+      "label": 0
+    },
+    {
+      "id": "p193",
+      "text_a": "Mapo Tofu (Spicy)",
+      "text_b": "Sweet & Sour Pork (Spicy)",
+      "label": 0
+    },
+    {
+      "id": "p194",
+      "text_a": "Veg Hakka Noodles ⭐",
+      "text_b": "Chicken Hakka Noodles ⭐",
+      "label": 0
+    },
+    {
+      "id": "p195",
+      "text_a": "Spring Rolls (Veg) - 6 pcs",
+      "text_b": "Shrimp Rolls (Shrimp) - 6 pcs",
+      "label": 0
+    },
+    {
+      "id": "p196",
+      "text_a": "Penne Arrabbiata | $9.95",
+      "text_b": "Penne Pesto | $9.95",
+      "label": 0
+    },
+    {
+      "id": "p197",
+      "text_a": "Grilled Cheese + Tomato Soup",
+      "text_b": "Tuna Melt + Tomato Soup",
+      "label": 0
+    },
+    {
+      "id": "p198",
+      "text_a": "Fish Curry Lunch Box",
+      "text_b": "Prawn Curry Lunch Box",
+      "label": 0
+    },
+    {
+      "id": "p199",
+      "text_a": "Katsu Chicken Rice Bowl",
+      "text_b": "Teriyaki Salmon Rice Bowl",
+      "label": 0
+    },
+    {
+      "id": "p200",
+      "text_a": "Tom Kha Soup - Small",
+      "text_b": "Tom Yum Soup - Small",
+      "label": 0
+    },
+    {
+      "id": "p201",
+      "text_a": "Greek Yogurt Parfait *BEST*",
+      "text_b": "Fruit Salad Cup *BEST*",
+      "label": 0
+    },
+    {
+      "id": "p202",
+      "text_a": "Iced Green Tea Lemonade",
+      "text_b": "Iced Black Tea Lemonade",
+      "label": 0
+    },
+    {
+      "id": "p203",
+      "text_a": "Chocolate Croissant ☕",
+      "text_b": "Almond Croissant ☕",
+      "label": 0
+    },
+    {
+      "id": "p204",
+      "text_a": "Samosa Chaat (Regular)",
+      "text_b": "Pani Puri (Regular)",
+      "label": 0
+    },
+    {
+      "id": "p205",
+      "text_a": "Beef Pho XL",
+      "text_b": "Chicken Pho XL",
+      "label": 0
+    },
+    {
+      "id": "p206",
+      "text_a": "Teriyaki Chicken Donburi",
+      "text_b": "Gyudon Beef Bowl",
+      "label": 0
+    },
+    {
+      "id": "p207",
+      "text_a": "Banh Mi - Pork",
+      "text_b": "Banh Mi - Chicken",
+      "label": 0
+    },
+    {
+      "id": "p208",
+      "text_a": "Maki Roll Set A",
+      "text_b": "Nigiri Set A",
+      "label": 0
+    },
+    {
+      "id": "p209",
+      "text_a": "Kimchi Fried Rice - Extra Egg",
+      "text_b": "Egg Fried Rice - Extra Egg",
+      "label": 0
+    },
+    {
+      "id": "p210",
+      "text_a": "Lemon Chicken [Chef Special]",
+      "text_b": "Orange Chicken [Chef Special]",
+      "label": 0
+    },
+    {
+      "id": "p211",
+      "text_a": "Cheese Pizza Slice $3.25",
+      "text_b": "Veggie Pizza Slice $3.25",
+      "label": 0
+    },
+    {
+      "id": "p212",
+      "text_a": "Shrimp Pad See Ew",
+      "text_b": "Beef Pad See Ew",
+      "label": 0
+    },
+    {
+      "id": "p213",
+      "text_a": "Turkey Club Sandwich - Toasted",
+      "text_b": "BLT Sandwich - Toasted",
+      "label": 0
+    },
+    {
+      "id": "p214",
+      "text_a": "Falooda Drink - Large",
+      "text_b": "Mango Lassi Drink - Large",
+      "label": 0
+    },
+    {
+      "id": "p215",
+      "text_a": "Baklava Box (4 pcs)",
+      "text_b": "Kunafa Box (4 pcs)",
+      "label": 0
+    },
+    {
+      "id": "p216",
+      "text_a": "Chicken Shawarma Pita",
+      "text_b": "Beef Shawarma Pita",
+      "label": 0
+    },
+    {
+      "id": "p217",
+      "text_a": "Curry Udon 🍜",
+      "text_b": "Soy Sauce Ramen 🍜",
+      "label": 0
+    },
+    {
+      "id": "p218",
+      "text_a": "Mozzarella Sticks 8pc",
+      "text_b": "Jalapeño Poppers 8pc",
+      "label": 0
+    },
+    {
+      "id": "p219",
+      "text_a": "Seafood Paella | Serving 1",
+      "text_b": "Chicken Paella | Serving 1",
+      "label": 0
+    },
+    {
+      "id": "p220",
+      "text_a": "Miso Ramen - Extra Noodles",
+      "text_b": "Shoyu Ramen - Extra Noodles",
+      "label": 0
+    },
+    {
+      "id": "p221",
+      "text_a": "Egg Tart Box x5",
+      "text_b": "Custard Tart Box x5",
+      "label": 0
+    },
+    {
+      "id": "p222",
+      "text_a": "Poutine Classic",
+      "text_b": "Loaded Nachos Classic",
+      "label": 0
+    },
+    {
+      "id": "p223",
+      "text_a": "Cappuccino ☕ 12oz",
+      "text_b": "Flat White ☕ 12oz",
+      "label": 0
+    },
+    {
+      "id": "p224",
+      "text_a": "Fried Calamari - Starter",
+      "text_b": "Buffalo Cauliflower - Starter",
+      "label": 0
+    },
+    {
+      "id": "p225",
+      "text_a": "Chicken Satay Skewers",
+      "text_b": "Beef Satay Skewers",
+      "label": 0
+    },
+    {
+      "id": "p226",
+      "text_a": "Pork Dumplings (10)",
+      "text_b": "Veg Dumplings (10)",
+      "label": 0
+    },
+    {
+      "id": "p227",
+      "text_a": "Tiramisu Slice",
+      "text_b": "Cheesecake Slice",
+      "label": 0
+    },
+    {
+      "id": "p228",
+      "text_a": "Chili Paneer Dry",
+      "text_b": "Chili Chicken Dry",
+      "label": 0
+    },
+    {
+      "id": "p229",
+      "text_a": "Tortilla Soup - Bowl",
+      "text_b": "Chicken Tortilla Soup - Bowl",
+      "label": 0
+    },
+    {
+      "id": "p230",
+      "text_a": "Sushi Burrito 🌯",
+      "text_b": "Burrito Bowl 🌯",
+      "label": 0
+    },
+    {
+      "id": "p231",
+      "text_a": "Szechuan Beef #HOT",
+      "text_b": "Szechuan Shrimp #HOT",
+      "label": 0
+    },
+    {
+      "id": "p232",
+      "text_a": "Fruit Danish ★",
+      "text_b": "Cheese Danish ★",
+      "label": 0
+    },
+    {
+      "id": "p233",
+      "text_a": "Avocado Toast + Egg",
+      "text_b": "Avocado Toast + Bacon",
+      "label": 0
+    },
+    {
+      "id": "p234",
+      "text_a": "Masala Chai - No Sugar",
+      "text_b": "Karak Tea - No Sugar",
+      "label": 0
+    },
+    {
+      "id": "p235",
+      "text_a": "Chicken Kebab Plate",
+      "text_b": "Lamb Kebab Plate",
+      "label": 0
+    },
+    {
+      "id": "p236",
+      "text_a": "Veg Spring Roll Bowl",
+      "text_b": "Chicken Spring Roll Bowl",
+      "label": 0
+    },
+    {
+      "id": "p237",
+      "text_a": "Pork Ramen Special",
+      "text_b": "Vegetable Ramen Special",
+      "label": 0
+    },
+    {
+      "id": "p238",
+      "text_a": "Aloo Gobi Lunch Special",
+      "text_b": "Palak Paneer Lunch Special",
+      "label": 0
+    },
+    {
+      "id": "p239",
+      "text_a": "Shrimp Tempura Roll",
+      "text_b": "California Roll",
+      "label": 0
+    },
+    {
+      "id": "p240",
+      "text_a": "Fish & Rice Combo",
+      "text_b": "Chicken & Rice Combo",
+      "label": 0
+    },
+    {
+      "id": "p241",
+      "text_a": "Blueberry Muffin 🧁",
+      "text_b": "Banana Muffin 🧁",
+      "label": 0
+    },
+    {
+      "id": "p242",
+      "text_a": "BBQ Ribs Half Rack",
+      "text_b": "Fried Chicken Half Rack",
+      "label": 0
+    },
+    {
+      "id": "p243",
+      "text_a": "Veggie Burger Deluxe",
+      "text_b": "Beef Burger Deluxe",
+      "label": 0
+    },
+    {
+      "id": "p244",
+      "text_a": "Soba Noodle Salad",
+      "text_b": "Udon Noodle Salad",
+      "label": 0
+    },
+    {
+      "id": "p245",
+      "text_a": "Coconut Water 500ml",
+      "text_b": "Aloe Vera Drink 500ml",
+      "label": 0
+    },
+    {
+      "id": "p246",
+      "text_a": "Minestrone Soup - Cup",
+      "text_b": "Clam Chowder Soup - Cup",
+      "label": 0
+    },
+    {
+      "id": "p247",
+      "text_a": "Raisin Bun",
+      "text_b": "Cinnamon Bun",
+      "label": 0
+    },
+    {
+      "id": "p248",
+      "text_a": "Chicken Shawarma Rice Bowl",
+      "text_b": "Lentil Rice Bowl",
+      "label": 0
+    },
+    {
+      "id": "p249",
+      "text_a": "Pork Belly Bao (2 pcs)",
+      "text_b": "Veggie Bao (2 pcs)",
+      "label": 0
+    },
+    {
+      "id": "p250",
+      "text_a": "Peking Duck Wrap",
+      "text_b": "Beef Wrap",
+      "label": 0
+    },
+    {
+      "id": "p251",
+      "text_a": "Cajun Fries 🌶",
+      "text_b": "Truffle Fries 🌶",
+      "label": 0
+    },
+    {
+      "id": "p252",
+      "text_a": "Tropical Smoothie - 16oz",
+      "text_b": "Berry Smoothie - 16oz",
+      "label": 0
+    },
+    {
+      "id": "p253",
+      "text_a": "Garlic Bread Sticks",
+      "text_b": "Cheesy Bread Sticks",
+      "label": 0
+    },
+    {
+      "id": "p254",
+      "text_a": "Chicken Shawarma Salad",
+      "text_b": "Falafel Salad",
+      "label": 0
+    },
+    {
+      "id": "p255",
+      "text_a": "Paneer Burger",
+      "text_b": "Chicken Burger",
+      "label": 0
+    },
+    {
+      "id": "p256",
+      "text_a": "Tuna Melt Panini",
+      "text_b": "Ham Panini",
+      "label": 0
+    },
+    {
+      "id": "p257",
+      "text_a": "Thai Iced Coffee",
+      "text_b": "Vietnamese Iced Coffee",
+      "label": 0
+    },
+    {
+      "id": "p258",
+      "text_a": "Baked Ziti",
+      "text_b": "Spaghetti Meatballs",
+      "label": 0
+    },
+    {
+      "id": "p259",
+      "text_a": "Sausage Roll",
+      "text_b": "Cornish Pasty",
+      "label": 0
+    },
+    {
+      "id": "p260",
+      "text_a": "Chicken Pot Pie",
+      "text_b": "Beef Pot Pie",
+      "label": 0
+    },
+    {
+      "id": "p261",
+      "text_a": "Mango Sorbet",
+      "text_b": "Chocolate Gelato",
+      "label": 0
+    },
+    {
+      "id": "p262",
+      "text_a": "Crispy Tofu Bowl",
+      "text_b": "Grilled Chicken Bowl",
+      "label": 0
+    },
+    {
+      "id": "p263",
+      "text_a": "Seoul Hotdog",
+      "text_b": "Tokyo Hotdog",
+      "label": 0
+    },
+    {
+      "id": "p264",
+      "text_a": "Oyster Sauce Beef",
+      "text_b": "Black Bean Chicken",
+      "label": 0
+    },
+    {
+      "id": "p265",
+      "text_a": "Lemon Tart",
+      "text_b": "Apple Tart",
+      "label": 0
+    },
+    {
+      "id": "p266",
+      "text_a": "Chicken Laksa",
+      "text_b": "Seafood Laksa",
+      "label": 0
+    },
+    {
+      "id": "p267",
+      "text_a": "Naan Bread Basket",
+      "text_b": "Garlic Bread Basket",
+      "label": 0
+    },
+    {
+      "id": "p268",
+      "text_a": "Jasmine Tea Hot",
+      "text_b": "Earl Grey Tea Hot",
+      "label": 0
+    },
+    {
+      "id": "p269",
+      "text_a": "Crispy Fish Burger",
+      "text_b": "Crispy Chicken Burger",
+      "label": 0
+    },
+    {
+      "id": "p270",
+      "text_a": "Sausage McMuffin Style",
+      "text_b": "Egg McMuffin Style",
+      "label": 0
+    },
+    {
+      "id": "p271",
+      "text_a": "Gnocchi Gorgonzola",
+      "text_b": "Ravioli Spinach",
+      "label": 0
+    },
+    {
+      "id": "p272",
+      "text_a": "Pumpkin Soup",
+      "text_b": "Broccoli Soup",
+      "label": 0
+    },
+    {
+      "id": "p273",
+      "text_a": "Chicken Fried Wontons",
+      "text_b": "Shrimp Fried Wontons",
+      "label": 0
+    },
+    {
+      "id": "p274",
+      "text_a": "Mango Cheesecake",
+      "text_b": "Strawberry Cheesecake",
+      "label": 0
+    },
+    {
+      "id": "p275",
+      "text_a": "Teriyaki Beef Skewers",
+      "text_b": "Yakitori Chicken Skewers",
+      "label": 0
+    },
+    {
+      "id": "p276",
+      "text_a": "Burrata Salad",
+      "text_b": "Caprese Salad",
+      "label": 0
+    },
+    {
+      "id": "p277",
+      "text_a": "Kofta Curry",
+      "text_b": "Lamb Rogan Josh",
+      "label": 0
+    },
+    {
+      "id": "p278",
+      "text_a": "Cucumber Roll",
+      "text_b": "Avocado Roll",
+      "label": 0
+    },
+    {
+      "id": "p279",
+      "text_a": "Tuna Poke Bowl",
+      "text_b": "Salmon Poke Bowl",
+      "label": 0
+    },
+    {
+      "id": "p280",
+      "text_a": "Mushroom Risotto",
+      "text_b": "Seafood Risotto",
+      "label": 0
+    },
+    {
+      "id": "p281",
+      "text_a": "Masala Fries",
+      "text_b": "Cheese Fries",
+      "label": 0
+    },
+    {
+      "id": "p282",
+      "text_a": "Chicken Enchiladas",
+      "text_b": "Beef Enchiladas",
+      "label": 0
+    },
+    {
+      "id": "p283",
+      "text_a": "Coconut Cake Slice",
+      "text_b": "Carrot Cake Slice",
+      "label": 0
+    },
+    {
+      "id": "p284",
+      "text_a": "Pepper Steak",
+      "text_b": "Garlic Chicken",
+      "label": 0
+    },
+    {
+      "id": "p285",
+      "text_a": "Vegetable Tempura",
+      "text_b": "Shrimp Tempura",
+      "label": 0
+    },
+    {
+      "id": "p286",
+      "text_a": "Sweet Corn Soup",
+      "text_b": "Hot & Sour Soup",
+      "label": 0
+    },
+    {
+      "id": "p287",
+      "text_a": "Mini Pies Pack",
+      "text_b": "Mini Quiche Pack",
+      "label": 0
+    },
+    {
+      "id": "p288",
+      "text_a": "Pearl Milk Tea",
+      "text_b": "Thai Milk Tea",
+      "label": 0
+    },
+    {
+      "id": "p289",
+      "text_a": "Turkey Sub 6 inch",
+      "text_b": "Italian Sub 6 inch",
+      "label": 0
+    },
+    {
+      "id": "p290",
+      "text_a": "Chicken Caesar Wrap",
+      "text_b": "Veggie Caesar Wrap",
+      "label": 0
+    },
+    {
+      "id": "p291",
+      "text_a": "Momo Soup",
+      "text_b": "Thukpa Soup",
+      "label": 0
+    },
+    {
+      "id": "p292",
+      "text_a": "Mango Sticky Rice Cup",
+      "text_b": "Black Sesame Pudding Cup",
+      "label": 0
+    },
+    {
+      "id": "p293",
+      "text_a": "Philly Cheesesteak",
+      "text_b": "Meatball Sub",
+      "label": 0
+    },
+    {
+      "id": "p294",
+      "text_a": "Sourdough Toast",
+      "text_b": "Rye Toast",
+      "label": 0
+    },
+    {
+      "id": "p295",
+      "text_a": "Chicken Bites Bucket",
+      "text_b": "Fish Bites Bucket",
+      "label": 0
+    },
+    {
+      "id": "p296",
+      "text_a": "Curry Puff",
+      "text_b": "Sausage Roll Puff",
+      "label": 0
+    },
+    {
+      "id": "p297",
+      "text_a": "Veggie Burger Slider",
+      "text_b": "Chicken Burger Slider",
+      "label": 0
+    },
+    {
+      "id": "p298",
+      "text_a": "Ribeye Steak",
+      "text_b": "Sirloin Steak",
+      "label": 0
+    },
+    {
+      "id": "p299",
+      "text_a": "Prawn Crackers",
+      "text_b": "Potato Chips",
+      "label": 0
+    },
+    {
+      "id": "p300",
+      "text_a": "Focaccia Sandwich",
+      "text_b": "Ciabatta Sandwich",
+      "label": 0
+    },
+    {
+      "id": "p301",
+      "text_a": "Cranberry Scone",
+      "text_b": "Blueberry Scone",
+      "label": 0
+    },
+    {
+      "id": "p302",
+      "text_a": "Chocolate Eclair",
+      "text_b": "Vanilla Eclair",
+      "label": 0
+    },
+    {
+      "id": "p303",
+      "text_a": "Seafood Chow Mein",
+      "text_b": "Beef Chow Mein",
+      "label": 0
+    },
+    {
+      "id": "p304",
+      "text_a": "Chicken Shawarma Box",
+      "text_b": "Kebab Box",
+      "label": 0
+    },
+    {
+      "id": "p305",
+      "text_a": "Mango Juice",
+      "text_b": "Passionfruit Juice",
+      "label": 0
+    },
+    {
+      "id": "p306",
+      "text_a": "Butter Naan",
+      "text_b": "Plain Paratha",
+      "label": 0
+    },
+    {
+      "id": "p307",
+      "text_a": "Baked Salmon",
+      "text_b": "Baked Cod",
+      "label": 0
+    },
+    {
+      "id": "p308",
+      "text_a": "Veggie Omelette",
+      "text_b": "Ham Omelette",
+      "label": 0
+    },
+    {
+      "id": "p309",
+      "text_a": "Chicken Satay Rice",
+      "text_b": "Beef Satay Rice",
+      "label": 0
+    },
+    {
+      "id": "p310",
+      "text_a": "Sesame Chicken",
+      "text_b": "General Tso's Chicken",
+      "label": 0
+    },
+    {
+      "id": "p311",
+      "text_a": "Chocolate Chip Cookie",
+      "text_b": "Oatmeal Raisin Cookie",
+      "label": 0
+    },
+    {
+      "id": "p312",
+      "text_a": "Egg Salad Sandwich",
+      "text_b": "Chicken Salad Sandwich",
+      "label": 0
+    },
+    {
+      "id": "p313",
+      "text_a": "Beef Empanadas",
+      "text_b": "Cheese Empanadas",
+      "label": 0
+    },
+    {
+      "id": "p314",
+      "text_a": "Tomato Basil Soup",
+      "text_b": "Roasted Red Pepper Soup",
+      "label": 0
+    },
+    {
+      "id": "p315",
+      "text_a": "Spicy Tuna Roll",
+      "text_b": "Eel Avocado Roll",
+      "label": 0
+    },
+    {
+      "id": "p316",
+      "text_a": "BBQ Chicken Pizza",
+      "text_b": "Meat Lovers Pizza",
+      "label": 0
+    },
+    {
+      "id": "p317",
+      "text_a": "Chicken Kiev",
+      "text_b": "Beef Stroganoff",
+      "label": 0
+    },
+    {
+      "id": "p318",
+      "text_a": "Margarita Mocktail",
+      "text_b": "Pina Colada Mocktail",
+      "label": 0
+    },
+    {
+      "id": "p319",
+      "text_a": "Lemon Pound Cake",
+      "text_b": "Banana Pound Cake",
+      "label": 0
+    },
+    {
+      "id": "p320",
+      "text_a": "Beef Torta",
+      "text_b": "Chicken Torta",
+      "label": 0
+    },
+    {
+      "id": "p321",
+      "text_a": "Rice Paper Rolls",
+      "text_b": "Fried Wontons",
+      "label": 0
+    },
+    {
+      "id": "p322",
+      "text_a": "Coconut Macaroon",
+      "text_b": "Almond Biscotti",
+      "label": 0
+    },
+    {
+      "id": "p323",
+      "text_a": "Tofu Teriyaki Bowl",
+      "text_b": "Chicken Katsu Bowl",
+      "label": 0
+    }
+  ],
+  "metadata": {
+    "n_pairs": 323,
+    "n_positive": 152,
+    "n_negative": 171
+  }
+}

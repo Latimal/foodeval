@@ -1,0 +1,2029 @@
+{
+  "task": "bakery_match",
+  "version": "0.1.0",
+  "description": "Bakery menu item matching",
+  "metric": "best_f1",
+  "pairs": [
+    {
+      "id": "p001",
+      "text_a": "Ais Kacang",
+      "text_b": "Cendol",
+      "label": 0
+    },
+    {
+      "id": "p002",
+      "text_a": "Alfajor",
+      "text_b": "Cookie",
+      "label": 0
+    },
+    {
+      "id": "p003",
+      "text_a": "Alfajor",
+      "text_b": "Dulce de Leche Cookie",
+      "label": 1
+    },
+    {
+      "id": "p004",
+      "text_a": "Alfajores",
+      "text_b": "Alfajor Cookies",
+      "label": 1
+    },
+    {
+      "id": "p005",
+      "text_a": "Almond Croissant",
+      "text_b": "Croissant Almond",
+      "label": 1
+    },
+    {
+      "id": "p006",
+      "text_a": "Anzac Biscuits",
+      "text_b": "ANZAC Cookies",
+      "label": 1
+    },
+    {
+      "id": "p007",
+      "text_a": "Apple Crumble",
+      "text_b": "Apple Cider",
+      "label": 0
+    },
+    {
+      "id": "p008",
+      "text_a": "Apple Pie",
+      "text_b": "Apple Crumble",
+      "label": 0
+    },
+    {
+      "id": "p009",
+      "text_a": "Apple Pie",
+      "text_b": "Apple Juice",
+      "label": 0
+    },
+    {
+      "id": "p010",
+      "text_a": "Apple Pie",
+      "text_b": "Apple Tart",
+      "label": 0
+    },
+    {
+      "id": "p011",
+      "text_a": "Apple Turnover",
+      "text_b": "Apple Strudel",
+      "label": 0
+    },
+    {
+      "id": "p012",
+      "text_a": "Atayef",
+      "text_b": "Hotteok",
+      "label": 0
+    },
+    {
+      "id": "p013",
+      "text_a": "Atayef",
+      "text_b": "Qatayef",
+      "label": 1
+    },
+    {
+      "id": "p014",
+      "text_a": "Baguette",
+      "text_b": "Brioche",
+      "label": 0
+    },
+    {
+      "id": "p015",
+      "text_a": "Baklava",
+      "text_b": "Baklawa",
+      "label": 1
+    },
+    {
+      "id": "p016",
+      "text_a": "Baklava",
+      "text_b": "Tulumba",
+      "label": 0
+    },
+    {
+      "id": "p017",
+      "text_a": "Baklava (Large)",
+      "text_b": "Baklava",
+      "label": 1
+    },
+    {
+      "id": "p018",
+      "text_a": "Baklava Rolls",
+      "text_b": "Phyllo Pastry",
+      "label": 0
+    },
+    {
+      "id": "p019",
+      "text_a": "Banana Bread",
+      "text_b": "Banana Loaf",
+      "label": 1
+    },
+    {
+      "id": "p020",
+      "text_a": "Banana Bread",
+      "text_b": "Banana Pudding",
+      "label": 0
+    },
+    {
+      "id": "p021",
+      "text_a": "Banana Bread",
+      "text_b": "Banana Split",
+      "label": 0
+    },
+    {
+      "id": "p022",
+      "text_a": "Banana Cream Pie",
+      "text_b": "Banana Pie",
+      "label": 1
+    },
+    {
+      "id": "p023",
+      "text_a": "Banana Tart",
+      "text_b": "Banana Milk",
+      "label": 0
+    },
+    {
+      "id": "p024",
+      "text_a": "Banoffee Pie",
+      "text_b": "Banoffee Tart",
+      "label": 0
+    },
+    {
+      "id": "p025",
+      "text_a": "Barfi",
+      "text_b": "Kalakand",
+      "label": 0
+    },
+    {
+      "id": "p026",
+      "text_a": "Basbousa",
+      "text_b": "Namoura",
+      "label": 1
+    },
+    {
+      "id": "p027",
+      "text_a": "Basbousa",
+      "text_b": "Revani",
+      "label": 1
+    },
+    {
+      "id": "p028",
+      "text_a": "Basbousa",
+      "text_b": "Semolina Cake",
+      "label": 1
+    },
+    {
+      "id": "p029",
+      "text_a": "Basbousa",
+      "text_b": "Tres Leches",
+      "label": 0
+    },
+    {
+      "id": "p030",
+      "text_a": "Beignet",
+      "text_b": "Beignets",
+      "label": 1
+    },
+    {
+      "id": "p031",
+      "text_a": "Beignet",
+      "text_b": "Churros",
+      "label": 0
+    },
+    {
+      "id": "p032",
+      "text_a": "Beignet",
+      "text_b": "French Donut",
+      "label": 1
+    },
+    {
+      "id": "p033",
+      "text_a": "Besan Ladoo",
+      "text_b": "Besan Laddu",
+      "label": 1
+    },
+    {
+      "id": "p034",
+      "text_a": "Bienenstich",
+      "text_b": "Bee Sting Cake",
+      "label": 1
+    },
+    {
+      "id": "p035",
+      "text_a": "Biscotti",
+      "text_b": "Cantuccini",
+      "label": 1
+    },
+    {
+      "id": "p036",
+      "text_a": "Black Forest Cake",
+      "text_b": "Black Forest Gateau",
+      "label": 1
+    },
+    {
+      "id": "p037",
+      "text_a": "Black Forest Cake",
+      "text_b": "Black Forest Pastry",
+      "label": 0
+    },
+    {
+      "id": "p038",
+      "text_a": "Black Forest Gateau",
+      "text_b": "Cherry Cola",
+      "label": 0
+    },
+    {
+      "id": "p039",
+      "text_a": "Blueberry Muffin",
+      "text_b": "Muffin Blueberry",
+      "label": 1
+    },
+    {
+      "id": "p040",
+      "text_a": "Blueberry Scone",
+      "text_b": "Blueberry Biscuit",
+      "label": 0
+    },
+    {
+      "id": "p041",
+      "text_a": "Blueberry Tart",
+      "text_b": "Blueberry Tartlet",
+      "label": 1
+    },
+    {
+      "id": "p042",
+      "text_a": "Brigadeiro",
+      "text_b": "Brigadeiros",
+      "label": 1
+    },
+    {
+      "id": "p043",
+      "text_a": "Brioche",
+      "text_b": "Bread Pudding",
+      "label": 0
+    },
+    {
+      "id": "p044",
+      "text_a": "Brioche",
+      "text_b": "Brioche Bun",
+      "label": 1
+    },
+    {
+      "id": "p045",
+      "text_a": "Brownie",
+      "text_b": "Cookie",
+      "label": 0
+    },
+    {
+      "id": "p046",
+      "text_a": "Bubur Cha Cha",
+      "text_b": "Malaysian Dessert Soup",
+      "label": 1
+    },
+    {
+      "id": "p047",
+      "text_a": "Bubur Cha Cha",
+      "text_b": "Taro Dessert Soup",
+      "label": 0
+    },
+    {
+      "id": "p048",
+      "text_a": "Bungeoppang",
+      "text_b": "Fish Shaped Bread",
+      "label": 1
+    },
+    {
+      "id": "p049",
+      "text_a": "Bungeoppang",
+      "text_b": "Korean Fish Bread",
+      "label": 1
+    },
+    {
+      "id": "p050",
+      "text_a": "Bungeoppang",
+      "text_b": "Taiyaki",
+      "label": 0
+    },
+    {
+      "id": "p051",
+      "text_a": "Butter Biscuit",
+      "text_b": "Butter Cookies",
+      "label": 1
+    },
+    {
+      "id": "p052",
+      "text_a": "Butter Cake",
+      "text_b": "Butter Sponge Cake",
+      "label": 1
+    },
+    {
+      "id": "p053",
+      "text_a": "Cannoli",
+      "text_b": "Cannolo",
+      "label": 1
+    },
+    {
+      "id": "p054",
+      "text_a": "Carrot Cake",
+      "text_b": "Carrot Muffin",
+      "label": 0
+    },
+    {
+      "id": "p055",
+      "text_a": "Carrot Cake Slice",
+      "text_b": "Carrot Cake",
+      "label": 1
+    },
+    {
+      "id": "p056",
+      "text_a": "Castella",
+      "text_b": "Japanese Sponge Cake",
+      "label": 1
+    },
+    {
+      "id": "p057",
+      "text_a": "Castella",
+      "text_b": "Kasutera",
+      "label": 1
+    },
+    {
+      "id": "p058",
+      "text_a": "Castella",
+      "text_b": "Ma Lai Gao",
+      "label": 0
+    },
+    {
+      "id": "p059",
+      "text_a": "Cendol",
+      "text_b": "Grass Jelly Dessert",
+      "label": 0
+    },
+    {
+      "id": "p060",
+      "text_a": "Challah",
+      "text_b": "Challah Bread",
+      "label": 1
+    },
+    {
+      "id": "p061",
+      "text_a": "Cheesecake",
+      "text_b": "Cheese Pizza",
+      "label": 0
+    },
+    {
+      "id": "p062",
+      "text_a": "Cheesecake",
+      "text_b": "Strawberry Cheesecake",
+      "label": 0
+    },
+    {
+      "id": "p063",
+      "text_a": "Cherry Pie",
+      "text_b": "Cherry Cobbler",
+      "label": 0
+    },
+    {
+      "id": "p064",
+      "text_a": "Chinese Sponge Cake",
+      "text_b": "Steamed Sponge Cake",
+      "label": 1
+    },
+    {
+      "id": "p065",
+      "text_a": "Chocolate Brownie",
+      "text_b": "Brownie",
+      "label": 1
+    },
+    {
+      "id": "p066",
+      "text_a": "Chocolate Cake",
+      "text_b": "Chocolate Cheesecake",
+      "label": 0
+    },
+    {
+      "id": "p067",
+      "text_a": "Chocolate Cake",
+      "text_b": "Chocolate Latte",
+      "label": 0
+    },
+    {
+      "id": "p068",
+      "text_a": "Chocolate Cake",
+      "text_b": "Chocolate Mousse",
+      "label": 0
+    },
+    {
+      "id": "p069",
+      "text_a": "Chocolate Chip Cookie",
+      "text_b": "Choc Chip Cookie",
+      "label": 1
+    },
+    {
+      "id": "p070",
+      "text_a": "Chocolate Chip Cookie",
+      "text_b": "Chocolate Chip Muffin",
+      "label": 0
+    },
+    {
+      "id": "p071",
+      "text_a": "Chocolate Cookie",
+      "text_b": "Chocolate Biscuit",
+      "label": 1
+    },
+    {
+      "id": "p072",
+      "text_a": "Chocolate Croissant",
+      "text_b": "Pain au Chocolat",
+      "label": 1
+    },
+    {
+      "id": "p073",
+      "text_a": "Chocolate Eclair",
+      "text_b": "Chocolate Profiterole",
+      "label": 0
+    },
+    {
+      "id": "p074",
+      "text_a": "Chocolate Ice Cream",
+      "text_b": "Choc Ice Cream",
+      "label": 1
+    },
+    {
+      "id": "p075",
+      "text_a": "Chocolate Macaron",
+      "text_b": "Chocolate Macaroon",
+      "label": 0
+    },
+    {
+      "id": "p076",
+      "text_a": "Chocolate Meringue",
+      "text_b": "Chocolate Biscuit",
+      "label": 0
+    },
+    {
+      "id": "p077",
+      "text_a": "Chocolate Mousse",
+      "text_b": "Chocolate Pudding",
+      "label": 0
+    },
+    {
+      "id": "p078",
+      "text_a": "Chocolate Mousse Cake",
+      "text_b": "Choco Mousse Cake",
+      "label": 1
+    },
+    {
+      "id": "p079",
+      "text_a": "Chocolate Pudding",
+      "text_b": "Chocolate Custard",
+      "label": 0
+    },
+    {
+      "id": "p080",
+      "text_a": "Chocolate Souffle",
+      "text_b": "Chocolate Lava Cake",
+      "label": 0
+    },
+    {
+      "id": "p081",
+      "text_a": "Chocolate Truffle",
+      "text_b": "Choc Truffle",
+      "label": 1
+    },
+    {
+      "id": "p082",
+      "text_a": "Chocolate Truffle Cake",
+      "text_b": "Chocolate Tart",
+      "label": 0
+    },
+    {
+      "id": "p083",
+      "text_a": "Chocolate Éclair",
+      "text_b": "Eclair Chocolate",
+      "label": 1
+    },
+    {
+      "id": "p084",
+      "text_a": "Churros",
+      "text_b": "Churro",
+      "label": 1
+    },
+    {
+      "id": "p085",
+      "text_a": "Churros",
+      "text_b": "Sopapillas",
+      "label": 0
+    },
+    {
+      "id": "p086",
+      "text_a": "Churros w/ Chocolate",
+      "text_b": "Churros",
+      "label": 1
+    },
+    {
+      "id": "p087",
+      "text_a": "Cinnamon Roll",
+      "text_b": "Cinnamon Bun",
+      "label": 1
+    },
+    {
+      "id": "p088",
+      "text_a": "Cinnamon Roll",
+      "text_b": "Cinnamon Cookie",
+      "label": 0
+    },
+    {
+      "id": "p089",
+      "text_a": "Cinnamon Swirl Cake",
+      "text_b": "Cinnamon Cake",
+      "label": 1
+    },
+    {
+      "id": "p090",
+      "text_a": "Coconut Ladoo",
+      "text_b": "Coconut Laddu",
+      "label": 1
+    },
+    {
+      "id": "p091",
+      "text_a": "Coconut Macaroons",
+      "text_b": "Coconut Macaroon",
+      "label": 1
+    },
+    {
+      "id": "p092",
+      "text_a": "Coffee Cake",
+      "text_b": "Cappuccino",
+      "label": 0
+    },
+    {
+      "id": "p093",
+      "text_a": "Conchas",
+      "text_b": "Pan Dulce Conchas",
+      "label": 1
+    },
+    {
+      "id": "p094",
+      "text_a": "Cookies and Cream Cookie",
+      "text_b": "Oreo Cookie",
+      "label": 1
+    },
+    {
+      "id": "p095",
+      "text_a": "Creme Brulee",
+      "text_b": "Crème Brûlée",
+      "label": 1
+    },
+    {
+      "id": "p096",
+      "text_a": "Croissant",
+      "text_b": "Danish",
+      "label": 0
+    },
+    {
+      "id": "p097",
+      "text_a": "Crème Caramel",
+      "text_b": "Caramel Custard",
+      "label": 1
+    },
+    {
+      "id": "p098",
+      "text_a": "Custard Pie",
+      "text_b": "Custard Latte",
+      "label": 0
+    },
+    {
+      "id": "p099",
+      "text_a": "Custard Tart",
+      "text_b": "Custard Pie",
+      "label": 0
+    },
+    {
+      "id": "p100",
+      "text_a": "Custard Tart",
+      "text_b": "Egg Custard Tart",
+      "label": 1
+    },
+    {
+      "id": "p101",
+      "text_a": "Daifuku",
+      "text_b": "Mochi Donut",
+      "label": 0
+    },
+    {
+      "id": "p102",
+      "text_a": "Daifuku",
+      "text_b": "Red Bean Mochi",
+      "label": 1
+    },
+    {
+      "id": "p103",
+      "text_a": "Daifuku Mochi",
+      "text_b": "Daifuku",
+      "label": 1
+    },
+    {
+      "id": "p104",
+      "text_a": "Dango",
+      "text_b": "Mochi",
+      "label": 0
+    },
+    {
+      "id": "p105",
+      "text_a": "Dango Skewers",
+      "text_b": "Mochi Dango",
+      "label": 1
+    },
+    {
+      "id": "p106",
+      "text_a": "Dark Chocolate Brownie",
+      "text_b": "White Chocolate Blondie",
+      "label": 0
+    },
+    {
+      "id": "p107",
+      "text_a": "Date Squares",
+      "text_b": "Date Slice",
+      "label": 1
+    },
+    {
+      "id": "p108",
+      "text_a": "Digestive Biscuit",
+      "text_b": "Digestive Cookie",
+      "label": 1
+    },
+    {
+      "id": "p109",
+      "text_a": "Dinner Roll",
+      "text_b": "Cupcake",
+      "label": 0
+    },
+    {
+      "id": "p110",
+      "text_a": "Donuts",
+      "text_b": "Beignets",
+      "label": 0
+    },
+    {
+      "id": "p111",
+      "text_a": "Dorayaki",
+      "text_b": "Monaka",
+      "label": 0
+    },
+    {
+      "id": "p112",
+      "text_a": "Dorayaki",
+      "text_b": "Red Bean Pancake",
+      "label": 1
+    },
+    {
+      "id": "p113",
+      "text_a": "Dorayaki",
+      "text_b": "Taiyaki",
+      "label": 0
+    },
+    {
+      "id": "p114",
+      "text_a": "Durian Pancake",
+      "text_b": "Durian Crepe Cake",
+      "label": 0
+    },
+    {
+      "id": "p115",
+      "text_a": "Eclair",
+      "text_b": "Chocolate Eclair",
+      "label": 1
+    },
+    {
+      "id": "p116",
+      "text_a": "Eclair",
+      "text_b": "Profiterole",
+      "label": 0
+    },
+    {
+      "id": "p117",
+      "text_a": "Egg Tart",
+      "text_b": "Dan Tat",
+      "label": 1
+    },
+    {
+      "id": "p118",
+      "text_a": "Egg Tart",
+      "text_b": "Egg Custard Tart",
+      "label": 1
+    },
+    {
+      "id": "p119",
+      "text_a": "Egg Tart",
+      "text_b": "Pastel de Nata",
+      "label": 0
+    },
+    {
+      "id": "p120",
+      "text_a": "Egg Tart",
+      "text_b": "Portuguese Tart",
+      "label": 0
+    },
+    {
+      "id": "p121",
+      "text_a": "Egg Waffle",
+      "text_b": "Bubble Egg Waffle",
+      "label": 1
+    },
+    {
+      "id": "p122",
+      "text_a": "Egg Waffle",
+      "text_b": "Egg Custard Tart",
+      "label": 0
+    },
+    {
+      "id": "p123",
+      "text_a": "Es Cendol",
+      "text_b": "Cendol Cake",
+      "label": 0
+    },
+    {
+      "id": "p124",
+      "text_a": "Flan",
+      "text_b": "Creme Caramel",
+      "label": 1
+    },
+    {
+      "id": "p125",
+      "text_a": "Flan",
+      "text_b": "Tres Leches",
+      "label": 0
+    },
+    {
+      "id": "p126",
+      "text_a": "Focaccia Bread",
+      "text_b": "Focaccia",
+      "label": 1
+    },
+    {
+      "id": "p127",
+      "text_a": "Frozen Yogurt",
+      "text_b": "Froyo",
+      "label": 1
+    },
+    {
+      "id": "p128",
+      "text_a": "Frozen Yogurt",
+      "text_b": "Yogurt Parfait",
+      "label": 0
+    },
+    {
+      "id": "p129",
+      "text_a": "Fruit Tart",
+      "text_b": "Mixed Fruit Tart",
+      "label": 1
+    },
+    {
+      "id": "p130",
+      "text_a": "Fudge",
+      "text_b": "Chocolate Fudge",
+      "label": 1
+    },
+    {
+      "id": "p131",
+      "text_a": "Funnel Cake",
+      "text_b": "Cake Donut",
+      "label": 0
+    },
+    {
+      "id": "p132",
+      "text_a": "Galette",
+      "text_b": "Rustic Tart",
+      "label": 1
+    },
+    {
+      "id": "p133",
+      "text_a": "Gateau",
+      "text_b": "French Cake",
+      "label": 1
+    },
+    {
+      "id": "p134",
+      "text_a": "Gelato",
+      "text_b": "Frozen Custard",
+      "label": 0
+    },
+    {
+      "id": "p135",
+      "text_a": "Gelato",
+      "text_b": "Italian Gelato",
+      "label": 1
+    },
+    {
+      "id": "p136",
+      "text_a": "Ginger Snap",
+      "text_b": "Gingersnap Cookie",
+      "label": 1
+    },
+    {
+      "id": "p137",
+      "text_a": "Gingerbread Cookie",
+      "text_b": "Gingerbread Cake",
+      "label": 0
+    },
+    {
+      "id": "p138",
+      "text_a": "Glazed Donut",
+      "text_b": "Glazed Doughnut",
+      "label": 1
+    },
+    {
+      "id": "p139",
+      "text_a": "Granita",
+      "text_b": "Slush",
+      "label": 0
+    },
+    {
+      "id": "p140",
+      "text_a": "Gulab Jamun",
+      "text_b": "Gulabjamun",
+      "label": 1
+    },
+    {
+      "id": "p141",
+      "text_a": "Gulab Jamun",
+      "text_b": "Imarti",
+      "label": 0
+    },
+    {
+      "id": "p142",
+      "text_a": "Halawet El Jibn",
+      "text_b": "Cannoli",
+      "label": 0
+    },
+    {
+      "id": "p143",
+      "text_a": "Halawet El Jibn",
+      "text_b": "Sweet Cheese Roll",
+      "label": 1
+    },
+    {
+      "id": "p144",
+      "text_a": "Halawet El Jibn",
+      "text_b": "Warbat",
+      "label": 0
+    },
+    {
+      "id": "p145",
+      "text_a": "Halo-Halo",
+      "text_b": "Halu-Halo",
+      "label": 1
+    },
+    {
+      "id": "p146",
+      "text_a": "Halo-Halo Dessert",
+      "text_b": "Haluhalo",
+      "label": 1
+    },
+    {
+      "id": "p147",
+      "text_a": "Halva",
+      "text_b": "Halawa",
+      "label": 1
+    },
+    {
+      "id": "p148",
+      "text_a": "Halva",
+      "text_b": "Halwa Pudding",
+      "label": 0
+    },
+    {
+      "id": "p149",
+      "text_a": "Halwa",
+      "text_b": "Sheera",
+      "label": 0
+    },
+    {
+      "id": "p150",
+      "text_a": "Hot Cross Bun",
+      "text_b": "Hot Milk Cake",
+      "label": 0
+    },
+    {
+      "id": "p151",
+      "text_a": "Hotteok",
+      "text_b": "Dorayaki",
+      "label": 0
+    },
+    {
+      "id": "p152",
+      "text_a": "Hotteok",
+      "text_b": "Hoddeok",
+      "label": 1
+    },
+    {
+      "id": "p153",
+      "text_a": "Hotteok",
+      "text_b": "Korean Sweet Pancake",
+      "label": 1
+    },
+    {
+      "id": "p154",
+      "text_a": "Ice Cream",
+      "text_b": "Frozen Yogurt",
+      "label": 0
+    },
+    {
+      "id": "p155",
+      "text_a": "Ice Cream",
+      "text_b": "Gelato",
+      "label": 0
+    },
+    {
+      "id": "p156",
+      "text_a": "Ice Cream",
+      "text_b": "Sorbet",
+      "label": 0
+    },
+    {
+      "id": "p157",
+      "text_a": "Ice Cream Sandwich",
+      "text_b": "Ice Cream Cone",
+      "label": 0
+    },
+    {
+      "id": "p158",
+      "text_a": "Ice Kacang",
+      "text_b": "Ais Kacang",
+      "label": 1
+    },
+    {
+      "id": "p159",
+      "text_a": "Jalebi",
+      "text_b": "Ghevar",
+      "label": 0
+    },
+    {
+      "id": "p160",
+      "text_a": "Jalebi",
+      "text_b": "Jilebi",
+      "label": 1
+    },
+    {
+      "id": "p161",
+      "text_a": "Kaju Katli",
+      "text_b": "Kaju Barfi",
+      "label": 1
+    },
+    {
+      "id": "p162",
+      "text_a": "Kakigori",
+      "text_b": "Japanese Shaved Ice",
+      "label": 1
+    },
+    {
+      "id": "p163",
+      "text_a": "Key Lime Pie",
+      "text_b": "Key Lime Tart",
+      "label": 1
+    },
+    {
+      "id": "p164",
+      "text_a": "Kheer",
+      "text_b": "Phirni",
+      "label": 0
+    },
+    {
+      "id": "p165",
+      "text_a": "Klepon",
+      "text_b": "Onde-Onde",
+      "label": 1
+    },
+    {
+      "id": "p166",
+      "text_a": "Koeksister",
+      "text_b": "Koeksisters",
+      "label": 1
+    },
+    {
+      "id": "p167",
+      "text_a": "Kueh Dadar",
+      "text_b": "Kuih Dadar",
+      "label": 1
+    },
+    {
+      "id": "p168",
+      "text_a": "Kueh Lapis",
+      "text_b": "Castella",
+      "label": 0
+    },
+    {
+      "id": "p169",
+      "text_a": "Kueh Lapis",
+      "text_b": "Indonesian Layer Cake",
+      "label": 1
+    },
+    {
+      "id": "p170",
+      "text_a": "Kueh Lapis",
+      "text_b": "Kue Lapis",
+      "label": 1
+    },
+    {
+      "id": "p171",
+      "text_a": "Kuih Dadar",
+      "text_b": "Kuih Seri Muka",
+      "label": 0
+    },
+    {
+      "id": "p172",
+      "text_a": "Kuih Lapis",
+      "text_b": "Layer Cake",
+      "label": 0
+    },
+    {
+      "id": "p173",
+      "text_a": "Kuih Seri Muka",
+      "text_b": "Seri Muka",
+      "label": 1
+    },
+    {
+      "id": "p174",
+      "text_a": "Kulfi",
+      "text_b": "Kulfi Pop",
+      "label": 0
+    },
+    {
+      "id": "p175",
+      "text_a": "Kunafa",
+      "text_b": "Basbousa",
+      "label": 0
+    },
+    {
+      "id": "p176",
+      "text_a": "Kunafa",
+      "text_b": "Knafeh",
+      "label": 1
+    },
+    {
+      "id": "p177",
+      "text_a": "Kunafa Roll",
+      "text_b": "Qatayef",
+      "label": 0
+    },
+    {
+      "id": "p178",
+      "text_a": "Kunafah",
+      "text_b": "Kanafeh",
+      "label": 1
+    },
+    {
+      "id": "p179",
+      "text_a": "Lemon Cake",
+      "text_b": "Lemon Tart",
+      "label": 0
+    },
+    {
+      "id": "p180",
+      "text_a": "Lemon Drizzle Cake",
+      "text_b": "Lemon Drizzle",
+      "label": 1
+    },
+    {
+      "id": "p181",
+      "text_a": "Lemon Meringue Pie",
+      "text_b": "Lemon Meringue Tart",
+      "label": 1
+    },
+    {
+      "id": "p182",
+      "text_a": "Lemon Meringue Pie",
+      "text_b": "Lemon Tea",
+      "label": 0
+    },
+    {
+      "id": "p183",
+      "text_a": "Lemon Tart",
+      "text_b": "Lemon Crumble",
+      "label": 0
+    },
+    {
+      "id": "p184",
+      "text_a": "Lemon Tart",
+      "text_b": "Lemon Curd Tart",
+      "label": 1
+    },
+    {
+      "id": "p185",
+      "text_a": "Lokum",
+      "text_b": "Turkish Delight Roll",
+      "label": 0
+    },
+    {
+      "id": "p186",
+      "text_a": "Loukoumades",
+      "text_b": "Honey Puffs",
+      "label": 1
+    },
+    {
+      "id": "p187",
+      "text_a": "Luqaimat",
+      "text_b": "Arabic Dumplings",
+      "label": 1
+    },
+    {
+      "id": "p188",
+      "text_a": "Luqaimat",
+      "text_b": "Gulab Jamun",
+      "label": 0
+    },
+    {
+      "id": "p189",
+      "text_a": "Ma Lai Gao",
+      "text_b": "Malay Cake",
+      "label": 1
+    },
+    {
+      "id": "p190",
+      "text_a": "Maamoul",
+      "text_b": "Date Cookie",
+      "label": 1
+    },
+    {
+      "id": "p191",
+      "text_a": "Maamoul",
+      "text_b": "Shortbread",
+      "label": 0
+    },
+    {
+      "id": "p192",
+      "text_a": "Maamoul Cookies",
+      "text_b": "Maamoul",
+      "label": 1
+    },
+    {
+      "id": "p193",
+      "text_a": "Macaron",
+      "text_b": "French Macaron",
+      "label": 1
+    },
+    {
+      "id": "p194",
+      "text_a": "Macaron",
+      "text_b": "Macaroon",
+      "label": 0
+    },
+    {
+      "id": "p195",
+      "text_a": "Madeleine",
+      "text_b": "Financier",
+      "label": 0
+    },
+    {
+      "id": "p196",
+      "text_a": "Madeleine",
+      "text_b": "Madeleines",
+      "label": 1
+    },
+    {
+      "id": "p197",
+      "text_a": "Malasada",
+      "text_b": "Donut Holes",
+      "label": 0
+    },
+    {
+      "id": "p198",
+      "text_a": "Mango Mochi",
+      "text_b": "Mochi Mango",
+      "label": 1
+    },
+    {
+      "id": "p199",
+      "text_a": "Mango Sorbet",
+      "text_b": "Mango Sherbet",
+      "label": 1
+    },
+    {
+      "id": "p200",
+      "text_a": "Mango Sticky Rice",
+      "text_b": "Mango Pudding",
+      "label": 0
+    },
+    {
+      "id": "p201",
+      "text_a": "Matcha Roll Cake",
+      "text_b": "Matcha Swiss Roll",
+      "label": 1
+    },
+    {
+      "id": "p202",
+      "text_a": "Milk Bread",
+      "text_b": "Milk Cake",
+      "label": 0
+    },
+    {
+      "id": "p203",
+      "text_a": "Mille Feuille",
+      "text_b": "Millefeuille",
+      "label": 1
+    },
+    {
+      "id": "p204",
+      "text_a": "Mille-Feuille",
+      "text_b": "Napoleon Cake",
+      "label": 1
+    },
+    {
+      "id": "p205",
+      "text_a": "Millefeuille",
+      "text_b": "Napoleon Pastry",
+      "label": 1
+    },
+    {
+      "id": "p206",
+      "text_a": "Mixed Berry Galette",
+      "text_b": "Berry Pie",
+      "label": 0
+    },
+    {
+      "id": "p207",
+      "text_a": "Mochi",
+      "text_b": "Japanese Rice Cake",
+      "label": 1
+    },
+    {
+      "id": "p208",
+      "text_a": "Mochi",
+      "text_b": "Mango Mochi",
+      "label": 0
+    },
+    {
+      "id": "p209",
+      "text_a": "Mochi",
+      "text_b": "Rice Mochi",
+      "label": 1
+    },
+    {
+      "id": "p210",
+      "text_a": "Mochi - Matcha",
+      "text_b": "Matcha Mochi",
+      "label": 1
+    },
+    {
+      "id": "p211",
+      "text_a": "Mochi Ice Cream",
+      "text_b": "Ice Cream Mochi",
+      "label": 1
+    },
+    {
+      "id": "p212",
+      "text_a": "Mochi Ice Cream",
+      "text_b": "Mochi",
+      "label": 0
+    },
+    {
+      "id": "p213",
+      "text_a": "Monaka",
+      "text_b": "Japanese Wafer",
+      "label": 1
+    },
+    {
+      "id": "p214",
+      "text_a": "Mooncake",
+      "text_b": "Egg Tart",
+      "label": 0
+    },
+    {
+      "id": "p215",
+      "text_a": "Mooncake",
+      "text_b": "Maamoul",
+      "label": 0
+    },
+    {
+      "id": "p216",
+      "text_a": "Mooncake",
+      "text_b": "Moon Cake",
+      "label": 1
+    },
+    {
+      "id": "p217",
+      "text_a": "Motichoor Ladoo",
+      "text_b": "Boondi Ladoo",
+      "label": 0
+    },
+    {
+      "id": "p218",
+      "text_a": "Muffin",
+      "text_b": "Cupcake",
+      "label": 0
+    },
+    {
+      "id": "p219",
+      "text_a": "Muhallabia",
+      "text_b": "Arabic Milk Pudding",
+      "label": 1
+    },
+    {
+      "id": "p220",
+      "text_a": "Muhallabia",
+      "text_b": "Muhallabiya",
+      "label": 1
+    },
+    {
+      "id": "p221",
+      "text_a": "Muhallabia",
+      "text_b": "Panna Cotta",
+      "label": 0
+    },
+    {
+      "id": "p222",
+      "text_a": "Mysore Pak",
+      "text_b": "Besan Ladoo",
+      "label": 0
+    },
+    {
+      "id": "p223",
+      "text_a": "Mysore Pak",
+      "text_b": "Mysorepak",
+      "label": 1
+    },
+    {
+      "id": "p224",
+      "text_a": "Naan Bread",
+      "text_b": "Naan",
+      "label": 1
+    },
+    {
+      "id": "p225",
+      "text_a": "New York Cheesecake",
+      "text_b": "NY Cheesecake",
+      "label": 1
+    },
+    {
+      "id": "p226",
+      "text_a": "Nian Gao",
+      "text_b": "Mochi",
+      "label": 0
+    },
+    {
+      "id": "p227",
+      "text_a": "Nian Gao",
+      "text_b": "Sticky Rice Cake",
+      "label": 1
+    },
+    {
+      "id": "p228",
+      "text_a": "Nian Gao",
+      "text_b": "Tteok",
+      "label": 0
+    },
+    {
+      "id": "p229",
+      "text_a": "Nougat",
+      "text_b": "Nougats",
+      "label": 1
+    },
+    {
+      "id": "p230",
+      "text_a": "Oatmeal Cookie",
+      "text_b": "Oat Cookie",
+      "label": 1
+    },
+    {
+      "id": "p231",
+      "text_a": "Oatmeal Cookie",
+      "text_b": "Oatmeal Bread",
+      "label": 0
+    },
+    {
+      "id": "p232",
+      "text_a": "Ondeh Ondeh",
+      "text_b": "Daifuku",
+      "label": 0
+    },
+    {
+      "id": "p233",
+      "text_a": "Ondeh Ondeh",
+      "text_b": "Klepon",
+      "label": 1
+    },
+    {
+      "id": "p234",
+      "text_a": "Ondeh Ondeh",
+      "text_b": "Tang Yuan",
+      "label": 0
+    },
+    {
+      "id": "p235",
+      "text_a": "Ondeh Ondeh Cake",
+      "text_b": "Ondeh Ondeh",
+      "label": 0
+    },
+    {
+      "id": "p236",
+      "text_a": "Opera Cake",
+      "text_b": "Opera Pastry",
+      "label": 0
+    },
+    {
+      "id": "p237",
+      "text_a": "Opera Cake",
+      "text_b": "Opera Torte",
+      "label": 1
+    },
+    {
+      "id": "p238",
+      "text_a": "Palmier",
+      "text_b": "Butter Cookie",
+      "label": 0
+    },
+    {
+      "id": "p239",
+      "text_a": "Pandan Cake",
+      "text_b": "Pandan Jelly",
+      "label": 0
+    },
+    {
+      "id": "p240",
+      "text_a": "Pandan Cake",
+      "text_b": "Pandan Juice",
+      "label": 0
+    },
+    {
+      "id": "p241",
+      "text_a": "Pandan Chiffon Cake",
+      "text_b": "Matcha Roll Cake",
+      "label": 0
+    },
+    {
+      "id": "p242",
+      "text_a": "Pandan Chiffon Cake",
+      "text_b": "Pandan Cake",
+      "label": 1
+    },
+    {
+      "id": "p243",
+      "text_a": "Panettone",
+      "text_b": "Fruit Cake",
+      "label": 0
+    },
+    {
+      "id": "p244",
+      "text_a": "Panna Cotta",
+      "text_b": "Pannacotta",
+      "label": 1
+    },
+    {
+      "id": "p245",
+      "text_a": "Pastel de Nata",
+      "text_b": "Portuguese Egg Tart",
+      "label": 1
+    },
+    {
+      "id": "p246",
+      "text_a": "Pastel de Nata",
+      "text_b": "Portuguese Tart",
+      "label": 1
+    },
+    {
+      "id": "p247",
+      "text_a": "Pastry Puff",
+      "text_b": "Bread Roll",
+      "label": 0
+    },
+    {
+      "id": "p248",
+      "text_a": "Patbingsu",
+      "text_b": "Bingsu",
+      "label": 1
+    },
+    {
+      "id": "p249",
+      "text_a": "Patbingsu",
+      "text_b": "Ice Kacang",
+      "label": 0
+    },
+    {
+      "id": "p250",
+      "text_a": "Patbingsu",
+      "text_b": "Kakigori",
+      "label": 0
+    },
+    {
+      "id": "p251",
+      "text_a": "Patbingsu",
+      "text_b": "Korean Shaved Ice",
+      "label": 1
+    },
+    {
+      "id": "p252",
+      "text_a": "Pavlova",
+      "text_b": "Meringue",
+      "label": 0
+    },
+    {
+      "id": "p253",
+      "text_a": "Pavlova",
+      "text_b": "Pavlova Cake",
+      "label": 1
+    },
+    {
+      "id": "p254",
+      "text_a": "Peach Cobbler",
+      "text_b": "Peach Pie",
+      "label": 0
+    },
+    {
+      "id": "p255",
+      "text_a": "Pecan Pie",
+      "text_b": "Pecan Smoothie",
+      "label": 0
+    },
+    {
+      "id": "p256",
+      "text_a": "Pecan Pie",
+      "text_b": "Pecan Tart",
+      "label": 1
+    },
+    {
+      "id": "p257",
+      "text_a": "Peda",
+      "text_b": "Soan Papdi",
+      "label": 0
+    },
+    {
+      "id": "p258",
+      "text_a": "Pineapple Bun",
+      "text_b": "Bo Lo Bao",
+      "label": 1
+    },
+    {
+      "id": "p259",
+      "text_a": "Pineapple Bun",
+      "text_b": "Wife Cake",
+      "label": 0
+    },
+    {
+      "id": "p260",
+      "text_a": "Pistachio Kulfi",
+      "text_b": "Kulfi Pistachio",
+      "label": 1
+    },
+    {
+      "id": "p261",
+      "text_a": "Popsicle",
+      "text_b": "Ice Pop",
+      "label": 1
+    },
+    {
+      "id": "p262",
+      "text_a": "Pound Cake",
+      "text_b": "Pound Bread",
+      "label": 0
+    },
+    {
+      "id": "p263",
+      "text_a": "Praline",
+      "text_b": "Pralines",
+      "label": 1
+    },
+    {
+      "id": "p264",
+      "text_a": "Profiterole",
+      "text_b": "Cream Puff",
+      "label": 1
+    },
+    {
+      "id": "p265",
+      "text_a": "Pumpkin Pie",
+      "text_b": "Pumpkin Spice Latte",
+      "label": 0
+    },
+    {
+      "id": "p266",
+      "text_a": "Pumpkin Pie",
+      "text_b": "Pumpkin Tart",
+      "label": 0
+    },
+    {
+      "id": "p267",
+      "text_a": "Pumpkin Pie Slice",
+      "text_b": "Pumpkin Pie",
+      "label": 1
+    },
+    {
+      "id": "p268",
+      "text_a": "Qatayef",
+      "text_b": "Baklava",
+      "label": 0
+    },
+    {
+      "id": "p269",
+      "text_a": "Raisin Bun",
+      "text_b": "Raisin Roll",
+      "label": 1
+    },
+    {
+      "id": "p270",
+      "text_a": "Rasgulla",
+      "text_b": "Sandesh",
+      "label": 0
+    },
+    {
+      "id": "p271",
+      "text_a": "Rasmalai",
+      "text_b": "Chhena Murki",
+      "label": 0
+    },
+    {
+      "id": "p272",
+      "text_a": "Rasmalai",
+      "text_b": "Kheer",
+      "label": 0
+    },
+    {
+      "id": "p273",
+      "text_a": "Rasmalai",
+      "text_b": "Ras Malai",
+      "label": 1
+    },
+    {
+      "id": "p274",
+      "text_a": "Red Velvet Cake",
+      "text_b": "Red Velvet",
+      "label": 1
+    },
+    {
+      "id": "p275",
+      "text_a": "Red Velvet Cake",
+      "text_b": "Red Velvet Cupcake",
+      "label": 0
+    },
+    {
+      "id": "p276",
+      "text_a": "Rhubarb Crumble",
+      "text_b": "Rhubarb Pie",
+      "label": 0
+    },
+    {
+      "id": "p277",
+      "text_a": "Rice Cake",
+      "text_b": "Fried Rice",
+      "label": 0
+    },
+    {
+      "id": "p278",
+      "text_a": "Rice Pudding",
+      "text_b": "Rice Cake",
+      "label": 0
+    },
+    {
+      "id": "p279",
+      "text_a": "Riz Bi Haleeb",
+      "text_b": "Kheer",
+      "label": 0
+    },
+    {
+      "id": "p280",
+      "text_a": "Riz Bi Haleeb",
+      "text_b": "Lebanese Rice Pudding",
+      "label": 1
+    },
+    {
+      "id": "p281",
+      "text_a": "Sachertorte",
+      "text_b": "Chocolate Cake",
+      "label": 0
+    },
+    {
+      "id": "p282",
+      "text_a": "Sachertorte",
+      "text_b": "Sacher Cake",
+      "label": 1
+    },
+    {
+      "id": "p283",
+      "text_a": "Sago Gula Melaka",
+      "text_b": "Sago Pudding",
+      "label": 0
+    },
+    {
+      "id": "p284",
+      "text_a": "Sandesh",
+      "text_b": "Shondesh",
+      "label": 1
+    },
+    {
+      "id": "p285",
+      "text_a": "Scone",
+      "text_b": "Scones",
+      "label": 1
+    },
+    {
+      "id": "p286",
+      "text_a": "Scone",
+      "text_b": "Soda Biscuit",
+      "label": 0
+    },
+    {
+      "id": "p287",
+      "text_a": "Sesame Ball",
+      "text_b": "Jian Dui",
+      "label": 1
+    },
+    {
+      "id": "p288",
+      "text_a": "Sesame Ball",
+      "text_b": "Sesame Chicken",
+      "label": 0
+    },
+    {
+      "id": "p289",
+      "text_a": "Sesame Ball",
+      "text_b": "Tang Yuan",
+      "label": 0
+    },
+    {
+      "id": "p290",
+      "text_a": "Shortbread",
+      "text_b": "Shortcake",
+      "label": 0
+    },
+    {
+      "id": "p291",
+      "text_a": "Shortbread Cookies",
+      "text_b": "Shortbread Biscuits",
+      "label": 1
+    },
+    {
+      "id": "p292",
+      "text_a": "Snickerdoodle",
+      "text_b": "Cinnamon Roll",
+      "label": 0
+    },
+    {
+      "id": "p293",
+      "text_a": "Snickerdoodle Cookie",
+      "text_b": "Snickerdoodles",
+      "label": 1
+    },
+    {
+      "id": "p294",
+      "text_a": "Songpyeon",
+      "text_b": "Daifuku",
+      "label": 0
+    },
+    {
+      "id": "p295",
+      "text_a": "Songpyeon",
+      "text_b": "Half Moon Rice Cake",
+      "label": 1
+    },
+    {
+      "id": "p296",
+      "text_a": "Sorbet",
+      "text_b": "Sherbet",
+      "label": 0
+    },
+    {
+      "id": "p297",
+      "text_a": "Strawberry Cheesecake",
+      "text_b": "Cheesecake Strawberry",
+      "label": 1
+    },
+    {
+      "id": "p298",
+      "text_a": "Strawberry Semifreddo",
+      "text_b": "Semifreddo Strawberry",
+      "label": 1
+    },
+    {
+      "id": "p299",
+      "text_a": "Strawberry Shortcake",
+      "text_b": "Strawberry Short Cake",
+      "label": 1
+    },
+    {
+      "id": "p300",
+      "text_a": "Strawberry Shortcake",
+      "text_b": "Strawberry Tart",
+      "label": 0
+    },
+    {
+      "id": "p301",
+      "text_a": "Strawberry Tart",
+      "text_b": "Strawberry Milkshake",
+      "label": 0
+    },
+    {
+      "id": "p302",
+      "text_a": "Stroopwafel",
+      "text_b": "Dutch Waffle",
+      "label": 1
+    },
+    {
+      "id": "p303",
+      "text_a": "Stroopwafel",
+      "text_b": "Syrup Waffle",
+      "label": 1
+    },
+    {
+      "id": "p304",
+      "text_a": "Stroopwafel",
+      "text_b": "Waffle",
+      "label": 0
+    },
+    {
+      "id": "p305",
+      "text_a": "Strudel",
+      "text_b": "Apple Strudel",
+      "label": 1
+    },
+    {
+      "id": "p306",
+      "text_a": "Strudel",
+      "text_b": "Danish",
+      "label": 0
+    },
+    {
+      "id": "p307",
+      "text_a": "Sugar Cookie",
+      "text_b": "Plain Sugar Cookie",
+      "label": 1
+    },
+    {
+      "id": "p308",
+      "text_a": "Sugar Donuts",
+      "text_b": "Sugar Doughnuts",
+      "label": 1
+    },
+    {
+      "id": "p309",
+      "text_a": "Sundae",
+      "text_b": "Milkshake",
+      "label": 0
+    },
+    {
+      "id": "p310",
+      "text_a": "Sweet Red Bean Bun",
+      "text_b": "Anpan",
+      "label": 1
+    },
+    {
+      "id": "p311",
+      "text_a": "Taiyaki",
+      "text_b": "Fish Shaped Cake",
+      "label": 1
+    },
+    {
+      "id": "p312",
+      "text_a": "Tang Yuan",
+      "text_b": "Glutinous Rice Balls",
+      "label": 1
+    },
+    {
+      "id": "p313",
+      "text_a": "Tang Yuan",
+      "text_b": "Gulab Jamun",
+      "label": 0
+    },
+    {
+      "id": "p314",
+      "text_a": "Tanghulu",
+      "text_b": "Candied Hawthorn",
+      "label": 1
+    },
+    {
+      "id": "p315",
+      "text_a": "Tiramisu",
+      "text_b": "Coffee",
+      "label": 0
+    },
+    {
+      "id": "p316",
+      "text_a": "Tiramisu",
+      "text_b": "Tiramissu",
+      "label": 1
+    },
+    {
+      "id": "p317",
+      "text_a": "Toffee",
+      "text_b": "Chewy Toffee",
+      "label": 1
+    },
+    {
+      "id": "p318",
+      "text_a": "Tres Leches",
+      "text_b": "Three Milk Cake",
+      "label": 1
+    },
+    {
+      "id": "p319",
+      "text_a": "Tteok",
+      "text_b": "Korean Rice Cake",
+      "label": 1
+    },
+    {
+      "id": "p320",
+      "text_a": "Tteok",
+      "text_b": "Mochi",
+      "label": 0
+    },
+    {
+      "id": "p321",
+      "text_a": "Turkish Delight",
+      "text_b": "Lokum",
+      "label": 1
+    },
+    {
+      "id": "p322",
+      "text_a": "Umm Ali",
+      "text_b": "Om Ali",
+      "label": 1
+    },
+    {
+      "id": "p323",
+      "text_a": "Vanilla Cake",
+      "text_b": "Vanilla Pudding",
+      "label": 0
+    },
+    {
+      "id": "p324",
+      "text_a": "Victoria Sponge",
+      "text_b": "Victoria Sandwich Biscuit",
+      "label": 0
+    },
+    {
+      "id": "p325",
+      "text_a": "Victoria Sponge Cake",
+      "text_b": "Victoria Sandwich",
+      "label": 1
+    },
+    {
+      "id": "p326",
+      "text_a": "Warbat",
+      "text_b": "Cream Filled Pastry",
+      "label": 1
+    },
+    {
+      "id": "p327",
+      "text_a": "Warbat",
+      "text_b": "Znoud El Sit",
+      "label": 0
+    },
+    {
+      "id": "p328",
+      "text_a": "White Chocolate Cheesecake",
+      "text_b": "Chocolate Cheesecake",
+      "label": 0
+    },
+    {
+      "id": "p329",
+      "text_a": "Wife Cake",
+      "text_b": "Sweetheart Cake",
+      "label": 1
+    },
+    {
+      "id": "p330",
+      "text_a": "Yakgwa",
+      "text_b": "Korean Honey Cookie",
+      "label": 1
+    },
+    {
+      "id": "p331",
+      "text_a": "Yakgwa",
+      "text_b": "Maamoul",
+      "label": 0
+    },
+    {
+      "id": "p332",
+      "text_a": "Yokan",
+      "text_b": "Daifuku",
+      "label": 0
+    },
+    {
+      "id": "p333",
+      "text_a": "Yokan",
+      "text_b": "Red Bean Jelly",
+      "label": 1
+    },
+    {
+      "id": "p334",
+      "text_a": "Youtiao",
+      "text_b": "Chinese Donut",
+      "label": 0
+    },
+    {
+      "id": "p335",
+      "text_a": "Zeppole",
+      "text_b": "Zeppoli",
+      "label": 1
+    },
+    {
+      "id": "p336",
+      "text_a": "Znoud El Sit",
+      "text_b": "Lady's Arms",
+      "label": 1
+    }
+  ],
+  "metadata": {
+    "n_pairs": 336,
+    "n_positive": 174,
+    "n_negative": 162
+  }
+}

@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "FoodEval: A Benchmark for Food-Domain Text Embeddings"
+message: "If you use this benchmark, please cite it using the metadata from this file."
+type: dataset
+authors:
+  - given-names: Aditya
+    family-names: Patni
+    affiliation: Latimal
+date-released: "2026-06-11"
+version: 0.1.0
+url: "https://github.com/latimal/foodeval"
+license-url: "https://github.com/latimal/foodeval/blob/main/LICENSE"
+preferred-citation:
+  type: dataset
+  title: "FoodEval: A Benchmark for Food-Domain Text Embeddings"
+  version: 0.1.0
+  date-released: "2026-06-11"
+  authors:
+    - given-names: Aditya
+      family-names: Patni
+      affiliation: Latimal
+  year: 2026
+  url: "https://github.com/latimal/foodeval"

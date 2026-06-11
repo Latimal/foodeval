@@ -1,0 +1,2084 @@
+{
+  "model_name": "Voyage 4 Large",
+  "dimension": 384,
+  "aggregate_score": 0.6838,
+  "timestamp": "2026-05-29T14:13:59+00:00",
+  "total_seconds": 443.419,
+  "tasks": {
+    "bakery_match": {
+      "task_name": "bakery_match",
+      "main_score": 0.7154,
+      "metric_name": "best_f1",
+      "details": {
+        "best_threshold": 0.802,
+        "precision": 0.6555,
+        "recall": 0.7874,
+        "average_precision": 0.8041,
+        "tp": 137,
+        "fp": 72,
+        "fn": 37,
+        "tn": 90,
+        "per_domain": {
+          "unknown": {
+            "best_f1": 0.7154,
+            "threshold": 0.802,
+            "n_pairs": 336,
+            "n_positive": 174,
+            "n_negative": 162
+          }
+        },
+        "confidence_interval": {
+          "mean": 0.7130750871583377,
+          "ci_lower": 0.6594564894564895,
+          "ci_upper": 0.7643979057591623,
+          "std": 0.027160670949167284
+        }
+      },
+      "n_examples": 336,
+      "elapsed_seconds": 0.044
+    },
+    "beverage_match": {
+      "task_name": "beverage_match",
+      "main_score": 0.7192,
+      "metric_name": "best_f1",
+      "details": {
+        "best_threshold": 0.802,
+        "precision": 0.6227,
+        "recall": 0.8509,
+        "average_precision": 0.756,
+        "tp": 137,
+        "fp": 83,
+        "fn": 24,
+        "tn": 51,
+        "per_domain": {
+          "unknown": {
+            "best_f1": 0.7192,
+            "threshold": 0.802,
+            "n_pairs": 295,
+            "n_positive": 161,
+            "n_negative": 134
+          }
+        },
+        "confidence_interval": {
+          "mean": 0.7192667651231683,
+          "ci_lower": 0.6685377992183683,
+          "ci_upper": 0.7711442786069651,
+          "std": 0.025869125540126204
+        }
+      },
+      "n_examples": 295,
+      "elapsed_seconds": 0.039
+    },
+    "concept_search": {
+      "task_name": "concept_search",
+      "main_score": 0.5615,
+      "metric_name": "ndcg@10",
+      "details": {
+        "k": 10,
+        "n_corpus": 301,
+        "per_domain": {
+          "concept": {
+            "mean_ndcg": 0.5615,
+            "n_queries": 44
+          }
+        },
+        "confidence_interval": {
+          "mean": 0.5615393071354513,
+          "ci_lower": 0.4808087898442427,
+          "ci_upper": 0.650713862037004,
+          "std": 0.04253511216801492
+        },
+        "per_query": [
+          {
+            "id": "q001",
+            "domain": "concept",
+            "ndcg": 0.7275
+          },
+          {
+            "id": "q002",
+            "domain": "concept",
+            "ndcg": 0.9325
+          },
+          {
+            "id": "q003",
+            "domain": "concept",
+            "ndcg": 0.8254
+          },
+          {
+            "id": "q004",
+            "domain": "concept",
+            "ndcg": 0.636
+          },
+          {
+            "id": "q005",
+            "domain": "concept",
+            "ndcg": 0.8808
+          },
+          {
+            "id": "q006",
+            "domain": "concept",
+            "ndcg": 0.7221
+          },
+          {
+            "id": "q007",
+            "domain": "concept",
+            "ndcg": 0.7871
+          },
+          {
+            "id": "q008",
+            "domain": "concept",
+            "ndcg": 0.4268
+          },
+          {
+            "id": "q009",
+            "domain": "concept",
+            "ndcg": 0.6543
+          },
+          {
+            "id": "q010",
+            "domain": "concept",
+            "ndcg": 0.1019
+          },
+          {
+            "id": "q011",
+            "domain": "concept",
+            "ndcg": 0.167
+          },
+          {
+            "id": "q012",
+            "domain": "concept",
+            "ndcg": 0.5354
+          },
+          {
+            "id": "q013",
+            "domain": "concept",
+            "ndcg": 0.6345
+          },
+          {
+            "id": "q014",
+            "domain": "concept",
+            "ndcg": 0.5425
+          },
+          {
+            "id": "q015",
+            "domain": "concept",
+            "ndcg": 0.1176
+          },
+          {
+            "id": "q016",
+            "domain": "concept",
+            "ndcg": 0.7162
+          },
+          {
+            "id": "q017",
+            "domain": "concept",
+            "ndcg": 0.6391
+          },
+          {
+            "id": "q018",
+            "domain": "concept",
+            "ndcg": 0.8343
+          },
+          {
+            "id": "q019",
+            "domain": "concept",
+            "ndcg": 0.9766
+          },
+          {
+            "id": "q020",
+            "domain": "concept",
+            "ndcg": 0.9094
+          },
+          {
+            "id": "q021",
+            "domain": "concept",
+            "ndcg": 0.8889
+          },
+          {
+            "id": "q022",
+            "domain": "concept",
+            "ndcg": 0.5386
+          },
+          {
+            "id": "q023",
+            "domain": "concept",
+            "ndcg": 0.3908
+          },
+          {
+            "id": "q024",
+            "domain": "concept",
+            "ndcg": 0.3191
+          },
+          {
+            "id": "q025",
+            "domain": "concept",
+            "ndcg": 0.2813
+          },
+          {
+            "id": "q026",
+            "domain": "concept",
+            "ndcg": 0.1882
+          },
+          {
+            "id": "q027",
+            "domain": "concept",
+            "ndcg": 0.971
+          },
+          {
+            "id": "q028",
+            "domain": "concept",
+            "ndcg": 0.7426
+          },
+          {
+            "id": "q029",
+            "domain": "concept",
+            "ndcg": 0.32
+          },
+          {
+            "id": "q030",
+            "domain": "concept",
+            "ndcg": 0.3155
+          },
+          {
+            "id": "q031",
+            "domain": "concept",
+            "ndcg": 0.9127
+          },
+          {
+            "id": "q032",
+            "domain": "concept",
+            "ndcg": 0.0341
+          },
+          {
+            "id": "q033",
+            "domain": "concept",
+            "ndcg": 0.9363
+          },
+          {
+            "id": "q034",
+            "domain": "concept",
+            "ndcg": 0.284
+          },
+          {
+            "id": "q035",
+            "domain": "concept",
+            "ndcg": 0.695
+          },
+          {
+            "id": "q036",
+            "domain": "concept",
+            "ndcg": 0.4971
+          },
+          {
+            "id": "q037",
+            "domain": "concept",
+            "ndcg": 0.0126
+          },
+          {
+            "id": "q038",
+            "domain": "concept",
+            "ndcg": 0.6256
+          },
+          {
+            "id": "q039",
+            "domain": "concept",
+            "ndcg": 0.6865
+          },
+          {
+            "id": "q040",
+            "domain": "concept",
+            "ndcg": 0.325
+          },
+          {
+            "id": "q041",
+            "domain": "concept",
+            "ndcg": 0.454
+          },
+          {
+            "id": "q042",
+            "domain": "concept",
+            "ndcg": 0.1913
+          },
+          {
+            "id": "q043",
+            "domain": "concept",
+            "ndcg": 0.5867
+          },
+          {
+            "id": "q044",
+            "domain": "concept",
+            "ndcg": 0.7438
+          }
+        ]
+      },
+      "n_examples": 44,
+      "elapsed_seconds": 0.007
+    },
+    "cross_lingual_match": {
+      "task_name": "cross_lingual_match",
+      "main_score": 0.8196,
+      "metric_name": "best_f1",
+      "details": {
+        "best_threshold": 0.811,
+        "precision": 0.8069,
+        "recall": 0.8327,
+        "average_precision": 0.9018,
+        "tp": 234,
+        "fp": 56,
+        "fn": 47,
+        "tn": 177,
+        "per_domain": {
+          "bilingual": {
+            "best_f1": 0.8945,
+            "threshold": 0.875,
+            "n_pairs": 173,
+            "n_positive": 102,
+            "n_negative": 71
+          },
+          "cross_script": {
+            "best_f1": 0.9262,
+            "threshold": 0.797,
+            "n_pairs": 155,
+            "n_positive": 72,
+            "n_negative": 83
+          },
+          "romanized": {
+            "best_f1": 0.7772,
+            "threshold": 0.808,
+            "n_pairs": 186,
+            "n_positive": 107,
+            "n_negative": 79
+          }
+        },
+        "confidence_interval": {
+          "mean": 0.8195004856333262,
+          "ci_lower": 0.7833317490494297,
+          "ci_upper": 0.85180276231092,
+          "std": 0.01751364682583934
+        }
+      },
+      "n_examples": 514,
+      "elapsed_seconds": 0.064
+    },
+    "cuisine_classify": {
+      "task_name": "cuisine_classify",
+      "main_score": 0.7895,
+      "metric_name": "macro_f1",
+      "details": {
+        "mean_macro_f1": 0.7895,
+        "std_macro_f1": 0.0195,
+        "mean_accuracy": 0.7433,
+        "n_seeds": 10,
+        "n_train": 2442,
+        "n_test": 611,
+        "n_classes": 26,
+        "label_names": [
+          "American",
+          "Bengali",
+          "Biryani",
+          "Chinese",
+          "Continental",
+          "Ethiopian",
+          "German",
+          "Global",
+          "Goan",
+          "Greek",
+          "Italian",
+          "Japanese",
+          "Korean",
+          "Mexican",
+          "Middle Eastern",
+          "Moroccan",
+          "North Indian",
+          "QSR",
+          "SE Asian",
+          "South Indian",
+          "Spanish",
+          "Street Food",
+          "Thai",
+          "Turkish",
+          "Vietnamese",
+          "West African"
+        ],
+        "per_class": {
+          "American": {
+            "precision": 1.0,
+            "recall": 0.42857142857142855,
+            "f1": 0.6,
+            "support": 7
+          },
+          "Bengali": {
+            "precision": 1.0,
+            "recall": 0.14285714285714285,
+            "f1": 0.25,
+            "support": 7
+          },
+          "Biryani": {
+            "precision": 1.0,
+            "recall": 0.2857142857142857,
+            "f1": 0.4444444444444444,
+            "support": 7
+          },
+          "Chinese": {
+            "precision": 0.8863636363636364,
+            "recall": 0.8863636363636364,
+            "f1": 0.8863636363636364,
+            "support": 44
+          },
+          "Continental": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315,
+            "support": 10
+          },
+          "Ethiopian": {
+            "precision": 1.0,
+            "recall": 0.3333333333333333,
+            "f1": 0.5,
+            "support": 6
+          },
+          "German": {
+            "precision": 1.0,
+            "recall": 0.625,
+            "f1": 0.7692307692307693,
+            "support": 8
+          },
+          "Global": {
+            "precision": 1.0,
+            "recall": 0.6,
+            "f1": 0.75,
+            "support": 5
+          },
+          "Goan": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 6
+          },
+          "Greek": {
+            "precision": 1.0,
+            "recall": 0.36363636363636365,
+            "f1": 0.5333333333333333,
+            "support": 11
+          },
+          "Italian": {
+            "precision": 0.8529411764705882,
+            "recall": 1.0,
+            "f1": 0.9206349206349206,
+            "support": 29
+          },
+          "Japanese": {
+            "precision": 0.9318181818181818,
+            "recall": 0.9111111111111111,
+            "f1": 0.9213483146067416,
+            "support": 45
+          },
+          "Korean": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "support": 28
+          },
+          "Mexican": {
+            "precision": 0.9285714285714286,
+            "recall": 0.975,
+            "f1": 0.9512195121951219,
+            "support": 40
+          },
+          "Middle Eastern": {
+            "precision": 1.0,
+            "recall": 0.7222222222222222,
+            "f1": 0.8387096774193549,
+            "support": 18
+          },
+          "Moroccan": {
+            "precision": 1.0,
+            "recall": 0.8571428571428571,
+            "f1": 0.9230769230769231,
+            "support": 7
+          },
+          "North Indian": {
+            "precision": 0.7931034482758621,
+            "recall": 1.0,
+            "f1": 0.8846153846153846,
+            "support": 161
+          },
+          "QSR": {
+            "precision": 0.696969696969697,
+            "recall": 0.8518518518518519,
+            "f1": 0.7666666666666667,
+            "support": 27
+          },
+          "SE Asian": {
+            "precision": 1.0,
+            "recall": 0.2857142857142857,
+            "f1": 0.4444444444444444,
+            "support": 7
+          },
+          "South Indian": {
+            "precision": 0.9142857142857143,
+            "recall": 0.9142857142857143,
+            "f1": 0.9142857142857143,
+            "support": 35
+          },
+          "Spanish": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8888888888888888,
+            "support": 5
+          },
+          "Street Food": {
+            "precision": 1.0,
+            "recall": 0.7222222222222222,
+            "f1": 0.8387096774193549,
+            "support": 18
+          },
+          "Thai": {
+            "precision": 0.9393939393939394,
+            "recall": 1.0,
+            "f1": 0.96875,
+            "support": 31
+          },
+          "Turkish": {
+            "precision": 0.8571428571428571,
+            "recall": 0.9473684210526315,
+            "f1": 0.9,
+            "support": 19
+          },
+          "Vietnamese": {
+            "precision": 1.0,
+            "recall": 0.95,
+            "f1": 0.9743589743589743,
+            "support": 20
+          },
+          "West African": {
+            "precision": 1.0,
+            "recall": 0.8,
+            "f1": 0.8888888888888888,
+            "support": 10
+          }
+        },
+        "per_seed_f1": [
+          0.7579,
+          0.7757,
+          0.7933,
+          0.8056,
+          0.8167,
+          0.8078,
+          0.7853,
+          0.8103,
+          0.7625,
+          0.7797
+        ]
+      },
+      "n_examples": 3053,
+      "elapsed_seconds": 0.541
+    },
+    "diet_search": {
+      "task_name": "diet_search",
+      "main_score": 0.2378,
+      "metric_name": "ndcg@10",
+      "details": {
+        "k": 10,
+        "n_corpus": 245,
+        "per_domain": {
+          "diet_allergen": {
+            "mean_ndcg": 0.2378,
+            "n_queries": 35
+          }
+        },
+        "confidence_interval": {
+          "mean": 0.23779434149010398,
+          "ci_lower": 0.16273483547994505,
+          "ci_upper": 0.320278292692111,
+          "std": 0.03987111558271758
+        },
+        "per_query": [
+          {
+            "id": "q001",
+            "domain": "diet_allergen",
+            "ndcg": 0.5845
+          },
+          {
+            "id": "q002",
+            "domain": "diet_allergen",
+            "ndcg": 0.0
+          },
+          {
+            "id": "q003",
+            "domain": "diet_allergen",
+            "ndcg": 0.0
+          },
+          {
+            "id": "q004",
+            "domain": "diet_allergen",
+            "ndcg": 0.0142
+          },
+          {
+            "id": "q005",
+            "domain": "diet_allergen",
+            "ndcg": 0.1463
+          },
+          {
+            "id": "q006",
+            "domain": "diet_allergen",
+            "ndcg": 0.3386
+          },
+          {
+            "id": "q007",
+            "domain": "diet_allergen",
+            "ndcg": 0.5656
+          },
+          {
+            "id": "q008",
+            "domain": "diet_allergen",
+            "ndcg": 0.4629
+          },
+          {
+            "id": "q009",
+            "domain": "diet_allergen",
+            "ndcg": 0.0159
+          },
+          {
+            "id": "q010",
+            "domain": "diet_allergen",
+            "ndcg": 0.6762
+          },
+          {
+            "id": "q011",
+            "domain": "diet_allergen",
+            "ndcg": 0.4207
+          },
+          {
+            "id": "q012",
+            "domain": "diet_allergen",
+            "ndcg": 0.3483
+          },
+          {
+            "id": "q013",
+            "domain": "diet_allergen",
+            "ndcg": 0.0
+          },
+          {
+            "id": "q014",
+            "domain": "diet_allergen",
+            "ndcg": 0.1876
+          },
+          {
+            "id": "q015",
+            "domain": "diet_allergen",
+            "ndcg": 0.1268
+          },
+          {
+            "id": "q016",
+            "domain": "diet_allergen",
+            "ndcg": 0.487
+          },
+          {
+            "id": "q017",
+            "domain": "diet_allergen",
+            "ndcg": 0.8491
+          },
+          {
+            "id": "q018",
+            "domain": "diet_allergen",
+            "ndcg": 0.0
+          },
+          {
+            "id": "q019",
+            "domain": "diet_allergen",
+            "ndcg": 0.6312
+          },
+          {
+            "id": "q020",
+            "domain": "diet_allergen",
+            "ndcg": 0.4128
+          },
+          {
+            "id": "q021",
+            "domain": "diet_allergen",
+            "ndcg": 0.0
+          },
+          {
+            "id": "q022",
+            "domain": "diet_allergen",
+            "ndcg": 0.4539
+          },
+          {
+            "id": "q023",
+            "domain": "diet_allergen",
+            "ndcg": 0.0205
+          },
+          {
+            "id": "q024",
+            "domain": "diet_allergen",
+            "ndcg": 0.1475
+          },
+          {
+            "id": "q025",
+            "domain": "diet_allergen",
+            "ndcg": 0.3441
+          },
+          {
+            "id": "q026",
+            "domain": "diet_allergen",
+            "ndcg": 0.3441
+          },
+          {
+            "id": "q027",
+            "domain": "diet_allergen",
+            "ndcg": 0.0238
+          },
+          {
+            "id": "q028",
+            "domain": "diet_allergen",
+            "ndcg": 0.0246
+          },
+          {
+            "id": "q029",
+            "domain": "diet_allergen",
+            "ndcg": 0.108
+          },
+          {
+            "id": "q030",
+            "domain": "diet_allergen",
+            "ndcg": 0.1298
+          },
+          {
+            "id": "q031",
+            "domain": "diet_allergen",
+            "ndcg": 0.0904
+          },
+          {
+            "id": "q032",
+            "domain": "diet_allergen",
+            "ndcg": 0.0296
+          },
+          {
+            "id": "q033",
+            "domain": "diet_allergen",
+            "ndcg": 0.1931
+          },
+          {
+            "id": "q034",
+            "domain": "diet_allergen",
+            "ndcg": 0.1456
+          },
+          {
+            "id": "q035",
+            "domain": "diet_allergen",
+            "ndcg": 0.0
+          }
+        ]
+      },
+      "n_examples": 35,
+      "elapsed_seconds": 0.005
+    },
+    "food_search": {
+      "task_name": "food_search",
+      "main_score": 0.6779,
+      "metric_name": "ndcg@10",
+      "details": {
+        "k": 10,
+        "n_corpus": 974,
+        "per_domain": {
+          "beverage": {
+            "mean_ndcg": 0.7055,
+            "n_queries": 52
+          },
+          "global": {
+            "mean_ndcg": 0.6669,
+            "n_queries": 73
+          },
+          "indian": {
+            "mean_ndcg": 0.6661,
+            "n_queries": 53
+          }
+        },
+        "confidence_interval": {
+          "mean": 0.6779325118300767,
+          "ci_lower": 0.6481809850547319,
+          "ci_upper": 0.7058051635072604,
+          "std": 0.014517953231138392
+        },
+        "per_query": [
+          {
+            "id": "q001",
+            "domain": "global",
+            "ndcg": 0.7164
+          },
+          {
+            "id": "q002",
+            "domain": "global",
+            "ndcg": 0.1727
+          },
+          {
+            "id": "q003",
+            "domain": "global",
+            "ndcg": 0.75
+          },
+          {
+            "id": "q004",
+            "domain": "global",
+            "ndcg": 0.6287
+          },
+          {
+            "id": "q005",
+            "domain": "beverage",
+            "ndcg": 0.7856
+          },
+          {
+            "id": "q006",
+            "domain": "global",
+            "ndcg": 0.9506
+          },
+          {
+            "id": "q007",
+            "domain": "global",
+            "ndcg": 0.9463
+          },
+          {
+            "id": "q008",
+            "domain": "indian",
+            "ndcg": 0.6126
+          },
+          {
+            "id": "q009",
+            "domain": "indian",
+            "ndcg": 0.4932
+          },
+          {
+            "id": "q010",
+            "domain": "global",
+            "ndcg": 0.7766
+          },
+          {
+            "id": "q011",
+            "domain": "global",
+            "ndcg": 0.7133
+          },
+          {
+            "id": "q012",
+            "domain": "global",
+            "ndcg": 0.7259
+          },
+          {
+            "id": "q013",
+            "domain": "indian",
+            "ndcg": 0.6204
+          },
+          {
+            "id": "q014",
+            "domain": "beverage",
+            "ndcg": 1.0
+          },
+          {
+            "id": "q015",
+            "domain": "beverage",
+            "ndcg": 0.8791
+          },
+          {
+            "id": "q016",
+            "domain": "beverage",
+            "ndcg": 0.7875
+          },
+          {
+            "id": "q017",
+            "domain": "beverage",
+            "ndcg": 0.9492
+          },
+          {
+            "id": "q018",
+            "domain": "global",
+            "ndcg": 0.6172
+          },
+          {
+            "id": "q019",
+            "domain": "indian",
+            "ndcg": 0.8202
+          },
+          {
+            "id": "q020",
+            "domain": "global",
+            "ndcg": 0.3554
+          },
+          {
+            "id": "q021",
+            "domain": "indian",
+            "ndcg": 0.415
+          },
+          {
+            "id": "q022",
+            "domain": "global",
+            "ndcg": 0.5156
+          },
+          {
+            "id": "q023",
+            "domain": "global",
+            "ndcg": 0.7497
+          },
+          {
+            "id": "q024",
+            "domain": "global",
+            "ndcg": 0.4982
+          },
+          {
+            "id": "q025",
+            "domain": "global",
+            "ndcg": 0.7009
+          },
+          {
+            "id": "q026",
+            "domain": "beverage",
+            "ndcg": 0.6482
+          },
+          {
+            "id": "q027",
+            "domain": "indian",
+            "ndcg": 0.8014
+          },
+          {
+            "id": "q028",
+            "domain": "indian",
+            "ndcg": 0.51
+          },
+          {
+            "id": "q029",
+            "domain": "indian",
+            "ndcg": 0.5405
+          },
+          {
+            "id": "q030",
+            "domain": "global",
+            "ndcg": 0.8217
+          },
+          {
+            "id": "q031",
+            "domain": "global",
+            "ndcg": 0.789
+          },
+          {
+            "id": "q032",
+            "domain": "beverage",
+            "ndcg": 0.4922
+          },
+          {
+            "id": "q033",
+            "domain": "beverage",
+            "ndcg": 0.6741
+          },
+          {
+            "id": "q034",
+            "domain": "indian",
+            "ndcg": 0.3204
+          },
+          {
+            "id": "q035",
+            "domain": "beverage",
+            "ndcg": 0.498
+          },
+          {
+            "id": "q036",
+            "domain": "beverage",
+            "ndcg": 0.1822
+          },
+          {
+            "id": "q037",
+            "domain": "global",
+            "ndcg": 0.9036
+          },
+          {
+            "id": "q038",
+            "domain": "global",
+            "ndcg": 0.8389
+          },
+          {
+            "id": "q039",
+            "domain": "global",
+            "ndcg": 0.852
+          },
+          {
+            "id": "q040",
+            "domain": "indian",
+            "ndcg": 0.5782
+          },
+          {
+            "id": "q041",
+            "domain": "beverage",
+            "ndcg": 0.528
+          },
+          {
+            "id": "q042",
+            "domain": "global",
+            "ndcg": 0.6481
+          },
+          {
+            "id": "q043",
+            "domain": "global",
+            "ndcg": 0.7173
+          },
+          {
+            "id": "q044",
+            "domain": "global",
+            "ndcg": 0.1786
+          },
+          {
+            "id": "q045",
+            "domain": "global",
+            "ndcg": 0.2281
+          },
+          {
+            "id": "q046",
+            "domain": "global",
+            "ndcg": 0.396
+          },
+          {
+            "id": "q047",
+            "domain": "global",
+            "ndcg": 0.699
+          },
+          {
+            "id": "q048",
+            "domain": "beverage",
+            "ndcg": 0.738
+          },
+          {
+            "id": "q049",
+            "domain": "beverage",
+            "ndcg": 0.8073
+          },
+          {
+            "id": "q050",
+            "domain": "indian",
+            "ndcg": 0.4956
+          },
+          {
+            "id": "q051",
+            "domain": "beverage",
+            "ndcg": 0.4359
+          },
+          {
+            "id": "q052",
+            "domain": "beverage",
+            "ndcg": 0.6441
+          },
+          {
+            "id": "q053",
+            "domain": "global",
+            "ndcg": 0.7191
+          },
+          {
+            "id": "q054",
+            "domain": "beverage",
+            "ndcg": 0.7611
+          },
+          {
+            "id": "q055",
+            "domain": "beverage",
+            "ndcg": 0.675
+          },
+          {
+            "id": "q056",
+            "domain": "beverage",
+            "ndcg": 0.7451
+          },
+          {
+            "id": "q057",
+            "domain": "global",
+            "ndcg": 0.7925
+          },
+          {
+            "id": "q058",
+            "domain": "beverage",
+            "ndcg": 0.8018
+          },
+          {
+            "id": "q059",
+            "domain": "beverage",
+            "ndcg": 0.8532
+          },
+          {
+            "id": "q060",
+            "domain": "global",
+            "ndcg": 0.8302
+          },
+          {
+            "id": "q061",
+            "domain": "indian",
+            "ndcg": 0.4082
+          },
+          {
+            "id": "q062",
+            "domain": "indian",
+            "ndcg": 0.7238
+          },
+          {
+            "id": "q063",
+            "domain": "global",
+            "ndcg": 0.6546
+          },
+          {
+            "id": "q064",
+            "domain": "global",
+            "ndcg": 0.8105
+          },
+          {
+            "id": "q065",
+            "domain": "global",
+            "ndcg": 0.1186
+          },
+          {
+            "id": "q066",
+            "domain": "global",
+            "ndcg": 0.6112
+          },
+          {
+            "id": "q067",
+            "domain": "global",
+            "ndcg": 0.1755
+          },
+          {
+            "id": "q068",
+            "domain": "indian",
+            "ndcg": 0.7064
+          },
+          {
+            "id": "q069",
+            "domain": "indian",
+            "ndcg": 0.6875
+          },
+          {
+            "id": "q070",
+            "domain": "indian",
+            "ndcg": 0.7932
+          },
+          {
+            "id": "q071",
+            "domain": "indian",
+            "ndcg": 0.7715
+          },
+          {
+            "id": "q072",
+            "domain": "indian",
+            "ndcg": 0.63
+          },
+          {
+            "id": "q073",
+            "domain": "global",
+            "ndcg": 0.7927
+          },
+          {
+            "id": "q074",
+            "domain": "global",
+            "ndcg": 0.7025
+          },
+          {
+            "id": "q075",
+            "domain": "global",
+            "ndcg": 0.6422
+          },
+          {
+            "id": "q076",
+            "domain": "indian",
+            "ndcg": 0.8886
+          },
+          {
+            "id": "q077",
+            "domain": "beverage",
+            "ndcg": 0.9297
+          },
+          {
+            "id": "q078",
+            "domain": "global",
+            "ndcg": 0.9403
+          },
+          {
+            "id": "q079",
+            "domain": "beverage",
+            "ndcg": 0.8318
+          },
+          {
+            "id": "q080",
+            "domain": "beverage",
+            "ndcg": 0.2134
+          },
+          {
+            "id": "q081",
+            "domain": "beverage",
+            "ndcg": 0.711
+          },
+          {
+            "id": "q082",
+            "domain": "indian",
+            "ndcg": 0.7121
+          },
+          {
+            "id": "q083",
+            "domain": "indian",
+            "ndcg": 0.4929
+          },
+          {
+            "id": "q084",
+            "domain": "indian",
+            "ndcg": 0.6568
+          },
+          {
+            "id": "q085",
+            "domain": "indian",
+            "ndcg": 0.689
+          },
+          {
+            "id": "q086",
+            "domain": "indian",
+            "ndcg": 0.8032
+          },
+          {
+            "id": "q087",
+            "domain": "global",
+            "ndcg": 0.8782
+          },
+          {
+            "id": "q088",
+            "domain": "beverage",
+            "ndcg": 0.5062
+          },
+          {
+            "id": "q089",
+            "domain": "beverage",
+            "ndcg": 0.7523
+          },
+          {
+            "id": "q090",
+            "domain": "global",
+            "ndcg": 0.8155
+          },
+          {
+            "id": "q091",
+            "domain": "indian",
+            "ndcg": 0.6885
+          },
+          {
+            "id": "q092",
+            "domain": "beverage",
+            "ndcg": 0.8569
+          },
+          {
+            "id": "q093",
+            "domain": "beverage",
+            "ndcg": 0.8712
+          },
+          {
+            "id": "q094",
+            "domain": "indian",
+            "ndcg": 0.857
+          },
+          {
+            "id": "q095",
+            "domain": "indian",
+            "ndcg": 0.8113
+          },
+          {
+            "id": "q096",
+            "domain": "global",
+            "ndcg": 0.6512
+          },
+          {
+            "id": "q097",
+            "domain": "global",
+            "ndcg": 0.7028
+          },
+          {
+            "id": "q098",
+            "domain": "beverage",
+            "ndcg": 0.7056
+          },
+          {
+            "id": "q099",
+            "domain": "beverage",
+            "ndcg": 0.8044
+          },
+          {
+            "id": "q100",
+            "domain": "beverage",
+            "ndcg": 0.8423
+          },
+          {
+            "id": "q101",
+            "domain": "global",
+            "ndcg": 0.5547
+          },
+          {
+            "id": "q102",
+            "domain": "beverage",
+            "ndcg": 0.708
+          },
+          {
+            "id": "q103",
+            "domain": "beverage",
+            "ndcg": 0.6852
+          },
+          {
+            "id": "q104",
+            "domain": "beverage",
+            "ndcg": 0.7516
+          },
+          {
+            "id": "q105",
+            "domain": "beverage",
+            "ndcg": 0.7751
+          },
+          {
+            "id": "q106",
+            "domain": "beverage",
+            "ndcg": 0.7493
+          },
+          {
+            "id": "q107",
+            "domain": "global",
+            "ndcg": 0.7377
+          },
+          {
+            "id": "q108",
+            "domain": "global",
+            "ndcg": 0.7994
+          },
+          {
+            "id": "q109",
+            "domain": "beverage",
+            "ndcg": 0.6213
+          },
+          {
+            "id": "q110",
+            "domain": "indian",
+            "ndcg": 0.7128
+          },
+          {
+            "id": "q111",
+            "domain": "beverage",
+            "ndcg": 0.6296
+          },
+          {
+            "id": "q112",
+            "domain": "indian",
+            "ndcg": 0.5286
+          },
+          {
+            "id": "q113",
+            "domain": "global",
+            "ndcg": 0.8135
+          },
+          {
+            "id": "q114",
+            "domain": "global",
+            "ndcg": 0.7357
+          },
+          {
+            "id": "q115",
+            "domain": "beverage",
+            "ndcg": 0.7446
+          },
+          {
+            "id": "q116",
+            "domain": "global",
+            "ndcg": 0.8172
+          },
+          {
+            "id": "q117",
+            "domain": "global",
+            "ndcg": 0.9091
+          },
+          {
+            "id": "q118",
+            "domain": "global",
+            "ndcg": 0.4705
+          },
+          {
+            "id": "q119",
+            "domain": "global",
+            "ndcg": 0.2632
+          },
+          {
+            "id": "q120",
+            "domain": "global",
+            "ndcg": 0.6991
+          },
+          {
+            "id": "q121",
+            "domain": "global",
+            "ndcg": 0.6286
+          },
+          {
+            "id": "q122",
+            "domain": "global",
+            "ndcg": 0.4673
+          },
+          {
+            "id": "q123",
+            "domain": "global",
+            "ndcg": 0.7124
+          },
+          {
+            "id": "q124",
+            "domain": "indian",
+            "ndcg": 0.6592
+          },
+          {
+            "id": "q125",
+            "domain": "indian",
+            "ndcg": 0.8327
+          },
+          {
+            "id": "q126",
+            "domain": "indian",
+            "ndcg": 0.9377
+          },
+          {
+            "id": "q127",
+            "domain": "indian",
+            "ndcg": 0.7912
+          },
+          {
+            "id": "q128",
+            "domain": "global",
+            "ndcg": 0.5688
+          },
+          {
+            "id": "q129",
+            "domain": "indian",
+            "ndcg": 0.7418
+          },
+          {
+            "id": "q130",
+            "domain": "indian",
+            "ndcg": 0.7726
+          },
+          {
+            "id": "q131",
+            "domain": "indian",
+            "ndcg": 0.737
+          },
+          {
+            "id": "q132",
+            "domain": "indian",
+            "ndcg": 0.8476
+          },
+          {
+            "id": "q133",
+            "domain": "global",
+            "ndcg": 0.9435
+          },
+          {
+            "id": "q134",
+            "domain": "global",
+            "ndcg": 0.9552
+          },
+          {
+            "id": "q135",
+            "domain": "indian",
+            "ndcg": 0.5659
+          },
+          {
+            "id": "q136",
+            "domain": "beverage",
+            "ndcg": 0.5215
+          },
+          {
+            "id": "q137",
+            "domain": "beverage",
+            "ndcg": 0.7533
+          },
+          {
+            "id": "q138",
+            "domain": "indian",
+            "ndcg": 0.8954
+          },
+          {
+            "id": "q139",
+            "domain": "beverage",
+            "ndcg": 0.7835
+          },
+          {
+            "id": "q140",
+            "domain": "beverage",
+            "ndcg": 0.8016
+          },
+          {
+            "id": "q141",
+            "domain": "indian",
+            "ndcg": 0.2734
+          },
+          {
+            "id": "q142",
+            "domain": "global",
+            "ndcg": 0.4268
+          },
+          {
+            "id": "q143",
+            "domain": "global",
+            "ndcg": 0.2062
+          },
+          {
+            "id": "q144",
+            "domain": "beverage",
+            "ndcg": 0.7886
+          },
+          {
+            "id": "q145",
+            "domain": "indian",
+            "ndcg": 0.9152
+          },
+          {
+            "id": "q146",
+            "domain": "beverage",
+            "ndcg": 0.6634
+          },
+          {
+            "id": "q147",
+            "domain": "indian",
+            "ndcg": 0.6321
+          },
+          {
+            "id": "q148",
+            "domain": "global",
+            "ndcg": 0.6986
+          },
+          {
+            "id": "q149",
+            "domain": "global",
+            "ndcg": 0.921
+          },
+          {
+            "id": "q150",
+            "domain": "indian",
+            "ndcg": 0.0
+          },
+          {
+            "id": "q151",
+            "domain": "indian",
+            "ndcg": 0.0373
+          },
+          {
+            "id": "q152",
+            "domain": "beverage",
+            "ndcg": 0.6318
+          },
+          {
+            "id": "q153",
+            "domain": "global",
+            "ndcg": 0.5953
+          },
+          {
+            "id": "q154",
+            "domain": "global",
+            "ndcg": 0.6467
+          },
+          {
+            "id": "q155",
+            "domain": "global",
+            "ndcg": 0.8484
+          },
+          {
+            "id": "q156",
+            "domain": "indian",
+            "ndcg": 0.7478
+          },
+          {
+            "id": "q157",
+            "domain": "indian",
+            "ndcg": 0.7304
+          },
+          {
+            "id": "q158",
+            "domain": "beverage",
+            "ndcg": 0.7992
+          },
+          {
+            "id": "q159",
+            "domain": "indian",
+            "ndcg": 0.9283
+          },
+          {
+            "id": "q160",
+            "domain": "beverage",
+            "ndcg": 0.5824
+          },
+          {
+            "id": "q161",
+            "domain": "beverage",
+            "ndcg": 0.5466
+          },
+          {
+            "id": "q162",
+            "domain": "beverage",
+            "ndcg": 0.7257
+          },
+          {
+            "id": "q163",
+            "domain": "beverage",
+            "ndcg": 0.7242
+          },
+          {
+            "id": "q164",
+            "domain": "beverage",
+            "ndcg": 0.7882
+          },
+          {
+            "id": "q165",
+            "domain": "global",
+            "ndcg": 0.966
+          },
+          {
+            "id": "q166",
+            "domain": "global",
+            "ndcg": 0.9661
+          },
+          {
+            "id": "q167",
+            "domain": "global",
+            "ndcg": 0.406
+          },
+          {
+            "id": "q168",
+            "domain": "global",
+            "ndcg": 0.6113
+          },
+          {
+            "id": "q169",
+            "domain": "indian",
+            "ndcg": 0.7267
+          },
+          {
+            "id": "q170",
+            "domain": "indian",
+            "ndcg": 0.6665
+          },
+          {
+            "id": "q171",
+            "domain": "indian",
+            "ndcg": 0.7316
+          },
+          {
+            "id": "q172",
+            "domain": "indian",
+            "ndcg": 0.657
+          },
+          {
+            "id": "q173",
+            "domain": "indian",
+            "ndcg": 0.8578
+          },
+          {
+            "id": "q174",
+            "domain": "indian",
+            "ndcg": 0.848
+          },
+          {
+            "id": "q175",
+            "domain": "global",
+            "ndcg": 0.8175
+          },
+          {
+            "id": "q176",
+            "domain": "global",
+            "ndcg": 0.709
+          },
+          {
+            "id": "q177",
+            "domain": "global",
+            "ndcg": 0.3457
+          },
+          {
+            "id": "q178",
+            "domain": "global",
+            "ndcg": 0.7168
+          }
+        ]
+      },
+      "n_examples": 178,
+      "elapsed_seconds": 0.027
+    },
+    "global_match": {
+      "task_name": "global_match",
+      "main_score": 0.7831,
+      "metric_name": "best_f1",
+      "details": {
+        "best_threshold": 0.887,
+        "precision": 0.7092,
+        "recall": 0.8742,
+        "average_precision": 0.8639,
+        "tp": 139,
+        "fp": 57,
+        "fn": 20,
+        "tn": 102,
+        "per_domain": {
+          "unknown": {
+            "best_f1": 0.7831,
+            "threshold": 0.887,
+            "n_pairs": 318,
+            "n_positive": 159,
+            "n_negative": 159
+          }
+        },
+        "confidence_interval": {
+          "mean": 0.7813468617285023,
+          "ci_lower": 0.7321389975298477,
+          "ci_upper": 0.8266798866855524,
+          "std": 0.02447291563660908
+        }
+      },
+      "n_examples": 318,
+      "elapsed_seconds": 0.042
+    },
+    "indian_match": {
+      "task_name": "indian_match",
+      "main_score": 0.7178,
+      "metric_name": "best_f1",
+      "details": {
+        "best_threshold": 0.872,
+        "precision": 0.6379,
+        "recall": 0.8205,
+        "average_precision": 0.7729,
+        "tp": 192,
+        "fp": 109,
+        "fn": 42,
+        "tn": 155,
+        "per_domain": {
+          "unknown": {
+            "best_f1": 0.7178,
+            "threshold": 0.872,
+            "n_pairs": 498,
+            "n_positive": 234,
+            "n_negative": 264
+          }
+        },
+        "confidence_interval": {
+          "mean": 0.718024982518959,
+          "ci_lower": 0.6747370254266807,
+          "ci_upper": 0.7597243816254418,
+          "std": 0.02167165716303093
+        }
+      },
+      "n_examples": 498,
+      "elapsed_seconds": 148.683
+    },
+    "noisy_menu_match": {
+      "task_name": "noisy_menu_match",
+      "main_score": 0.64,
+      "metric_name": "best_f1",
+      "details": {
+        "best_threshold": 0.483,
+        "precision": 0.4706,
+        "recall": 1.0,
+        "average_precision": 0.4588,
+        "tp": 152,
+        "fp": 171,
+        "fn": 0,
+        "tn": 0,
+        "per_domain": {
+          "unknown": {
+            "best_f1": 0.64,
+            "threshold": 0.483,
+            "n_pairs": 323,
+            "n_positive": 152,
+            "n_negative": 171
+          }
+        },
+        "confidence_interval": {
+          "mean": 0.6390708008606371,
+          "ci_lower": 0.5925925925925926,
+          "ci_upper": 0.6869918699186992,
+          "std": 0.02500379624937767
+        }
+      },
+      "n_examples": 323,
+      "elapsed_seconds": 125.505
+    },
+    "noisy_search": {
+      "task_name": "noisy_search",
+      "main_score": 0.7535,
+      "metric_name": "ndcg@10",
+      "details": {
+        "k": 10,
+        "n_corpus": 304,
+        "per_domain": {
+          "noisy": {
+            "mean_ndcg": 0.7535,
+            "n_queries": 46
+          }
+        },
+        "confidence_interval": {
+          "mean": 0.7534615606010477,
+          "ci_lower": 0.6923605548710782,
+          "ci_upper": 0.8074190100208084,
+          "std": 0.02918976801779678
+        },
+        "per_query": [
+          {
+            "id": "q001",
+            "domain": "noisy",
+            "ndcg": 0.7186
+          },
+          {
+            "id": "q002",
+            "domain": "noisy",
+            "ndcg": 0.9198
+          },
+          {
+            "id": "q003",
+            "domain": "noisy",
+            "ndcg": 0.8319
+          },
+          {
+            "id": "q004",
+            "domain": "noisy",
+            "ndcg": 0.1581
+          },
+          {
+            "id": "q005",
+            "domain": "noisy",
+            "ndcg": 0.9033
+          },
+          {
+            "id": "q006",
+            "domain": "noisy",
+            "ndcg": 0.7025
+          },
+          {
+            "id": "q007",
+            "domain": "noisy",
+            "ndcg": 0.9217
+          },
+          {
+            "id": "q008",
+            "domain": "noisy",
+            "ndcg": 0.7997
+          },
+          {
+            "id": "q009",
+            "domain": "noisy",
+            "ndcg": 0.6039
+          },
+          {
+            "id": "q010",
+            "domain": "noisy",
+            "ndcg": 0.9643
+          },
+          {
+            "id": "q011",
+            "domain": "noisy",
+            "ndcg": 0.8444
+          },
+          {
+            "id": "q012",
+            "domain": "noisy",
+            "ndcg": 0.8493
+          },
+          {
+            "id": "q013",
+            "domain": "noisy",
+            "ndcg": 0.7734
+          },
+          {
+            "id": "q014",
+            "domain": "noisy",
+            "ndcg": 0.8892
+          },
+          {
+            "id": "q015",
+            "domain": "noisy",
+            "ndcg": 0.8397
+          },
+          {
+            "id": "q016",
+            "domain": "noisy",
+            "ndcg": 0.5053
+          },
+          {
+            "id": "q017",
+            "domain": "noisy",
+            "ndcg": 0.7871
+          },
+          {
+            "id": "q018",
+            "domain": "noisy",
+            "ndcg": 0.6449
+          },
+          {
+            "id": "q019",
+            "domain": "noisy",
+            "ndcg": 0.0265
+          },
+          {
+            "id": "q020",
+            "domain": "noisy",
+            "ndcg": 0.57
+          },
+          {
+            "id": "q021",
+            "domain": "noisy",
+            "ndcg": 0.9433
+          },
+          {
+            "id": "q022",
+            "domain": "noisy",
+            "ndcg": 0.8299
+          },
+          {
+            "id": "q023",
+            "domain": "noisy",
+            "ndcg": 0.8868
+          },
+          {
+            "id": "q024",
+            "domain": "noisy",
+            "ndcg": 0.7483
+          },
+          {
+            "id": "q025",
+            "domain": "noisy",
+            "ndcg": 0.5882
+          },
+          {
+            "id": "q026",
+            "domain": "noisy",
+            "ndcg": 0.718
+          },
+          {
+            "id": "q027",
+            "domain": "noisy",
+            "ndcg": 0.8952
+          },
+          {
+            "id": "q028",
+            "domain": "noisy",
+            "ndcg": 0.9141
+          },
+          {
+            "id": "q029",
+            "domain": "noisy",
+            "ndcg": 0.3708
+          },
+          {
+            "id": "q030",
+            "domain": "noisy",
+            "ndcg": 0.4811
+          },
+          {
+            "id": "q031",
+            "domain": "noisy",
+            "ndcg": 0.8178
+          },
+          {
+            "id": "q032",
+            "domain": "noisy",
+            "ndcg": 0.8238
+          },
+          {
+            "id": "q033",
+            "domain": "noisy",
+            "ndcg": 0.8775
+          },
+          {
+            "id": "q034",
+            "domain": "noisy",
+            "ndcg": 0.8979
+          },
+          {
+            "id": "q035",
+            "domain": "noisy",
+            "ndcg": 0.5114
+          },
+          {
+            "id": "q036",
+            "domain": "noisy",
+            "ndcg": 0.9015
+          },
+          {
+            "id": "q037",
+            "domain": "noisy",
+            "ndcg": 0.8817
+          },
+          {
+            "id": "q038",
+            "domain": "noisy",
+            "ndcg": 0.9181
+          },
+          {
+            "id": "q039",
+            "domain": "noisy",
+            "ndcg": 0.972
+          },
+          {
+            "id": "q040",
+            "domain": "noisy",
+            "ndcg": 0.8446
+          },
+          {
+            "id": "q041",
+            "domain": "noisy",
+            "ndcg": 0.775
+          },
+          {
+            "id": "q042",
+            "domain": "noisy",
+            "ndcg": 0.7086
+          },
+          {
+            "id": "q043",
+            "domain": "noisy",
+            "ndcg": 0.6435
+          },
+          {
+            "id": "q044",
+            "domain": "noisy",
+            "ndcg": 0.8551
+          },
+          {
+            "id": "q045",
+            "domain": "noisy",
+            "ndcg": 0.7793
+          },
+          {
+            "id": "q046",
+            "domain": "noisy",
+            "ndcg": 0.822
+          }
+        ]
+      },
+      "n_examples": 46,
+      "elapsed_seconds": 84.069
+    },
+    "portion_size": {
+      "task_name": "portion_size",
+      "main_score": 0.7909,
+      "metric_name": "best_f1",
+      "details": {
+        "best_threshold": 0.861,
+        "precision": 0.6842,
+        "recall": 0.9369,
+        "average_precision": 0.7283,
+        "tp": 104,
+        "fp": 48,
+        "fn": 7,
+        "tn": 69,
+        "per_domain": {
+          "unknown": {
+            "best_f1": 0.7909,
+            "threshold": 0.861,
+            "n_pairs": 228,
+            "n_positive": 111,
+            "n_negative": 117
+          }
+        },
+        "confidence_interval": {
+          "mean": 0.7909223478588995,
+          "ci_lower": 0.7351778656126482,
+          "ci_upper": 0.842911877394636,
+          "std": 0.027716266886796955
+        }
+      },
+      "n_examples": 228,
+      "elapsed_seconds": 84.373
+    }
+  }
+}

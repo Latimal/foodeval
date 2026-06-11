@@ -1,0 +1,38 @@
+FoodEval License: CC-BY-NC-4.0 with Evaluation-Only Addendum and
+Additional Permissions
+
+Copyright (c) 2026 Latimal
+
+Latimal offers this dataset and the accompanying evaluation code under
+CC-BY-NC-4.0 as supplemented by the addendum and additional permissions
+below.
+
+Under CC-BY-NC-4.0 you are free to Share and Adapt the material, with
+Attribution and NonCommercial conditions. The addendum below narrows those
+freedoms for this dataset: evaluation-only use, no training, unmodified
+redistribution. Where this summary, the CC deed, and the addendum differ,
+the addendum controls; the additional permissions below are granted by the
+licensor on top of all of the above and control to their full extent.
+
+Full license text: https://creativecommons.org/licenses/by-nc/4.0/legalcode
+
+EVALUATION-ONLY ADDENDUM
+
+This dataset is licensed for evaluation, benchmarking, and academic research
+only. Use as training data for machine learning models is expressly prohibited:
+no training, fine-tuning, distillation, or baking examples into a model.
+Redistribution is permitted only on these same terms (unmodified, attributed,
+non-commercial, evaluation-only); selling the data is prohibited as a
+commercial use.
+
+ADDITIONAL PERMISSIONS GRANTED BY THE LICENSOR
+
+On top of CC-BY-NC-4.0, Latimal, as licensor, grants:
+
+1. Running FoodEval to evaluate and compare models is permitted in any
+   setting, including inside a company and in commercial model-selection
+   decisions. The NonCommercial clause is not intended to prevent anyone
+   from measuring models with this benchmark.
+2. The evaluation code and tooling (everything outside the dataset task
+   files, which live at foodeval/data/ in the package and data/ on the
+   Hugging Face dataset repo) may be used commercially.
