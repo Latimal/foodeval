@@ -181,12 +181,15 @@ def run_benchmark(
     for name in task_names:
         get_task(name)  # raises KeyError if invalid
 
+    from foodeval import __version__
+
     result = BenchmarkResult(
         model_name=adapter.name,
         dimension=adapter.dimension,
         timestamp=datetime.now(timezone.utc).isoformat(timespec="seconds"),
         metadata=metadata or {},
     )
+    result.metadata.setdefault("foodeval_version", __version__)
 
     t0_total = time.monotonic()
 

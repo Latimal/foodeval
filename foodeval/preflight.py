@@ -94,7 +94,11 @@ def collect_benchmark_surface(task_names: list[str] | None = None) -> BenchmarkS
             corpus = data.get("corpus", [])
             queries = data.get("queries", [])
             manifest.update(
-                {"type": "retrieval", "n_corpus": len(corpus), "n_queries": len(queries)}
+                {
+                    "type": "retrieval",
+                    "n_corpus": len(corpus),
+                    "n_queries": len(queries),
+                }
             )
             for i, item in enumerate(corpus):
                 _add_text(surface, task_name, "corpus", f"corpus_{i}", item)
@@ -201,7 +205,9 @@ def _walk_json_pairs(value: Any) -> list[tuple[str, str, dict[str, Any]]]:
     return pairs
 
 
-def _extract_source(path: Path) -> tuple[list[str], list[tuple[str, str, dict[str, Any]]]]:
+def _extract_source(
+    path: Path,
+) -> tuple[list[str], list[tuple[str, str, dict[str, Any]]]]:
     suffix = path.suffix.lower()
     if suffix == ".json":
         with open(path, "r", encoding="utf-8") as f:

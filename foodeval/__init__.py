@@ -11,4 +11,4 @@ Quick start:
     >>> print(result.aggregate_score)  # doctest: +SKIP
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"

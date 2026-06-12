@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.1 (2026-06-12)
+
+- Result JSONs now carry the benchmark release in `metadata.foodeval_version`,
+  so leaderboard rows stay attributable to the data version they were
+  evaluated on. User-supplied metadata keys are preserved.
+- No task data, metric, or scoring changes; 0.1.0 results remain valid.
+
 ## 0.1.0 (2026-06-11)
 
 Initial public release.
