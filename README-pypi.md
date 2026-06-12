@@ -58,7 +58,7 @@ The MiniLM model is a 90 MB download, so this gives a first result table in minu
 
 ## Leaderboard
 
-Nine dense models evaluated at d=384, plus a lexical baseline at its native term-frequency dimension. FoodEval Score = unweighted mean across all 12 tasks. The built-in adapters reach more providers than the launch board covers; rows for Gemini, Vertex AI, and Bedrock models come in as community submissions (see Contributing Results).
+Nine dense models evaluated at d=384, plus a lexical baseline at its native term-frequency dimension. FoodEval Score = unweighted mean across all 12 tasks. The built-in adapters reach more providers than the launch board covers; rows for Gemini, Vertex AI, and Bedrock models come in as community submissions (see Contributing Results). Browse the board interactively at the [FoodEval leaderboard Space](https://huggingface.co/spaces/latimal/foodeval-leaderboard); merged submissions appear there automatically.
 
 A note on protocol, because the details change how you read the table. OpenAI is requested at 384 through its native dimensions parameter. The Latimal row is truncated to 384 the same way as the open-weight rows; its public API also serves 384 directly through a dimension parameter, which is what the reproduction script uses. Voyage is requested at 512, the narrowest width its API serves above 384, then truncated to 384 and re-normalized; every other dense model, Cohere included, is truncated to its first 384 dimensions and re-normalized. Truncation can understate a model's native-dimension quality, so read each row as that model's d=384 operating point, a width production deployments commonly pay for.
 

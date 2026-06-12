@@ -5,12 +5,12 @@ Usage:
     export LATIMAL_API_KEY=...   # get a key at https://latimal.com
     python3 scripts/run_latimal.py --dim 384 --output results/latimal_food_embed_v1_384.json
 
-Wraps the production /embed endpoint (https://dish-embed.latimal.com) in the
+Wraps the production /embed endpoint (https://food-embed.latimal.com) in the
 standard EmbeddingAdapter protocol and runs the full FoodEval suite. This is
 the same custom-adapter route CONTRIBUTING.md asks of any submission whose
 model has no built-in adapter.
 
-One caveat, documented at https://dish-embed.latimal.com/docs: /embed applies
+One caveat, documented at https://food-embed.latimal.com/docs: /embed applies
 the API's standard input preprocessing (noise and spelling normalization)
 before encoding. The published leaderboard row was measured on raw text like
 every other row, so scores from this script land at or above the published
@@ -30,7 +30,7 @@ import urllib.error
 import urllib.request
 
 
-DEFAULT_BASE_URL = "https://dish-embed.latimal.com"
+DEFAULT_BASE_URL = "https://food-embed.latimal.com"
 API_MAX_ITEMS = 512
 MAX_RETRIES = 5
 
